@@ -1,0 +1,346 @@
+/* ===[ ICONS - Buttons ]===
+   ================================================== */
+
+body {
+	.imj_buttonStyleSwitcher {
+		@include iconPreset(16);
+		margin: 0 0.727272em;
+		outline: none;
+		@include backgroundIcon('imjButtonMonitorColor_16.png', default);
+
+		&:hover {
+			border: 0 none;
+			outline: none;
+			@include backgroundIcon('imjButtonMonitorColor_16.png', hover);
+		}
+	}
+	
+	// /* * unspecific icons
+	// ================================================== */
+	.imj_iconTriangleBottomRight_16 {
+		@include iconPreset(16);
+		@include backgroundIcon('imjTriangleLargeBottomRight_16.png', default);
+
+		&:hover {
+			@include backgroundIcon('imjTriangleLargeBottomRight_16.png', hover);
+		}
+	}
+	.imj_overlayMenu {
+		&:hover {
+			.imj_iconTriangleBottomRight_16 {
+				@include backgroundIcon('imjTriangleLargeBottomRight_16.png', hover);
+			}
+		}
+	}
+
+	.imj_iconEyeOpen_16 {
+		@include iconPreset(16);
+		@include backgroundIcon('imjEyeOpen_16.png', default);
+
+		&:hover {
+			@include backgroundIcon('imjEyeOpen_16.png', hover);
+		}
+	}
+	// + enhanced definitions
+	a {
+		&:hover {
+			.imj_iconEyeOpen_16 {
+				@include backgroundIcon('imjEyeOpen_16.png', hover);
+			}
+		}
+	}
+
+	// /* * Edit Buttons
+	// ================================================== */
+	.imj_buttonEdit_16 {
+		@include iconPreset(16);
+		@include backgroundIcon('imjEditPen_16.png', default);
+
+		&:hover {
+			@include backgroundIcon('imjEditPen_16.png', hover);
+		}
+	}
+
+	// + enhanced definitions
+	a {
+		&:hover {
+			.imj_buttonEdit_16 {
+				@include backgroundIcon('imjEditPen_16.png', hover);
+			}
+		}
+	}
+	
+
+	// /* * Sort & Order by Buttons
+	// ================================================== */
+	.imj_buttonSortAscending_16 {
+		@include iconPreset(16);
+		margin-right: 0.5em;
+		@include backgroundIcon('imjButtonTriangleSortAsc_16.png', default);
+		
+		&:hover {
+			@include backgroundIcon('imjButtonTriangleSortAsc_16.png', hover);
+		}
+	}
+	.imj_buttonSortDescending_16 {
+		@include iconPreset(16);
+		margin-right: 0.5em;
+		@include backgroundIcon('imjButtonTriangleSortDesc_16.png', default);
+		
+		&:hover {
+			@include backgroundIcon('imjButtonTriangleSortDesc_16.png', hover);
+		}
+	}
+
+	// + Order by Buttons (sub menu)
+	// + CollectionBrowse.xhtml + Images.xhtml ...
+	// ================================================== */
+	.imj_buttonOrderByAsc_16 {
+		@include iconPreset(16, 2.363636em);
+		@include backgroundIcon('imjButtonTriangleSortAsc_16.png', default);
+		
+		&:hover {
+			@include backgroundIcon('imjButtonTriangleSortAsc_16.png', hover);
+		}
+	}
+	.imj_buttonOrderByDesc_16 {
+		@include iconPreset(16, 2.363636em);
+		@include backgroundIcon('imjButtonTriangleSortDesc_16.png', default);
+		
+		&:hover {
+			@include backgroundIcon('imjButtonTriangleSortDesc_16.png', hover);
+		}
+	}
+
+	// + enhanced definitions
+	// ==================================================
+	a:hover {
+		.imj_buttonSortDescending_16 {
+			@include backgroundIcon('imjButtonTriangleSortDesc_16.png', hover);
+		}
+		.imj_buttonSortAscending_16 {
+			@include backgroundIcon('imjButtonTriangleSortAsc_16.png', hover);
+		}
+	}
+	select + .imj_buttonOrderByAsc_16,
+	select + .imj_buttonOrderByDesc_16,
+	select + .imj_buttonSortAscending_16,
+	select + .imj_buttonSortDescending_16 {
+		margin-left: 1em;
+	}
+	
+
+	// /* * Search Buttons
+	//  * used in: selectionInfoPanel, simpleSearch
+	// ================================================== */
+	.imj_iconMagnifier_16 {
+		@include iconPreset(16);
+		margin-right: 0.5em;
+		@include backgroundIcon('imjMagnifierTopLeft_16.png', default, center, center);
+
+		&:hover {
+			@include backgroundIcon('imjMagnifierTopLeft_16.png', hover, center, center);
+		}
+	}
+
+	.imj_overlayMenu {
+		&:hover {
+			.imj_iconMagnifier_16 {
+				@include backgroundIcon('imjMagnifierTopLeft_16.png', hover, center, center);
+			}
+		}
+	}
+
+	.imj_iconMagnifier_24 {
+// 		float: left;
+		display: inline-block;
+		height: 2em;
+		width: 2em;
+		margin-right: 0.636363em;
+		margin-top: -0.1818em;
+		@include backgroundIcon('imjMagnifierTopLeft_24.png', hover, center, center);
+	}
+
+
+	// /* * Paginator Buttons (Tiled List)
+	// ================================================== */
+	.imj_buttonBrowseToFirst_16 {
+		@include iconPreset(16, 2.363636em);
+		@include backgroundIcon('imjGotoFirst_16.png', default, center, left);
+
+		&.imj_deactivated {
+			@include backgroundIcon('imjGotoFirst_16.png', disabled, center, left);
+		}
+		&:hover {
+			@include backgroundIcon('imjGotoFirst_16.png', hover, center, left);
+			&.imj_deactivated {
+				@include backgroundIcon('imjGotoFirst_16.png', disabled, center, left);
+			}
+		}
+	}
+
+	.imj_buttonBrowseBackward_16 {
+		@include iconPreset(16, 2.363636em);
+		@include backgroundIcon('imjTrianglePrevious_16.png', default, center, left);
+
+		&.imj_deactivated {
+			@include backgroundIcon('imjTrianglePrevious_16.png', disabled, center, left);
+		}
+		&:hover {
+			@include backgroundIcon('imjTrianglePrevious_16.png', hover, center, left);
+			&.imj_deactivated {
+				@include backgroundIcon('imjTrianglePrevious_16.png', disabled, center, left);
+			}
+		}
+	}
+
+	.imj_buttonBrowseForward_16 {
+		@include iconPreset(16, 2.363636em);
+		@include backgroundIcon('imjTriangleNext_16.png', default, center, right);
+
+		&.imj_deactivated {
+			@include backgroundIcon('imjTriangleNext_16.png', disabled, center, right);
+		}
+		&:hover {
+			@include backgroundIcon('imjTriangleNext_16.png', hover, center, right);
+			&.imj_deactivated {
+				@include backgroundIcon('imjTriangleNext_16.png', disabled, center, right);
+			}
+		}
+	}
+
+	.imj_buttonBrowseToLast_16 {
+		@include iconPreset(16, 2.363636em);
+		@include backgroundIcon('imjGotoLast_16.png', default, center, right);
+
+		&.imj_deactivated {
+			@include backgroundIcon('imjGotoLast_16.png', disabled, center, right);
+		}
+		&:hover {
+			@include backgroundIcon('imjGotoLast_16.png', hover, center, right);
+			&.imj_deactivated {
+				@include backgroundIcon('imjGotoLast_16.png', disabled, center, right);
+			}
+		}
+	}
+
+	// /* * Paginator Buttons (Image.xhtml)
+	// ================================================== */
+	.imj_paginator {
+		.imj_backwardButton {	// used in simplePageBrowser
+			padding-left: 1.5em;
+			@include backgroundIcon('imjTrianglePrevious_16.png', default, center, left);
+
+			&:hover {
+				color: #F0F0F0;
+				@include backgroundIcon('imjTrianglePrevious_16.png', hover, center, left);
+			}
+		}
+	
+		.imj_forwardButton {	// used in simplePageBrowser
+			padding-right: 1.5em;
+			@include backgroundIcon('imjTriangleNext_16.png', default, center, right);
+
+			&:hover {
+				color: #F0F0F0;
+				@include backgroundIcon('imjTriangleNext_16.png', hover, center, right);
+			}
+		}
+	}	
+
+	// /* * Add + Remove Buttons - MetaData List
+   	// ================================================== */
+	.imj_buttonAdd_16 {
+		@include iconPreset(16);
+		margin-right: 0.181818em;
+		@include backgroundIcon('imjButtonPlusBorderOpen_16.png', default);
+
+		&:hover {
+			@include backgroundIcon('imjButtonPlusBorderOpen_16.png', hover);
+		}
+	}
+
+	.imj_buttonRemove_16 {
+		@include iconPreset(16);
+		margin-right: 0.182em;
+		@include backgroundIcon('imjButtonMinusRoundedBorderOpen_16.png', default);
+
+		&:hover {
+			@include backgroundIcon('imjButtonMinusRoundedBorderOpen_16.png', hover);
+		}
+	}
+
+	.imj_collapse {
+		.imj_buttonRemove_16 {
+			margin-right: 0.272727em;
+			vertical-align: top;
+			@include backgroundIcon('imjButtonMinusRoundedBorder_16.png', default);
+
+			&:hover {
+				@include backgroundIcon('imjButtonMinusRoundedBorder_16.png', hover);
+			}
+		}
+		&:hover {
+			.imj_buttonRemove_16 {
+				@include backgroundIcon('imjButtonMinusRoundedBorder_16.png', hover);
+			}
+		}
+	}
+
+	.imj_expand {
+		.imj_buttonAdd_16 {
+			margin-right: 0.272727em;
+			vertical-align: top;
+			@include backgroundIcon('imjButtonPlusBorder_16.png', default);
+
+			&:hover {
+				@include backgroundIcon('imjButtonPlusBorder_16.png', hover);
+			}
+		}
+		&:hover {
+			.imj_buttonAdd_16 {
+				@include backgroundIcon('imjButtonPlusBorder_16.png', hover);
+			}
+		}
+	}
+	
+	// /* * Status Icons
+	// e.g. component (bibliographicGridList.xhtml - logged in)
+	// ================================================== */
+	.imj_icoStatusWithdrawn_32 {
+		@include iconPreset(32);
+		@include backgroundIcon('imjDocumentDelete_32.png', hover, left, center);
+	}
+	.imj_icoStatusPending_32 {
+		@include iconPreset(32);
+		@include backgroundIcon('imjDocumentPending_32.png', hover, left, center);
+	}
+	.imj_icoStatusReleased_32 {
+		@include iconPreset(32);
+		@include backgroundIcon('imjDocumentPublished_32.png', hover, left, center);
+	}
+	
+	// /* * Link Icons
+	// ================================================== */
+	.imj_entryPagePreviewTiledListLinkArrow {
+		float: right;
+		@include iconPreset(24);
+		margin-top: 1em;
+		@include backgroundIcon('imjArrowThinRight_24.png', default, top, right);
+		
+		&:hover {
+			@include backgroundIcon('imjArrowThinRight_24.png', hover, top, right);
+		}
+		&:after {
+			clear: both;
+			content: "";
+		}
+	}
+	a {
+		&:hover {
+			.imj_entryPagePreviewTiledListLinkArrow {
+				@include backgroundIcon('imjArrowThinRight_24.png', hover, top, right);
+			}
+		}
+	}
+}

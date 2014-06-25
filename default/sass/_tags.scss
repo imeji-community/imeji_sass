@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html,body {
+	@include max-dimension();
+	margin: 0px;
+	padding: 0px;
+	background-color: $body-bgcolor;
+}
+body {
+	@include osfont();
+}
+form {
+	display: inline;
+}
+a {
+	color: $link-color;
+	text-decoration: none;
+	
+	&:hover {
+		@include hover('a');
+	}
+	&:focus {
+		@include hover('a');
+	}
+	&:active {
+		color: $link-color;
+	}
+	&.disabled {
+		@include disabled('a');
+	}
+	&.disabled:hover {
+		@include disabled('a');
+	}
+
+}
+input {
+	color: $input-color;
+	background-color: $input-bgcolor;
+	border: $input-border;
+	@include border-radius($border-radius-default);
+	letter-spacing: 0.06em;
+	vertical-align: top;
+	
+	&:hover {
+		@include hover('input');
+	}
+	&:focus {
+		@include hover('input');
+	}
+}
+input[type=button], input[type=submit], input[type=reset], button, [class*=Button] {
+	padding: 0.25em 0.5em;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0.25em 0.5em;
+	@include inputfont();
+}
+select {
+	max-width: 100%;
+	border: $select-border;
+
+	&:hover {
+		@include hover('select');
+	}
+	&:focus {
+		@include hover('select');
+	}
+}
+label, input, button, select, textarea {
+	font-size: 1em;
+}
+label {
+	min-width: 24%;
+}
+p {
+	display: block;
+	margin: 1em 0;
+}
+

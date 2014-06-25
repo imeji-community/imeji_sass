@@ -1,0 +1,30 @@
+			// /*CSS class for autocomplete component */
+			.ui-menu {
+				color: $body-bgcolor;
+				width: 300px;
+				background-color: $body-bgcolor;
+			}
+			
+			.ui-menu-item {
+				background-color: $body-bgcolor;
+				width: 300px;
+				font-weight: bold;
+				border-left: 5px;
+			}
+			
+			.ui-corner-all { }
+			.ui-widget-content { }
+			.ui-widget { }
+			
+			.ui-autocomplete {
+				position: absolute;
+				z-index: 4000 !important
+			}
+			
+			.ui-autocomplete-loading {
+				background-color: $link-color !important;
+			}
+			
+			.ui-helper-hidden-accessible {
+				display: none;
+			}

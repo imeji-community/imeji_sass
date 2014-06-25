@@ -1,0 +1,2469 @@
+// ===            GLOBAL DEFINITIONS                 ===
+//======================================================
+// --CLASSES--
+.imj_invisible {
+        visibility: hidden;
+}
+.imj_noDisplay {
+        display: none;
+}
+.imj_active {
+	color: $link-color-active;
+
+	a {
+		color: $link-color-active;
+	}
+}
+.imj_disabled {
+	color: $input-color-disabled;
+	cursor: default;
+	background-color: $input-bgcolor-disabled;
+
+	a {
+		color: $link-color-disabled;
+		cursor: default;
+
+		&:hover {
+			color: $link-color-disabled;
+			cursor: default;
+		}
+	}
+	&:hover {
+		color: $input-color-disabled;
+		cursor: default;
+		background-color: $input-bgcolor-disabled;
+	}
+}
+.imj_keepFormat {
+	white-space: pre-wrap;
+}
+.imj_mediaWithdrawn { // (image_details.xhtml, entryPagePreviewTiledList)
+	width: 100%;
+	color: $media-widthdrawn-color;
+	text-align: center;
+}
+.imj_selectMedia { // (image_details.xhtml)
+  	margin-right: 0.636em;
+}
+
+// (image_details.xhtml)
+.imj_activeMedia,
+.imj_addMedia {
+	
+	&:hover {
+		background-color: $media-active-add-bgcolor-hover;
+	}
+}
+// (image_details.xhtml)
+.imj_removeMedia {
+	
+	&:hover { 
+		color: $media-remove-color-hover;
+		background-color: $media-remove-bgcolor-hover;
+	}
+}
+
+// MESSAGES
+// =======================================================================
+.imj_pageMessageArea,
+.imj_contentMessageArea {
+	width: 87.95%;
+	display: inline-block;
+	color: $messagearea-color;
+	margin: 1em 0;
+	padding: 0 6%;
+}
+
+.imj_messageList {
+	width: 100%;
+	padding: 0;
+	font-size: 110%;
+	
+	li {
+		width: 97.95%;
+		padding: 0.125em 1% 0.25em 1%;
+	}
+}
+.imj_messageStatus {
+	margin-top: 1em;
+	width: 97.95%;
+	padding: 0 1%;
+}
+.imj_messageInfo {
+	color: $message-info-color;
+	background-color: $message-info-bgcolor;
+}
+.imj_messageTitleInfo {
+	width: 97.95%;
+	padding: 0 1% 0.125em 1%;
+	font-size: 125%;
+	color: $message-info-color;
+	background-color: $message-info-bgcolor;
+}
+.imj_messageTitleWarn {
+	width: 97.95%;
+	padding: 0.25em 1%;
+	font-size: 145%;
+	line-height: 110%;
+	color: $message-warn-color;
+	background-color: $message-warn-bgcolor;
+}
+.imj_messageError,
+.imj_messageFatal,
+.imj_messageWarn {
+	color: $message-warn-color;
+	background-color: $message-warn-bgcolor;
+}
+// DIALOGS
+// =======================================================================
+.imj_modalDialogBackground {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $modaldialog-bgcolor;
+	opacity: 0.5;
+	filter: alpha(opacity =   50); /* IE 6, 7, 8 */
+	-ms-filter: "alpha(opacity = 50)";
+}
+
+.imj_modalDialogBox {
+	position: absolute;
+	top: 22.7272727272em;
+	padding: 0.72727272em;
+	background-color: $modaldialog-bgcolor;
+	display: none;
+	z-index: 5000;
+	/* CSS3 enhancements */
+	@include box-shadow($box-shadow-default);
+	
+	@include border-radius($border-radius-default);
+
+	.imj_submitPanel {
+		display: block;
+	}
+	.imj_confirmationReasonTextarea {
+		label {
+			display: block;
+		}
+	}
+	.imj_dialogReasonText {
+		width: 50em;
+		resize: vertical;
+	}
+	.imj_confirmationText {
+		p {
+			max-width: 50em;
+		}
+	}
+}
+
+
+// BUTTONS - NOT ICONS
+// =======================================================================
+
+// /* general button group definitions
+
+.imj_inlineButtonGroup {	// used in mediaContainer_editMetadata.xhtml, SearchAdvanced.xhtml
+	white-space: nowrap;
+}
+
+// /* general button classes
+
+.imj_collapse, button.imj_collapse, input[type=button].imj_collapse,
+.imj_expand, button.imj_expand, input[type=button].imj_expand {
+	color: $link-color;
+	border: 0 none;
+	background-color: transparent;
+	cursor: pointer;
+
+	&:hover {
+		color: $link-color-hover;
+		border: 0 none;
+		background-color: transparent;
+	}
+}
+a.imj_cancelButton,
+input.imj_cancelButton,
+button.imj_cancelButton,
+.imj_cancelButton {
+	margin: 0 1em;
+	color: $button-cancel-color;
+	background-color: $button-cancel-bgcolor;
+	border: $button-cancel-border;
+	@include border-radius($border-radius-default);
+
+	&:hover {
+		@include hover(cancelButton);
+	}
+	&:active {
+		@include hover(cancelButton);
+	}
+	&:focus {
+		@include hover(cancelButton);
+	}
+}
+
+a.imj_submitButton,
+input.imj_submitButton,
+button.imj_submitButton,
+.imj_simpleSearchButtonSubmit,
+.imj_submitButton {
+	margin-left: 1em;
+	color: $button-submit-color;
+	background-color: $button-submit-bgcolor;
+	border: $button-submit-border;
+	@include border-radius($border-radius-default);
+
+	&:hover {
+		@include hover(submitButton);
+	}
+	&:active {
+		@include hover(submitButton);
+	}
+	&:focus {
+		@include hover(submitButton);
+	}
+}
+
+a.imj_disabledButton,
+input.imj_disabledButton,
+button.imj_disabledButton,
+.imj_disabledButton {
+	margin-left: 1em;
+	cursor: default;
+	@include disabled(button);
+	@include border-radius($border-radius-default);
+
+	&:hover {
+		@include hover(disabledButton);
+	}
+	&:active {
+		@include hover(disabledButton);
+	}
+	&:focus {
+		@include hover(disabledButton);
+	}
+}
+
+/* * resetButton used in: e.g. batch edit */
+a.imj_resetButton,
+input.imj_resetButton,
+button.imj_resetButton,
+.imj_resetButton {
+	color: $button-reset-color;
+	background-color: $button-reset-bgcolor;
+	border: $button-reset-border;
+	@include border-radius($border-radius-default);
+
+	&:hover {
+		@include hover(resetButton);
+	}
+	&:active {
+		@include hover(resetButton);
+	}
+	&:focus {
+		@include hover(resetButton);
+	}
+}
+
+.imj_backButton {
+	padding: 0 0.3333333em;
+	margin-left: 1em;
+	color: $button-back-color;
+	background-color: $button-back-bgcolor;
+	border-bottom: $button-back-border;
+	@include border-radius(0 0 $border-radius-default $border-radius-default);
+
+	&:hover {
+		@include border-radius($border-radius-default);
+		@include hover(backButton);
+	}
+	&:active {
+		@include border-radius($border-radius-default);
+		@include hover(backButton);
+	}
+	&:focus {
+		@include border-radius($border-radius-default);
+		@include hover(backButton);
+	}
+}
+
+.imj_editButton,
+a.imj_editButton {
+	margin-left: 1em;
+	color: $button-edit-color;
+	background-color: $button-edit-bgcolor;
+	border: $button-edit-border;
+	@include border-radius($border-radius-default);
+
+	&:hover {
+		@include hover(editButton);
+	}
+	&:active {
+		@include hover(editButton);
+	}
+	&:focus {
+		@include hover(editButton);
+	}
+}
+.imj_editButton {
+	
+	&[type="submit"] {
+		margin-left: 0;
+	}
+}
+
+
+// HEADLINES
+// =======================================================================
+.imj_headline h2,
+h2.imj_headline {
+	padding: 0.454545em 0.81818181em;
+	font-size: 140%;
+	line-height: normal;
+}
+
+.imj_headline h3,
+h3.imj_headline {
+	padding: 0.272727em 0.545454em;
+	font-size: 125%;
+	line-height: normal;
+}
+
+.imj_sectionHeadline h3,
+h3.imj_sectionHeadline {
+	padding: 0.272727em 0.545454em;
+	font-size: 120%;
+	line-height: normal;
+}
+
+.imj_headline h4,
+h4.imj_headline {
+	padding: 0.181818em 0.363636em;
+	font-size: 110%;
+	line-height: normal;
+}
+
+.imj_sectionHeadline h4,
+h4.imj_sectionHeadline {
+	padding: 0.181818em 0.363636em;
+	font-size: 110%;
+	font-style: italic;
+	line-height: normal;
+}
+
+// /* ===[ COMMON ELEMENTS ]===
+// ================================================== */
+.highlight_area {
+	border: $highlightarea-border-style;
+	background-color: $highlightarea-bgcolor;
+
+	&.imj_highlightDependencies, 
+	.imj_highlightDependencies {
+		background-color: $highlightarea-bgcolor-hover;
+	}
+	&:hover {
+		background-color: $highlightarea-bgcolor-hover;
+	}
+}
+.imj_backPanel {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	margin: 1em 0;
+	padding: 0 2%;
+}
+.imj_customSelectbox {
+	display: inline-block;
+	margin-top: 0.090909em;
+	padding: 0.181818em 0.545454em 0 0.545454em;
+	border: $selectbox-border-style;
+	@include border-radius($border-radius-default);
+
+	select {
+		opacity: 0;
+		filter: Alpa(opacity=0);
+	}
+	.imj_showSelection {
+		position: absolute;
+		display: inline-block;
+		
+		.imj_selectionText {
+			display: inline-block;
+			color: $selectbox-text-color;
+			text-align: left;
+			vertical-align: top;
+		}
+		.imj_buttonSortDescending_16 {
+			display: inline-block;
+			margin-right: 0;
+			margin-left: 0.272727em;
+			
+			&:after {
+				clear: both;
+				content: "";
+				content: 0 none;
+			}
+		}
+	}
+}
+
+/* * image / picture / media - stack - 
+	component (bibliographicList.xhtml)
+   ==================================================
+   ================================================== */
+
+.imj_imageStack {
+	border: $imgstack-border-style;
+	@include box-shadow($box-shadow-default);
+	float: left;
+	height: 100px;
+	margin: 15px;
+	position: relative;
+	width: 100px;
+	z-index: 100;
+
+	img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border: $imgstack-border-style;
+		background: $imgstack-background-style;
+		z-index: 10;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		left: -6px;
+		top: -2px;
+		border: $imgstack-border-style;
+		background: $imgstack-background-style-before;
+		@include box-shadow($box-shadow-default);
+		@include transform(rotate(-5deg));
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		left: -6px;
+		top: -2px;
+		border: $imgstack-border-style;
+		background: $imgstack-background-style-after;
+		@include box-shadow($box-shadow-default);
+		@include transform(rotate(4deg));
+	}
+}
+
+
+// PAGE LAYOUT
+.imj_siteWrapper {
+	overflow: hidden;
+	width: $page-width;
+	max-width: $page-width-max;
+	height: auto !important;
+	min-height: 100%;
+	margin: 0 auto;
+	margin-bottom: -2.001em;
+	border-left: $page-border;
+	border-right: $page-border;
+	
+	// /* ===[ SiteHeader ]===
+   	// ================================================== */
+	.imj_siteHeader {
+		padding: 0 4%;
+		
+		&:after {
+			clear: both;
+			content: "";
+			content: 0 none;
+		}
+	}
+
+	// /* === [ Site Headline ]===
+	// ================================================== */
+	.imj_siteContentHeadline {
+		clear: both;
+		float: right;
+		max-width: 24em;
+		margin: 0;
+		padding: 0.5% 6.5% 0.5% 1%;
+		color: $pagetitle-color;
+		background-color: $pagetitle-bgcolor;
+		text-align: right;
+		@include border-radius($border-radius-default);
+		
+		&:after {
+			content: "";
+			content: none;
+			clear: right;
+		}
+		h1 {
+			font-size: 160%;
+			font-weight: bold;
+			letter-spacing: 0.045em; 
+			line-height: normal;
+		}
+	}
+
+	// /*  ===[ SiteFooter ]===
+   	// ================================================== */
+	.imj_siteFooter {
+		clear: both;
+		width: 100%;
+		padding: 2em 0;
+		text-align: center;
+	}
+}
+
+//======================================================
+// ===                COMPONENTS                     ===
+//======================================================
+
+// /* ===[ COMMON ELEMENTS ]===
+// ================================================== */
+// /* imj_optionSet used in 
+// * tiledMediaList.xhtml, template_metada_profileEdit.xhtml, BatchEdit.xhtml, Upload.xhtml
+// */
+.imj_optionSet {
+	max-width: 100%;
+	margin-bottom: 1em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	.imj_optionCheckbox {
+		margin-right: 0.272727em;
+	}
+	.imj_optionLabel {
+		white-space: normal;
+	}
+}
+table.imj_optionSet {
+	td {
+		label {
+			white-space: normal;
+		}
+	}
+}
+
+// /* imj_optionList used in 
+// * image_details.xhtml, template_metada_profileEdit.xhtml
+// */
+.imj_optionList {
+	li {
+		padding-bottom: 0.272727em;
+	}
+}
+
+.imj_techdataList {	// used in image_details.xhtml to show exif metadata
+	width: 100%;
+	padding: 0.545454em 0;
+	background-color: $techmdlist-bgcolor;
+
+	.imj_techdataEntry {
+		width: 98%;
+		padding: 0 1%;
+		white-space: pre;
+		display: inline-block;
+		overflow-x: auto;
+	}
+}
+
+.imj_globalMetadataSet,
+.imj_metadataWrapper,
+.imj_infodataWrapper {
+	width: 100%;
+}
+
+.imj_metadataSet {
+	@include datasetParam(set);
+
+	.imj_metadataLabel {
+		@include datasetParam(label);
+	}
+	.imj_metadataValue {
+		@include datasetParam(value);
+	}
+}
+textarea.imj_metadataValue,
+input.imj_metadataValue {
+	width: 73.25%;
+}
+p.imj_metadataValue {
+	margin: 0 0 0 1em;
+}
+.imj_metadataValueEntry {
+	display: inline-block;
+
+	p:first-child {
+		margin-top: 0;
+	}
+}
+.imj_metadataValueEntryViewMap {	// used in MetadataOutput.xhtml
+	display: block;
+}
+
+// -- metadata edit
+.imj_metadataEditText {
+	width: 55em;
+	min-height: 6em;
+}
+select.imj_metadataEditText {
+	min-height: 0;
+}
+
+.imj_metadataEditDate {	// used in MetadataInput.xhtml
+	width: 7.545454em;
+	text-align: center;
+}
+.imj_metadataEditLink,
+.imj_metadataEditPerson,
+.imj_metadataEditPublication {
+	width: 55em;
+}
+.imj_metadataEditLicence,
+.imj_metadataEditNumber,
+.imj_metadataEditGeo,
+.imj_admindataEdit {
+	width: 25em;
+}
+
+.imj_infodataSet {
+	@include datasetParam(set);
+
+	.imj_infodataLabel {
+		@include datasetParam(label);
+	}
+	.imj_infodataValue {
+		@include datasetParam(value);
+	}
+}
+.imj_infodataValueEntryEmbed {	// used in image_details.xhtml
+	min-height: 6em;
+	width: 55em;
+}
+
+
+.imj_admindataSet {
+	@include datasetParam(set);
+
+	.imj_admindataLabel {
+		@include datasetParam(label);
+	}
+	.imj_admindataValue {
+		@include datasetParam(value);
+	}
+}
+.imj_admindataSetEdit {
+	margin: 1em 0;
+
+	.imj_admindataValue {
+		.imj_admindataSetEdit {
+			margin: 0;
+		}
+	}
+}
+.imj_admindataCheckbox {
+	margin-left: 0;
+}
+.imj_admindataValue {
+	.imj_additionalCodeSnippet {	// used in Config.xhtml
+		width: 25em;
+		min-height: 7em;
+		resize: vertical;
+	}
+}
+.imj_admindataValueCheckBox {
+	display: inline-block;
+}
+.imj_admindataValueEntry {
+	display: inline-block;
+}
+
+
+
+// /* ===[ Main Menu Standard ]===
+// ================================================== */
+.imj_mainMenuStandard {
+	display: inline-block;
+	padding: 0 3%;
+	// margin-bottom: 0.454545em;
+	font-size: 135%;
+	letter-spacing: 0.090909em;
+	text-align: left;
+	text-transform: uppercase;
+
+	.imj_mainMenuStandardItem {
+		display: inline-block;
+		padding: 0.272727em 0.181818em 0.272727em 0.272727em;
+		margin-right: 0.454545em;
+		text-decoration: none;
+		background-color: $mainmenu-item-bgcolor;
+
+		@include border-radius($border-radius-default);
+	}
+}
+
+// /* ===[ Metamenu Standard ]===
+// ================================================== */
+.imj_metaMenuStandardSingleLine {
+	width: 100%;
+	text-align: right;
+
+
+	.imj_metaMenuSeparator {
+		height: 1.545454em;
+		width: 0.090909em;
+		margin: 0 0.727272em;
+		border-right: $meta-separator-border-style;
+		display: inline-block;
+		visibility: hidden;
+	}
+
+	.imj_metaMenuItem:not[select] {
+		display: inline;
+	}
+	
+	.imj_metaMenuItem {
+		vertical-align: baseline;
+		
+		input {
+			height: 1.454545em;
+			color: $meta-input-color;
+			background-color: $meta-input-bgcolor;
+			border: $border-style-default;
+			vertical-align: top;
+		}
+		input[type="text"], input[type="password"] {
+			width: 12em;
+			margin-right: 0.181818em;
+			border: $border-style-default-double;
+		}
+		input[type="submit"] {
+			color: $meta-button-color;
+			padding: 0;
+			margin-left: 0.272727em;
+			border: none 0;
+		}
+		input[type="submit"]:hover {
+			@include hover(a);
+		}
+		
+		@include gchromeInputFix($meta-input-bgcolor, $meta-input-color);
+	}
+}
+
+
+// /* ===[ Content (Sub) Menu ]===
+// ================================================== */
+.imj_contentMenu {
+	display: inline-block;
+	clear: both;
+	padding: 0 7.5%;
+	letter-spacing: 0.045em;
+	text-transform: uppercase;
+
+	.imj_contentMenuItem {
+		display: inline-block;
+		padding: 0;
+		margin-right: 1em;
+	}
+	.imj_contentMenuSeparator {
+		display: inline-block;
+		width: 0.090909em; 
+		height: 1.090909em;
+		margin: 0 0.318em; 
+		padding: 0;
+	}
+	+ .imj_contentSubMenu {
+		margin-top: 0.272727em;
+	}
+}
+.imj_contentSubMenu {
+	clear: both;
+	width: 84.95%;
+	padding: 0 7.5%;
+	letter-spacing: 0.045em;
+
+	.imj_contentSubMenuItem {
+		display: inline-block;
+		padding: 0;
+		margin-right: 1em;
+	}
+	.imj_contentSubMenuSeparator {
+		display: inline-block;
+		width: 0.090909em; 
+		height: 1.090909em;
+		margin: 0 0.318em; 
+		padding: 0;
+	}
+	+ .imj_contentSubMenu {
+		margin-top: 0.272727em;
+	}
+}
+
+
+// /* ===[ Overlay Menu ]===
+// ================================================== */
+.imj_overlayMenu {
+	display: inline-block;
+	padding: 0.125em 0.25em;
+
+	.imj_menuHeader {
+		text-align: left;
+		color: $overlaymenu-header-color;
+		cursor: pointer;
+	}
+	.imj_menuBody {
+		display: none;
+		position: absolute;
+		padding: 0.272727em 1em;
+		background-color: $overlaymenu-bgcolor;
+	}
+	&:hover {
+		.imj_menuHeader {
+			color: $overlaymenu-header-color-hover;
+		}
+		.imj_menuBody {
+			display: block;
+		}
+	}
+
+	.imj_criticalItem {
+		
+		&:hover {
+			background-color: $overlaymenu-bgcolor-critical;
+		}
+	}
+
+	.imj_listItemSeparator {
+		padding-top: 0.181818em;
+		border-top: $overlaymenu-border-horizontal-separator;
+	}
+
+	li {
+		line-height: 175%;
+	}
+}
+
+
+
+// PAGE HEADER
+
+
+
+// /* ===[ SiteHeader - Logo + Search Area]===
+// ================================================== */
+.imj_siteHeaderLogoSearchSection {
+	width: 100%;
+	padding: 0;
+	margin: 0.454545em 0 2em 0;
+
+	// /* ===[ SiteHeader - Logo ]===
+   	// ================================================== */
+	.imj_siteHeaderLogoArea {
+		display: inline-block;
+		padding: 0 2em 0 0;
+		
+		.imj_siteHeaderLogo {
+			width: $logo-width;
+			height: $logo-height;
+			padding: 0;
+			display: inline-block;
+			@include backgroundIcon($logo-file, logo, $logo-position-top, $logo-position-left);
+		}
+	}
+}
+
+// /* ===[ SiteHeader - SimpleSearch ]===
+// ================================================== */
+.imj_simpleSearch {
+	float: right;
+	display: inline-block;
+	overflow: visible;
+	
+	.imj_simpleSearchInputWrapper {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.imj_simpleSearchInput {
+		width: 21em;
+		min-width: 13em;
+		@include border-radius(0.454545em 0 0 0.454545em);
+	}
+	
+	.imj_simpleSearchButtonSubmit {
+		height: 1.909090em; 
+		margin-left: 0;
+		padding: 0.090909em 1em;
+		@include border-radius(0 0.454545em 0.454545em 0);
+	}
+	
+	input[type=radio] {
+		border: 0 none;
+		margin: 0.090909em 0 0 0.090909em;
+	}
+	
+	input[type=radio] + label {
+		margin-left: 0.181818em;
+		margin-right: 1em;
+	}
+
+	.imj_simpleSearchLinkAdvancedsearch {
+		margin-top: 0.181818em;
+		margin-left: 2.090909em;
+		white-space: nowrap;
+		display: inline-block;
+	}
+} // end of imj_simpleSearch
+
+
+
+// /* ===[ Content - Sub Header Message Space ]===
+// ================================================== */
+.imj_subHeaderMessageSpace {
+	clear: both;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	margin: 0.65em 0.0909em 0 0;
+	width: 81.3636em;
+}
+
+// ================================================== */
+// ================================================== */
+
+// /* ===[ Content - Submit Panel ]===
+// ================================================== */
+.imj_submitPanel {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	margin-top: 1em;
+
+	.imj_submitPanelSeparator {	// used in Share.xhtml
+		margin-left: 0.545454em;
+		margin-right: 0.545454em;
+
+		+ .imj_submitButton {	// used in Share.xhtml
+			margin-left: 0;
+		}
+	}
+}
+
+// /* ===[ Content - Main Content - Content Header]===
+// ================================================== */
+.imj_mainContentWrapper {
+	clear: both;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 93.95%;
+	padding: 0 3%;
+	margin: 2em 0.090909em 0 0;
+	background-color: $maincontent-bgcolor;
+}
+
+
+// /* ===[ Content - Breadcrump History Navigation ]===
+// /* * breadcrump component (History.xhtml)
+// ================================================== */
+.imj_breadcrumpHistory {
+ 	width: 91.75%;
+	padding: 0 4%;
+	margin-bottom: 0.5em;
+
+	.imj_breadcrumpTitle {
+		margin-right: 0.363636em;
+		font-size: 1.090909em;
+		line-height: 2em;
+		vertical-align: top;
+	}
+	.imj_breadcrumpItem {
+		display: inline-block;
+		max-width: 11em;
+		line-height: 2em;
+		font-size: 1.090909em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		vertical-align: top;
+		.imj_breadcrumpLongDescription {
+			display:none;
+			max-width: 10.272727em;
+			padding: 0 0.363636em;
+			white-space: normal;
+			background-color: $breadcrump-overlay-bgcolor;
+		}
+		&:hover {
+			.imj_breadcrumpLongDescription {
+				position:absolute;
+				display:block;
+				z-index: 10;
+			}
+		}
+	}
+	.imj_breadcrumpSeparator {
+		margin-left: 0.363636em;
+		margin-right: 0.363636em;
+		line-height: 2em;
+		font-size: 1.090909em;
+		vertical-align: top;
+	}
+}
+
+
+
+// ===[ Advanced Search ]===
+// ================================================== */
+.imj_advancedSearch {
+  	width: 91.25%;
+	padding: 0 4%;
+	border-top: $advsearch-separatortop-border-style;
+
+	.imj_logicalSearchGroup {
+		white-space: nowrap;
+		margin-right: 5%;
+	}
+	.imj_searchUnit {
+		width: 100%;
+		margin-top: 1em;
+
+		> div {
+			display: inline-block;
+		}
+		.imj_logicalConnector {
+			min-width: 3em;
+		}
+		.imj_logicalDetailConnector {
+			margin-left: 10%;
+			margin-top: 0.5em;
+			display: block;
+		}
+		.imj_inlineButtonGroup {
+			min-width: 3.5em;
+		}
+		.imj_compareLabel {
+			padding: 0 0.5em;
+		}
+
+		.imj_searchSelectbox {
+			> select {
+				max-width: 30em;
+			}
+		}
+		.imj_searchDetails {
+			width: 92%;
+			margin-left: 7%;
+			margin-top: 0.5em;
+
+			.imj_inlineButtonGroup {
+				margin-left: 0.5em;
+			}
+			.imj_searchStatement {
+				> select {
+					width: 15em;
+				}
+			}
+			.imj_searchInput {
+				> input {
+					width: 20em;
+				}
+			}
+		}
+	}
+}
+
+// /* search query display, in head of content
+// * (searchQueryDisplayArea.xhtml)
+// ===============================================
+.imj_searchQueryDisplay {
+	width: 91.25%;
+	padding: 1% 4%;
+
+	> fieldset {
+		padding: 1% 1%;
+		border-top-style: inset;
+		border-bottom-style: outset;
+		border-color: rgba(255,255,255, 0.15);
+
+		legend {
+			margin: 0 1%;
+			padding: 0 1%;
+			font-size: 110%;
+		}
+	}
+	.imj_submitButton {
+		display: inline-block;
+		white-space: nowrap;
+		margin-top: 0.272727em;
+	}
+}
+
+
+
+
+// /* * Selection Info Panel (Image.xhtml)
+// ================================================== */
+.imj_selectionInfoPanel {
+	width: 91.75%;
+	padding: 0 4%;
+	margin-bottom: 0.5em;
+
+	.imj_removeFacetButton {
+		margin-left: 0.272727em;
+	}
+}
+.imj_selectionInfoPanelItemSelect {
+	float: right;
+}
+
+// /* * filter info panel (overview pages - Collections, Albums)
+// * filterInfoPanel.xhtml
+// ================================================== */
+.imj_filterInfoPanel {
+	width: 91.75%;
+	padding: 0 4%;
+	margin-bottom: 0.5em;
+
+	.imj_removeFilterButton {
+		margin: 0 0.272727em;
+	}
+}
+
+// ===[ Paginator Components ]===
+// ================================================== */
+.imj_paginator {	// used as container for different paginator types
+	width: 91.75%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 0.636363em 4%;
+	text-align: center;
+	border-top: $paginator-bordertop-style;
+
+	.imj_rangeSelector {
+		float: left;
+
+		.imj_rangeSelectorLabel {
+			margin-left: 0.363636em;
+			vertical-align: baseline;
+		}
+	}
+	.imj_gotoBox {
+		float: right;
+	
+		label {
+			vertical-align: baseline;
+		}
+		.imj_pageInput {
+			width: 3em;
+			margin-left: 0.363636em;
+			margin-right: 0.363636em;
+			text-align: center;
+		}
+		.imj_submitButton {
+			margin-left: 0.545454em;
+		}
+	}
+}
+
+// /* Simple Page Browser - used for detail view
+// ================================================== */
+.imj_simplePageBrowser {
+	.imj_backwardButton + .imj_forwardButton {
+		margin-left: 1em;
+	}
+}
+
+// /* Single Page Browser - used for browse into tiled list
+// ================================================== */
+.imj_singlePageBrowser {
+	display: inline-block;
+
+	.imj_separator {
+		display: inline-block;
+		height: 1.81818181em;
+		vertical-align: middle;
+	}
+	
+	.imj_pageNumber {
+		padding: 0 1em;
+		background-color: transparent;
+		border: 0 none;
+		color: $paginator-pagenumber-color;
+	}
+	
+	.imj_pageNumber:hover {
+		color: $paginator-pagenumber-color-hover;
+	}
+	
+	.imj_currentPageNumber {
+		padding: 0 1em;
+		color: $paginator-pagenumber-color-active;
+		background-color: transparent;
+		border: 0 none;
+	}
+}
+
+
+
+// === [ Image Info Layer ]===
+// /* currently used in MetadataPopup.xhtml for tiled list
+// ================================================== */
+.imj_imageInfoLayer {
+	width: 95.95%;
+	padding: 0 2%;
+
+	a {
+		margin-left: 1em;
+	}
+	.imj_metadataValue {
+		width: 72.33%;
+		margin-left: 0.727272em;
+	}
+
+	.highlight_area {
+		&.imj_highlightDependencies {
+			background-color: $highlightarea-tooltip-bgcolor-hover;
+		}
+	}
+	.imj_infoNavigation {
+		width: 95.95%;
+		padding: 0 2%;
+		text-align: right;
+		margin-bottom: 1.454545em;
+		
+		.imj_buttonEdit_16 {
+			margin-right: 0.181818em;
+		}
+	}
+}
+
+// /* * bibliographicList used in bibliographicListTwoColumn.xhtml, bibliographicListThreeColumn.xhtml
+// ================================================== */
+.imj_bibliographicList {
+	width: 100%;
+
+	.imj_listHeader,
+	.imj_listFooter {
+		width: 91.95%;
+		padding: 0.25em 4% 0.5em 4%;
+
+		> div {
+			vertical-align: middle;
+		}
+		.imj_globalDisplaySwitchArea {
+			display: inline-block;
+			width: 77.95%;
+		}
+	}
+	
+	.imj_interactiveArea {
+		width: 5%;
+		min-width: 1.5em;
+		display: inline-block;
+	}
+	.imj_statusArea {
+		width: 16%;
+		min-width: 9em;
+		text-align: center;
+		display: inline-block;
+		overflow: hidden;
+
+		.imj_statusIconArea {
+			width: 100%;
+			margin: 0.5em 0;
+			text-align: center;
+		}
+	}
+	.imj_listFooter {
+		border-top: $biblist-separator-horizontal;
+	}
+
+	.imj_listBody {
+		width: 100%;
+
+		.imj_bibliographicListItem {
+			width: 91.95%;
+			padding: 0 4% 1em 4%;
+			display: inline-block;
+			border-top: $biblist-separator-horizontal;
+
+			&:hover {
+				background-color: $biblist-item-bgcolor-hover;
+			}
+			&.imj_active {	// e.g. an album is marked as active
+				background-color: $biblist-item-bgcolor-active;
+
+				&:hover {
+					background-color: $biblist-item-bgcolor-active-hover;
+				}
+			}
+			.imj_previewArea {
+				width: 21.5%;
+				min-width: 12em;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+			}
+			.imj_itemHeadline {
+				padding: 0.5em 0;
+				font-size: 120%;
+				line-height: 145%;
+
+				a {
+					display: inline-block;
+					max-width: 100%;
+					text-overflow: ellipsis;
+					overflow: hidden;
+				}
+				.imj_messageWarn {
+					padding: 0 1%;
+					margin-right: 0.5454em;
+				}
+			}
+			.imj_metadataLabel {
+				font-weight: normal;
+			}
+			.imj_itemActionArea {
+				width: 100%;
+
+				li {
+					display: inline-block;
+					padding: 0 0.545454em;
+				}
+				+ .imj_metadataSet {
+					margin-top: 0.5em;
+				}
+			}
+			.imj_interactiveArea {
+				padding-top: 0.75em;
+				vertical-align: top;
+			}
+			.imj_informationContent {
+				width: 77.25%;
+				display: inline-block;
+				vertical-align: top;
+
+				.imj_metadataSet {
+					padding-bottom: 0.25em;
+
+					label {
+						&.imj_metadataLabel {
+							cursor: default;
+							min-width: 0;
+							width: 24%;
+						}
+					}
+					&:hover {
+						background-color: $biblist-item-data-bgcolor-hover;
+					}
+				}
+				
+				.imj_additionalInfoArea {
+					.imj_metadataContent {
+						display: none;
+						padding-top: 0.5em;
+					
+					}
+					.imj_displaySwitchArea {
+						a {
+							cursor: pointer;
+						}
+					}
+				}
+			}
+
+		}	// end of listItem
+	}	// end of listBody
+}	// end of imj_bibliographicList
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* * metadataLists (image_details.xhtml, entryPageTabList.xhtml, mediaContainer_viewMetadata.xhtml)
+// ================================================== */
+.imj_metadataList {
+
+	.imj_listHeader {
+		width: 100%;
+
+		a {
+			float: right;
+			margin: 0.363636em 0.272727em 0.363636em;
+			padding: 0 0.363636em;
+
+			&:hover {
+				background-color: $mdlist-header-bgcolor-hover;
+			}
+		}
+		.imj_separator {
+			float: right;
+			width: 0.090909em;
+			margin-top: 0.454545em;
+			border: solid $mdlist-header-separator-border-color;
+			border-width: 1.3em 0 0;
+		}
+		.imj_active {
+			color: $mdlist-header-color-hover;
+			background-color: $mdlist-header-bgcolor-active;
+		}
+	}
+
+	.imj_listBody {
+		clear: both;
+		width: 100%;
+		border-top: $mdlist-body-border-top-style;
+		
+		.imj_entryPageTitle {
+			font-size: 1.636em;
+			letter-spacing: 0.045em;
+			line-height: 130%;
+			margin-bottom: 0.455em;
+		}
+		.imj_entryPageDescription {
+			line-height: 130%;
+		}
+	}
+}
+
+// /* * metadataSubPanel (image_details.xhtml, entryPageTabList.xhtml)
+//  * should be a part of imj_metadataList
+// ================================================== */
+.imj_metadataSubPanel {
+	text-align: left;
+	width: 91.95%;
+	padding: 1% 4%;
+
+	.imj_metadataSubPanelItem {
+		font-weight: bold;
+		border-bottom: $mdsubpanel-border-bottom-style;
+
+		a {
+			padding: 0 0.181818em;
+
+			&:hover {
+				background-color: $mdsubpanel-item-bgcolor-hover;
+			}
+		}
+	}
+}
+// ================================================== */
+// ================================================== */
+// ================================================== */
+// /* * tiledMediaList + singlePageBrowser
+// + Buttons + rangeSelector + infoLayer
+// (template_image_tiledlist.xhtml)
+// ================================================== */
+// /* * tiledMediaList */
+.imj_tiledMediaList {
+  	padding: 1% 4%;
+
+	.imj_listHeader {
+		min-height: 2em;
+
+		.imj_overlayMenu .imj_menuBody {
+			border: $tiledlist-overlay-border-style;
+			@include border-radius($border-radius-default);
+		}
+	}
+
+	> .imj_listBody {
+		margin: 0 auto;
+
+		.imj_tileItem {
+			display: inline-block;
+			width: 15.75%;
+			max-width: 11.545454em;
+			padding-bottom: 2em;
+			margin: 0 0.25%;
+			vertical-align: top;
+
+			label {
+				max-width: 100%;
+				overflow-x: hidden;
+				text-overflow: ellipsis;
+				display:inline-block;
+
+				&.imj_optionLabel {
+					white-space: nowrap;
+				}
+			}
+
+			.imj_optionCheckbox {
+				+ label.imj_optionLabel {
+					max-width: 88%;
+					display: inline-block;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+			}
+			.imj_tooltip {
+				display: none;
+				position: absolute;
+				z-index: 10;
+				width: 30em;
+				background-color: $tiledlist-tooltip-bgcolor;
+				@include box-shadow($box-shadow-default);
+
+				.imj_metadataPublicationArea {
+					.imj_citation {
+						p:first-child {
+							margin-top: 0;
+							padding-top: 0;
+						}
+					}
+				}
+			}
+			.imj_tileThumbnailArea {
+				background-color: $tiledlist-item-bgcolor;
+
+				&.imj_selected {
+					background-color: $tiledlist-item-bgcolor-selected;
+				}
+				img {
+					width: 84%;
+					height: 85%;
+					padding: 8%;
+					margin-top: 3%;
+				}
+			}
+
+			&:hover {
+				.imj_tileThumbnailArea {
+					background-color: $tiledlist-item-bgcolor-hover;
+				}
+				.imj_tooltip {
+					display: block;
+				}
+			}
+
+			/* general bug fix for webkit browser, because of wrong interpretation in responsive image scaling */
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    		.imj_tileThumbnailArea img {
+	        		height: auto;
+	    		}
+			}
+		} // end of imj_tileItem
+
+	} // end of imj_listBody
+}
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// /* ===[ FACETS ]===
+// * - facets.xhtml, selectionInfoPanel.xhtml
+// * ================================ */
+#imj_ajaxFacets {
+	padding: 1% 4%;
+}
+.imj_facetArea {
+	line-height: 175%;
+
+	.imj_facetGroup {
+		display: inline-block;
+		margin-right: 1.545454em;
+		padding: 0 0.181818em;
+		.imj_facetGroupOpener {
+			margin-right: 0.181818em;
+			display: none;
+		}
+		.imj_facetSeparator {
+			margin: 0 0.272727em;
+			color: $facet-separator-color;
+		}
+		.imj_facetGroupItem {
+			white-space: nowrap;
+		}
+		.imj_facetGroupCloser {
+			margin-left: 0.181818em;
+			display: none;
+		}
+
+		&:hover {
+			background-color: $facet-bgcolor-hover;
+		}
+	}
+}
+
+
+
+
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+// /* * login form
+// loginFormSite is includes on page content, not in menu!
+// ================================================= */
+.imj_loginFormSite {
+	width: 91.25%;
+	padding: 1% 4%;
+	border-top: $page-login-form-border-style;
+}
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// STARTPAGE
+.imj_startpageFooter {
+	clear: both;
+	width: 100%;
+	padding: 1em 0;
+	img {
+		margin: 0 1%;
+	}
+	.imj_startpageFooterLogos {
+		width: 100%;
+		padding: 1em 1.25em 1.25em 1em;
+		text-align: center;
+	}
+	.imj_community_logo {
+		padding: 1%;
+		margin-right: 5%;
+		@include border-radius($border-radius-default);
+	}
+}
+
+#imj_welcomeInfoWrapper {
+	display: inline-block;
+	width: 48%;
+}
+.imj_welcomeInfo {
+	min-height: 34.8333333em;
+	width: 37.85%;
+	padding: 1%;
+	margin: 1% 0;
+	overflow: hidden;
+	background-color: $welcome-info-bgcolor;
+	@include border-radius($border-radius-default);
+	
+	.id_tabs {
+		ul {
+			padding: 0;
+			margin-top: 0;
+			padding-top: 0.333333em;
+			list-style-type: none;	
+
+			li {
+				margin-left: 1%;
+				padding: 1%;
+				display: inline;
+				font-size: 110%;
+				@include border-radius($border-radius-default);
+			}
+		}
+		.imj_tabMenu {
+			width: 100%;
+			text-align: right;
+
+			li {
+				background-color: $welcome-info-tabs-bgcolor;
+				&.ui-state-active {
+					background-color: $welcome-info-tabs-bgcolor-active;
+					a {
+						@include hover('a');
+					}
+				}
+			}
+		}
+		.imj_tabContent {
+			width: 100%;
+			min-height: 30em;
+			overflow: auto;
+			font-size: 110%;
+
+			ul {
+				margin-bottom: 3em;
+				.imj_iconGoTo {
+					vertical-align: top;
+				}
+			}
+			li {
+				display: block;
+				padding-left: 2%;
+				background-color: $welcome-info-listentry-bgcolor;
+			}
+			.imj_headline, .imj_sectionHeadline {
+				margin-top: 1em;
+			}
+		}
+		div.ui-tabs-hide {
+			display: none;
+		}
+	}
+}
+
+// CAROUSEL
+.imj_startpage_carouselWrapper {
+	float: right;
+	margin-top: 2em;
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	
+	.imj_startpage_carousel {
+		width: 100%;
+		min-height: 33.333333em;
+		overflow: hidden;
+		
+		.imj_startpage_carouselContainer {
+			max-height: 400px;
+			overflow: visible;
+			min-width: 350px;
+			width: 40%;
+			margin: 0 auto;
+			
+			#carousel {
+				height: 26.66666666em;
+				width: 90%;
+				margin: 0 auto;
+				background: $welcome-carousel-bgcolor;
+				overflow: visible !important;
+			}
+			#cloudinfoText {
+				display: none;
+				
+				.imj_cloudInfoTitle {
+					font-weight: bold;
+				}
+				#title-text, #alt-text {
+					margin: 0;
+				}
+			}
+			.dynamicCloudinfo {
+				position: absolute;
+				z-index: 5600;
+				background-color: $welcome-carousel-infolayer-bgcolor;
+				padding: 0.75em;
+			}
+		}
+	}
+}
+.imj_startpage_carouselWrapper:after {
+	clear: right;
+}
+
+// OVERRIDES
+iframe#twitter-widget-0 {
+	width: 99.5%;
+	height: 43em;
+}
+
+iframe#twitter-widget-0 div.root div.stream {
+	height: 20em !important;
+}
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// DETAIL PAGE OF MEDIA ENTRIES
+
+// /* * imj_mediaEntryDetailPage (sub_template/template_image.xhtml)
+// ================================================== */
+.imj_mediaEntryDetailPage {
+
+	> .imj_metadataList,
+	> .imj_mediaDisplayContainer {
+		width: 91.25%;
+		margin: 1% 4%;
+	}
+	.highlight_area.imj_highlightDependencies {
+		background-color: $highlightarea-bgcolor-hover;
+	}
+
+	// /* * mediaDisplayContainer + mediaEditPanel , MetaDataList + Submit Panel + Buttons (image_details.xhtml)
+	// ================================================== */
+	.imj_mediaDisplayContainer {
+		padding: 1em 0;
+		margin-bottom: 0.545454em;
+		text-align: center;
+		border-bottom: $detailpage-displaycontainer-borderbottom-style;
+	}
+}
+
+// /* * [ Content - EDIT] + Items (image_deatails.xhtml)
+// ================================================== */
+.imj_mediaEditPanel {
+	width: 100%;
+	margin-top: 0.545454em;
+
+	.imj_mediaEditPanelItem {
+		letter-spacing: 0.045em;
+		margin: 1em 0.273em 0 2.000em;
+		@include border-radius($border-radius-default);
+	}
+	.imj_metadataEditButtonArea {
+		display: inline-block;
+	}
+}
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// ENTRY PAGE OF COLLECTION OR ALBUM
+
+.imj_entryPagePreviewTiledList {
+	margin-bottom: 0.5em;
+	padding: 1% 4%;
+	border-top: $entrypage-separatortop-border-style;
+	
+	.imj_entryPagePreviewTiledListItem {
+		padding: 0.25em;
+	}
+	.imj_entryPagePreviewTiledListLink {
+		float: right;
+		width: 8em;
+		
+		&:after {
+			clear: both;
+			content: "";
+		}
+	}
+	+ .imj_metadataList {
+		clear: both;
+		padding: 1% 4%;
+	}
+}
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// /* ===[ Content - VIEW PROFILE OF METADATA ]===
+// ================================================================ */
+// /* * metadataProfileLists (metadataProfile_view.xhtml) 
+// * metadataListMediaContainer (mediaContainer_viewMetadata.xhtml)
+// ================================================================ */
+.imj_metadataProfileList,
+.imj_metadataListMediaContainer {
+	width: 91.25%;
+	padding: 0 4%;
+	border-top: $mdprofilelist-separatortop-border-style;
+
+	.imj_listHeader {
+		padding: 1% 0;
+
+		.imj_listHeaderMenu {
+			float: right;
+			display: inline-block;
+
+			a {
+				margin: 0.363636em 0.27272727em 0.363636em;
+				padding: 0 0.363636em;
+			}
+		}
+		.imj_headline {
+			display: inline-block;
+			margin-right: 1em;
+		}
+	}
+	.imj_sectionHeadline {
+		width: 100%;
+		display: inline-block;
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		// background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+		// background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* FF3.6+ */
+		// background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(1%, rgba(0, 0, 0, 0.2)), color-stop(63%, rgba(0, 0, 0, 0))); /* Chrome,Safari4+ */
+		// background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* Chrome10+,Safari5.1+ */
+		// background: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* Opera 11.10+ */
+		// background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* IE10+ */
+		// background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* W3C */
+		// filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#33000000', endColorstr='#00000000', GradientType=1); /* IE6-8 */
+		@include background-image(linear-gradient(left, #292929 0%, #313131 60%));
+	}
+	.imj_metadataProfileItem {
+		margin-top: 0.545454em;
+	}
+}
+
+.imj_metadataListMediaContainer {
+	.imj_listBody {
+		.imj_statusIconArea {
+			vertical-align: top;
+		}
+	}
+	table {
+		&.imj_metadataAuthorList {
+			thead {
+				th {
+					font-weight: bold;
+				}
+			}
+			th, td {
+				padding-right: 0.75em;
+				vertical-align: top;
+			}
+			tbody {
+				tr {
+					line-height: 200%;
+				}
+			}
+		}
+	}
+	// specific border definition
+	+ .imj_metadataProfileList {
+		border-top: $mdprofilelist-separatortop-border-style-inplace;
+	}
+}
+// specific border definitions
+#imj_ajaxWrapper {
+	> .imj_metadataListMediaContainer {		// ahead of metadata profile list - show metadata
+		border-top: $mdprofilelist-separatortop-border-style;
+	}
+}
+
+// /* ===[ Content - EDIT PROFILE OF METADATA ]===
+// ================================================================ */
+// /* * metadataProfileLists (metadataProfile_view.xhtml) 
+// * metadataListMediaContainer (mediaContainer_viewMetadata.xhtml)
+// ================================================================ */
+#imj_ajaxWrapper {
+	> .imj_metadataProfileList {
+		&.imj_edit {
+			border-top: $mdprofilelist-separatortop-border-style;
+		}
+	}
+}
+.imj_metadataProfileList {
+	&.imj_edit {
+		> .imj_listHeader {
+			> .imj_listHeaderMenu {
+				float: none;
+				display: inline-block;
+			
+				> * {
+					display: inline;
+				}
+				select {
+					margin: 0 0.181818em;
+				}
+			}
+		}
+		.imj_metadataTypeSelection { 
+			width: 9em;
+		}
+		.imj_metadataLanguageSelection {
+			width: 10em;
+		}
+		.imj_itemHeader {
+			width: 98%;
+			padding: 0.5% 1%;
+
+			* {
+				vertical-align: top;
+			}
+			.imj_inlineButtonGroup {
+				margin-right: 0.272727em;
+			}
+			.imj_optionList {
+				float:right;
+				display: inline;
+				margin-left: 0.727272em;
+
+				.imj_optionSet {
+					display: inline-block;
+
+					+ .imj_optionSet {
+						margin-left: 0.545454em;
+					}
+				}
+				.imj_optionLabel {
+					min-width: 0;
+					width: auto;
+				}
+			}
+		} // end of imj_itemHeader
+
+		.statement_area {
+			width: 100%;
+			overflow: none;
+		}
+		.dropMetadataActive,
+		.dropChildActive {
+			border-color: $mdprofilelist-dropmd-border-color-active;
+		}
+		.drop-hover {
+			min-height: 1em;
+			background-color: $mdprofilelist-drop-bgcolor-hover;
+		}
+		.dropMetadata {}
+		.imj_dropArea {
+			display: block;
+			min-width: 85%;
+
+			.imj_orderInfo {
+				display: none;
+			}
+			&:hover {
+				.imj_orderInfo {
+					display: inline;
+				}
+			}
+		}
+		.highlight_area {
+			border: $highlightarea-border-style-mdprofile;
+			background-color: $highlightarea-bgcolor-mdprofile;
+
+			&.imj_highlightDependencies, 
+			.imj_highlightDependencies {
+				background-color: $highlightarea-bgcolor-hover-mdprofile;
+			}
+			&:hover {
+				background-color: $highlightarea-bgcolor-hover-mdprofile;
+			}
+		}
+
+	} // end of imj_edit
+}
+
+// /* * create new or edit container, e.g. album or collection
+// component (createNewContainer.xhtml)
+// ================================================== */
+.imj_mediaContainerEditMD {
+	margin-bottom: 0.5em;
+	padding: 0 4%;
+	width: 91.75%;
+	border-top: $mediacontainer-separatortop-border-style;
+
+	.imj_headline {
+		width: 100%;
+	
+		.imj_headline h3 {
+			margin: 1% 0;
+		}
+	}
+	.imj_authorMetadataSet {
+		background-color: $mediacontainer-author-bgcolor;
+		margin-bottom: 0.363636em;
+		padding: 0.5em 1%;
+	}
+	.imj_sectionHeadline {
+		margin-bottom: 0.545454em;
+	}
+}
+
+// /* * batchEditItemList - 
+// file (BatchEdit.xhtml)
+// ================================================================================== */
+.imj_batchEditItemList {
+	width: 91.25%;
+	padding: 1% 4%;
+	
+	.imj_listHeader {
+		padding-bottom: 1em;
+	}
+	.imj_previewArea {
+		width: 21.5%;
+		min-width: 12em;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+	.imj_informationContent {
+		width: 77.25%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+.imj_batchEditListItem {
+	margin-bottom: 1em;
+}
+
+.imj_editGlobalAssignment {
+	width: 91.25%;
+	padding: 1% 4%;
+	border-top: $batchedit-globalAssignment-separatortop-border-style;
+
+	> .imj_metadataSet {
+		> .imj_metadataLabel {
+			label {
+				display: inline-block;
+				width: 100%;
+			}
+		}
+		> .imj_metadataValue {
+			width: 69.25%;
+			max-width: 69.25%;
+
+			> .imj_singleStatementEdit {
+				> textarea {
+					&.imj_metadataValue {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.imj_dataAssignmentPanel {
+		display: inline-block;
+		margin-top: 1em;
+	}
+
+	+ .imj_batchEditItemList {
+		border-top: $batchedit-itemlist-separatortop-border-style;
+	}
+}
+
+.imj_singleStatementEdit {
+	width: 100%;
+	margin-bottom: 1em;
+
+	.imj_inlineButtonGroup {
+		margin-left: 1%;
+	}
+	textarea {
+		resize: vertical;
+	}
+}
+
+
+// /* ===[ Ingest Page ]===
+// * (Ingest.xhtml)
+// * ============================================ */
+.imj_ingestWrapper {
+	width: 91.25%;
+	padding: 0 4% 2em 4%;
+	border-top: $ingestpage-separatortop-border-style;
+}
+.imj_ingestMessageArea {
+	width: 100%;
+	border-bottom: $ingestpage-messagearea-border-style;
+	margin-bottom: 3em;
+}
+
+.imj_uploadDropArea {
+
+	+ .imj_headline {	// used in Ingest.xhtml
+		border-top: $upload-separation-border-style;
+		border-bottom: $upload-separation-border-style;
+		margin: 2em 0 1em 0;
+	}
+	+ .imj_uploadUrlReference {	// used in Upload.xhtml
+		margin-top: 4em;
+	}
+}
+
+
+/* === Upload Page ===
+ * Upload.xhtml
+ * ============================================ */
+.imj_upload {
+	width: 91.25%;
+	padding: 1% 4%;
+	border-top: $uploadpage-separatortop-border-style;
+
+	.imj_uploadInputWrapper {
+		width: 70%;
+		min-width: 30em;
+		display: inline-block;
+	}
+	.imj_uploadDropArea {
+		width: 100%;
+	}
+}
+
+
+.imj_uploadUrlReference {
+	width: 98%;
+	min-width: 30em;
+	padding: 0.5% 1%;
+	background-color: $upload-urlref-bgcolor;
+	
+	label {
+		margin-left: 1em;
+	}
+	input {
+		width: 100%
+	}
+	.submitPanel {
+		padding: 0.545454em 0;
+	}
+}
+
+
+.imj_uploadOptionsArea {
+	width: 27%;
+	min-height: 33.545454em;
+	margin: 0 0 0 1.5%;
+	padding: 0.5% 0.5%;
+	display: inline-block;
+	vertical-align: top;
+	background-color: $upload-optionarea-bgcolor;
+
+	.imj_headline,
+	.imj_sectionHeadline {
+		margin-bottom: 1em;
+	}
+}
+
+.imj_uploadMessageArea {
+	width: 100%;
+	margin-top: 4em;
+
+	.imj_fileErrorMessageArea,
+	.imj_fileSuccessMessageArea {
+		width: 48%;
+		padding: 1% 0.8%;
+		display: inline-block;
+		vertical-align: top;
+	
+		.imj_messageList {
+			width: 84%;
+			max-height: 21em;
+			padding: 0 0 0 15.25%;
+			list-style: decimal-leading-zero;
+			overflow: auto;
+		}
+	}
+	.imj_fileErrorMessageArea {
+		background-color: $upload-messagearea-bgcolor-error;
+	}
+	.imj_fileSuccessMessageArea {
+		background-color: $upload-messagearea-bgcolor-success;
+	}
+}
+
+
+
+// /* === Share Page & Share Form ===
+// *  Share.xhtml
+// * ============================================ */
+.imj_shareForm {
+	width: 91.25%;
+	padding: 1% 4%;
+	
+	.imj_shareRightsOverview {
+		margin-top: 2em;
+		padding-top: 1em;
+		border-top: $share-separator-border-style;
+	}
+	
+	.imj_rightsTable {
+		th, 
+		td {
+			width: 6em;
+			padding: 0.272727em 0.545454em;
+			text-align: center;
+		}
+		
+		th {
+			font-weight: bold;
+			
+			&:first-child {
+				width: 13em;
+				text-align: left;
+			}
+		}
+		td {
+			padding-bottom: 0.363636em;
+		}
+		> tbody {
+			> tr {
+				&:hover {
+					background-color: $share-rightstable-body-bgcolor;
+				}
+			}
+		}
+	}
+
+	.imj_rightsTableForNewUser {	// used to add a new user with rights
+		td {
+			padding-right: 0.818181em;
+			vertical-align: top;
+		}
+		input[type=checkbox] {
+			display: block;
+		}
+	}
+}
+#sharePanel {	// used in image_details.xhtml
+	fieldset {
+		&.imj_shareInformationFieldset {
+			padding: 1% 1%;
+			border-top-style: inset;
+			border-bottom-style: outset;
+			border-color: rgba(255,255,255, 0.15);
+
+			> legend {
+				margin: 0 1%;
+				padding: 0 1%;
+				font-size: 110%;
+			}
+		}
+	}
+	.imj_shareForm {
+		border: 0 none;
+		width: 100%;
+		padding: 0;
+	}
+}
+
+
+// =====================================================================
+// ===[ ADMIN PAGES ]===
+// * UserAdministrationPage.xhtml
+// * UserCreate.xhtml
+// * Users.xhtml
+// * AdminStorage.xhtml
+// =====================================================================
+.imj_administrationTiledList {
+	width: 91.95%;
+	padding: 2% 4%;
+	border-top: $adminpage-separatortop-border-style;
+	
+	.imj_listBody {
+		width: 100%;
+		text-align: left;
+	}
+	
+	.imj_adminPanel {
+		display: inline-block;
+		max-width: 23.95%;
+		padding: 0 2%;
+		vertical-align: top;
+		margin-bottom: 2em;
+		text-align: left;
+		
+		h2 {
+			font-size: 140%;
+			line-height: normal;
+		}
+		ul {
+			line-height: 150%;
+		}
+		.imj_headline {
+			width: 91.95%;
+			padding: 0.454545em 0.81818181em;
+			text-align: center;
+			background-color: $tiledlistadmin-itemheader-bgcolor;
+			@include border-radius(0.909090em 0.909090em 0 0);
+			border: $tiledlistadmin-itemheader-border-style;
+		}
+		.imj_content {
+			width: 91.95%;
+			padding: 0.454545em 0.81818181em;
+			min-height: 10em;
+			@include border-radius(0 0 0.909090em 0.909090em);
+			border: $tiledlistadmin-itemcontent-border-style;
+		}
+		
+		// /* for information about the storage content 
+ 		// * the values needs less space as usual
+		// */
+		&.imj_storageInformation {
+			max-width: 33em;
+			
+			.imj_admindataLabel {
+				width: 33%;
+			}
+			.imj_admindataValue {
+				width: 61%;
+			}
+		}
+	}
+	
+	.imj_userConfig {
+		.imj_adminPanel {
+			display: inline-block;
+			float: left;
+			margin-bottom: 2em;
+			max-width: 99.99%;
+			padding: 0 2%;
+			text-align: left;
+			vertical-align: top;
+		}
+		.imj_userGlobalInformation {	// e.g. shows email, name and nick name for user
+			> fieldset {
+				padding: 2%;
+				border: $user-globalinfo-border-style;
+				@include border-radius($border-radius-default);
+
+				.imj_submitPanel {
+					margin-top: 0;
+				}
+			}
+			
+			+ .imj_admindataSetEdit {
+				margin: 1em 0;
+				padding: 1em 0;
+				border-bottom: $user-separatorbottom-border-style;
+			}
+		}
+		.imj_userGrantList {
+			display: inline-block;
+			margin: 0.5em 0;
+		}
+
+		.imj_admindataValueEntry {
+			+ .imj_editButton {
+				float:right;
+			}
+		}
+	}
+	
+	&.imj_maxWidth {
+		.imj_adminPanel {
+			width: 100%;
+			max-width: none;
+		}
+	}
+}	// end of imj_administrationTiledList
+
+// /* Admin Edit Panel - used in AdminStorage.xhtml, UserGroups.xhtml, Users.xhtml
+.imj_adminEditPanel {
+	margin: 0.5em 0em 1em -1em;
+	padding: 0 0 2em 0;
+}
+
+
+
+
+// =====================================================================
+// ===[ GENERAL DEFINITIONS FOR PAGES WITH DEFAULT OR SMALL CONTENT ]===
+// *  Share.xhtml
+// *  Legal.xhtml
+// *  About.xhtml
+// *  Help.xhtml
+// =====================================================================
+.imj_errorPage {
+	width: 91.25%;
+	padding: 1% 4%;
+}
+.imj_shareForm,
+.imj_legalPage,
+.imj_aboutPage,
+.imj_helpPage {
+	width: 91.25%;
+	padding: 1% 4%;
+	border-top: $sharepage-separatortop-border-style;
+}
