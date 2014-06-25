@@ -23,7 +23,7 @@ Please make a tax deductable donation for a worthy cause: http://umdf.org/compas
 
 
 ## NOTICE
-EVERY folder in root directory symbolize a branch of imeji and is a COMPASS project.
+EVERY folder in root directory symbolize an instance of imeji and is a COMPASS project.
 > for development it's recommended to use the compass watch job "compass watch "path-to-your-working-directory/imeji_sass/compass-project/"
 
 
