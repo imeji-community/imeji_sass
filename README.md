@@ -1,12 +1,12 @@
 # IMEJI SASS
 ## DESCRIPTION
-imeji sass is the migration from classic css to the sass framework compass. It creates possibilities for smarter cross-branch modifications, because every branch needs for them application css only one file with variables and could include all other declarations from imeji default. You should only migrate the _vars.scss to your wished branch and have no trouble with changed or new core css declarations.
+imeji sass is the migration from classic css to the sass framework compass. It creates possibilities for smarter cross-instance modifications, because every instance needs for them application css only one file with variables and could include all other declarations from imeji default. You should only migrate the _vars.scss to your wished instance and have no trouble with changed or new core css declarations.
 
 
 ## STRUCTURE
 the application.scss (app.scss) includes the variables (_vars.scss) and the "_combinedStyles.scss".
 
-The _combinedStyles.scss includes all separated scss-files without the _vars.scss. That gives the advantage for other branches to include only the own variable.scss and the _combinedStyles.scss from imeji default without any knowledge of every file-hierachy separation.
+The _combinedStyles.scss includes all separated scss-files without the _vars.scss. That gives the advantage for other instance to include only the own variable.scss and the _combinedStyles.scss from imeji default without any knowledge of every file-hierachy separation.
 
 
 ## REQUIREMENTS
