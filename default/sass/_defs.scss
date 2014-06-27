@@ -1,6 +1,68 @@
-// ===            GLOBAL DEFINITIONS                 ===
-//======================================================
-// --CLASSES--
+// ======================================================
+// ===                  PAGE LAYOUT                   ===
+// ======================================================
+.imj_siteWrapper {
+	overflow: hidden;
+	width: $page-width;
+	max-width: $page-width-max;
+	height: auto !important;
+	min-height: 100%;
+	margin: 0 auto;
+	margin-bottom: -2.001em;
+	border-left: $page-border;
+	border-right: $page-border;
+	
+	// /* ===[ SiteHeader ]===
+	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+	.imj_siteHeader {
+		padding: 0 4%;
+		
+		&:after {
+			clear: both;
+			content: "";
+			content: 0 none;
+		}
+	}
+
+	// /* === [ Site Headline ]===
+	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+	.imj_siteContentHeadline {
+		clear: both;
+		float: right;
+		max-width: 24em;
+		margin: 0;
+		padding: 0.5% 6.5% 0.5% 1%;
+		color: $pagetitle-color;
+		background-color: $pagetitle-bgcolor;
+		text-align: right;
+		@include border-radius($border-radius-default);
+		
+		&:after {
+			content: "";
+			content: none;
+			clear: right;
+		}
+		h1 {
+			font-size: 160%;
+			font-weight: bold;
+			letter-spacing: 0.045em; 
+			line-height: normal;
+		}
+	}
+
+	// /*  ===[ SiteFooter ]===
+	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+	.imj_siteFooter {
+		clear: both;
+		width: 100%;
+		padding: 2em 0;
+		text-align: center;
+	}
+}
+
+// ======================================================
+// ===             GLOBAL DEFINITIONS                 ===
+// ======================================================
 .imj_invisible {
         visibility: hidden;
 }
@@ -12,6 +74,15 @@
 
 	a {
 		color: $link-color-active;
+	}
+}
+
+// (image_details.xhtml)
+.imj_activeMedia,
+.imj_addMedia {
+	
+	&:hover {
+		background-color: $media-active-add-bgcolor-hover;
 	}
 }
 .imj_disabled {
@@ -46,25 +117,31 @@
   	margin-right: 0.636em;
 }
 
-// (image_details.xhtml)
-.imj_activeMedia,
-.imj_addMedia {
-	
-	&:hover {
-		background-color: $media-active-add-bgcolor-hover;
-	}
+
+// =====================================================================
+// ===[ GENERAL DEFINITIONS FOR PAGES WITH DEFAULT OR SMALL CONTENT ]===
+// *  Share.xhtml
+// *  Legal.xhtml
+// *  About.xhtml
+// *  Help.xhtml
+// =====================================================================
+.imj_errorPage {
+	width: 91.25%;
+	padding: 1% 4%;
 }
-// (image_details.xhtml)
-.imj_removeMedia {
-	
-	&:hover { 
-		color: $media-remove-color-hover;
-		background-color: $media-remove-bgcolor-hover;
-	}
+.imj_shareForm,
+.imj_legalPage,
+.imj_aboutPage,
+.imj_helpPage {
+	width: 91.25%;
+	padding: 1% 4%;
+	border-top: $sharepage-separatortop-border-style;
 }
 
+
+// =====================================================================
 // MESSAGES
-// =======================================================================
+// =====================================================================
 .imj_pageMessageArea,
 .imj_contentMessageArea {
 	width: 87.95%;
@@ -114,8 +191,11 @@
 	color: $message-warn-color;
 	background-color: $message-warn-bgcolor;
 }
+
+
+// =====================================================================
 // DIALOGS
-// =======================================================================
+// =====================================================================
 .imj_modalDialogBackground {
 	display: none;
 	position: fixed;
@@ -161,17 +241,18 @@
 }
 
 
+// =====================================================================
 // BUTTONS - NOT ICONS
-// =======================================================================
+// =====================================================================
 
-// /* general button group definitions
-
+// * general button group definitions */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_inlineButtonGroup {	// used in mediaContainer_editMetadata.xhtml, SearchAdvanced.xhtml
 	white-space: nowrap;
 }
 
-// /* general button classes
-
+// * general button classes */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_collapse, button.imj_collapse, input[type=button].imj_collapse,
 .imj_expand, button.imj_expand, input[type=button].imj_expand {
 	color: $link-color;
@@ -185,6 +266,7 @@
 		background-color: transparent;
 	}
 }
+
 a.imj_cancelButton,
 input.imj_cancelButton,
 button.imj_cancelButton,
@@ -248,7 +330,8 @@ button.imj_disabledButton,
 	}
 }
 
-/* * resetButton used in: e.g. batch edit */
+// * resetButton used in: e.g. batch edit */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 a.imj_resetButton,
 input.imj_resetButton,
 button.imj_resetButton,
@@ -317,8 +400,29 @@ a.imj_editButton {
 }
 
 
+// * removeButton used in: e.g. image_details.xhtml */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+button.imj_removeButton { 
+	color: $link-color;
+	background-color: inherit;
+}
+.imj_removeButton { 
+	
+	&:hover {
+		@include hover(removeButton);
+	}
+	&:active {
+		@include hover(removeButton);
+	}
+	&:focus {
+		@include hover(removeButton);
+	}
+}
+
+
+// =====================================================================
 // HEADLINES
-// =======================================================================
+// =====================================================================
 .imj_headline h2,
 h2.imj_headline {
 	padding: 0.454545em 0.81818181em;
@@ -355,8 +459,9 @@ h4.imj_sectionHeadline {
 	line-height: normal;
 }
 
+// =====================================================================
 // /* ===[ COMMON ELEMENTS ]===
-// ================================================== */
+// =====================================================================
 .highlight_area {
 	border: $highlightarea-border-style;
 	background-color: $highlightarea-bgcolor;
@@ -369,6 +474,7 @@ h4.imj_sectionHeadline {
 		background-color: $highlightarea-bgcolor-hover;
 	}
 }
+
 .imj_backPanel {
 	display: inline-block;
 	width: 100%;
@@ -376,6 +482,7 @@ h4.imj_sectionHeadline {
 	margin: 1em 0;
 	padding: 0 2%;
 }
+
 .imj_customSelectbox {
 	display: inline-block;
 	margin-top: 0.090909em;
@@ -411,10 +518,9 @@ h4.imj_sectionHeadline {
 	}
 }
 
-/* * image / picture / media - stack - 
-	component (bibliographicList.xhtml)
-   ==================================================
-   ================================================== */
+// * image / picture / media - stack - 
+// * -- component (bibliographicList.xhtml)
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 .imj_imageStack {
 	border: $imgstack-border-style;
@@ -461,75 +567,10 @@ h4.imj_sectionHeadline {
 }
 
 
-// PAGE LAYOUT
-.imj_siteWrapper {
-	overflow: hidden;
-	width: $page-width;
-	max-width: $page-width-max;
-	height: auto !important;
-	min-height: 100%;
-	margin: 0 auto;
-	margin-bottom: -2.001em;
-	border-left: $page-border;
-	border-right: $page-border;
-	
-	// /* ===[ SiteHeader ]===
-   	// ================================================== */
-	.imj_siteHeader {
-		padding: 0 4%;
-		
-		&:after {
-			clear: both;
-			content: "";
-			content: 0 none;
-		}
-	}
 
-	// /* === [ Site Headline ]===
-	// ================================================== */
-	.imj_siteContentHeadline {
-		clear: both;
-		float: right;
-		max-width: 24em;
-		margin: 0;
-		padding: 0.5% 6.5% 0.5% 1%;
-		color: $pagetitle-color;
-		background-color: $pagetitle-bgcolor;
-		text-align: right;
-		@include border-radius($border-radius-default);
-		
-		&:after {
-			content: "";
-			content: none;
-			clear: right;
-		}
-		h1 {
-			font-size: 160%;
-			font-weight: bold;
-			letter-spacing: 0.045em; 
-			line-height: normal;
-		}
-	}
-
-	// /*  ===[ SiteFooter ]===
-   	// ================================================== */
-	.imj_siteFooter {
-		clear: both;
-		width: 100%;
-		padding: 2em 0;
-		text-align: center;
-	}
-}
-
-//======================================================
-// ===                COMPONENTS                     ===
-//======================================================
-
-// /* ===[ COMMON ELEMENTS ]===
-// ================================================== */
-// /* imj_optionSet used in 
-// * tiledMediaList.xhtml, template_metada_profileEdit.xhtml, BatchEdit.xhtml, Upload.xhtml
-// */
+// * imj_optionSet used in: 
+// --- tiledMediaList.xhtml, template_metada_profileEdit.xhtml, BatchEdit.xhtml, Upload.xhtml
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_optionSet {
 	max-width: 100%;
 	margin-bottom: 1em;
@@ -552,11 +593,10 @@ table.imj_optionSet {
 	}
 }
 
-// IMPORT ALL TYPES OF LIST DEFINITIONS
-@import "lists";
 
 
-
+// SETS OF METADATA
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_globalMetadataSet,
 .imj_metadataWrapper,
 .imj_infodataWrapper {
@@ -667,10 +707,6 @@ select.imj_metadataEditText {
 .imj_admindataValueEntry {
 	display: inline-block;
 }
-
-
-// IMPORT MENUS
-@import "menus";
 
 
 
@@ -1331,6 +1367,13 @@ iframe#twitter-widget-0 div.root div.stream {
 		margin-bottom: 0.545454em;
 		text-align: center;
 		border-bottom: $detailpage-displaycontainer-borderbottom-style;
+
+		.imj_optionSet {
+
+			.imj_optionCheckbox {
+				vertical-align: bottom;
+			}
+		}
 	}
 }
 
@@ -1662,22 +1705,11 @@ iframe#twitter-widget-0 div.root div.stream {
 	
 
 
-// =====================================================================
-// ===[ GENERAL DEFINITIONS FOR PAGES WITH DEFAULT OR SMALL CONTENT ]===
-// *  Share.xhtml
-// *  Legal.xhtml
-// *  About.xhtml
-// *  Help.xhtml
-// =====================================================================
-.imj_errorPage {
-	width: 91.25%;
-	padding: 1% 4%;
-}
-.imj_shareForm,
-.imj_legalPage,
-.imj_aboutPage,
-.imj_helpPage {
-	width: 91.25%;
-	padding: 1% 4%;
-	border-top: $sharepage-separatortop-border-style;
-}
+
+
+// IMPORT MENUS
+@import "menus";
+
+// IMPORT ALL TYPES OF LIST DEFINITIONS
+@import "lists";
+

@@ -61,6 +61,9 @@
 		color: $button-edit-color-hover;
 		background-color: $button-edit-bgcolor-hover;
 		border: $button-edit-border-hover;
+	} @else if $type == removeButton {
+		color: $button-remove-color-hover;
+		background-color: $button-remove-bgcolor-hover;
 	}
 }
 

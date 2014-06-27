@@ -138,6 +138,8 @@ $button-edit-color-hover: $button-color-hover;
 $button-edit-bgcolor-hover: $button-bgcolor-hover;
 $button-edit-border-hover: $button-border-hover;
 
+$button-remove-color-hover: #F0F0F0;
+$button-remove-bgcolor-hover: #990000;
 
 
 // input
@@ -403,6 +405,4 @@ $adminpage-separatortop-border-style: $border-style-default;
 // following are vars to discuss or rework
 // media in image_details.xhtml
 $media-active-add-bgcolor-hover: #444444;
-$media-remove-color-hover: #F0F0F0;
-$media-remove-bgcolor-hover: #990000;
 $media-widthdrawn-color: #D80000;
