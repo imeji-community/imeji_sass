@@ -717,29 +717,14 @@ select.imj_metadataEditText {
 
 // /* ===[ SiteHeader - Logo + Search Area]===
 // ================================================== */
-.imj_siteHeaderLogoSearchSection {
+.imj_siteHeaderMenuSearchSection {
 	width: 100%;
 	padding: 0;
-	margin: 0.454545em 0 2em 0;
-
-	// /* ===[ SiteHeader - Logo ]===
-   	// ================================================== */
-	.imj_siteHeaderLogoArea {
-		display: inline-block;
-		padding: 0 2em 0 0;
-		
-		.imj_siteHeaderLogo {
-			width: $logo-width;
-			height: $logo-height;
-			padding: 0;
-			display: inline-block;
-			@include backgroundIcon($logo-file, logo, $logo-position-top, $logo-position-left);
-		}
-	}
+	margin: 0 0 2em 0;
 }
 
 // /* ===[ SiteHeader - SimpleSearch ]===
-// ================================================== */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_simpleSearch {
 	float: right;
 	display: inline-block;

@@ -2,6 +2,14 @@
    ================================================== */
 
 body {
+	.imj_logo {
+		width: $logo-width;
+		height: $logo-height;
+		padding: 0;
+		display: inline-block;
+		@include backgroundIcon($logo-file, logo, $logo-position-top, $logo-position-left);
+	}
+	
 	.imj_buttonStyleSwitcher {
 		@include iconPreset(16);
 		margin: 0 0.727272em;
