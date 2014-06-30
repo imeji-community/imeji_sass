@@ -4,7 +4,7 @@
 $color01: #F0F0F0;	// dirty white
 $color02: #F2F2F2;	// lighten dirty white
 
-$color03: #6CAE2F;	// green
+$color03: #D45A00;	// green
 $color04: #4AFF00;	// lighten green
 
 $color05: #FF7700;	// orange
@@ -14,7 +14,7 @@ $color07: #D80000;	// lighten red
 $color08: #990000;	// red
 
 $color09: #000000;	// black
-$color10: #292929;	// darkgrey
+$color10: #F2F2F2;	// darkgrey
 $color11: #313131;	// darkgrey - equals #313131
 $color12: #383838;	// darkgrey - equals #383838
 $color13: #444444;	// darken grey - equals #444444
@@ -44,23 +44,23 @@ $logo-height: 5em;
 
 
 // DEFAULTS
-$font-color-default: #F0F0F0;
+$font-color-default: #101010;
 $font-size-default: 68.75%;
 $font-color-critical: #D80000;
 $line-height-default: 145%;
-$box-shadow-default: 0.545454em 0.545454em 0.545454em #292929;
+$box-shadow-default: 0.545454em 0.545454em 0.545454em #F2F2F2;
 $border-radius-default: 0.41666666em;
 $border-width-default: 0.10em;
-$border-style-default: $border-width-default solid #6CAE2F;
-$border-style-dashed: $border-width-default dashed #6CAE2F;
-$border-style-default-double: 0.20em solid #6CAE2F;
+$border-style-default: $border-width-default solid #D45A00;
+$border-style-dashed: $border-width-default dashed #D45A00;
+$border-style-default-double: 0.20em solid #D45A00;
 $border-style-dotted-disabled: $border-width-default dotted #BBBBBB;
 $border-style-solid-disabled: $border-width-default solid #BBBBBB;
 
 
 
 // PAGE WRAPPER
-$page-border: ($border-width-default dotted #6CAE2F);
+$page-border: ($border-width-default dotted #D45A00);
 $page-width: 100%;
 $page-width-max: 84.0909em;
 
@@ -71,13 +71,13 @@ $page-login-form-border-style: $border-style-default;
 
 
 // body
-$body-bgcolor: #292929;
+$body-bgcolor: #F2F2F2;
 
 
 
 // navigation, links, ...
-$link-color: #6CAE2F;
-$link-color-hover: #F0F0F0;
+$link-color: #D45A00;
+$link-color-hover: #101010;
 $link-color-active: $link-color-hover;
 $link-color-disabled: #BBBBBB;
 
@@ -92,7 +92,7 @@ $button-bgcolor: $link-color;
 $button-border: $button-border-style transparent $button-border-width;
 
 $button-color-hover: #000000;
-$button-bgcolor-hover: #4AFF00;
+$button-bgcolor-hover: lighten($link-color, 8%);
 $button-border-hover: $button-border-style $button-bgcolor-hover $button-border-width;
 
 $button-color-disabled: #444444;
@@ -147,9 +147,9 @@ $button-remove-bgcolor-hover: #990000;
 $input-border-width: $border-width-default;
 $input-border-style: solid;
 
-$input-color: #000000;
-$input-bgcolor: $font-color-default;
-$input-border: $input-border-style transparent $input-border-width;
+$input-color: #010101;
+$input-bgcolor: #F2F2F2;
+$input-border: $input-border-style #808080 $input-border-width;
 
 $input-color-hover: $input-color;
 $input-bgcolor-hover: $input-bgcolor;
@@ -164,21 +164,21 @@ $input-border-disabled: $input-border;
 // select
 $select-border-width: $border-width-default;
 $select-border-style: solid;
-$select-bgcolor: #F0F0F0;
+$select-bgcolor: #F2F2F2;
 
-$select-border: $select-border-style transparent $select-border-width;
+$select-border: $select-border-style #808080 $select-border-width;
 $select-border-hover: $select-border-style $link-color $select-border-width;
 $select-border-disabled: $select-border;
 
 
 
 // MAIN MENU
-$mainmenu-item-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
+$mainmenu-item-bgcolor: #D6D8D7;
 
 
 
 // META MENU
-$meta-input-color: #F2F2F2;
+$meta-input-color: #101010;
 $meta-button-color: $link-color;
 $meta-input-bgcolor: $body-bgcolor;
 $meta-separator-border-style: $border-style-default;
@@ -187,7 +187,7 @@ $meta-separator-border-style: $border-style-default;
 
 // PAGE TITLE
 $pagetitle-color: $font-color-default;
-$pagetitle-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
+$pagetitle-bgcolor: #D6D8D7;
 
 
 
@@ -201,12 +201,12 @@ $overlaymenu-border-horizontal-separator: $border-style-default;
 
 
 // MAIN CONTENT
-$maincontent-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
+$maincontent-bgcolor: #D6D8D7;
 
 
 
 // BREADCRUMP
-$breadcrump-overlay-bgcolor: $body-bgcolor; // equals 292929
+$breadcrump-overlay-bgcolor: $body-bgcolor; // equals F2F2F2
 
 
 
@@ -249,7 +249,7 @@ $mdlist-header-bgcolor-hover: $link-color;
 $mdlist-header-bgcolor-active: $link-color;
 $mdlist-body-border-top-style: $border-style-solid-disabled;
 
-$techmdlist-bgcolor: lighten($body-bgcolor, 10.5%); // equals 444444
+$techmdlist-bgcolor: #C9CBC6;
 
 
 
@@ -258,14 +258,14 @@ $biblist-item-bgcolor-hover: $body-bgcolor;
 $biblist-item-bgcolor-active: lighten($body-bgcolor, 10.5%);	// equals 444444
 $biblist-item-bgcolor-active-hover: lighten($body-bgcolor, 14%);	// equals 4D4D4D
 $biblist-item-data-bgcolor-hover: lighten($body-bgcolor, 10.5%);	// equals 444444
-$biblist-separator-horizontal: 0.10em solid #292929;
+$biblist-separator-horizontal: 0.10em solid #F2F2F2;
 
 
 
 // TILED MEDIA LIST
 $tiledlist-overlay-border-style: 0.181818em outset #F0F0F0;
-$tiledlist-tooltip-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
-$tiledlist-item-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
+$tiledlist-tooltip-bgcolor: #C9CBC6;
+$tiledlist-item-bgcolor: #C9CBC6;
 $tiledlist-item-bgcolor-selected: $link-color;
 $tiledlist-item-bgcolor-hover: $link-color;
 
@@ -328,9 +328,9 @@ $selectbox-text-color: $link-color;
 
 
 // IMAGE STACK
-$imgstack-border-style: 2px solid #F0F0F0;
-$imgstack-background-style-before: none repeat scroll 0 0 #F0F0F0;
-$imgstack-background-style-after: none repeat scroll 0 0 #444444;
+$imgstack-border-style: 2px solid #101010;
+$imgstack-background-style-before: none repeat scroll 0 0 #101010;
+$imgstack-background-style-after: none repeat scroll 0 0 #D6D8D7;
 $imgstack-background-style: none repeat scroll 0 0 #BBBBBB;
 
 
@@ -359,9 +359,9 @@ $upload-messagearea-bgcolor-success: $body-bgcolor;
 
 // WELCOME / START PAGE
 $welcome-info-bgcolor: $body-bgcolor;
-$welcome-info-tabs-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
+$welcome-info-tabs-bgcolor: #D6D8D7;
 $welcome-info-listentry-bgcolor: $welcome-info-tabs-bgcolor;
-$welcome-info-tabs-bgcolor-active: lighten($body-bgcolor, 5.75%); // equals 383838
+$welcome-info-tabs-bgcolor-active: #D6D8D7;
 
 $welcome-carousel-bgcolor: transparent;
 $welcome-carousel-infolayer-bgcolor: $body-bgcolor;

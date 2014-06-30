@@ -45,7 +45,7 @@
 		h1 {
 			font-size: 160%;
 			font-weight: bold;
-			letter-spacing: 0.045em; 
+			letter-spacing: 0.045em;
 			line-height: normal;
 		}
 	}
@@ -216,9 +216,8 @@
 	background-color: $modaldialog-bgcolor;
 	display: none;
 	z-index: 5000;
-	/* CSS3 enhancements */
+
 	@include box-shadow($box-shadow-default);
-	
 	@include border-radius($border-radius-default);
 
 	.imj_submitPanel {

@@ -58,6 +58,7 @@ input[type="text"], input[type="password"], textarea {
 select {
 	max-width: 100%;
 	border: $select-border;
+	background-color: $select-bgcolor;
 
 	&:hover {
 		@include hover('select');
