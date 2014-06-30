@@ -24,8 +24,8 @@ $color15: #BBBBBB;	// grey
 
 
 // ICONS
-$jsf-icon-path: "http://localhost:8080/imeji/jsf/javax.faces.resource/imj_iconset/";
-// $jsf-icon-path: "/imeji/jsf/javax.faces.resource/imj_iconset/";
+$jsf-icon-path: "http://localhost:8080/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for development
+// $jsf-icon-path: "/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for production
 $icon-colorfolder-default: "6CAE2F/";
 $icon-colorfolder-hover: "F0F0F0/";
 $icon-colorfolder-disabled: "BBBBBB/";
