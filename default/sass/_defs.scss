@@ -746,6 +746,11 @@ select.imj_metadataEditText {
 		padding: 0.090909em 1em;
 		@include border-radius(0 0.454545em 0.454545em 0);
 	}
+
+	.imj_searchInfoText {
+		display: inline-block;
+		margin: 0 0.272727em;
+	}
 	
 	input[type=radio] {
 		border: 0 none;
