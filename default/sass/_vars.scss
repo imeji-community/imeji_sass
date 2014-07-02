@@ -355,6 +355,11 @@ $upload-optionarea-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
 $upload-messagearea-bgcolor-error: #757575;
 $upload-messagearea-bgcolor-success: $body-bgcolor;
 
+// UPLOAD STYLE FOR PLUPLOAD
+$plupload-header-bgcolor: #292929;
+$plupload-footer-bgcolor: #292929;
+$plupload-content-bgcolor: #757575;
+
 
 
 // WELCOME / START PAGE
