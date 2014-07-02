@@ -102,6 +102,9 @@ body {
 				&:hover {
 					@include hover(submitButton);
 				}
+				&:focus {
+					@include hover(submitButton);
+				}
 			}
 		}
 		.plupload_delete {

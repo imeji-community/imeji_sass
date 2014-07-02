@@ -372,7 +372,7 @@
 		// background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* IE10+ */
 		// background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* W3C */
 		// filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#33000000', endColorstr='#00000000', GradientType=1); /* IE6-8 */
-		@include background-image(linear-gradient(left, #292929 0%, #313131 60%));
+		@include background-image(linear-gradient(left, $mdprofilelist-headline-gradient-color-1 0%, $mdprofilelist-headline-gradient-color-2 60%));
 	}
 	.imj_metadataProfileItem {
 		margin-top: 0.545454em;

@@ -22,6 +22,21 @@
 			content: "";
 			content: 0 none;
 		}
+		.imj_simpleSearchInput {
+			font-size: 100%;
+		}
+		.imj_simpleSearchButtonSubmit {
+			color: $pageheader-button-submit-color;
+			background-color: $pageheader-button-submit-bgcolor;
+			border: $pageheader-button-submit-border;
+
+			&:hover {
+				@include hover(submitButtonHeader);
+			}
+			&:focus {
+				@include hover(submitButtonHeader);
+			}
+		}
 	}
 
 	// /* === [ Site Headline ]===
@@ -741,9 +756,8 @@ select.imj_metadataEditText {
 	}
 	
 	.imj_simpleSearchButtonSubmit {
-		height: 1.909090em; 
 		margin-left: 0;
-		padding: 0.090909em 1em;
+		padding: 0.181818em 1em 0.272727em 1em;
 		@include border-radius(0 0.454545em 0.454545em 0);
 	}
 

@@ -142,6 +142,16 @@ $button-edit-border-hover: $button-border-hover;
 $button-remove-color-hover: #F0F0F0;
 $button-remove-bgcolor-hover: #990000;
 
+// PAGE HEADER BUTTONS 
+$pageheader-button-submit-color: $button-submit-color;
+$pageheader-button-submit-bgcolor: $button-submit-bgcolor;
+$pageheader-button-submit-border: 0 none; 
+
+$pageheader-button-submit-color-hover: $button-submit-color-hover;
+$pageheader-button-submit-bgcolor-hover: $button-submit-bgcolor-hover;
+$pageheader-button-submit-border-hover: 0 none;
+
+
 
 // input
 $input-border-width: $border-width-default;
@@ -275,6 +285,12 @@ $tiledlist-item-bgcolor-hover: $link-color;
 $tiledlistadmin-itemheader-bgcolor: $body-bgcolor;
 $tiledlistadmin-itemheader-border-style: $border-width-default solid $body-bgcolor;
 $tiledlistadmin-itemcontent-border-style: $border-width-default solid $body-bgcolor;
+
+
+
+// METADATA PROFILE LIST
+$mdprofilelist-headline-gradient-color-1: $body-bgcolor;
+$mdprofilelist-headline-gradient-color-2: #313131;
 
 
 

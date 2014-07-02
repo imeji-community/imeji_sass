@@ -67,9 +67,9 @@ select {
 		@include hover('select');
 	}
 }
-label, input, button, select, textarea {
-	font-size: 1em;
-}
+// label, input, button, select, textarea {
+	// font-size: 1em;
+// }
 label {
 	min-width: 24%;
 }

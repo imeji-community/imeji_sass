@@ -47,6 +47,10 @@
 		color: $button-submit-color-hover;
 		background-color: $button-submit-bgcolor-hover;
 		border: $button-submit-border-hover;
+	} @else if $type == submitButtonHeader {
+		color: $pageheader-button-submit-color-hover;
+		background-color: $pageheader-button-submit-bgcolor-hover;
+		border: $pageheader-button-submit-border-hover;
 	} @else if $type == disabledButton {
 		@include disabled(button);
 	} @else if $type == resetButton {
