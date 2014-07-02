@@ -329,6 +329,7 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_submitPanel { display: inline-block; width: 100%; text-align: right; margin-top: 1em; }
 .imj_submitPanel .imj_submitPanelSeparator { margin-left: 0.545454em; margin-right: 0.545454em; }
 .imj_submitPanel .imj_submitPanelSeparator + .imj_submitButton { margin-left: 0; }
+.imj_submitPanel a, .imj_submitPanel input { vertical-align: baseline; }
 
 .imj_mainContentWrapper { clear: both; float: left; display: inline; overflow: hidden; width: 93.95%; padding: 0 3%; margin: 2em 0.090909em 0 0; background-color: #313131; }
 

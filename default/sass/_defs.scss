@@ -802,6 +802,11 @@ select.imj_metadataEditText {
 			margin-left: 0;
 		}
 	}
+
+	a,
+	input {
+		vertical-align: baseline;
+	}
 }
 
 // /* ===[ Content - Main Content - Content Header]===
@@ -1520,7 +1525,7 @@ iframe#twitter-widget-0 div.root div.stream {
 		margin-left: 1em;
 	}
 	input {
-		width: 100%
+		width: 98%
 	}
 	.submitPanel {
 		padding: 0.545454em 0;
