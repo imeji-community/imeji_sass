@@ -176,6 +176,7 @@
 			padding: 0 0.363636em;
 
 			&:hover {
+				color: $mdlist-header-color-hover;
 				background-color: $mdlist-header-bgcolor-hover;
 			}
 		}
@@ -261,7 +262,7 @@
 				z-index: 10;
 				width: 30em;
 				background-color: $tiledlist-tooltip-bgcolor;
-				@include box-shadow($box-shadow-default);
+				@include box-shadow($tiledlist-tooltip-shadow);
 
 				.imj_metadataPublicationArea {
 					.imj_citation {

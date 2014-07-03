@@ -145,11 +145,11 @@ $button-remove-bgcolor-hover: #990000;
 // PAGE HEADER BUTTONS 
 $pageheader-button-submit-color: $button-submit-color;
 $pageheader-button-submit-bgcolor: $button-submit-bgcolor;
-$pageheader-button-submit-border: 0 none; 
+$pageheader-button-submit-border: $button-border-style $pageheader-button-submit-bgcolor $button-border-width; 
 
 $pageheader-button-submit-color-hover: $button-submit-color-hover;
 $pageheader-button-submit-bgcolor-hover: $button-submit-bgcolor-hover;
-$pageheader-button-submit-border-hover: 0 none;
+$pageheader-button-submit-border-hover: $button-border-style $pageheader-button-submit-bgcolor-hover $button-border-width;
 
 
 
@@ -275,6 +275,7 @@ $biblist-separator-horizontal: 0.10em solid #292929;
 // TILED MEDIA LIST
 $tiledlist-overlay-border-style: 0.181818em outset #F0F0F0;
 $tiledlist-tooltip-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
+$tiledlist-tooltip-shadow: $box-shadow-default;
 $tiledlist-item-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
 $tiledlist-item-bgcolor-selected: $link-color;
 $tiledlist-item-bgcolor-hover: $link-color;
@@ -335,6 +336,7 @@ $message-warn-bgcolor: $link-color-disabled;	// equals BBBBBB
 
 // DIALOGS
 $modaldialog-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
+$modaldialog-shadow: $box-shadow-default;
 
 
 
@@ -348,6 +350,7 @@ $imgstack-border-style: 2px solid #F0F0F0;
 $imgstack-background-style-before: none repeat scroll 0 0 #F0F0F0;
 $imgstack-background-style-after: none repeat scroll 0 0 #444444;
 $imgstack-background-style: none repeat scroll 0 0 #BBBBBB;
+$imgstack-shadow: $box-shadow-default;
 
 
 

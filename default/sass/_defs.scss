@@ -232,7 +232,7 @@
 	display: none;
 	z-index: 5000;
 
-	@include box-shadow($box-shadow-default);
+	@include box-shadow($modaldialog-shadow);
 	@include border-radius($border-radius-default);
 
 	.imj_submitPanel {
@@ -538,7 +538,7 @@ h4.imj_sectionHeadline {
 
 .imj_imageStack {
 	border: $imgstack-border-style;
-	@include box-shadow($box-shadow-default);
+	@include box-shadow($imgstack-shadow);
 	float: left;
 	height: 100px;
 	margin: 15px;
@@ -563,7 +563,7 @@ h4.imj_sectionHeadline {
 		top: -2px;
 		border: $imgstack-border-style;
 		background: $imgstack-background-style-before;
-		@include box-shadow($box-shadow-default);
+		@include box-shadow($imgstack-shadow);
 		@include transform(rotate(-5deg));
 	}
 	&:after {
@@ -575,7 +575,7 @@ h4.imj_sectionHeadline {
 		top: -2px;
 		border: $imgstack-border-style;
 		background: $imgstack-background-style-after;
-		@include box-shadow($box-shadow-default);
+		@include box-shadow($imgstack-shadow);
 		@include transform(rotate(4deg));
 	}
 }
@@ -1510,9 +1510,9 @@ iframe#twitter-widget-0 div.root div.stream {
 }
 
 
-/* === Upload Page ===
- * Upload.xhtml
- * ============================================ */
+// /* === Upload Page ===
+// * Upload.xhtml
+// * ============================================ */
 .imj_upload {
 	width: 91.25%;
 	padding: 1% 4%;
