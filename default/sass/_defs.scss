@@ -750,14 +750,20 @@ select.imj_metadataEditText {
 	}
 	
 	.imj_simpleSearchInput {
-		width: 21em;
-		min-width: 13em;
+		width: 19em;
 		@include border-radius(0.454545em 0 0 0.454545em);
 	}
 	
 	.imj_simpleSearchButtonSubmit {
 		margin-left: 0;
 		padding: 0.181818em 1em 0.272727em 1em;
+		@include border-radius(0 0.454545em 0.454545em 0);
+	}
+
+	.imj_cancelButton {
+		margin: 0;
+		padding: 0.181818em 1em 0.272727em 1em;
+		vertical-align: middle;
 		@include border-radius(0 0.454545em 0.454545em 0);
 	}
 
