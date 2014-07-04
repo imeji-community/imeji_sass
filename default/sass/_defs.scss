@@ -22,8 +22,10 @@
 			content: "";
 			content: 0 none;
 		}
-		.imj_simpleSearchInput {
+		.imj_simpleSearchInput,
+		.imj_simpleSearchButtonSubmit {
 			font-size: 100%;
+			padding-bottom: 0.090909em;
 		}
 		.imj_simpleSearchButtonSubmit {
 			color: $pageheader-button-submit-color;
