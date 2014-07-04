@@ -24,22 +24,24 @@ $color15: #BBBBBB;	// grey
 
 
 // ICONS
-$jsf-icon-path: "http://localhost:8080/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for development
-// $jsf-icon-path: "/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for production
-$icon-colorfolder-default: "6CAE2F/";
-$icon-colorfolder-hover: "F0F0F0/";
+// $jsf-icon-path: "http://10.20.2.22:8080/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for development
+$jsf-icon-path: "/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for production
+$icon-colorfolder-default: "D45A00/";
+$icon-colorfolder-hover: "101010/";
 $icon-colorfolder-disabled: "BBBBBB/";
 $icon-colorfolder-error: "D80000/";
 
 
+
 // LOGO
-$jsf-logo-path: $jsf-icon-path;
-$logo-file: "../logo_for_bright.png";
-$logo-position-top: -1.909090em;
+$jsf-logo-path: $jsf-icon-path;	// for development
+$logo-file: "../css/logo_for_bright.png";	// for development
+// $jsf-logo-path: '';
+// $logo-file: "../logo_for_bright.png";
+$logo-position-top: 1.3333em;
 $logo-position-left: 0;
 $logo-width: 21em;
 $logo-height: 5em;
-
 
 
 
@@ -48,7 +50,7 @@ $font-color-default: #101010;
 $font-size-default: 68.75%;
 $font-color-critical: #D80000;
 $line-height-default: 145%;
-$box-shadow-default: 0.545454em 0.545454em 0.545454em #F2F2F2;
+$box-shadow-default: 0.545454em 0.545454em 0.545454em #101010;
 $border-radius-default: 0.41666666em;
 $border-width-default: 0.10em;
 $border-style-default: $border-width-default solid #D45A00;
@@ -70,6 +72,7 @@ $page-width-max: 84.0909em;
 $page-login-form-border-style: $border-style-default;
 
 
+
 // body
 $body-bgcolor: #F2F2F2;
 
@@ -80,7 +83,6 @@ $link-color: #D45A00;
 $link-color-hover: #101010;
 $link-color-active: $link-color-hover;
 $link-color-disabled: #BBBBBB;
-
 
 
 // buttons
@@ -99,12 +101,12 @@ $button-color-disabled: #444444;
 $button-bgcolor-disabled: $link-color-disabled;
 $button-border-disabled: $button-border;
 
-$button-cancel-color: $font-color-default;
-$button-cancel-bgcolor: darken($font-color-critical, 12.3%); // #990000;
+$button-cancel-color: #F2F2F2;
+$button-cancel-bgcolor: darken($font-color-critical, 12.3%); 
 $button-cancel-border: $button-border-style $button-cancel-bgcolor $button-border-width;
 
-$button-cancel-color-hover: $font-color-default;
-$button-cancel-bgcolor-hover: $font-color-critical; // equals #D80000;
+$button-cancel-color-hover: #F2F2F2;
+$button-cancel-bgcolor-hover: $font-color-critical; 
 $button-cancel-border-hover: $button-border-style $button-cancel-bgcolor-hover $button-border-width;
 
 $button-submit-color: $button-color;
@@ -115,15 +117,15 @@ $button-submit-color-hover: $button-color-hover;
 $button-submit-bgcolor-hover: $button-bgcolor-hover;
 $button-submit-border-hover: $button-border-hover;
 
-$button-reset-color: #000000;
-$button-reset-bgcolor: #FF7700;
+$button-reset-color: #101010;
+$button-reset-bgcolor: #FFA302;
 $button-reset-border: $button-border-style $button-reset-bgcolor $button-border-width;
 
 $button-reset-color-hover: $button-reset-color;
-$button-reset-bgcolor-hover: #FFC999;
+$button-reset-bgcolor-hover: #FF9000;
 $button-reset-border-hover: $button-border-style $button-reset-bgcolor-hover $button-border-width;
 
-$button-back-color: $button-color;
+$button-back-color: #D45A00;
 $button-back-bgcolor: inherit;
 $button-back-border: $button-border-style $button-bgcolor $button-border-width;
 
@@ -142,6 +144,16 @@ $button-edit-border-hover: $button-border-hover;
 $button-remove-color-hover: #F0F0F0;
 $button-remove-bgcolor-hover: #990000;
 
+// PAGE HEADER BUTTONS
+$pageheader-button-submit-color: #101010;
+$pageheader-button-submit-bgcolor: #D6DBD7;
+$pageheader-button-submit-border: $button-border-style $pageheader-button-submit-bgcolor $button-border-width;
+
+$pageheader-button-submit-color-hover: #101010;
+$pageheader-button-submit-bgcolor-hover: #C9CBC6;
+$pageheader-button-submit-border-hover: $button-border-style $pageheader-button-submit-bgcolor-hover $button-border-width;
+
+
 
 // input
 $input-border-width: $border-width-default;
@@ -149,7 +161,7 @@ $input-border-style: solid;
 
 $input-color: #010101;
 $input-bgcolor: #F2F2F2;
-$input-border: $input-border-style #808080 $input-border-width;
+$input-border: $input-border-style #8D8D8D $input-border-width;
 
 $input-color-hover: $input-color;
 $input-bgcolor-hover: $input-bgcolor;
@@ -166,7 +178,7 @@ $select-border-width: $border-width-default;
 $select-border-style: solid;
 $select-bgcolor: #F2F2F2;
 
-$select-border: $select-border-style #808080 $select-border-width;
+$select-border: $select-border-style #8D8D8D $select-border-width;
 $select-border-hover: $select-border-style $link-color $select-border-width;
 $select-border-disabled: $select-border;
 
@@ -193,7 +205,7 @@ $pagetitle-bgcolor: #D6D8D7;
 
 // OVERLAY MENU
 $overlaymenu-header-color: $link-color;
-$overlaymenu-bgcolor: #444444; 
+$overlaymenu-bgcolor: #C9CBC6; 
 $overlaymenu-bgcolor-critical: $font-color-critical;
 $overlaymenu-header-color-hover: $link-color-hover;
 $overlaymenu-border-horizontal-separator: $border-style-default;
@@ -244,7 +256,7 @@ $autocomplete-bgcolor-loading: $link-color;
 
 // METADATA LISTs -- e.g. on details page
 $mdlist-header-separator-border-color: $link-color;
-$mdlist-header-color-hover: $link-color-hover;
+$mdlist-header-color-hover: #F2F2F2;
 $mdlist-header-bgcolor-hover: $link-color;
 $mdlist-header-bgcolor-active: $link-color;
 $mdlist-body-border-top-style: $border-style-solid-disabled;
@@ -265,16 +277,23 @@ $biblist-separator-horizontal: 0.10em solid #F2F2F2;
 // TILED MEDIA LIST
 $tiledlist-overlay-border-style: 0.181818em outset #F0F0F0;
 $tiledlist-tooltip-bgcolor: #C9CBC6;
+$tiledlist-tooltip-shadow: 0 0 1em #F0F0F0;
 $tiledlist-item-bgcolor: #C9CBC6;
 $tiledlist-item-bgcolor-selected: $link-color;
 $tiledlist-item-bgcolor-hover: $link-color;
-
 
 
 // TILED ADMIN LIST
 $tiledlistadmin-itemheader-bgcolor: $body-bgcolor;
 $tiledlistadmin-itemheader-border-style: $border-width-default solid $body-bgcolor;
 $tiledlistadmin-itemcontent-border-style: $border-width-default solid $body-bgcolor;
+
+
+
+// METADATA PROFILE LIST
+$mdprofilelist-headline-gradient-color-1: $body-bgcolor;
+$mdprofilelist-headline-gradient-color-2: #D6D8D7;
+
 
 
 
@@ -309,16 +328,17 @@ $batchedit-itemlist-separatortop-border-style: $border-style-dashed;
 
 
 // MESSAGES
-$messagearea-color: $font-color-default;	// equals F0F0F0
-$message-info-color: $link-color;
-$message-info-bgcolor: lighten($body-bgcolor, 10.5%); // equals 444444
+$messagearea-color: $font-color-default;
+$message-info-color: #007A29;
+$message-info-bgcolor: #C9CBC6;
 $message-warn-color: $font-color-critical;	// equals D80000
 $message-warn-bgcolor: $link-color-disabled;	// equals BBBBBB
 
 
 
 // DIALOGS
-$modaldialog-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
+$modaldialog-bgcolor: #C9CBC6;
+$modaldialog-shadow: $box-shadow-default;
 
 
 
@@ -328,10 +348,11 @@ $selectbox-text-color: $link-color;
 
 
 // IMAGE STACK
-$imgstack-border-style: 2px solid #101010;
+$imgstack-border-style: 2px solid #8D8D8D;
 $imgstack-background-style-before: none repeat scroll 0 0 #101010;
 $imgstack-background-style-after: none repeat scroll 0 0 #D6D8D7;
 $imgstack-background-style: none repeat scroll 0 0 #BBBBBB;
+$imgstack-shadow: 0 0.545454em 0.545454em #8D8D8D;
 
 
 
@@ -350,10 +371,15 @@ $paginator-pagenumber-color-active: $link-color-hover;
 
 // UPLOAD
 $upload-separation-border-style: $border-style-dashed;
-$upload-urlref-bgcolor: $body-bgcolor;
-$upload-optionarea-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
-$upload-messagearea-bgcolor-error: #757575;
+$upload-urlref-bgcolor: #C9CBC6;
+$upload-optionarea-bgcolor: inherit;
+$upload-messagearea-bgcolor-error: $body-bgcolor;
 $upload-messagearea-bgcolor-success: $body-bgcolor;
+
+// UPLOAD STYLE FOR PLUPLOAD
+$plupload-header-bgcolor: #C9CBC6;
+$plupload-content-bgcolor: lighten($maincontent-bgcolor, 10%);
+$plupload-footer-bgcolor: #C9CBC6;
 
 
 
