@@ -35,4 +35,9 @@ for other compilation as production or sth. else read the 'command line docu' ht
 
 
 ## INSTALL
-You find a very practiable installation guide on http://www.compass-style.org/install/ .
+You find a very practicable installation guide on http://www.compass-style.org/install/ .
+If you get a failure (e.g. on Debian systems) with "$ gem update --system", please try the following steps in front of update system:
+```
+sudo gem install rubygems-update  
+sudo update_rubygems
+```
