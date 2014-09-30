@@ -42,7 +42,7 @@ If you get a failure (e.g. on Debian systems) with "$ gem update --system", plea
 ```
 sudo gem install rubygems-update  
 sudo update_rubygems
-sudo gem install compass
+sudo gem update --system
 ```
 If you get a failure for installing compass, try following:
 ```
