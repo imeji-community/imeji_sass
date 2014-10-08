@@ -881,34 +881,36 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_shareForm .imj_rightsTable td { padding-bottom: 0.363636em; }
 /* line 1649, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable > tbody > tr:hover { background-color: #313131; }
-/* line 1657, ../sass/_defs.scss */
+/* line 1653, ../sass/_defs.scss */
+.imj_shareForm .imj_rightsTable > tbody table { width: 100%; }
+/* line 1660, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTableForNewUser td { padding-right: 0.818181em; vertical-align: top; }
-/* line 1661, ../sass/_defs.scss */
+/* line 1664, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTableForNewUser input[type=checkbox] { display: block; }
 
-/* line 1668, ../sass/_defs.scss */
+/* line 1671, ../sass/_defs.scss */
 #sharePanel fieldset.imj_shareInformationFieldset { padding: 1% 1%; border-top-style: inset; border-bottom-style: outset; border-color: rgba(255, 255, 255, 0.15); }
-/* line 1674, ../sass/_defs.scss */
+/* line 1677, ../sass/_defs.scss */
 #sharePanel fieldset.imj_shareInformationFieldset > legend { margin: 0 1%; padding: 0 1%; font-size: 110%; }
-/* line 1681, ../sass/_defs.scss */
+/* line 1684, ../sass/_defs.scss */
 #sharePanel .imj_shareForm { border: 0 none; width: 100%; padding: 0; }
 
-/* line 1690, ../sass/_defs.scss */
+/* line 1693, ../sass/_defs.scss */
 .imj_adminEditPanel { margin: 0.5em 0em 1em -1em; padding: 0 0 2em 0; }
 
-/* line 1697, ../sass/_defs.scss */
+/* line 1700, ../sass/_defs.scss */
 .imj_userConfig .imj_adminPanel { display: inline-block; float: left; margin-bottom: 2em; max-width: 99.99%; padding: 0 2%; text-align: left; vertical-align: top; }
-/* line 1707, ../sass/_defs.scss */
+/* line 1710, ../sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation > fieldset { padding: 2%; border: 0 none; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
-/* line 1712, ../sass/_defs.scss */
+/* line 1715, ../sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation > fieldset .imj_submitPanel { margin-top: 0; }
-/* line 1717, ../sass/_defs.scss */
+/* line 1720, ../sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation + .imj_admindataSetEdit { margin: 1em 0; padding: 1em 0; border-bottom: 0.1em dashed #6CAE2F; }
-/* line 1723, ../sass/_defs.scss */
+/* line 1726, ../sass/_defs.scss */
 .imj_userConfig .imj_userGrantList { display: inline-block; margin: 0.5em 0; }
-/* line 1729, ../sass/_defs.scss */
+/* line 1732, ../sass/_defs.scss */
 .imj_userConfig .imj_admindataValueEntry + .imj_editButton { float: right; }
-/* line 1735, ../sass/_defs.scss */
+/* line 1738, ../sass/_defs.scss */
 .imj_userConfig .imj_connectedUserGroups .imj_admindataValueEntry { display: block; }
 
 /* line 3, ../sass/_menus.scss */
