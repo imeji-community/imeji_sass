@@ -56,7 +56,7 @@ input[type="text"], input[type="password"], textarea {
 	@include inputfont();
 }
 input[type="checkbox"], input[ŧype="radio"] {
-	border: none\9; /* hack for IE9, IE10 to hide the border effects */
+	background-color: inherit;
 }
 select {
 	height: 2.090909em;

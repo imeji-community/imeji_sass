@@ -84,7 +84,7 @@ input[type=button], input[type=submit], input[type=reset], button, [class*=Butto
 input[type="text"], input[type="password"], textarea { padding: 0.25em 0.5em; font-size: 100%; font-family: Courier, "Courier New", serif; font-weight: normal; color: #000000; line-height: 145%; }
 
 /* line 58, ../sass/_tags.scss */
-input[type="checkbox"], input[ŧype="radio"] { border: none\9; /* hack for IE9, IE10 to hide the border effects */ }
+input[type="checkbox"], input[ŧype="radio"] { background-color: inherit; }
 
 /* line 61, ../sass/_tags.scss */
 select { height: 2.090909em; max-width: 100%; border: solid transparent 0.1em; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; background-color: #F0F0F0; }
@@ -473,444 +473,447 @@ table.imj_optionSet td label { white-space: normal; }
 .imj_metadataSet .imj_metadataValue { display: inline-block; margin-left: 1.0em; min-width: 60%; max-width: 73.2%; word-wrap: break-word; }
 
 /* line 635, ../sass/_defs.scss */
+textarea.imj_metadataValue { resize: vertical; }
+
+/* line 638, ../sass/_defs.scss */
 textarea.imj_metadataValue, input.imj_metadataValue { width: 72.85%; }
 
-/* line 639, ../sass/_defs.scss */
+/* line 642, ../sass/_defs.scss */
 p.imj_metadataValue { margin: 0 0 0 1em; }
 
-/* line 642, ../sass/_defs.scss */
-.imj_metadataValueEntry { display: inline-block; }
 /* line 645, ../sass/_defs.scss */
+.imj_metadataValueEntry { display: inline-block; }
+/* line 648, ../sass/_defs.scss */
 .imj_metadataValueEntry p:first-child { margin-top: 0; }
 
-/* line 649, ../sass/_defs.scss */
+/* line 652, ../sass/_defs.scss */
 .imj_metadataValueEntryViewMap { display: block; }
 
-/* line 654, ../sass/_defs.scss */
+/* line 657, ../sass/_defs.scss */
 .imj_metadataEditText { width: 55em; min-height: 6em; }
 
-/* line 658, ../sass/_defs.scss */
+/* line 661, ../sass/_defs.scss */
 select.imj_metadataEditText { min-height: 0; }
 
-/* line 662, ../sass/_defs.scss */
+/* line 665, ../sass/_defs.scss */
 .imj_metadataEditDate { width: 7.545454em; text-align: center; }
 
-/* line 666, ../sass/_defs.scss */
+/* line 669, ../sass/_defs.scss */
 .imj_metadataEditLink, .imj_metadataEditPerson, .imj_metadataEditPublication { width: 55em; }
 
-/* line 671, ../sass/_defs.scss */
+/* line 674, ../sass/_defs.scss */
 .imj_metadataEditLicence, .imj_metadataEditNumber, .imj_metadataEditGeo, .imj_admindataEdit { width: 25em; }
 
-/* line 678, ../sass/_defs.scss */
-.imj_infodataSet { width: 100%; display: inline-block; padding-bottom: 1em; }
 /* line 681, ../sass/_defs.scss */
-.imj_infodataSet .imj_infodataLabel { display: inline-block; width: 24%; vertical-align: top; font-weight: bold; overflow: hidden; text-overflow: ellipsis; }
+.imj_infodataSet { width: 100%; display: inline-block; padding-bottom: 1em; }
 /* line 684, ../sass/_defs.scss */
+.imj_infodataSet .imj_infodataLabel { display: inline-block; width: 24%; vertical-align: top; font-weight: bold; overflow: hidden; text-overflow: ellipsis; }
+/* line 687, ../sass/_defs.scss */
 .imj_infodataSet .imj_infodataValue { display: inline-block; margin-left: 1.0em; min-width: 60%; max-width: 73.2%; word-wrap: break-word; }
 
-/* line 688, ../sass/_defs.scss */
+/* line 691, ../sass/_defs.scss */
 .imj_infodataValueEntryEmbed { min-height: 6em; width: 55em; }
 
-/* line 694, ../sass/_defs.scss */
-.imj_admindataSet { width: 100%; display: inline-block; padding-bottom: 1em; }
 /* line 697, ../sass/_defs.scss */
-.imj_admindataSet .imj_admindataLabel { display: inline-block; width: 24%; vertical-align: top; font-weight: bold; overflow: hidden; text-overflow: ellipsis; }
+.imj_admindataSet { width: 100%; display: inline-block; padding-bottom: 1em; }
 /* line 700, ../sass/_defs.scss */
+.imj_admindataSet .imj_admindataLabel { display: inline-block; width: 24%; vertical-align: top; font-weight: bold; overflow: hidden; text-overflow: ellipsis; }
+/* line 703, ../sass/_defs.scss */
 .imj_admindataSet .imj_admindataValue { display: inline-block; margin-left: 1.0em; min-width: 60%; max-width: 73.2%; word-wrap: break-word; }
 
-/* line 704, ../sass/_defs.scss */
+/* line 707, ../sass/_defs.scss */
 .imj_admindataSetEdit { margin: 1em 0; }
-/* line 708, ../sass/_defs.scss */
+/* line 711, ../sass/_defs.scss */
 .imj_admindataSetEdit .imj_admindataValue .imj_admindataSetEdit { margin: 0; }
 
-/* line 713, ../sass/_defs.scss */
+/* line 716, ../sass/_defs.scss */
 .imj_admindataCheckbox { margin-left: 0; }
 
-/* line 717, ../sass/_defs.scss */
+/* line 720, ../sass/_defs.scss */
 .imj_admindataValue .imj_additionalCodeSnippet { width: 25em; min-height: 7em; resize: vertical; }
 
-/* line 723, ../sass/_defs.scss */
+/* line 726, ../sass/_defs.scss */
 .imj_admindataValueCheckBox { display: inline-block; }
 
-/* line 726, ../sass/_defs.scss */
+/* line 729, ../sass/_defs.scss */
 .imj_admindataValueEntry { display: inline-block; }
 
-/* line 739, ../sass/_defs.scss */
+/* line 742, ../sass/_defs.scss */
 .imj_siteHeaderMenuSearchSection { width: 100%; padding: 0; margin: 0 0 2em 0; }
 
-/* line 747, ../sass/_defs.scss */
+/* line 750, ../sass/_defs.scss */
 .imj_simpleSearch { float: right; display: inline-block; overflow: visible; }
-/* line 752, ../sass/_defs.scss */
+/* line 755, ../sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInputWrapper { display: inline-block; vertical-align: top; }
-/* line 757, ../sass/_defs.scss */
+/* line 760, ../sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInput { width: 19em; -moz-border-radius: 0.45455em 0 0 0.45455em; -webkit-border-radius: 0.45455em; border-radius: 0.45455em 0 0 0.45455em; }
-/* line 762, ../sass/_defs.scss */
+/* line 765, ../sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchButtonSubmit { margin-left: 0; padding: 0.181818em 1em 0.272727em 1em; -moz-border-radius: 0 0.45455em 0.45455em 0; -webkit-border-radius: 0; border-radius: 0 0.45455em 0.45455em 0; }
-/* line 768, ../sass/_defs.scss */
+/* line 771, ../sass/_defs.scss */
 .imj_simpleSearch .imj_cancelButton { margin: 0; padding: 0.181818em 1em 0.272727em 1em; vertical-align: middle; -moz-border-radius: 0 0.45455em 0.45455em 0; -webkit-border-radius: 0; border-radius: 0 0.45455em 0.45455em 0; }
-/* line 775, ../sass/_defs.scss */
+/* line 778, ../sass/_defs.scss */
 .imj_simpleSearch .imj_searchInfoText { display: inline-block; margin: 0 0.272727em; }
-/* line 780, ../sass/_defs.scss */
-.imj_simpleSearch input[type=radio] { border: 0 none; margin: 0.090909em 0 0 0.090909em; }
-/* line 785, ../sass/_defs.scss */
+/* line 783, ../sass/_defs.scss */
+.imj_simpleSearch input[type=radio] { margin: 0.090909em 0 0 0.090909em; border: none; background-color: inherit; }
+/* line 789, ../sass/_defs.scss */
 .imj_simpleSearch input[type=radio] + label { margin-left: 0.181818em; margin-right: 1em; }
-/* line 790, ../sass/_defs.scss */
+/* line 794, ../sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchLinkAdvancedsearch { margin-top: 0.181818em; margin-left: 2.090909em; white-space: nowrap; display: inline-block; }
 
-/* line 802, ../sass/_defs.scss */
+/* line 806, ../sass/_defs.scss */
 .imj_subHeaderMessageSpace { clear: both; float: left; display: inline; overflow: hidden; margin: 0.65em 0.0909em 0 0; width: 81.3636em; }
 
-/* line 816, ../sass/_defs.scss */
+/* line 820, ../sass/_defs.scss */
 .imj_submitPanel { display: inline-block; width: 100%; text-align: right; margin-top: 1em; }
-/* line 822, ../sass/_defs.scss */
-.imj_submitPanel .imj_submitPanelSeparator { margin-left: 0.545454em; margin-right: 0.545454em; }
 /* line 826, ../sass/_defs.scss */
+.imj_submitPanel .imj_submitPanelSeparator { margin-left: 0.545454em; margin-right: 0.545454em; }
+/* line 830, ../sass/_defs.scss */
 .imj_submitPanel .imj_submitPanelSeparator + .imj_submitButton { margin-left: 0; }
-/* line 831, ../sass/_defs.scss */
+/* line 835, ../sass/_defs.scss */
 .imj_submitPanel a, .imj_submitPanel input { vertical-align: baseline; }
 
-/* line 839, ../sass/_defs.scss */
+/* line 843, ../sass/_defs.scss */
 .imj_mainContentWrapper { clear: both; float: left; display: inline; overflow: hidden; width: 93.95%; padding: 0 3%; margin: 2em 0.090909em 0 0; background-color: #313131; }
 
-/* line 854, ../sass/_defs.scss */
+/* line 858, ../sass/_defs.scss */
 .imj_breadcrumpHistory { width: 91.75%; padding: 0 4%; margin-bottom: 0.5em; }
-/* line 859, ../sass/_defs.scss */
+/* line 863, ../sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpTitle { margin-right: 0.363636em; font-size: 1.090909em; line-height: 2em; vertical-align: top; }
-/* line 865, ../sass/_defs.scss */
+/* line 869, ../sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpItem { display: inline-block; max-width: 11em; line-height: 2em; font-size: 1.090909em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; }
-/* line 874, ../sass/_defs.scss */
+/* line 878, ../sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpItem .imj_breadcrumpLongDescription { display: none; max-width: 10.272727em; padding: 0 0.363636em; white-space: normal; background-color: #292929; }
-/* line 882, ../sass/_defs.scss */
+/* line 886, ../sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpItem:hover .imj_breadcrumpLongDescription { position: absolute; display: block; z-index: 10; }
-/* line 889, ../sass/_defs.scss */
+/* line 893, ../sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpSeparator { margin-left: 0.363636em; margin-right: 0.363636em; line-height: 2em; font-size: 1.090909em; vertical-align: top; }
 
-/* line 902, ../sass/_defs.scss */
+/* line 906, ../sass/_defs.scss */
 .imj_advancedSearch { width: 91.25%; padding: 0 4%; border-top: 0.1em solid #6CAE2F; }
-/* line 907, ../sass/_defs.scss */
-.imj_advancedSearch .imj_logicalSearchGroup { white-space: nowrap; margin-right: 5%; }
 /* line 911, ../sass/_defs.scss */
-.imj_advancedSearch .imj_searchUnit { width: 100%; margin-top: 1em; }
+.imj_advancedSearch .imj_logicalSearchGroup { white-space: nowrap; margin-right: 5%; }
 /* line 915, ../sass/_defs.scss */
+.imj_advancedSearch .imj_searchUnit { width: 100%; margin-top: 1em; }
+/* line 919, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit > div { display: inline-block; }
-/* line 918, ../sass/_defs.scss */
+/* line 922, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_logicalConnector { min-width: 3em; }
-/* line 921, ../sass/_defs.scss */
+/* line 925, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_logicalDetailConnector { margin-left: 10%; margin-top: 0.5em; display: block; }
-/* line 926, ../sass/_defs.scss */
+/* line 930, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_inlineButtonGroup { min-width: 3.5em; }
-/* line 929, ../sass/_defs.scss */
+/* line 933, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_compareLabel { padding: 0 0.5em; }
-/* line 934, ../sass/_defs.scss */
-.imj_advancedSearch .imj_searchUnit .imj_searchSelectbox > select { max-width: 30em; }
 /* line 938, ../sass/_defs.scss */
+.imj_advancedSearch .imj_searchUnit .imj_searchSelectbox > select { max-width: 30em; }
+/* line 942, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails { width: 92%; margin-left: 7%; margin-top: 0.5em; }
-/* line 943, ../sass/_defs.scss */
-.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_inlineButtonGroup { margin-left: 0.5em; }
 /* line 947, ../sass/_defs.scss */
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_inlineButtonGroup { margin-left: 0.5em; }
+/* line 951, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchStatement > select { width: 15em; }
-/* line 952, ../sass/_defs.scss */
+/* line 956, ../sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchInput > input { width: 20em; }
 
-/* line 963, ../sass/_defs.scss */
-.imj_searchQueryDisplay { width: 91.25%; padding: 1% 4%; }
 /* line 967, ../sass/_defs.scss */
+.imj_searchQueryDisplay { width: 91.25%; padding: 1% 4%; }
+/* line 971, ../sass/_defs.scss */
 .imj_searchQueryDisplay > fieldset { padding: 1% 1%; border-top-style: inset; border-bottom-style: outset; border-color: rgba(255, 255, 255, 0.15); }
-/* line 973, ../sass/_defs.scss */
+/* line 977, ../sass/_defs.scss */
 .imj_searchQueryDisplay > fieldset legend { margin: 0 1%; padding: 0 1%; font-size: 110%; }
-/* line 979, ../sass/_defs.scss */
+/* line 983, ../sass/_defs.scss */
 .imj_searchQueryDisplay .imj_submitButton { display: inline-block; white-space: nowrap; margin-top: 0.272727em; }
 
-/* line 991, ../sass/_defs.scss */
+/* line 995, ../sass/_defs.scss */
 .imj_selectionInfoPanel { width: 91.75%; padding: 0 4%; margin-bottom: 0.5em; }
-/* line 996, ../sass/_defs.scss */
+/* line 1000, ../sass/_defs.scss */
 .imj_selectionInfoPanel .imj_removeFacetButton { margin-left: 0.272727em; }
 
-/* line 1000, ../sass/_defs.scss */
+/* line 1004, ../sass/_defs.scss */
 .imj_selectionInfoPanelItemSelect { float: right; }
 
-/* line 1007, ../sass/_defs.scss */
+/* line 1011, ../sass/_defs.scss */
 .imj_filterInfoPanel { width: 91.75%; padding: 0 4%; margin-bottom: 0.5em; }
-/* line 1012, ../sass/_defs.scss */
+/* line 1016, ../sass/_defs.scss */
 .imj_filterInfoPanel .imj_removeFilterButton { margin: 0 0.272727em; }
 
-/* line 1019, ../sass/_defs.scss */
+/* line 1023, ../sass/_defs.scss */
 .imj_paginator { width: 91.75%; margin-top: 1em; margin-bottom: 1em; padding: 0.636363em 4%; text-align: center; border-top: 0.1em solid #6CAE2F; }
-/* line 1027, ../sass/_defs.scss */
+/* line 1031, ../sass/_defs.scss */
 .imj_paginator .imj_rangeSelector { float: left; }
-/* line 1030, ../sass/_defs.scss */
+/* line 1034, ../sass/_defs.scss */
 .imj_paginator .imj_rangeSelector .imj_rangeSelectorLabel { margin-left: 0.363636em; vertical-align: baseline; }
-/* line 1035, ../sass/_defs.scss */
+/* line 1039, ../sass/_defs.scss */
 .imj_paginator .imj_gotoBox { float: right; }
-/* line 1038, ../sass/_defs.scss */
+/* line 1042, ../sass/_defs.scss */
 .imj_paginator .imj_gotoBox label { vertical-align: baseline; }
-/* line 1041, ../sass/_defs.scss */
+/* line 1045, ../sass/_defs.scss */
 .imj_paginator .imj_gotoBox .imj_pageInput { width: 3em; margin-left: 0.363636em; margin-right: 0.363636em; text-align: center; }
-/* line 1047, ../sass/_defs.scss */
+/* line 1051, ../sass/_defs.scss */
 .imj_paginator .imj_gotoBox .imj_submitButton { margin-left: 0.545454em; }
 
-/* line 1056, ../sass/_defs.scss */
+/* line 1060, ../sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton + .imj_forwardButton { margin-left: 1em; }
 
-/* line 1063, ../sass/_defs.scss */
+/* line 1067, ../sass/_defs.scss */
 .imj_singlePageBrowser { display: inline-block; }
-/* line 1066, ../sass/_defs.scss */
+/* line 1070, ../sass/_defs.scss */
 .imj_singlePageBrowser .imj_separator { display: inline-block; height: 1.81818181em; vertical-align: middle; }
-/* line 1072, ../sass/_defs.scss */
+/* line 1076, ../sass/_defs.scss */
 .imj_singlePageBrowser .imj_pageNumber { padding: 0 1em; background-color: transparent; border: 0 none; color: #6CAE2F; }
-/* line 1079, ../sass/_defs.scss */
-.imj_singlePageBrowser .imj_pageNumber:hover { color: #F0F0F0; }
 /* line 1083, ../sass/_defs.scss */
+.imj_singlePageBrowser .imj_pageNumber:hover { color: #F0F0F0; }
+/* line 1087, ../sass/_defs.scss */
 .imj_singlePageBrowser .imj_currentPageNumber { padding: 0 1em; color: #F0F0F0; background-color: transparent; border: 0 none; }
 
-/* line 1096, ../sass/_defs.scss */
-.imj_imageInfoLayer { width: 95.95%; padding: 0 2%; }
 /* line 1100, ../sass/_defs.scss */
+.imj_imageInfoLayer { width: 95.95%; padding: 0 2%; }
+/* line 1104, ../sass/_defs.scss */
 .imj_imageInfoLayer a { margin-left: 1em; }
-/* line 1103, ../sass/_defs.scss */
+/* line 1107, ../sass/_defs.scss */
 .imj_imageInfoLayer .imj_metadataValue { width: 72.33%; margin-left: 0.727272em; }
-/* line 1109, ../sass/_defs.scss */
-.imj_imageInfoLayer .highlight_area.imj_highlightDependencies { background-color: #4d4d4d; }
 /* line 1113, ../sass/_defs.scss */
+.imj_imageInfoLayer .highlight_area.imj_highlightDependencies { background-color: #4d4d4d; }
+/* line 1117, ../sass/_defs.scss */
 .imj_imageInfoLayer .imj_infoNavigation { width: 95.95%; padding: 0 2%; text-align: right; margin-bottom: 1.454545em; }
-/* line 1119, ../sass/_defs.scss */
+/* line 1123, ../sass/_defs.scss */
 .imj_imageInfoLayer .imj_infoNavigation .imj_buttonEdit_16 { margin-right: 0.181818em; }
 
-/* line 1130, ../sass/_defs.scss */
+/* line 1134, ../sass/_defs.scss */
 .imj_metadataSubPanel { text-align: left; width: 91.95%; padding: 1% 4%; }
-/* line 1135, ../sass/_defs.scss */
-.imj_metadataSubPanel .imj_metadataSubPanelItem { font-weight: bold; border-bottom: 0.1em solid #BBBBBB; }
 /* line 1139, ../sass/_defs.scss */
+.imj_metadataSubPanel .imj_metadataSubPanelItem { font-weight: bold; border-bottom: 0.1em solid #BBBBBB; }
+/* line 1143, ../sass/_defs.scss */
 .imj_metadataSubPanel .imj_metadataSubPanelItem a { padding: 0 0.181818em; }
-/* line 1142, ../sass/_defs.scss */
+/* line 1146, ../sass/_defs.scss */
 .imj_metadataSubPanel .imj_metadataSubPanelItem a:hover { background-color: #6CAE2F; }
 
-/* line 1160, ../sass/_defs.scss */
+/* line 1164, ../sass/_defs.scss */
 #imj_ajaxFacets { padding: 1% 4%; }
 
-/* line 1163, ../sass/_defs.scss */
+/* line 1167, ../sass/_defs.scss */
 .imj_facetArea { line-height: 175%; }
-/* line 1166, ../sass/_defs.scss */
-.imj_facetArea .imj_facetGroup { display: inline-block; margin-right: 1.545454em; padding: 0 0.181818em; }
 /* line 1170, ../sass/_defs.scss */
-.imj_facetArea .imj_facetGroup .imj_facetGroupOpener { margin-right: 0.181818em; display: none; }
+.imj_facetArea .imj_facetGroup { display: inline-block; margin-right: 1.545454em; padding: 0 0.181818em; }
 /* line 1174, ../sass/_defs.scss */
-.imj_facetArea .imj_facetGroup .imj_facetSeparator { margin: 0 0.272727em; color: #F0F0F0; }
+.imj_facetArea .imj_facetGroup .imj_facetGroupOpener { margin-right: 0.181818em; display: none; }
 /* line 1178, ../sass/_defs.scss */
+.imj_facetArea .imj_facetGroup .imj_facetSeparator { margin: 0 0.272727em; color: #F0F0F0; }
+/* line 1182, ../sass/_defs.scss */
 .imj_facetArea .imj_facetGroup .imj_facetGroupItem { white-space: nowrap; }
-/* line 1181, ../sass/_defs.scss */
+/* line 1185, ../sass/_defs.scss */
 .imj_facetArea .imj_facetGroup .imj_facetGroupCloser { margin-left: 0.181818em; display: none; }
-/* line 1186, ../sass/_defs.scss */
+/* line 1190, ../sass/_defs.scss */
 .imj_facetArea .imj_facetGroup:hover { background-color: #444444; }
 
-/* line 1203, ../sass/_defs.scss */
+/* line 1207, ../sass/_defs.scss */
 .imj_loginFormSite { width: 91.25%; padding: 1% 4%; border-top: 0.1em solid #6CAE2F; }
 
-/* line 1214, ../sass/_defs.scss */
-.imj_startpageFooter { clear: both; width: 100%; padding: 1em 0; }
 /* line 1218, ../sass/_defs.scss */
+.imj_startpageFooter { clear: both; width: 100%; padding: 1em 0; }
+/* line 1222, ../sass/_defs.scss */
 .imj_startpageFooter img { margin: 0 1%; }
-/* line 1221, ../sass/_defs.scss */
+/* line 1225, ../sass/_defs.scss */
 .imj_startpageFooter .imj_startpageFooterLogos { width: 100%; padding: 1em 1.25em 1.25em 1em; text-align: center; }
-/* line 1226, ../sass/_defs.scss */
+/* line 1230, ../sass/_defs.scss */
 .imj_startpageFooter .imj_community_logo { padding: 1%; margin-right: 5%; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
 
-/* line 1233, ../sass/_defs.scss */
+/* line 1237, ../sass/_defs.scss */
 #imj_welcomeInfoWrapper { display: inline-block; width: 48%; }
 
-/* line 1237, ../sass/_defs.scss */
+/* line 1241, ../sass/_defs.scss */
 .imj_welcomeInfo { min-height: 34.8333333em; width: 37.85%; padding: 1%; margin: 1% 0; overflow: hidden; background-color: #292929; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
-/* line 1247, ../sass/_defs.scss */
+/* line 1251, ../sass/_defs.scss */
 .imj_welcomeInfo .id_tabs ul { padding: 0; margin-top: 0; padding-top: 0.333333em; list-style-type: none; }
-/* line 1253, ../sass/_defs.scss */
+/* line 1257, ../sass/_defs.scss */
 .imj_welcomeInfo .id_tabs ul li { margin-left: 1%; padding: 1%; display: inline; font-size: 110%; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
-/* line 1261, ../sass/_defs.scss */
-.imj_welcomeInfo .id_tabs .imj_tabMenu { width: 100%; text-align: right; }
 /* line 1265, ../sass/_defs.scss */
-.imj_welcomeInfo .id_tabs .imj_tabMenu li { background-color: #313131; }
-/* line 1267, ../sass/_defs.scss */
-.imj_welcomeInfo .id_tabs .imj_tabMenu li.ui-state-active { background-color: #383838; }
+.imj_welcomeInfo .id_tabs .imj_tabMenu { width: 100%; text-align: right; }
 /* line 1269, ../sass/_defs.scss */
+.imj_welcomeInfo .id_tabs .imj_tabMenu li { background-color: #313131; }
+/* line 1271, ../sass/_defs.scss */
+.imj_welcomeInfo .id_tabs .imj_tabMenu li.ui-state-active { background-color: #383838; }
+/* line 1273, ../sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabMenu li.ui-state-active a { color: #F0F0F0; }
-/* line 1275, ../sass/_defs.scss */
+/* line 1279, ../sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent { width: 100%; min-height: 30em; overflow: auto; font-size: 110%; }
-/* line 1281, ../sass/_defs.scss */
+/* line 1285, ../sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent ul { margin-bottom: 3em; }
-/* line 1283, ../sass/_defs.scss */
-.imj_welcomeInfo .id_tabs .imj_tabContent ul .imj_iconGoTo { vertical-align: top; }
 /* line 1287, ../sass/_defs.scss */
+.imj_welcomeInfo .id_tabs .imj_tabContent ul .imj_iconGoTo { vertical-align: top; }
+/* line 1291, ../sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent li { display: block; padding-left: 2%; background-color: #313131; }
-/* line 1292, ../sass/_defs.scss */
-.imj_welcomeInfo .id_tabs .imj_tabContent .imj_headline, .imj_welcomeInfo .id_tabs .imj_tabContent .imj_sectionHeadline { margin-top: 1em; }
 /* line 1296, ../sass/_defs.scss */
+.imj_welcomeInfo .id_tabs .imj_tabContent .imj_headline, .imj_welcomeInfo .id_tabs .imj_tabContent .imj_sectionHeadline { margin-top: 1em; }
+/* line 1300, ../sass/_defs.scss */
 .imj_welcomeInfo .id_tabs div.ui-tabs-hide { display: none; }
 
-/* line 1303, ../sass/_defs.scss */
+/* line 1307, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper { float: right; margin-top: 2em; width: 48%; display: inline-block; vertical-align: top; }
-/* line 1310, ../sass/_defs.scss */
+/* line 1314, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel { width: 100%; min-height: 33.333333em; overflow: hidden; }
-/* line 1315, ../sass/_defs.scss */
+/* line 1319, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer { max-height: 400px; overflow: visible; min-width: 350px; width: 40%; margin: 0 auto; }
-/* line 1322, ../sass/_defs.scss */
+/* line 1326, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #carousel { height: 26.66666666em; width: 90%; margin: 0 auto; background: transparent; overflow: visible !important; }
-/* line 1329, ../sass/_defs.scss */
+/* line 1333, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText { display: none; }
-/* line 1332, ../sass/_defs.scss */
+/* line 1336, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText .imj_cloudInfoTitle { font-weight: bold; }
-/* line 1335, ../sass/_defs.scss */
-.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText #title-text, .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText #alt-text { margin: 0; }
 /* line 1339, ../sass/_defs.scss */
+.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText #title-text, .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText #alt-text { margin: 0; }
+/* line 1343, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer .dynamicCloudinfo { position: absolute; z-index: 5600; background-color: #292929; padding: 0.75em; }
 
-/* line 1348, ../sass/_defs.scss */
+/* line 1352, ../sass/_defs.scss */
 .imj_startpage_carouselWrapper:after { clear: right; }
 
-/* line 1353, ../sass/_defs.scss */
+/* line 1357, ../sass/_defs.scss */
 iframe#twitter-widget-0 { width: 99.5%; height: 43em; }
 
-/* line 1358, ../sass/_defs.scss */
+/* line 1362, ../sass/_defs.scss */
 iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 
-/* line 1373, ../sass/_defs.scss */
+/* line 1377, ../sass/_defs.scss */
 .imj_mediaEntryDetailPage > .imj_metadataList, .imj_mediaEntryDetailPage > .imj_mediaDisplayContainer { width: 91.25%; margin: 1% 4%; }
-/* line 1378, ../sass/_defs.scss */
+/* line 1382, ../sass/_defs.scss */
 .imj_mediaEntryDetailPage .highlight_area.imj_highlightDependencies { background-color: #444444; }
-/* line 1384, ../sass/_defs.scss */
+/* line 1388, ../sass/_defs.scss */
 .imj_mediaEntryDetailPage .imj_mediaDisplayContainer { padding: 1em 0; margin-bottom: 0.545454em; text-align: center; border-bottom: 0.1em solid #6CAE2F; }
-/* line 1392, ../sass/_defs.scss */
+/* line 1396, ../sass/_defs.scss */
 .imj_mediaEntryDetailPage .imj_mediaDisplayContainer .imj_optionSet .imj_optionCheckbox { vertical-align: bottom; }
 
-/* line 1401, ../sass/_defs.scss */
-.imj_mediaEditPanel { width: 100%; margin-top: 0.545454em; }
 /* line 1405, ../sass/_defs.scss */
+.imj_mediaEditPanel { width: 100%; margin-top: 0.545454em; }
+/* line 1409, ../sass/_defs.scss */
 .imj_mediaEditPanel .imj_mediaEditPanelItem { letter-spacing: 0.045em; margin: 1em 0.273em 0 2.000em; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
-/* line 1410, ../sass/_defs.scss */
+/* line 1414, ../sass/_defs.scss */
 .imj_mediaEditPanel .imj_metadataEditButtonArea { display: inline-block; }
 
-/* line 1425, ../sass/_defs.scss */
+/* line 1429, ../sass/_defs.scss */
 .imj_mediaContainerEditMD { margin-bottom: 0.5em; padding: 0 4%; width: 91.75%; border-top: 0.1em solid #6CAE2F; }
-/* line 1431, ../sass/_defs.scss */
+/* line 1435, ../sass/_defs.scss */
 .imj_mediaContainerEditMD .imj_headline { width: 100%; }
-/* line 1434, ../sass/_defs.scss */
-.imj_mediaContainerEditMD .imj_headline .imj_headline h3 { margin: 1% 0; }
 /* line 1438, ../sass/_defs.scss */
+.imj_mediaContainerEditMD .imj_headline .imj_headline h3 { margin: 1% 0; }
+/* line 1442, ../sass/_defs.scss */
 .imj_mediaContainerEditMD .imj_authorMetadataSet { background-color: #292929; margin-bottom: 0.363636em; padding: 0.5em 1%; }
-/* line 1443, ../sass/_defs.scss */
+/* line 1447, ../sass/_defs.scss */
 .imj_mediaContainerEditMD .imj_sectionHeadline { margin-bottom: 0.545454em; }
 
-/* line 1449, ../sass/_defs.scss */
+/* line 1453, ../sass/_defs.scss */
 .imj_editGlobalAssignment { width: 91.25%; padding: 1% 4%; border-top: 0.1em solid #6CAE2F; }
-/* line 1456, ../sass/_defs.scss */
+/* line 1460, ../sass/_defs.scss */
 .imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataLabel label { display: inline-block; width: 100%; }
-/* line 1461, ../sass/_defs.scss */
+/* line 1465, ../sass/_defs.scss */
 .imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataValue { width: 69.25%; max-width: 69.25%; }
-/* line 1467, ../sass/_defs.scss */
+/* line 1471, ../sass/_defs.scss */
 .imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataValue > .imj_singleStatementEdit > textarea.imj_metadataValue { width: 100%; }
-/* line 1474, ../sass/_defs.scss */
+/* line 1478, ../sass/_defs.scss */
 .imj_editGlobalAssignment .imj_dataAssignmentPanel { display: inline-block; margin-top: 1em; }
-/* line 1479, ../sass/_defs.scss */
+/* line 1483, ../sass/_defs.scss */
 .imj_editGlobalAssignment + .imj_batchEditItemList { border-top: 0.1em dashed #6CAE2F; }
 
-/* line 1484, ../sass/_defs.scss */
-.imj_singleStatementEdit { width: 100%; margin-bottom: 1em; }
 /* line 1488, ../sass/_defs.scss */
+.imj_singleStatementEdit { width: 100%; margin-bottom: 1em; }
+/* line 1492, ../sass/_defs.scss */
 .imj_singleStatementEdit .imj_inlineButtonGroup { margin-left: 1%; }
-/* line 1491, ../sass/_defs.scss */
+/* line 1495, ../sass/_defs.scss */
 .imj_singleStatementEdit textarea { resize: vertical; }
 
-/* line 1500, ../sass/_defs.scss */
+/* line 1504, ../sass/_defs.scss */
 .imj_ingestWrapper { width: 91.25%; padding: 0 4% 2em 4%; border-top: 0.1em solid #6CAE2F; }
 
-/* line 1505, ../sass/_defs.scss */
+/* line 1509, ../sass/_defs.scss */
 .imj_ingestMessageArea { width: 100%; border-bottom: 0.1em solid #6CAE2F; margin-bottom: 3em; }
 
-/* line 1513, ../sass/_defs.scss */
+/* line 1517, ../sass/_defs.scss */
 .imj_uploadDropArea + .imj_headline { border-top: 0.1em dashed #6CAE2F; border-bottom: 0.1em dashed #6CAE2F; margin: 2em 0 1em 0; }
-/* line 1518, ../sass/_defs.scss */
+/* line 1522, ../sass/_defs.scss */
 .imj_uploadDropArea + .imj_uploadUrlReference { margin-top: 4em; }
 
-/* line 1527, ../sass/_defs.scss */
+/* line 1531, ../sass/_defs.scss */
 .imj_upload { width: 91.25%; padding: 1% 4%; border-top: 0.1em solid #6CAE2F; }
-/* line 1532, ../sass/_defs.scss */
+/* line 1536, ../sass/_defs.scss */
 .imj_upload .imj_uploadInputWrapper { width: 70%; min-width: 30em; display: inline-block; }
-/* line 1537, ../sass/_defs.scss */
+/* line 1541, ../sass/_defs.scss */
 .imj_upload .imj_uploadDropArea { width: 100%; }
 
-/* line 1543, ../sass/_defs.scss */
+/* line 1547, ../sass/_defs.scss */
 .imj_uploadUrlReference { width: 98%; min-width: 30em; padding: 0.5% 1%; background-color: #292929; }
-/* line 1549, ../sass/_defs.scss */
+/* line 1553, ../sass/_defs.scss */
 .imj_uploadUrlReference label { margin-left: 1em; }
-/* line 1552, ../sass/_defs.scss */
+/* line 1556, ../sass/_defs.scss */
 .imj_uploadUrlReference input { width: 98%; }
-/* line 1555, ../sass/_defs.scss */
+/* line 1559, ../sass/_defs.scss */
 .imj_uploadUrlReference .submitPanel { padding: 0.545454em 0; }
 
-/* line 1561, ../sass/_defs.scss */
+/* line 1565, ../sass/_defs.scss */
 .imj_uploadOptionsArea { width: 27%; min-height: 33.545454em; margin: 0 0 0 1.5%; padding: 0.5% 0.5%; display: inline-block; vertical-align: top; background-color: #444444; }
-/* line 1570, ../sass/_defs.scss */
+/* line 1574, ../sass/_defs.scss */
 .imj_uploadOptionsArea .imj_headline, .imj_uploadOptionsArea .imj_sectionHeadline { margin-bottom: 1em; }
 
-/* line 1576, ../sass/_defs.scss */
-.imj_uploadMessageArea { width: 100%; margin-top: 4em; }
 /* line 1580, ../sass/_defs.scss */
+.imj_uploadMessageArea { width: 100%; margin-top: 4em; }
+/* line 1584, ../sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileErrorMessageArea, .imj_uploadMessageArea .imj_fileSuccessMessageArea { width: 48%; padding: 1% 0.8%; display: inline-block; vertical-align: top; }
-/* line 1587, ../sass/_defs.scss */
+/* line 1591, ../sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileErrorMessageArea .imj_messageList, .imj_uploadMessageArea .imj_fileSuccessMessageArea .imj_messageList { width: 84%; max-height: 21em; padding: 0 0 0 15.25%; list-style: decimal-leading-zero; overflow: auto; }
-/* line 1595, ../sass/_defs.scss */
+/* line 1599, ../sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileErrorMessageArea { background-color: #757575; }
-/* line 1598, ../sass/_defs.scss */
+/* line 1602, ../sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileSuccessMessageArea { background-color: #292929; }
 
-/* line 1608, ../sass/_defs.scss */
-.imj_shareForm { width: 91.25%; padding: 1% 4%; }
 /* line 1612, ../sass/_defs.scss */
+.imj_shareForm { width: 91.25%; padding: 1% 4%; }
+/* line 1616, ../sass/_defs.scss */
 .imj_shareForm .imj_shareRightsOverview { margin-top: 2em; padding-top: 1em; border-top: 0.1em dashed #6CAE2F; }
-/* line 1618, ../sass/_defs.scss */
+/* line 1622, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable { width: 100%; }
-/* line 1621, ../sass/_defs.scss */
+/* line 1625, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th, .imj_shareForm .imj_rightsTable td { width: 6em; padding: 0.272727em 0.545454em; }
-/* line 1626, ../sass/_defs.scss */
-.imj_shareForm .imj_rightsTable th.imj_rightsAction, .imj_shareForm .imj_rightsTable td.imj_rightsAction { padding: 0; text-align: right; }
 /* line 1630, ../sass/_defs.scss */
+.imj_shareForm .imj_rightsTable th.imj_rightsAction, .imj_shareForm .imj_rightsTable td.imj_rightsAction { padding: 0; text-align: right; }
+/* line 1634, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th.imj_rightsAction input, .imj_shareForm .imj_rightsTable td.imj_rightsAction input { margin: 0; }
-/* line 1636, ../sass/_defs.scss */
+/* line 1640, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th { font-weight: bold; }
-/* line 1639, ../sass/_defs.scss */
+/* line 1643, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th:first-child { width: 13em; text-align: left; }
-/* line 1644, ../sass/_defs.scss */
+/* line 1648, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable td { padding-bottom: 0.363636em; }
-/* line 1649, ../sass/_defs.scss */
-.imj_shareForm .imj_rightsTable > tbody > tr:hover { background-color: #313131; }
 /* line 1653, ../sass/_defs.scss */
+.imj_shareForm .imj_rightsTable > tbody > tr:hover { background-color: #313131; }
+/* line 1657, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTable > tbody table { width: 100%; }
-/* line 1660, ../sass/_defs.scss */
-.imj_shareForm .imj_rightsTableForNewUser td { padding-right: 0.818181em; vertical-align: top; }
 /* line 1664, ../sass/_defs.scss */
+.imj_shareForm .imj_rightsTableForNewUser td { padding-right: 0.818181em; vertical-align: top; }
+/* line 1668, ../sass/_defs.scss */
 .imj_shareForm .imj_rightsTableForNewUser input[type=checkbox] { display: block; }
 
-/* line 1671, ../sass/_defs.scss */
+/* line 1675, ../sass/_defs.scss */
 #sharePanel fieldset.imj_shareInformationFieldset { padding: 1% 1%; border-top-style: inset; border-bottom-style: outset; border-color: rgba(255, 255, 255, 0.15); }
-/* line 1677, ../sass/_defs.scss */
+/* line 1681, ../sass/_defs.scss */
 #sharePanel fieldset.imj_shareInformationFieldset > legend { margin: 0 1%; padding: 0 1%; font-size: 110%; }
-/* line 1684, ../sass/_defs.scss */
+/* line 1688, ../sass/_defs.scss */
 #sharePanel .imj_shareForm { border: 0 none; width: 100%; padding: 0; }
 
-/* line 1693, ../sass/_defs.scss */
+/* line 1697, ../sass/_defs.scss */
 .imj_adminEditPanel { margin: 0.5em 0em 1em -1em; padding: 0 0 2em 0; }
 
-/* line 1700, ../sass/_defs.scss */
+/* line 1704, ../sass/_defs.scss */
 .imj_userConfig .imj_adminPanel { display: inline-block; float: left; margin-bottom: 2em; max-width: 99.99%; padding: 0 2%; text-align: left; vertical-align: top; }
-/* line 1710, ../sass/_defs.scss */
+/* line 1714, ../sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation > fieldset { padding: 2%; border: 0 none; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
-/* line 1715, ../sass/_defs.scss */
+/* line 1719, ../sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation > fieldset .imj_submitPanel { margin-top: 0; }
-/* line 1720, ../sass/_defs.scss */
+/* line 1724, ../sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation + .imj_admindataSetEdit { margin: 1em 0; padding: 1em 0; border-bottom: 0.1em dashed #6CAE2F; }
-/* line 1726, ../sass/_defs.scss */
+/* line 1730, ../sass/_defs.scss */
 .imj_userConfig .imj_userGrantList { display: inline-block; margin: 0.5em 0; }
-/* line 1732, ../sass/_defs.scss */
+/* line 1736, ../sass/_defs.scss */
 .imj_userConfig .imj_admindataValueEntry + .imj_editButton { float: right; }
-/* line 1738, ../sass/_defs.scss */
+/* line 1742, ../sass/_defs.scss */
 .imj_userConfig .imj_connectedUserGroups .imj_admindataValueEntry { display: block; }
 
 /* line 3, ../sass/_menus.scss */

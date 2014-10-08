@@ -632,6 +632,9 @@ table.imj_optionSet {
 		@include datasetParam(value);
 	}
 }
+textarea.imj_metadataValue {
+	resize: vertical;
+}
 textarea.imj_metadataValue,
 input.imj_metadataValue {
 	width: 72.85%;
@@ -778,8 +781,9 @@ select.imj_metadataEditText {
 	}
 	
 	input[type=radio] {
-		border: 0 none;
 		margin: 0.090909em 0 0 0.090909em;
+		border: none;
+		background-color: inherit;
 	}
 	
 	input[type=radio] + label {
