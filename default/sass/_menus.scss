@@ -24,8 +24,9 @@
 // ================================================== */
 .imj_metaMenuStandardSingleLine {
 	width: 100%;
+	margin-top: 0.363636em;
 	text-align: right;
-
+	
 	.imj_metaMenuSeparator {
 		height: 1.545454em;
 		width: 0.090909em;
@@ -59,12 +60,21 @@
 			padding: 0;
 			margin-left: 0.272727em;
 			border: none 0;
+			vertical-align: text-top;
 		}
 		input[type="submit"]:hover {
 			@include hover(a);
 		}
 		
 		@include gchromeInputFix($meta-input-bgcolor, $meta-input-color);
+	}
+	.imj_customSelectbox {
+		vertical-align: middle;
+		padding-top: 0.181818em;
+		
+		select {
+			margin-top: -0.181818em;
+		}
 	}
 }
 

@@ -20,6 +20,11 @@ body {
 			> div {
 				display: inline-block;
 			}
+			
+			.plupload_header_text {
+				display: block;
+				margin-bottom: 0.181818em;
+			}
 		}
 		
 		.plupload_filelist_header,
@@ -42,8 +47,8 @@ body {
 				white-space: nowrap;
 			}
 			.plupload_upload_status {
-				width: 49%;
-				display: inline-block;
+				width: 100%;
+				display: block;
 				white-space: normal;
 			}
 		}

@@ -55,9 +55,14 @@ input[type="text"], input[type="password"], textarea {
 	padding: 0.25em 0.5em;
 	@include inputfont();
 }
+input[type="checkbox"], input[ŧype="radio"] {
+	border: none\9; /* hack for IE9, IE10 to hide the border effects */
+}
 select {
+	height: 2.090909em;
 	max-width: 100%;
 	border: $select-border;
+	@include border-radius($border-radius-default);
 	background-color: $select-bgcolor;
 
 	&:hover {

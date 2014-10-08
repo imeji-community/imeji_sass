@@ -568,12 +568,12 @@
 	
 	.imj_listBody {
 		width: 100%;
-		text-align: left;
+		text-align: center;
 	}
 	
 	.imj_adminPanel {
 		display: inline-block;
-		max-width: 23.95%;
+		max-width: 23%;
 		padding: 0 2%;
 		vertical-align: top;
 		margin-bottom: 2em;
@@ -588,7 +588,6 @@
 		}
 		.imj_headline {
 			// width: 91.95%;
-			padding: 0.454545em 0.81818181em;
 			text-align: center;
 			background-color: $tiledlistadmin-itemheader-bgcolor;
 			@include border-radius(0.909090em 0.909090em 0 0);

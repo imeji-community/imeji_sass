@@ -22,10 +22,9 @@
 			content: "";
 			content: 0 none;
 		}
-		.imj_simpleSearchInput,
-		.imj_simpleSearchButtonSubmit {
-			font-size: 100%;
-			padding-bottom: 0.090909em;
+		.imj_simpleSearchInputWrapper {
+			display: inline-block;
+			margin-bottom: 0.272727em;
 		}
 		.imj_simpleSearchButtonSubmit {
 			color: $pageheader-button-submit-color;
@@ -452,7 +451,11 @@ h3.imj_headline {
 	font-size: 125%;
 	line-height: normal;
 }
-
+.imj_sectionHeadline h2,
+h2.imj_sectionHeadline {
+	font-size: 140%;
+	line-height: normal;
+}
 .imj_sectionHeadline h3,
 h3.imj_sectionHeadline {
 	padding: 0.272727em 0.545454em;
@@ -631,7 +634,7 @@ table.imj_optionSet {
 }
 textarea.imj_metadataValue,
 input.imj_metadataValue {
-	width: 73.25%;
+	width: 72.85%;
 }
 p.imj_metadataValue {
 	margin: 0 0 0 1em;
@@ -1613,11 +1616,21 @@ iframe#twitter-widget-0 div.root div.stream {
 	}
 	
 	.imj_rightsTable {
+		width: 100%;
+		
 		th, 
 		td {
 			width: 6em;
 			padding: 0.272727em 0.545454em;
-			text-align: center;
+			
+			&.imj_rightsAction {
+				padding: 0;
+				text-align: right;
+				
+				input {
+					margin: 0;
+				}
+			}
 		}
 		
 		th {
@@ -1715,6 +1728,12 @@ iframe#twitter-widget-0 div.root div.stream {
 	.imj_admindataValueEntry {
 		+ .imj_editButton {
 			float:right;
+		}
+	}
+	
+	.imj_connectedUserGroups {
+		.imj_admindataValueEntry {
+			display: block;
 		}
 	}
 }

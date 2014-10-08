@@ -11,7 +11,7 @@
 	@include font(("Open Sans", sans-serif));
 }
 @mixin inputfont() {
-	@include font((Courier, "Courier New", serif), $input-color, (92%));
+	@include font((Courier, "Courier New", serif), $input-color, (100%));
 }
 
 @mixin disabled($type:'') {
@@ -135,7 +135,7 @@
 		display: inline-block;
 		margin-left: 1.0em;
 		min-width: 60%;
-		max-width: 73.25%;
+		max-width: 73.2%;
 		word-wrap: break-word;
 	}
 }
