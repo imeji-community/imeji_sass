@@ -22,10 +22,6 @@
 			content: "";
 			content: 0 none;
 		}
-		.imj_simpleSearchInputWrapper {
-			display: inline-block;
-			margin-bottom: 0.272727em;
-		}
 		.imj_simpleSearchButtonSubmit {
 			color: $pageheader-button-submit-color;
 			background-color: $pageheader-button-submit-bgcolor;
@@ -306,7 +302,6 @@ button.imj_cancelButton,
 a.imj_submitButton,
 input.imj_submitButton,
 button.imj_submitButton,
-.imj_simpleSearchButtonSubmit,
 .imj_submitButton {
 	margin-left: 1em;
 	color: $button-submit-color;
@@ -754,18 +749,32 @@ select.imj_metadataEditText {
 	
 	.imj_simpleSearchInputWrapper {
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 	
 	.imj_simpleSearchInput {
-		width: 19em;
+		width: 16em;
 		@include border-radius(0.454545em 0 0 0.454545em);
+		vertical-align: top;
 	}
 	
 	.imj_simpleSearchButtonSubmit {
 		margin-left: 0;
-		padding: 0.181818em 1em 0.272727em 1em;
+		padding-left: 1em;
+		padding-right: 1em;
+
 		@include border-radius(0 0.454545em 0.454545em 0);
+		vertical-align: top;
+		
+		&:hover {
+			@include hover(submitButtonHeader);
+		}
+		&:active {
+			@include hover(submitButtonHeader);
+		}
+		&:focus {
+			@include hover(submitButtonHeader);
+		}
 	}
 
 	.imj_cancelButton {
@@ -1058,6 +1067,27 @@ select.imj_metadataEditText {
 // /* Simple Page Browser - used for detail view
 // ================================================== */
 .imj_simplePageBrowser {
+	.imj_backwardButton,
+	.imj_forwardButton {
+		color: $paginator-color;
+		cursor: pointer;
+		
+		&:hover {
+			@include hover('paginatorHover');
+		}
+		&:focus {
+			@include hover('paginatorHover');
+		}
+		&:active {
+			@include disabled('paginatorDisabled');
+		}
+		&.disabled {
+			@include disabled('paginatorDisabled');
+		}
+		&.disabled:hover {
+			@include disabled('paginatorDisabled');
+		}
+	}
 	.imj_backwardButton + .imj_forwardButton {
 		margin-left: 1em;
 	}

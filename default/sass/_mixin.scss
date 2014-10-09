@@ -24,6 +24,10 @@
 		color: $link-color-disabled;
 		cursor: default;
 		border: $button-border-disabled;
+	} @else if $type == paginatorDisabled {
+		color: $paginator-color-disabled;
+		cursor: default;
+		border: none;
 	}
 }
 @mixin hover($type:'') {
@@ -68,6 +72,9 @@
 	} @else if $type == removeButton {
 		color: $button-remove-color-hover;
 		background-color: $button-remove-bgcolor-hover;
+	} @else if $type == paginatorHover {
+		color: $paginator-color-hover;
+		border: none;
 	}
 }
 

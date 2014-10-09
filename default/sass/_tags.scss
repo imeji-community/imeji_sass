@@ -33,12 +33,13 @@ a {
 	}
 
 }
-input {
+
+input, button, [class$=Button] {
+	padding: 0.090909em 0.545454em;
 	color: $input-color;
 	background-color: $input-bgcolor;
 	border: $input-border;
 	@include border-radius($border-radius-default);
-	letter-spacing: 0.06em;
 	
 	&:hover {
 		@include hover('input');
@@ -47,36 +48,58 @@ input {
 		@include hover('input');
 	}
 }
-input[type=button], input[type=submit], input[type=reset], button, [class*=Button] {
-	padding: 0.25em 0.5em;
+input[type="checkbox"], 
+input[type="radio"] {
+	background-color: inherit;
+	border: none;
 }
-input[type="text"], input[type="password"], textarea {
-	padding: 0.25em 0.5em;
-	@include inputfont();
-}
+
+
+
+// input {
+	// color: $input-color;
+	// background-color: $input-bgcolor;
+	// border: $input-border;
+	// @include border-radius($border-radius-default);
+	// letter-spacing: 0.06em;
+	// padding: 0.25em 0.5em;
+	// @include inputfont();
+// 	
+	// &:hover {
+		// @include hover('input');
+	// }
+	// &:focus {
+		// @include hover('input');
+	// }
+// }
+// button, [class*=Button] {
+	// padding: 0.25em 0.5em;
+	// border: $input-border;
+	// @include inputfont();
+// }*/
 /**
 * 1. Address box sizing set to `content-box` in IE 8/9.
 * 2. Remove excess padding in IE 8/9.
 */
-input[type="checkbox"], 
-input[type="radio"] {
-	padding: 0; /* 2 */
-	box-sizing: border-box; /* 1 */
-	background-color: inherit;
-	
-	&:hover {
-		padding: 0; /* 2 */
-		box-sizing: border-box; /* 1 */
-		background-color: inherit;
-		border: none;
-	}
-	&:focus {
-		padding: 0; /* 2 */
-		box-sizing: border-box; /* 1 */
-		background-color: inherit;
-		border: none;
-	}
-}
+// input[type="checkbox"], 
+// input[type="radio"] {
+// //	padding: 0; /* 2 */
+	// box-sizing: border-box; /* 1 */
+	// background-color: inherit;
+// 	
+	// &:hover {
+		// padding: 0; /* 2 */
+		// box-sizing: border-box; /* 1 */
+		// background-color: inherit;
+		// border: none;
+	// }
+	// &:focus {
+		// padding: 0; /* 2 */
+		// box-sizing: border-box; /* 1 */
+		// background-color: inherit;
+		// border: none;
+	// }
+// }*/
 select {
 	max-width: 100%;
 	border: $select-border;

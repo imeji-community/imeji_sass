@@ -23,3 +23,7 @@ output_style = :compact
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+
+# Use sensible defaults for your current environment.
+# One of: development (default), production
+environment = :production

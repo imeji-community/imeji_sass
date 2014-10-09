@@ -221,6 +221,9 @@ $breadcrump-overlay-bgcolor: $body-bgcolor; // equals 292929
 
 
 // PAGINATOR
+$paginator-color: $link-color;
+$paginator-color-hover: $link-color-hover;
+$paginator-color-disabled: $link-color-disabled;
 $paginator-bordertop-style: $border-style-default;
 
 
