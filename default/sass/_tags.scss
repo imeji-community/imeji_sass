@@ -39,7 +39,6 @@ input {
 	border: $input-border;
 	@include border-radius($border-radius-default);
 	letter-spacing: 0.06em;
-	vertical-align: top;
 	
 	&:hover {
 		@include hover('input');
@@ -55,11 +54,30 @@ input[type="text"], input[type="password"], textarea {
 	padding: 0.25em 0.5em;
 	@include inputfont();
 }
-input[type="checkbox"], input[ŧype="radio"] {
+/**
+* 1. Address box sizing set to `content-box` in IE 8/9.
+* 2. Remove excess padding in IE 8/9.
+*/
+input[type="checkbox"], 
+input[type="radio"] {
+	padding: 0; /* 2 */
+	box-sizing: border-box; /* 1 */
 	background-color: inherit;
+	
+	&:hover {
+		padding: 0; /* 2 */
+		box-sizing: border-box; /* 1 */
+		background-color: inherit;
+		border: none;
+	}
+	&:focus {
+		padding: 0; /* 2 */
+		box-sizing: border-box; /* 1 */
+		background-color: inherit;
+		border: none;
+	}
 }
 select {
-	height: 2.090909em;
 	max-width: 100%;
 	border: $select-border;
 	@include border-radius($border-radius-default);

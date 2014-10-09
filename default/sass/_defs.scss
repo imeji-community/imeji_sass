@@ -782,8 +782,6 @@ select.imj_metadataEditText {
 	
 	input[type=radio] {
 		margin: 0.090909em 0 0 0.090909em;
-		border: none;
-		background-color: inherit;
 	}
 	
 	input[type=radio] + label {
@@ -1080,6 +1078,7 @@ select.imj_metadataEditText {
 		padding: 0 1em;
 		background-color: transparent;
 		border: 0 none;
+		font-size: 1em;
 		color: $paginator-pagenumber-color;
 	}
 	
