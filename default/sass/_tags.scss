@@ -34,8 +34,9 @@ a {
 
 }
 
-input, button, [class$=Button] {
-	padding: 0.090909em 0.545454em;
+input, button {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 	color: $input-color;
 	background-color: $input-bgcolor;
 	border: $input-border;
@@ -54,6 +55,19 @@ input[type="radio"] {
 	border: none;
 }
 
+[class$=Button] {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	
+	@include border-radius($border-radius-default);
+	
+	&:hover {
+		@include hover('a');
+	}
+	&:focus {
+		@include hover('a');
+	}
+}
 
 
 // input {

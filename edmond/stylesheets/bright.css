@@ -141,7 +141,6 @@ a.disabled:hover {
 
 /* line 37, ../../default/sass/_tags.scss */
 input, button, [class$=Button] {
-  padding: 0.090909em 0.545454em;
   color: #010101;
   background-color: #F2F2F2;
   border: solid #8D8D8D 0.1em;
@@ -149,20 +148,20 @@ input, button, [class$=Button] {
   -webkit-border-radius: 0.41667em;
   border-radius: 0.41667em;
 }
-/* line 44, ../../default/sass/_tags.scss */
+/* line 43, ../../default/sass/_tags.scss */
 input:hover, button:hover, [class$=Button]:hover {
   color: #010101;
   background-color: #F2F2F2;
   border: solid #D45A00 0.1em;
 }
-/* line 47, ../../default/sass/_tags.scss */
+/* line 46, ../../default/sass/_tags.scss */
 input:focus, button:focus, [class$=Button]:focus {
   color: #010101;
   background-color: #F2F2F2;
   border: solid #D45A00 0.1em;
 }
 
-/* line 51, ../../default/sass/_tags.scss */
+/* line 50, ../../default/sass/_tags.scss */
 input[type="checkbox"],
 input[type="radio"] {
   background-color: inherit;
@@ -173,7 +172,7 @@ input[type="radio"] {
 * 1. Address box sizing set to `content-box` in IE 8/9.
 * 2. Remove excess padding in IE 8/9.
 */
-/* line 103, ../../default/sass/_tags.scss */
+/* line 102, ../../default/sass/_tags.scss */
 select {
   max-width: 100%;
   border: solid #8D8D8D 0.1em;
@@ -182,21 +181,21 @@ select {
   border-radius: 0.41667em;
   background-color: #F2F2F2;
 }
-/* line 109, ../../default/sass/_tags.scss */
+/* line 108, ../../default/sass/_tags.scss */
 select:hover {
   border: solid #D45A00 0.1em;
 }
-/* line 112, ../../default/sass/_tags.scss */
+/* line 111, ../../default/sass/_tags.scss */
 select:focus {
   border: solid #D45A00 0.1em;
 }
 
-/* line 119, ../../default/sass/_tags.scss */
+/* line 118, ../../default/sass/_tags.scss */
 label {
   min-width: 24%;
 }
 
-/* line 122, ../../default/sass/_tags.scss */
+/* line 121, ../../default/sass/_tags.scss */
 p {
   display: block;
   margin: 1em 0;
@@ -210,7 +209,7 @@ body .imj_logo {
   height: 5em;
   padding: 0;
   display: inline-block;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/../css/logo_for_bright.png") 1.3333em 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/../css/logo_for_bright.png") 1.3333em 0 no-repeat;
 }
 /* line 13, ../../default/sass/_icons.scss */
 body .imj_buttonStyleSwitcher {
@@ -221,13 +220,13 @@ body .imj_buttonStyleSwitcher {
   border: 0 none;
   margin: 0 0.727272em;
   outline: none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonMonitorColor_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonMonitorColor_16.png") 0 0 no-repeat;
 }
 /* line 19, ../../default/sass/_icons.scss */
 body .imj_buttonStyleSwitcher:hover {
   border: 0 none;
   outline: none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonMonitorColor_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonMonitorColor_16.png") 0 0 no-repeat;
 }
 /* line 28, ../../default/sass/_icons.scss */
 body .imj_iconTriangleBottomRight_16 {
@@ -236,15 +235,15 @@ body .imj_iconTriangleBottomRight_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat;
 }
 /* line 32, ../../default/sass/_icons.scss */
 body .imj_iconTriangleBottomRight_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat;
 }
 /* line 38, ../../default/sass/_icons.scss */
 body .imj_overlayMenu:hover .imj_iconTriangleBottomRight_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat;
 }
 /* line 44, ../../default/sass/_icons.scss */
 body .imj_iconEyeOpen_16 {
@@ -253,15 +252,15 @@ body .imj_iconEyeOpen_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjEyeOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjEyeOpen_16.png") 0 0 no-repeat;
 }
 /* line 48, ../../default/sass/_icons.scss */
 body .imj_iconEyeOpen_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjEyeOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjEyeOpen_16.png") 0 0 no-repeat;
 }
 /* line 55, ../../default/sass/_icons.scss */
 body a:hover .imj_iconEyeOpen_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjEyeOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjEyeOpen_16.png") 0 0 no-repeat;
 }
 /* line 63, ../../default/sass/_icons.scss */
 body .imj_buttonEdit_16 {
@@ -270,15 +269,15 @@ body .imj_buttonEdit_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjEditPen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjEditPen_16.png") 0 0 no-repeat;
 }
 /* line 67, ../../default/sass/_icons.scss */
 body .imj_buttonEdit_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjEditPen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjEditPen_16.png") 0 0 no-repeat;
 }
 /* line 75, ../../default/sass/_icons.scss */
 body a:hover .imj_buttonEdit_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjEditPen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjEditPen_16.png") 0 0 no-repeat;
 }
 /* line 84, ../../default/sass/_icons.scss */
 body .imj_buttonSortAscending_16 {
@@ -288,11 +287,11 @@ body .imj_buttonSortAscending_16 {
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.5em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
 }
 /* line 89, ../../default/sass/_icons.scss */
 body .imj_buttonSortAscending_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
 }
 /* line 93, ../../default/sass/_icons.scss */
 body .imj_buttonSortDescending_16 {
@@ -302,11 +301,11 @@ body .imj_buttonSortDescending_16 {
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.5em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
 }
 /* line 98, ../../default/sass/_icons.scss */
 body .imj_buttonSortDescending_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
 }
 /* line 106, ../../default/sass/_icons.scss */
 body .imj_buttonOrderByAsc_16 {
@@ -315,11 +314,11 @@ body .imj_buttonOrderByAsc_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
 }
 /* line 110, ../../default/sass/_icons.scss */
 body .imj_buttonOrderByAsc_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
 }
 /* line 114, ../../default/sass/_icons.scss */
 body .imj_buttonOrderByDesc_16 {
@@ -328,19 +327,19 @@ body .imj_buttonOrderByDesc_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
 }
 /* line 118, ../../default/sass/_icons.scss */
 body .imj_buttonOrderByDesc_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
 }
 /* line 126, ../../default/sass/_icons.scss */
 body a:hover .imj_buttonSortDescending_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
 }
 /* line 129, ../../default/sass/_icons.scss */
 body a:hover .imj_buttonSortAscending_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
 }
 /* line 133, ../../default/sass/_icons.scss */
 body select + .imj_buttonOrderByAsc_16,
@@ -357,15 +356,15 @@ body .imj_iconMagnifier_16 {
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.5em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjMagnifierTopLeft_16.png") center center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjMagnifierTopLeft_16.png") center center no-repeat;
 }
 /* line 149, ../../default/sass/_icons.scss */
 body .imj_iconMagnifier_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjMagnifierTopLeft_16.png") center center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjMagnifierTopLeft_16.png") center center no-repeat;
 }
 /* line 156, ../../default/sass/_icons.scss */
 body .imj_overlayMenu:hover .imj_iconMagnifier_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjMagnifierTopLeft_16.png") center center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjMagnifierTopLeft_16.png") center center no-repeat;
 }
 /* line 162, ../../default/sass/_icons.scss */
 body .imj_iconMagnifier_24 {
@@ -374,7 +373,7 @@ body .imj_iconMagnifier_24 {
   width: 2em;
   margin-right: 0.636363em;
   margin-top: -0.1818em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjMagnifierTopLeft_24.png") center center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjMagnifierTopLeft_24.png") center center no-repeat;
 }
 /* line 175, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16 {
@@ -383,19 +382,19 @@ body .imj_buttonBrowseToFirst_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjGotoFirst_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjGotoFirst_16.png") center left no-repeat;
 }
 /* line 179, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjGotoFirst_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjGotoFirst_16.png") center left no-repeat;
 }
 /* line 182, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjGotoFirst_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjGotoFirst_16.png") center left no-repeat;
 }
 /* line 184, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16:hover.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjGotoFirst_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjGotoFirst_16.png") center left no-repeat;
 }
 /* line 190, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16 {
@@ -404,19 +403,19 @@ body .imj_buttonBrowseBackward_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTrianglePrevious_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTrianglePrevious_16.png") center left no-repeat;
 }
 /* line 194, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjTrianglePrevious_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjTrianglePrevious_16.png") center left no-repeat;
 }
 /* line 197, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTrianglePrevious_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTrianglePrevious_16.png") center left no-repeat;
 }
 /* line 199, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16:hover.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjTrianglePrevious_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjTrianglePrevious_16.png") center left no-repeat;
 }
 /* line 205, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16 {
@@ -425,19 +424,19 @@ body .imj_buttonBrowseForward_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTriangleNext_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTriangleNext_16.png") center right no-repeat;
 }
 /* line 209, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjTriangleNext_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjTriangleNext_16.png") center right no-repeat;
 }
 /* line 212, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTriangleNext_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTriangleNext_16.png") center right no-repeat;
 }
 /* line 214, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16:hover.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjTriangleNext_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjTriangleNext_16.png") center right no-repeat;
 }
 /* line 220, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16 {
@@ -446,39 +445,39 @@ body .imj_buttonBrowseToLast_16 {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjGotoLast_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjGotoLast_16.png") center right no-repeat;
 }
 /* line 224, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjGotoLast_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjGotoLast_16.png") center right no-repeat;
 }
 /* line 227, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjGotoLast_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjGotoLast_16.png") center right no-repeat;
 }
 /* line 229, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16:hover.imj_deactivated {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/BBBBBB/imjGotoLast_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/BBBBBB/imjGotoLast_16.png") center right no-repeat;
 }
 /* line 238, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_backwardButton {
   padding-left: 1.5em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTrianglePrevious_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTrianglePrevious_16.png") center left no-repeat;
 }
 /* line 242, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_backwardButton:hover {
   color: #F0F0F0;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTrianglePrevious_16.png") center left no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTrianglePrevious_16.png") center left no-repeat;
 }
 /* line 248, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_forwardButton {
   padding-right: 1.5em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTriangleNext_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTriangleNext_16.png") center right no-repeat;
 }
 /* line 252, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_forwardButton:hover {
   color: #F0F0F0;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTriangleNext_16.png") center right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTriangleNext_16.png") center right no-repeat;
 }
 /* line 261, ../../default/sass/_icons.scss */
 body .imj_buttonAdd_16 {
@@ -488,11 +487,11 @@ body .imj_buttonAdd_16 {
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.181818em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonPlusBorderOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonPlusBorderOpen_16.png") 0 0 no-repeat;
 }
 /* line 266, ../../default/sass/_icons.scss */
 body .imj_buttonAdd_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonPlusBorderOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonPlusBorderOpen_16.png") 0 0 no-repeat;
 }
 /* line 271, ../../default/sass/_icons.scss */
 body .imj_buttonRemove_16 {
@@ -502,39 +501,39 @@ body .imj_buttonRemove_16 {
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.182em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
 }
 /* line 276, ../../default/sass/_icons.scss */
 body .imj_buttonRemove_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
 }
 /* line 282, ../../default/sass/_icons.scss */
 body .imj_collapse .imj_buttonRemove_16 {
   margin-right: 0.272727em;
   vertical-align: top;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
 }
 /* line 287, ../../default/sass/_icons.scss */
 body .imj_collapse .imj_buttonRemove_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
 }
 /* line 292, ../../default/sass/_icons.scss */
 body .imj_collapse:hover .imj_buttonRemove_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
 }
 /* line 299, ../../default/sass/_icons.scss */
 body .imj_expand .imj_buttonAdd_16 {
   margin-right: 0.272727em;
   vertical-align: top;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjButtonPlusBorder_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjButtonPlusBorder_16.png") 0 0 no-repeat;
 }
 /* line 304, ../../default/sass/_icons.scss */
 body .imj_expand .imj_buttonAdd_16:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonPlusBorder_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonPlusBorder_16.png") 0 0 no-repeat;
 }
 /* line 309, ../../default/sass/_icons.scss */
 body .imj_expand:hover .imj_buttonAdd_16 {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonPlusBorder_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonPlusBorder_16.png") 0 0 no-repeat;
 }
 /* line 318, ../../default/sass/_icons.scss */
 body .imj_icoStatusWithdrawn_32 {
@@ -543,7 +542,7 @@ body .imj_icoStatusWithdrawn_32 {
   height: 2.90909em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjDocumentDelete_32.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjDocumentDelete_32.png") left center no-repeat;
 }
 /* line 322, ../../default/sass/_icons.scss */
 body .imj_icoStatusPending_32 {
@@ -552,7 +551,7 @@ body .imj_icoStatusPending_32 {
   height: 2.90909em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjDocumentPending_32.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjDocumentPending_32.png") left center no-repeat;
 }
 /* line 326, ../../default/sass/_icons.scss */
 body .imj_icoStatusReleased_32 {
@@ -561,7 +560,7 @@ body .imj_icoStatusReleased_32 {
   height: 2.90909em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjDocumentPublished_32.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjDocumentPublished_32.png") left center no-repeat;
 }
 /* line 333, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow {
@@ -572,11 +571,11 @@ body .imj_entryPagePreviewTiledListLinkArrow {
   vertical-align: middle;
   border: 0 none;
   margin-top: 1em;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjArrowThinRight_24.png") top right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjArrowThinRight_24.png") top right no-repeat;
 }
 /* line 339, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjArrowThinRight_24.png") top right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjArrowThinRight_24.png") top right no-repeat;
 }
 /* line 342, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow:after {
@@ -585,7 +584,7 @@ body .imj_entryPagePreviewTiledListLinkArrow:after {
 }
 /* line 349, ../../default/sass/_icons.scss */
 body a:hover .imj_entryPagePreviewTiledListLinkArrow {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjArrowThinRight_24.png") top right no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjArrowThinRight_24.png") top right no-repeat;
 }
 
 /* line 4, ../../default/sass/_defs.scss */
@@ -3372,22 +3371,22 @@ body .ui-datepicker-next {
   cursor: pointer;
   padding-right: 1.454545em;
   display: inline-block;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTriangleNext_16.png") right center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTriangleNext_16.png") right center no-repeat;
 }
 /* line 215, ../../default/sass/_mixin.scss */
 body .ui-datepicker-next:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTriangleNext_16.png") right center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTriangleNext_16.png") right center no-repeat;
 }
 /* line 219, ../../default/sass/_mixin.scss */
 body .ui-datepicker-prev {
   padding-left: 1.454545em;
   display: inline-block;
   cursor: pointer;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTrianglePrevious_16.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTrianglePrevious_16.png") left center no-repeat;
 }
 /* line 225, ../../default/sass/_mixin.scss */
 body .ui-datepicker-prev:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTrianglePrevious_16.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTrianglePrevious_16.png") left center no-repeat;
 }
 /* line 229, ../../default/sass/_mixin.scss */
 body .ui-datepicker-title {
@@ -3468,22 +3467,22 @@ body .imj_siteWrapper .ui-datepicker-next {
   cursor: pointer;
   padding-right: 1.454545em;
   display: inline-block;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTriangleNext_16.png") right center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTriangleNext_16.png") right center no-repeat;
 }
 /* line 215, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .ui-datepicker-next:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTriangleNext_16.png") right center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTriangleNext_16.png") right center no-repeat;
 }
 /* line 219, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .ui-datepicker-prev {
   padding-left: 1.454545em;
   display: inline-block;
   cursor: pointer;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTrianglePrevious_16.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTrianglePrevious_16.png") left center no-repeat;
 }
 /* line 225, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .ui-datepicker-prev:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTrianglePrevious_16.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTrianglePrevious_16.png") left center no-repeat;
 }
 /* line 229, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .ui-datepicker-title {
@@ -3599,14 +3598,14 @@ body .imj_siteWrapper .imj_siteFooter .ui-datepicker-next {
   cursor: pointer;
   padding-right: 1.454545em;
   display: inline-block;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTriangleNext_16.png") right center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTriangleNext_16.png") right center no-repeat;
 }
 /* line 215, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .imj_siteHeader .ui-datepicker-next:hover,
 body .imj_siteWrapper .imj_contentSubMenu .ui-datepicker-next:hover,
 body .imj_siteWrapper .imj_mainContentWrapper .ui-datepicker-next:hover,
 body .imj_siteWrapper .imj_siteFooter .ui-datepicker-next:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTriangleNext_16.png") right center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTriangleNext_16.png") right center no-repeat;
 }
 /* line 219, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .imj_siteHeader .ui-datepicker-prev,
@@ -3616,14 +3615,14 @@ body .imj_siteWrapper .imj_siteFooter .ui-datepicker-prev {
   padding-left: 1.454545em;
   display: inline-block;
   cursor: pointer;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D45A00/imjTrianglePrevious_16.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D45A00/imjTrianglePrevious_16.png") left center no-repeat;
 }
 /* line 225, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .imj_siteHeader .ui-datepicker-prev:hover,
 body .imj_siteWrapper .imj_contentSubMenu .ui-datepicker-prev:hover,
 body .imj_siteWrapper .imj_mainContentWrapper .ui-datepicker-prev:hover,
 body .imj_siteWrapper .imj_siteFooter .ui-datepicker-prev:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjTrianglePrevious_16.png") left center no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjTrianglePrevious_16.png") left center no-repeat;
 }
 /* line 229, ../../default/sass/_mixin.scss */
 body .imj_siteWrapper .imj_siteHeader .ui-datepicker-title,
@@ -3782,9 +3781,9 @@ body .imj_siteWrapper .plupload_delete .plupload_file_action a {
   height: 1.45455em;
   vertical-align: middle;
   border: 0 none;
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/D80000/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/D80000/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
 }
 /* line 127, ../../default/sass/_jQueryOverrides.scss */
 body .imj_siteWrapper .plupload_delete .plupload_file_action a:hover {
-  background: transparent url("/imeji/jsf/javax.faces.resource/imj_iconset/101010/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
+  background: transparent url("/imeji/resources/imj_iconset/101010/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
 }

@@ -51,11 +51,15 @@ a:active { color: #6CAE2F; }
 a.disabled { color: #BBBBBB; cursor: default; border: solid transparent 0.1em; }
 a.disabled:hover { color: #BBBBBB; cursor: default; border: solid transparent 0.1em; }
 
-input, button, [class$=Button] { padding: 0.090909em 0.545454em; color: #000000; background-color: #F0F0F0; border: solid transparent 0.1em; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
-input:hover, button:hover, [class$=Button]:hover { color: #000000; background-color: #F0F0F0; border: solid #6CAE2F 0.1em; }
-input:focus, button:focus, [class$=Button]:focus { color: #000000; background-color: #F0F0F0; border: solid #6CAE2F 0.1em; }
+input, button { padding-left: 0.5em; padding-right: 0.5em; color: #000000; background-color: #F0F0F0; border: solid transparent 0.1em; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
+input:hover, button:hover { color: #000000; background-color: #F0F0F0; border: solid #6CAE2F 0.1em; }
+input:focus, button:focus { color: #000000; background-color: #F0F0F0; border: solid #6CAE2F 0.1em; }
 
 input[type="checkbox"], input[type="radio"] { background-color: inherit; border: none; }
+
+[class$=Button] { padding-left: 0.5em; padding-right: 0.5em; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
+[class$=Button]:hover { color: #F0F0F0; }
+[class$=Button]:focus { color: #F0F0F0; }
 
 /**
 * 1. Address box sizing set to `content-box` in IE 8/9.
