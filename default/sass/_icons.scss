@@ -7,7 +7,7 @@ body {
 		height: $logo-height;
 		padding: 0;
 		display: inline-block;
-		@include backgroundIcon($logo-file, logo, $logo-position-top, $logo-position-left);
+		@include backgroundIcon($logo-file, logo, $logo-position-horizontal, $logo-position-vertical);
 	}
 	
 	.imj_buttonStyleSwitcher {
