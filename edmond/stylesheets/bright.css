@@ -1275,9 +1275,9 @@ h4.imj_sectionHeadline {
 /* line 539, ../../default/sass/_defs.scss */
 .imj_imageStack {
   border: 2px solid #8D8D8D;
-  -moz-box-shadow: 0 0.54545em 0.54545em #8D8D8D;
-  -webkit-box-shadow: 0 0.54545em 0.54545em #8D8D8D;
-  box-shadow: 0 0.54545em 0.54545em #8D8D8D;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   float: left;
   height: 100px;
   margin: 15px;
@@ -1304,9 +1304,9 @@ h4.imj_sectionHeadline {
   top: -2px;
   border: 2px solid #8D8D8D;
   background: none repeat scroll 0 0 #101010;
-  -moz-box-shadow: 0 0.54545em 0.54545em #8D8D8D;
-  -webkit-box-shadow: 0 0.54545em 0.54545em #8D8D8D;
-  box-shadow: 0 0.54545em 0.54545em #8D8D8D;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
@@ -1322,9 +1322,9 @@ h4.imj_sectionHeadline {
   top: -2px;
   border: 2px solid #8D8D8D;
   background: none repeat scroll 0 0 #D6D8D7;
-  -moz-box-shadow: 0 0.54545em 0.54545em #8D8D8D;
-  -webkit-box-shadow: 0 0.54545em 0.54545em #8D8D8D;
-  box-shadow: 0 0.54545em 0.54545em #8D8D8D;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   -moz-transform: rotate(4deg);
   -ms-transform: rotate(4deg);
   -webkit-transform: rotate(4deg);
@@ -1552,7 +1552,7 @@ select.imj_metadataEditText {
 /* line 755, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInput {
   width: 16em;
-  border: solid #F2F2F2 0.1em;
+  border: solid #FFFFFF 0.1em;
   -moz-border-radius: 0.45455em 0 0 0.45455em;
   -webkit-border-radius: 0.45455em;
   border-radius: 0.45455em 0 0 0.45455em;

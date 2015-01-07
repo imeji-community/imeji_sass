@@ -173,7 +173,7 @@ $input-border-disabled: $input-border;
 
 
 // PAGE HEADER INPUT FIELDS
-$pageheader-search-input-border: $input-border-style $body-bgcolor $input-border-width;
+$pageheader-search-input-border: $input-border-style $input-bgcolor $input-border-width;
 
 $pageheader-search-input-border-hover: $input-border-style $link-color $input-border-width;
 
@@ -361,7 +361,7 @@ $imgstack-border-style: 2px solid #8D8D8D;
 $imgstack-background-style-before: none repeat scroll 0 0 #101010;
 $imgstack-background-style-after: none repeat scroll 0 0 #D6D8D7;
 $imgstack-background-style: none repeat scroll 0 0 #BBBBBB;
-$imgstack-shadow: 0 0.545454em 0.545454em #8D8D8D;
+$imgstack-shadow: none;
 
 
 
