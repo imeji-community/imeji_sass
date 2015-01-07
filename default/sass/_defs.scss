@@ -754,8 +754,19 @@ select.imj_metadataEditText {
 	
 	.imj_simpleSearchInput {
 		width: 16em;
+		border: $pageheader-search-input-border;
 		@include border-radius(0.454545em 0 0 0.454545em);
 		vertical-align: top;
+		
+		&:hover {
+			@include hover(searchInputHeader);
+		}
+		&:active {
+			@include hover(searchInputHeader);
+		}
+		&:focus {
+			@include hover(searchInputHeader);
+		}
 	}
 	
 	.imj_simpleSearchButtonSubmit {

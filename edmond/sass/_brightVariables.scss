@@ -26,7 +26,7 @@ $color15: #BBBBBB;	// grey
 // ICONS
 // $jsf-icon-path: "http://10.20.2.22:8080/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for development
 // $jsf-icon-path: "/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for production
-$jsf-icon-path: "/imeji/resources/imj_iconset/";	// path for production
+$jsf-icon-path: "http://localhost/";
 $icon-colorfolder-default: "D45A00/";
 $icon-colorfolder-hover: "101010/";
 $icon-colorfolder-disabled: "BBBBBB/";
@@ -36,9 +36,7 @@ $icon-colorfolder-error: "D80000/";
 
 // LOGO
 $jsf-logo-path: $jsf-icon-path;	// for development
-$logo-file: "../css/logo_for_bright.png";	// for development
-// $jsf-logo-path: '';
-// $logo-file: "../logo_for_bright.png";
+$logo-file: "logo/logo_for_bright.png";	// for development
 $logo-position-horizontal: 1.3333em;
 $logo-position-vertical: 0;
 $logo-width: 21em;
@@ -146,12 +144,12 @@ $button-remove-color-hover: #F0F0F0;
 $button-remove-bgcolor-hover: #990000;
 
 // PAGE HEADER BUTTONS
-$pageheader-button-submit-color: #101010;
-$pageheader-button-submit-bgcolor: #D6DBD7;
+$pageheader-button-submit-color: $button-color;
+$pageheader-button-submit-bgcolor: $button-bgcolor;
 $pageheader-button-submit-border: $button-border-style $pageheader-button-submit-bgcolor $button-border-width;
 
-$pageheader-button-submit-color-hover: #101010;
-$pageheader-button-submit-bgcolor-hover: #C9CBC6;
+$pageheader-button-submit-color-hover: $button-color-hover;
+$pageheader-button-submit-bgcolor-hover: $button-bgcolor-hover;
 $pageheader-button-submit-border-hover: $button-border-style $pageheader-button-submit-bgcolor-hover $button-border-width;
 
 
@@ -161,7 +159,7 @@ $input-border-width: $border-width-default;
 $input-border-style: solid;
 
 $input-color: #010101;
-$input-bgcolor: #F2F2F2;
+$input-bgcolor: #FFFFFF;
 $input-border: $input-border-style #8D8D8D $input-border-width;
 
 $input-color-hover: $input-color;
@@ -171,6 +169,13 @@ $input-border-hover: $input-border-style $link-color $input-border-width;
 $input-color-disabled: #444444;
 $input-bgcolor-disabled: inherit;
 $input-border-disabled: $input-border;
+
+
+
+// PAGE HEADER INPUT FIELDS
+$pageheader-search-input-border: $input-border-style $body-bgcolor $input-border-width;
+
+$pageheader-search-input-border-hover: $input-border-style $link-color $input-border-width;
 
 
 

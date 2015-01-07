@@ -51,6 +51,8 @@
 		color: $button-submit-color-hover;
 		background-color: $button-submit-bgcolor-hover;
 		border: $button-submit-border-hover;
+	} @else if $type == searchInputHeader {
+		border: $pageheader-search-input-border-hover;
 	} @else if $type == submitButtonHeader {
 		color: $pageheader-button-submit-color-hover;
 		background-color: $pageheader-button-submit-bgcolor-hover;
