@@ -707,13 +707,20 @@ select.imj_metadataEditText {
 			margin: 0;
 		}
 	}
+	
+	.imj_admindataLabel {
+		@include datasetParam(label);
+	}
+	.imj_admindataValue {
+		@include datasetParam(value);
+	}
 }
 .imj_admindataCheckbox {
 	margin-left: 0;
 }
 .imj_admindataValue {
 	.imj_additionalCodeSnippet {	// used in Config.xhtml
-		width: 25em;
+		width: 100%;
 		min-height: 7em;
 		resize: vertical;
 	}
@@ -928,7 +935,7 @@ select.imj_metadataEditText {
 
 	.imj_logicalSearchGroup {
 		white-space: nowrap;
-		margin-right: 5%;
+		margin-right: 1.8%;
 	}
 	.imj_searchUnit {
 		width: 100%;
@@ -971,11 +978,24 @@ select.imj_metadataEditText {
 				}
 			}
 			.imj_searchInput {
+				
 				> input {
 					width: 20em;
 				}
 			}
+			.imj_searchInputValue{
+				margin-bottom: 1em;
+			}
+			
+			input[type="checkbox"] + label {
+				margin-left: 0.181818em;
+				margin-right: 1em;
+			}
 		}
+	}
+	.imj_ajaxChangeElementButton,
+	.imj_ajaxUpdateElementButton {
+		display: none;
 	}
 }
 
@@ -1742,7 +1762,10 @@ iframe#twitter-widget-0 div.root div.stream {
 	padding: 0 0 2em 0;
 }
 
-
+// /* === Config Pages ===
+// *  Users.xhtml
+// * Config.xhtml
+// * ============================================ */
 .imj_userConfig {
 	.imj_adminPanel {
 		display: inline-block;
@@ -1774,8 +1797,9 @@ iframe#twitter-widget-0 div.root div.stream {
 		display: inline-block;
 		margin: 0.5em 0;
 	}
-
+	
 	.imj_admindataValueEntry {
+		
 		+ .imj_editButton {
 			float:right;
 		}
@@ -1787,8 +1811,28 @@ iframe#twitter-widget-0 div.root div.stream {
 		}
 	}
 }
-	
 
+// Config.xhtml
+.imj_setupConfig {
+	
+	.imj_admindataValue {
+		.imj_admindataEdit {
+			width: 100%;
+		}
+	}
+	
+	.imj_adminPanel {
+		.imj_content {
+		
+			.imj_admindataSet {
+				
+				.imj_submitPanel {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
 
 
 

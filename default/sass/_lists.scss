@@ -47,6 +47,7 @@
 		min-width: 1.5em;
 		display: inline-block;
 	}
+	/*
 	.imj_statusArea {
 		width: 16%;
 		min-width: 9em;
@@ -59,6 +60,23 @@
 			margin: 0.5em 0;
 			text-align: center;
 		}
+	}
+	*/
+	.imj_statusArea {
+		width: 2.181818em;
+		float: right;
+		margin-right: -2.75em;
+		
+		> *[class*="imj_icon"] {
+			margin-top: 0.25em;
+			margin-bottom: 0.5em;
+		}
+		
+		&:after {
+			clear: both;
+			content: "";
+		}
+		
 	}
 	.imj_listFooter {
 		border-top: $biblist-separator-horizontal;
@@ -124,11 +142,26 @@
 				padding-top: 0.75em;
 				vertical-align: top;
 			}
-			.imj_informationContent {
+			.imj_itemContent {
 				width: 77.25%;
 				display: inline-block;
 				vertical-align: top;
-
+				
+				.imj_metadataContent {
+					width: 100%;
+				}
+				
+				.imj_descriptionArea {
+					p {
+						margin: 0;
+					}
+				}
+				p {
+					&.imj_descriptionArea {
+						margin: 0;
+					}
+				}
+				
 				.imj_metadataSet {
 					padding-bottom: 0.25em;
 
@@ -145,11 +178,9 @@
 				}
 				
 				.imj_additionalInfoArea {
-					.imj_metadataContent {
-						display: none;
-						padding-top: 0.5em;
+					display: none;
+					padding-top: 0.5em;
 					
-					}
 					.imj_displaySwitchArea {
 						a {
 							cursor: pointer;
@@ -560,6 +591,7 @@
 // * UserCreate.xhtml
 // * Users.xhtml
 // * AdminStorage.xhtml
+// * Config.xhtml
 // =====================================================================
 .imj_administrationTiledList {
 	width: 91.95%;
@@ -623,4 +655,48 @@
 		}
 	}
 }	// end of imj_administrationTiledList
+
+.imj_fileTypeConfig {
+	width: 100%;
+	
+	
+	
+	.imj_fileTypeConfigList {
+		width: 100%;
+		margin-top: 0.5em;
+		
+		.imj_fileTypeDescription,
+		.imj_fileTypeValueDescription {
+			width: 46.5%;
+			padding: 0 0.5em;
+			margin-top: 0;
+			display: inline-block;
+		}
+		
+		.imj_fileTypeDescription {
+			margin-right: 1%;
+		}
+		
+		.imj_fileTypeInput {
+			width: 46.5%;
+			margin-right: 1%;
+			
+			input {
+				width: 100%;
+			}
+		}
+		.imj_fileTypeValueInput {
+			width: 46.5%;
+			
+			input {
+				width: 100%;
+			}
+		}
+		
+		.imj_submitPanel {
+			margin-top: 0;
+			margin-bottom: 1em;
+		}
+	}
+}
 

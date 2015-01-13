@@ -233,8 +233,8 @@ body .imj_logo {
 /* line 13, ../../default/sass/_icons.scss */
 body .imj_buttonStyleSwitcher {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   margin: 0 0.727272em;
@@ -250,8 +250,8 @@ body .imj_buttonStyleSwitcher:hover {
 /* line 28, ../../default/sass/_icons.scss */
 body .imj_iconTriangleBottomRight_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat;
@@ -267,8 +267,8 @@ body .imj_overlayMenu:hover .imj_iconTriangleBottomRight_16 {
 /* line 44, ../../default/sass/_icons.scss */
 body .imj_iconEyeOpen_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjEyeOpen_16.png") 0 0 no-repeat;
@@ -284,8 +284,8 @@ body a:hover .imj_iconEyeOpen_16 {
 /* line 63, ../../default/sass/_icons.scss */
 body .imj_buttonEdit_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjEditPen_16.png") 0 0 no-repeat;
@@ -301,8 +301,8 @@ body a:hover .imj_buttonEdit_16 {
 /* line 84, ../../default/sass/_icons.scss */
 body .imj_buttonSortAscending_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.5em;
@@ -315,8 +315,8 @@ body .imj_buttonSortAscending_16:hover {
 /* line 93, ../../default/sass/_icons.scss */
 body .imj_buttonSortDescending_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.5em;
@@ -330,7 +330,7 @@ body .imj_buttonSortDescending_16:hover {
 body .imj_buttonOrderByAsc_16 {
   display: inline-block;
   width: 2.36364em;
-  height: 1.45455em;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjButtonTriangleSortAsc_16.png") 0 0 no-repeat;
@@ -343,7 +343,7 @@ body .imj_buttonOrderByAsc_16:hover {
 body .imj_buttonOrderByDesc_16 {
   display: inline-block;
   width: 2.36364em;
-  height: 1.45455em;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjButtonTriangleSortDesc_16.png") 0 0 no-repeat;
@@ -370,8 +370,8 @@ body select + .imj_buttonSortDescending_16 {
 /* line 144, ../../default/sass/_icons.scss */
 body .imj_iconMagnifier_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.5em;
@@ -398,7 +398,7 @@ body .imj_iconMagnifier_24 {
 body .imj_buttonBrowseToFirst_16 {
   display: inline-block;
   width: 2.36364em;
-  height: 1.45455em;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjGotoFirst_16.png") center left no-repeat;
@@ -419,7 +419,7 @@ body .imj_buttonBrowseToFirst_16:hover.imj_deactivated {
 body .imj_buttonBrowseBackward_16 {
   display: inline-block;
   width: 2.36364em;
-  height: 1.45455em;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjTrianglePrevious_16.png") center left no-repeat;
@@ -440,7 +440,7 @@ body .imj_buttonBrowseBackward_16:hover.imj_deactivated {
 body .imj_buttonBrowseForward_16 {
   display: inline-block;
   width: 2.36364em;
-  height: 1.45455em;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjTriangleNext_16.png") center right no-repeat;
@@ -461,7 +461,7 @@ body .imj_buttonBrowseForward_16:hover.imj_deactivated {
 body .imj_buttonBrowseToLast_16 {
   display: inline-block;
   width: 2.36364em;
-  height: 1.45455em;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjGotoLast_16.png") center right no-repeat;
@@ -501,8 +501,8 @@ body .imj_paginator .imj_forwardButton:hover {
 /* line 261, ../../default/sass/_icons.scss */
 body .imj_buttonAdd_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.181818em;
@@ -515,8 +515,8 @@ body .imj_buttonAdd_16:hover {
 /* line 271, ../../default/sass/_icons.scss */
 body .imj_buttonRemove_16 {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   margin-right: 0.182em;
@@ -554,54 +554,106 @@ body .imj_expand .imj_buttonAdd_16:hover {
 body .imj_expand:hover .imj_buttonAdd_16 {
   background: transparent url("http://localhost/F0F0F0/imjButtonPlusBorder_16.png") 0 0 no-repeat;
 }
-/* line 318, ../../default/sass/_icons.scss */
+/* line 315, ../../default/sass/_icons.scss */
+body .imj_iconExpand_16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  border: 0 none;
+  background: transparent url("http://localhost/D45A00/imjArrowAwayText_16.png") 0 0 no-repeat;
+}
+/* line 319, ../../default/sass/_icons.scss */
+body .imj_iconExpand_16:hover {
+  background: transparent url("http://localhost/F0F0F0/imjArrowAwayText_16.png") 0 0 no-repeat;
+}
+/* line 322, ../../default/sass/_icons.scss */
+body .imj_iconExpand_16:focus {
+  background: transparent url("http://localhost/F0F0F0/imjArrowAwayText_16.png") 0 0 no-repeat;
+}
+/* line 327, ../../default/sass/_icons.scss */
+body .imj_iconCollapse_16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  border: 0 none;
+  background: transparent url("http://localhost/D45A00/imjArrowToText_16.png") 0 0 no-repeat;
+}
+/* line 331, ../../default/sass/_icons.scss */
+body .imj_iconCollapse_16:hover {
+  background: transparent url("http://localhost/F0F0F0/imjArrowToText_16.png") 0 0 no-repeat;
+}
+/* line 334, ../../default/sass/_icons.scss */
+body .imj_iconCollapse_16:focus {
+  background: transparent url("http://localhost/F0F0F0/imjArrowToText_16.png") 0 0 no-repeat;
+}
+/* line 343, ../../default/sass/_icons.scss */
+body .imj_iconStatusPrivate_24 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  border: 0 none;
+  background: transparent url("http://localhost/F0F0F0/imjLocked_24.png") left center no-repeat;
+}
+/* line 347, ../../default/sass/_icons.scss */
+body .imj_iconStatusShareable_24 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  border: 0 none;
+  background: transparent url("http://localhost/F0F0F0/imjArrowRightToPeople_24.png") left center no-repeat;
+}
+/* line 356, ../../default/sass/_icons.scss */
 body .imj_icoStatusWithdrawn_32 {
   display: inline-block;
-  width: 2.90909em;
-  height: 2.90909em;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/F0F0F0/imjDocumentDelete_32.png") left center no-repeat;
 }
-/* line 322, ../../default/sass/_icons.scss */
+/* line 360, ../../default/sass/_icons.scss */
 body .imj_icoStatusPending_32 {
   display: inline-block;
-  width: 2.90909em;
-  height: 2.90909em;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/F0F0F0/imjDocumentPending_32.png") left center no-repeat;
 }
-/* line 326, ../../default/sass/_icons.scss */
+/* line 364, ../../default/sass/_icons.scss */
 body .imj_icoStatusReleased_32 {
   display: inline-block;
-  width: 2.90909em;
-  height: 2.90909em;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/F0F0F0/imjDocumentPublished_32.png") left center no-repeat;
 }
-/* line 333, ../../default/sass/_icons.scss */
+/* line 371, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow {
   float: right;
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   border: 0 none;
   margin-top: 1em;
   background: transparent url("http://localhost/D45A00/imjArrowThinRight_24.png") top right no-repeat;
 }
-/* line 339, ../../default/sass/_icons.scss */
+/* line 377, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow:hover {
   background: transparent url("http://localhost/F0F0F0/imjArrowThinRight_24.png") top right no-repeat;
 }
-/* line 342, ../../default/sass/_icons.scss */
+/* line 380, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow:after {
   clear: both;
   content: "";
 }
-/* line 349, ../../default/sass/_icons.scss */
+/* line 387, ../../default/sass/_icons.scss */
 body a:hover .imj_entryPagePreviewTiledListLinkArrow {
   background: transparent url("http://localhost/F0F0F0/imjArrowThinRight_24.png") top right no-repeat;
 }
@@ -1508,48 +1560,65 @@ select.imj_metadataEditText {
 .imj_admindataSetEdit .imj_admindataValue .imj_admindataSetEdit {
   margin: 0;
 }
-
 /* line 711, ../../default/sass/_defs.scss */
+.imj_admindataSetEdit .imj_admindataLabel {
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 714, ../../default/sass/_defs.scss */
+.imj_admindataSetEdit .imj_admindataValue {
+  display: inline-block;
+  margin-left: 1.0em;
+  min-width: 60%;
+  max-width: 73.2%;
+  word-wrap: break-word;
+}
+
+/* line 718, ../../default/sass/_defs.scss */
 .imj_admindataCheckbox {
   margin-left: 0;
 }
 
-/* line 715, ../../default/sass/_defs.scss */
+/* line 722, ../../default/sass/_defs.scss */
 .imj_admindataValue .imj_additionalCodeSnippet {
-  width: 25em;
+  width: 100%;
   min-height: 7em;
   resize: vertical;
 }
 
-/* line 721, ../../default/sass/_defs.scss */
+/* line 728, ../../default/sass/_defs.scss */
 .imj_admindataValueCheckBox {
   display: inline-block;
 }
 
-/* line 724, ../../default/sass/_defs.scss */
+/* line 731, ../../default/sass/_defs.scss */
 .imj_admindataValueEntry {
   display: inline-block;
 }
 
-/* line 737, ../../default/sass/_defs.scss */
+/* line 744, ../../default/sass/_defs.scss */
 .imj_siteHeaderMenuSearchSection {
   width: 100%;
   padding: 0;
   margin: 0 0 2em 0;
 }
 
-/* line 745, ../../default/sass/_defs.scss */
+/* line 752, ../../default/sass/_defs.scss */
 .imj_simpleSearch {
   float: right;
   display: inline-block;
   overflow: visible;
 }
-/* line 750, ../../default/sass/_defs.scss */
+/* line 757, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInputWrapper {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 755, ../../default/sass/_defs.scss */
+/* line 762, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInput {
   width: 16em;
   border: solid #FFFFFF 0.1em;
@@ -1558,19 +1627,19 @@ select.imj_metadataEditText {
   border-radius: 0.45455em 0 0 0.45455em;
   vertical-align: top;
 }
-/* line 761, ../../default/sass/_defs.scss */
+/* line 768, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInput:hover {
   border: solid #D45A00 0.1em;
 }
-/* line 764, ../../default/sass/_defs.scss */
+/* line 771, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInput:active {
   border: solid #D45A00 0.1em;
 }
-/* line 767, ../../default/sass/_defs.scss */
+/* line 774, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchInput:focus {
   border: solid #D45A00 0.1em;
 }
-/* line 772, ../../default/sass/_defs.scss */
+/* line 779, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchButtonSubmit {
   margin-left: 0;
   padding-left: 1em;
@@ -1580,25 +1649,25 @@ select.imj_metadataEditText {
   border-radius: 0 0.45455em 0.45455em 0;
   vertical-align: top;
 }
-/* line 780, ../../default/sass/_defs.scss */
+/* line 787, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchButtonSubmit:hover {
   color: #000000;
   background-color: #fd6b00;
   border: solid #fd6b00 0.1em;
 }
-/* line 783, ../../default/sass/_defs.scss */
+/* line 790, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchButtonSubmit:active {
   color: #000000;
   background-color: #fd6b00;
   border: solid #fd6b00 0.1em;
 }
-/* line 786, ../../default/sass/_defs.scss */
+/* line 793, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchButtonSubmit:focus {
   color: #000000;
   background-color: #fd6b00;
   border: solid #fd6b00 0.1em;
 }
-/* line 791, ../../default/sass/_defs.scss */
+/* line 798, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_cancelButton {
   margin: 0;
   padding: 0.181818em 1em 0.272727em 1em;
@@ -1607,21 +1676,21 @@ select.imj_metadataEditText {
   -webkit-border-radius: 0;
   border-radius: 0 0.45455em 0.45455em 0;
 }
-/* line 798, ../../default/sass/_defs.scss */
+/* line 805, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_searchInfoText {
   display: inline-block;
   margin: 0 0.272727em;
 }
-/* line 803, ../../default/sass/_defs.scss */
+/* line 810, ../../default/sass/_defs.scss */
 .imj_simpleSearch input[type=radio] {
   margin: 0.090909em 0 0 0.090909em;
 }
-/* line 807, ../../default/sass/_defs.scss */
+/* line 814, ../../default/sass/_defs.scss */
 .imj_simpleSearch input[type=radio] + label {
   margin-left: 0.181818em;
   margin-right: 1em;
 }
-/* line 812, ../../default/sass/_defs.scss */
+/* line 819, ../../default/sass/_defs.scss */
 .imj_simpleSearch .imj_simpleSearchLinkAdvancedsearch {
   margin-top: 0.181818em;
   margin-left: 2.090909em;
@@ -1629,7 +1698,7 @@ select.imj_metadataEditText {
   display: inline-block;
 }
 
-/* line 824, ../../default/sass/_defs.scss */
+/* line 831, ../../default/sass/_defs.scss */
 .imj_subHeaderMessageSpace {
   clear: both;
   float: left;
@@ -1639,29 +1708,29 @@ select.imj_metadataEditText {
   width: 81.3636em;
 }
 
-/* line 838, ../../default/sass/_defs.scss */
+/* line 845, ../../default/sass/_defs.scss */
 .imj_submitPanel {
   display: inline-block;
   width: 100%;
   text-align: right;
   margin-top: 1em;
 }
-/* line 844, ../../default/sass/_defs.scss */
+/* line 851, ../../default/sass/_defs.scss */
 .imj_submitPanel .imj_submitPanelSeparator {
   margin-left: 0.545454em;
   margin-right: 0.545454em;
 }
-/* line 848, ../../default/sass/_defs.scss */
+/* line 855, ../../default/sass/_defs.scss */
 .imj_submitPanel .imj_submitPanelSeparator + .imj_submitButton {
   margin-left: 0;
 }
-/* line 853, ../../default/sass/_defs.scss */
+/* line 860, ../../default/sass/_defs.scss */
 .imj_submitPanel a,
 .imj_submitPanel input {
   vertical-align: baseline;
 }
 
-/* line 861, ../../default/sass/_defs.scss */
+/* line 868, ../../default/sass/_defs.scss */
 .imj_mainContentWrapper {
   clear: both;
   float: left;
@@ -1673,20 +1742,20 @@ select.imj_metadataEditText {
   background-color: #313131;
 }
 
-/* line 876, ../../default/sass/_defs.scss */
+/* line 883, ../../default/sass/_defs.scss */
 .imj_breadcrumpHistory {
   width: 91.75%;
   padding: 0 4%;
   margin-bottom: 0.5em;
 }
-/* line 881, ../../default/sass/_defs.scss */
+/* line 888, ../../default/sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpTitle {
   margin-right: 0.363636em;
   font-size: 1.090909em;
   line-height: 2em;
   vertical-align: top;
 }
-/* line 887, ../../default/sass/_defs.scss */
+/* line 894, ../../default/sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpItem {
   display: inline-block;
   max-width: 11em;
@@ -1697,7 +1766,7 @@ select.imj_metadataEditText {
   text-overflow: ellipsis;
   vertical-align: top;
 }
-/* line 896, ../../default/sass/_defs.scss */
+/* line 903, ../../default/sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpItem .imj_breadcrumpLongDescription {
   display: none;
   max-width: 10.272727em;
@@ -1705,13 +1774,13 @@ select.imj_metadataEditText {
   white-space: normal;
   background-color: #1A1A1A;
 }
-/* line 904, ../../default/sass/_defs.scss */
+/* line 911, ../../default/sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpItem:hover .imj_breadcrumpLongDescription {
   position: absolute;
   display: block;
   z-index: 10;
 }
-/* line 911, ../../default/sass/_defs.scss */
+/* line 918, ../../default/sass/_defs.scss */
 .imj_breadcrumpHistory .imj_breadcrumpSeparator {
   margin-left: 0.363636em;
   margin-right: 0.363636em;
@@ -1720,124 +1789,138 @@ select.imj_metadataEditText {
   vertical-align: top;
 }
 
-/* line 924, ../../default/sass/_defs.scss */
+/* line 931, ../../default/sass/_defs.scss */
 .imj_advancedSearch {
   width: 91.25%;
   padding: 0 4%;
   border-top: 0.1em solid #D45A00;
 }
-/* line 929, ../../default/sass/_defs.scss */
+/* line 936, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_logicalSearchGroup {
   white-space: nowrap;
-  margin-right: 5%;
+  margin-right: 1.8%;
 }
-/* line 933, ../../default/sass/_defs.scss */
+/* line 940, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit {
   width: 100%;
   margin-top: 1em;
 }
-/* line 937, ../../default/sass/_defs.scss */
+/* line 944, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit > div {
   display: inline-block;
 }
-/* line 940, ../../default/sass/_defs.scss */
+/* line 947, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_logicalConnector {
   min-width: 3em;
 }
-/* line 943, ../../default/sass/_defs.scss */
+/* line 950, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_logicalDetailConnector {
   margin-left: 10%;
   margin-top: 0.5em;
   display: block;
 }
-/* line 948, ../../default/sass/_defs.scss */
+/* line 955, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_inlineButtonGroup {
   min-width: 3.5em;
 }
-/* line 951, ../../default/sass/_defs.scss */
+/* line 958, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_compareLabel {
   padding: 0 0.5em;
 }
-/* line 956, ../../default/sass/_defs.scss */
+/* line 963, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchSelectbox > select {
   max-width: 30em;
 }
-/* line 960, ../../default/sass/_defs.scss */
+/* line 967, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails {
   width: 92%;
   margin-left: 7%;
   margin-top: 0.5em;
 }
-/* line 965, ../../default/sass/_defs.scss */
+/* line 972, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_inlineButtonGroup {
   margin-left: 0.5em;
 }
-/* line 969, ../../default/sass/_defs.scss */
+/* line 976, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchStatement > select {
   width: 15em;
 }
-/* line 974, ../../default/sass/_defs.scss */
+/* line 982, ../../default/sass/_defs.scss */
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchInput > input {
   width: 20em;
 }
+/* line 986, ../../default/sass/_defs.scss */
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchInputValue {
+  margin-bottom: 1em;
+}
+/* line 990, ../../default/sass/_defs.scss */
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails input[type="checkbox"] + label {
+  margin-left: 0.181818em;
+  margin-right: 1em;
+}
+/* line 996, ../../default/sass/_defs.scss */
+.imj_advancedSearch .imj_ajaxChangeElementButton,
+.imj_advancedSearch .imj_ajaxUpdateElementButton {
+  display: none;
+}
 
-/* line 985, ../../default/sass/_defs.scss */
+/* line 1005, ../../default/sass/_defs.scss */
 .imj_searchQueryDisplay {
   width: 91.25%;
   padding: 1% 4%;
 }
-/* line 989, ../../default/sass/_defs.scss */
+/* line 1009, ../../default/sass/_defs.scss */
 .imj_searchQueryDisplay > fieldset {
   padding: 1% 1%;
   border-top-style: inset;
   border-bottom-style: outset;
   border-color: rgba(255, 255, 255, 0.15);
 }
-/* line 995, ../../default/sass/_defs.scss */
+/* line 1015, ../../default/sass/_defs.scss */
 .imj_searchQueryDisplay > fieldset legend {
   margin: 0 1%;
   padding: 0 1%;
   font-size: 110%;
 }
-/* line 1001, ../../default/sass/_defs.scss */
+/* line 1021, ../../default/sass/_defs.scss */
 .imj_searchQueryDisplay .imj_submitButton {
   display: inline-block;
   white-space: nowrap;
   margin-top: 0.272727em;
 }
 
-/* line 1013, ../../default/sass/_defs.scss */
+/* line 1033, ../../default/sass/_defs.scss */
 .imj_selectionInfoPanel {
   width: 91.75%;
   padding: 0 4%;
   margin-bottom: 0.5em;
 }
-/* line 1018, ../../default/sass/_defs.scss */
+/* line 1038, ../../default/sass/_defs.scss */
 .imj_selectionInfoPanel .imj_removeFacetButton {
   margin-left: 0.181818em;
 }
-/* line 1021, ../../default/sass/_defs.scss */
+/* line 1041, ../../default/sass/_defs.scss */
 .imj_selectionInfoPanel .imj_facetSeparator {
   margin-right: 0.181818em;
 }
 
-/* line 1025, ../../default/sass/_defs.scss */
+/* line 1045, ../../default/sass/_defs.scss */
 .imj_selectionInfoPanelItemSelect {
   float: right;
 }
 
-/* line 1032, ../../default/sass/_defs.scss */
+/* line 1052, ../../default/sass/_defs.scss */
 .imj_filterInfoPanel {
   width: 91.75%;
   padding: 0 4%;
   margin-bottom: 0.5em;
 }
-/* line 1037, ../../default/sass/_defs.scss */
+/* line 1057, ../../default/sass/_defs.scss */
 .imj_filterInfoPanel .imj_removeFilterButton {
   margin: 0 0.272727em;
 }
 
-/* line 1044, ../../default/sass/_defs.scss */
+/* line 1064, ../../default/sass/_defs.scss */
 .imj_paginator {
   width: 91.75%;
   margin-top: 1em;
@@ -1846,90 +1929,90 @@ select.imj_metadataEditText {
   text-align: center;
   border-top: 0.1em solid #D45A00;
 }
-/* line 1052, ../../default/sass/_defs.scss */
+/* line 1072, ../../default/sass/_defs.scss */
 .imj_paginator .imj_rangeSelector {
   float: left;
 }
-/* line 1055, ../../default/sass/_defs.scss */
+/* line 1075, ../../default/sass/_defs.scss */
 .imj_paginator .imj_rangeSelector .imj_rangeSelectorLabel {
   margin-left: 0.363636em;
   vertical-align: baseline;
 }
-/* line 1060, ../../default/sass/_defs.scss */
+/* line 1080, ../../default/sass/_defs.scss */
 .imj_paginator .imj_gotoBox {
   float: right;
 }
-/* line 1063, ../../default/sass/_defs.scss */
+/* line 1083, ../../default/sass/_defs.scss */
 .imj_paginator .imj_gotoBox label {
   vertical-align: baseline;
 }
-/* line 1066, ../../default/sass/_defs.scss */
+/* line 1086, ../../default/sass/_defs.scss */
 .imj_paginator .imj_gotoBox .imj_pageInput {
   width: 3em;
   margin-left: 0.363636em;
   margin-right: 0.363636em;
   text-align: center;
 }
-/* line 1072, ../../default/sass/_defs.scss */
+/* line 1092, ../../default/sass/_defs.scss */
 .imj_paginator .imj_gotoBox .imj_submitButton {
   margin-left: 0.545454em;
 }
 
-/* line 1081, ../../default/sass/_defs.scss */
+/* line 1101, ../../default/sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton,
 .imj_simplePageBrowser .imj_forwardButton {
   color: #D45A00;
   cursor: pointer;
 }
-/* line 1086, ../../default/sass/_defs.scss */
+/* line 1106, ../../default/sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton:hover,
 .imj_simplePageBrowser .imj_forwardButton:hover {
   color: #F0F0F0;
   border: none;
 }
-/* line 1089, ../../default/sass/_defs.scss */
+/* line 1109, ../../default/sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton:focus,
 .imj_simplePageBrowser .imj_forwardButton:focus {
   color: #F0F0F0;
   border: none;
 }
-/* line 1092, ../../default/sass/_defs.scss */
+/* line 1112, ../../default/sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton:active,
 .imj_simplePageBrowser .imj_forwardButton:active {
   color: #BBBBBB;
   cursor: default;
   border: none;
 }
-/* line 1095, ../../default/sass/_defs.scss */
+/* line 1115, ../../default/sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton.disabled,
 .imj_simplePageBrowser .imj_forwardButton.disabled {
   color: #BBBBBB;
   cursor: default;
   border: none;
 }
-/* line 1098, ../../default/sass/_defs.scss */
+/* line 1118, ../../default/sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton.disabled:hover,
 .imj_simplePageBrowser .imj_forwardButton.disabled:hover {
   color: #BBBBBB;
   cursor: default;
   border: none;
 }
-/* line 1102, ../../default/sass/_defs.scss */
+/* line 1122, ../../default/sass/_defs.scss */
 .imj_simplePageBrowser .imj_backwardButton + .imj_forwardButton {
   margin-left: 1em;
 }
 
-/* line 1109, ../../default/sass/_defs.scss */
+/* line 1129, ../../default/sass/_defs.scss */
 .imj_singlePageBrowser {
   display: inline-block;
 }
-/* line 1112, ../../default/sass/_defs.scss */
+/* line 1132, ../../default/sass/_defs.scss */
 .imj_singlePageBrowser .imj_separator {
   display: inline-block;
   height: 1.81818181em;
   vertical-align: middle;
 }
-/* line 1118, ../../default/sass/_defs.scss */
+/* line 1138, ../../default/sass/_defs.scss */
 .imj_singlePageBrowser .imj_pageNumber {
   padding: 0 1em;
   background-color: transparent;
@@ -1937,11 +2020,11 @@ select.imj_metadataEditText {
   font-size: 1em;
   color: #D45A00;
 }
-/* line 1126, ../../default/sass/_defs.scss */
+/* line 1146, ../../default/sass/_defs.scss */
 .imj_singlePageBrowser .imj_pageNumber:hover {
   color: #F0F0F0;
 }
-/* line 1130, ../../default/sass/_defs.scss */
+/* line 1150, ../../default/sass/_defs.scss */
 .imj_singlePageBrowser .imj_currentPageNumber {
   padding: 0 1em;
   color: #F0F0F0;
@@ -1949,119 +2032,119 @@ select.imj_metadataEditText {
   border: 0 none;
 }
 
-/* line 1143, ../../default/sass/_defs.scss */
+/* line 1163, ../../default/sass/_defs.scss */
 .imj_imageInfoLayer {
   width: 95.95%;
   padding: 0 2%;
 }
-/* line 1147, ../../default/sass/_defs.scss */
+/* line 1167, ../../default/sass/_defs.scss */
 .imj_imageInfoLayer a {
   margin-left: 1em;
 }
-/* line 1150, ../../default/sass/_defs.scss */
+/* line 1170, ../../default/sass/_defs.scss */
 .imj_imageInfoLayer .imj_metadataValue {
   width: 72.33%;
   margin-left: 0.727272em;
 }
-/* line 1156, ../../default/sass/_defs.scss */
+/* line 1176, ../../default/sass/_defs.scss */
 .imj_imageInfoLayer .highlight_area.imj_highlightDependencies {
   background-color: #3e3e3e;
 }
-/* line 1160, ../../default/sass/_defs.scss */
+/* line 1180, ../../default/sass/_defs.scss */
 .imj_imageInfoLayer .imj_infoNavigation {
   width: 95.95%;
   padding: 0 2%;
   text-align: right;
   margin-bottom: 1.454545em;
 }
-/* line 1166, ../../default/sass/_defs.scss */
+/* line 1186, ../../default/sass/_defs.scss */
 .imj_imageInfoLayer .imj_infoNavigation .imj_buttonEdit_16 {
   margin-right: 0.181818em;
 }
 
-/* line 1177, ../../default/sass/_defs.scss */
+/* line 1197, ../../default/sass/_defs.scss */
 .imj_metadataSubPanel {
   text-align: left;
   width: 91.95%;
   padding: 1% 4%;
 }
-/* line 1182, ../../default/sass/_defs.scss */
+/* line 1202, ../../default/sass/_defs.scss */
 .imj_metadataSubPanel .imj_metadataSubPanelItem {
   font-weight: bold;
   border-bottom: 0.1em solid #BBBBBB;
 }
-/* line 1186, ../../default/sass/_defs.scss */
+/* line 1206, ../../default/sass/_defs.scss */
 .imj_metadataSubPanel .imj_metadataSubPanelItem a {
   padding: 0 0.181818em;
 }
-/* line 1189, ../../default/sass/_defs.scss */
+/* line 1209, ../../default/sass/_defs.scss */
 .imj_metadataSubPanel .imj_metadataSubPanelItem a:hover {
   background-color: #D45A00;
 }
 
-/* line 1207, ../../default/sass/_defs.scss */
+/* line 1227, ../../default/sass/_defs.scss */
 #imj_ajaxFacets {
   padding: 1% 4%;
 }
 
-/* line 1210, ../../default/sass/_defs.scss */
+/* line 1230, ../../default/sass/_defs.scss */
 .imj_facetArea {
   line-height: 175%;
 }
-/* line 1213, ../../default/sass/_defs.scss */
+/* line 1233, ../../default/sass/_defs.scss */
 .imj_facetArea .imj_facetGroup {
   display: inline-block;
   margin-right: 1.545454em;
   padding: 0 0.181818em;
 }
-/* line 1217, ../../default/sass/_defs.scss */
+/* line 1237, ../../default/sass/_defs.scss */
 .imj_facetArea .imj_facetGroup .imj_facetGroupOpener {
   margin-right: 0.181818em;
   display: none;
 }
-/* line 1221, ../../default/sass/_defs.scss */
+/* line 1241, ../../default/sass/_defs.scss */
 .imj_facetArea .imj_facetGroup .imj_facetSeparator {
   margin: 0 0.272727em;
   color: #F0F0F0;
 }
-/* line 1225, ../../default/sass/_defs.scss */
+/* line 1245, ../../default/sass/_defs.scss */
 .imj_facetArea .imj_facetGroup .imj_facetGroupItem {
   white-space: nowrap;
 }
-/* line 1228, ../../default/sass/_defs.scss */
+/* line 1248, ../../default/sass/_defs.scss */
 .imj_facetArea .imj_facetGroup .imj_facetGroupCloser {
   margin-left: 0.181818em;
   display: none;
 }
-/* line 1233, ../../default/sass/_defs.scss */
+/* line 1253, ../../default/sass/_defs.scss */
 .imj_facetArea .imj_facetGroup:hover {
   background-color: #353535;
 }
 
-/* line 1250, ../../default/sass/_defs.scss */
+/* line 1270, ../../default/sass/_defs.scss */
 .imj_loginFormSite {
   width: 91.25%;
   padding: 1% 4%;
   border-top: 0.1em solid #D45A00;
 }
 
-/* line 1261, ../../default/sass/_defs.scss */
+/* line 1281, ../../default/sass/_defs.scss */
 .imj_startpageFooter {
   clear: both;
   width: 100%;
   padding: 1em 0;
 }
-/* line 1265, ../../default/sass/_defs.scss */
+/* line 1285, ../../default/sass/_defs.scss */
 .imj_startpageFooter img {
   margin: 0 1%;
 }
-/* line 1268, ../../default/sass/_defs.scss */
+/* line 1288, ../../default/sass/_defs.scss */
 .imj_startpageFooter .imj_startpageFooterLogos {
   width: 100%;
   padding: 1em 1.25em 1.25em 1em;
   text-align: center;
 }
-/* line 1273, ../../default/sass/_defs.scss */
+/* line 1293, ../../default/sass/_defs.scss */
 .imj_startpageFooter .imj_community_logo {
   padding: 1%;
   margin-right: 5%;
@@ -2070,13 +2153,13 @@ select.imj_metadataEditText {
   border-radius: 0.41667em;
 }
 
-/* line 1280, ../../default/sass/_defs.scss */
+/* line 1300, ../../default/sass/_defs.scss */
 #imj_welcomeInfoWrapper {
   display: inline-block;
   width: 48%;
 }
 
-/* line 1284, ../../default/sass/_defs.scss */
+/* line 1304, ../../default/sass/_defs.scss */
 .imj_welcomeInfo {
   min-height: 34.8333333em;
   width: 37.85%;
@@ -2088,14 +2171,14 @@ select.imj_metadataEditText {
   -webkit-border-radius: 0.41667em;
   border-radius: 0.41667em;
 }
-/* line 1294, ../../default/sass/_defs.scss */
+/* line 1314, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs ul {
   padding: 0;
   margin-top: 0;
   padding-top: 0.333333em;
   list-style-type: none;
 }
-/* line 1300, ../../default/sass/_defs.scss */
+/* line 1320, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs ul li {
   margin-left: 1%;
   padding: 1%;
@@ -2105,54 +2188,54 @@ select.imj_metadataEditText {
   -webkit-border-radius: 0.41667em;
   border-radius: 0.41667em;
 }
-/* line 1308, ../../default/sass/_defs.scss */
+/* line 1328, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabMenu {
   width: 100%;
   text-align: right;
 }
-/* line 1312, ../../default/sass/_defs.scss */
+/* line 1332, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabMenu li {
   background-color: #313131;
 }
-/* line 1314, ../../default/sass/_defs.scss */
+/* line 1334, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabMenu li.ui-state-active {
   background-color: #313131;
 }
-/* line 1316, ../../default/sass/_defs.scss */
+/* line 1336, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabMenu li.ui-state-active a {
   color: #F0F0F0;
 }
-/* line 1322, ../../default/sass/_defs.scss */
+/* line 1342, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent {
   width: 100%;
   min-height: 30em;
   overflow: auto;
   font-size: 110%;
 }
-/* line 1328, ../../default/sass/_defs.scss */
+/* line 1348, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent ul {
   margin-bottom: 3em;
 }
-/* line 1330, ../../default/sass/_defs.scss */
+/* line 1350, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent ul .imj_iconGoTo {
   vertical-align: top;
 }
-/* line 1334, ../../default/sass/_defs.scss */
+/* line 1354, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent li {
   display: block;
   padding-left: 2%;
   background-color: #313131;
 }
-/* line 1339, ../../default/sass/_defs.scss */
+/* line 1359, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs .imj_tabContent .imj_headline, .imj_welcomeInfo .id_tabs .imj_tabContent .imj_sectionHeadline {
   margin-top: 1em;
 }
-/* line 1343, ../../default/sass/_defs.scss */
+/* line 1363, ../../default/sass/_defs.scss */
 .imj_welcomeInfo .id_tabs div.ui-tabs-hide {
   display: none;
 }
 
-/* line 1350, ../../default/sass/_defs.scss */
+/* line 1370, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper {
   float: right;
   margin-top: 2em;
@@ -2160,13 +2243,13 @@ select.imj_metadataEditText {
   display: inline-block;
   vertical-align: top;
 }
-/* line 1357, ../../default/sass/_defs.scss */
+/* line 1377, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel {
   width: 100%;
   min-height: 33.333333em;
   overflow: hidden;
 }
-/* line 1362, ../../default/sass/_defs.scss */
+/* line 1382, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer {
   max-height: 400px;
   overflow: visible;
@@ -2174,7 +2257,7 @@ select.imj_metadataEditText {
   width: 40%;
   margin: 0 auto;
 }
-/* line 1369, ../../default/sass/_defs.scss */
+/* line 1389, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #carousel {
   height: 26.66666666em;
   width: 90%;
@@ -2182,19 +2265,19 @@ select.imj_metadataEditText {
   background: transparent;
   overflow: visible !important;
 }
-/* line 1376, ../../default/sass/_defs.scss */
+/* line 1396, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText {
   display: none;
 }
-/* line 1379, ../../default/sass/_defs.scss */
+/* line 1399, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText .imj_cloudInfoTitle {
   font-weight: bold;
 }
-/* line 1382, ../../default/sass/_defs.scss */
+/* line 1402, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText #title-text, .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer #cloudinfoText #alt-text {
   margin: 0;
 }
-/* line 1386, ../../default/sass/_defs.scss */
+/* line 1406, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper .imj_startpage_carousel .imj_startpage_carouselContainer .dynamicCloudinfo {
   position: absolute;
   z-index: 5600;
@@ -2202,50 +2285,50 @@ select.imj_metadataEditText {
   padding: 0.75em;
 }
 
-/* line 1395, ../../default/sass/_defs.scss */
+/* line 1415, ../../default/sass/_defs.scss */
 .imj_startpage_carouselWrapper:after {
   clear: right;
 }
 
-/* line 1400, ../../default/sass/_defs.scss */
+/* line 1420, ../../default/sass/_defs.scss */
 iframe#twitter-widget-0 {
   width: 99.5%;
   height: 43em;
 }
 
-/* line 1405, ../../default/sass/_defs.scss */
+/* line 1425, ../../default/sass/_defs.scss */
 iframe#twitter-widget-0 div.root div.stream {
   height: 20em !important;
 }
 
-/* line 1420, ../../default/sass/_defs.scss */
+/* line 1440, ../../default/sass/_defs.scss */
 .imj_mediaEntryDetailPage > .imj_metadataList,
 .imj_mediaEntryDetailPage > .imj_mediaDisplayContainer {
   width: 91.25%;
   margin: 1% 4%;
 }
-/* line 1425, ../../default/sass/_defs.scss */
+/* line 1445, ../../default/sass/_defs.scss */
 .imj_mediaEntryDetailPage .highlight_area.imj_highlightDependencies {
   background-color: #353535;
 }
-/* line 1431, ../../default/sass/_defs.scss */
+/* line 1451, ../../default/sass/_defs.scss */
 .imj_mediaEntryDetailPage .imj_mediaDisplayContainer {
   padding: 1em 0;
   margin-bottom: 0.545454em;
   text-align: center;
   border-bottom: 0.1em solid #D45A00;
 }
-/* line 1439, ../../default/sass/_defs.scss */
+/* line 1459, ../../default/sass/_defs.scss */
 .imj_mediaEntryDetailPage .imj_mediaDisplayContainer .imj_optionSet .imj_optionCheckbox {
   vertical-align: bottom;
 }
 
-/* line 1448, ../../default/sass/_defs.scss */
+/* line 1468, ../../default/sass/_defs.scss */
 .imj_mediaEditPanel {
   width: 100%;
   margin-top: 0.545454em;
 }
-/* line 1452, ../../default/sass/_defs.scss */
+/* line 1472, ../../default/sass/_defs.scss */
 .imj_mediaEditPanel .imj_mediaEditPanelItem {
   letter-spacing: 0.045em;
   margin: 1em 0.273em 0 2.000em;
@@ -2253,144 +2336,144 @@ iframe#twitter-widget-0 div.root div.stream {
   -webkit-border-radius: 0.41667em;
   border-radius: 0.41667em;
 }
-/* line 1457, ../../default/sass/_defs.scss */
+/* line 1477, ../../default/sass/_defs.scss */
 .imj_mediaEditPanel .imj_metadataEditButtonArea {
   display: inline-block;
 }
 
-/* line 1472, ../../default/sass/_defs.scss */
+/* line 1492, ../../default/sass/_defs.scss */
 .imj_mediaContainerEditMD {
   margin-bottom: 0.5em;
   padding: 0 4%;
   width: 91.75%;
   border-top: 0.1em solid #D45A00;
 }
-/* line 1478, ../../default/sass/_defs.scss */
+/* line 1498, ../../default/sass/_defs.scss */
 .imj_mediaContainerEditMD .imj_headline {
   width: 100%;
 }
-/* line 1481, ../../default/sass/_defs.scss */
+/* line 1501, ../../default/sass/_defs.scss */
 .imj_mediaContainerEditMD .imj_headline .imj_headline h3 {
   margin: 1% 0;
 }
-/* line 1485, ../../default/sass/_defs.scss */
+/* line 1505, ../../default/sass/_defs.scss */
 .imj_mediaContainerEditMD .imj_authorMetadataSet {
   background-color: #1A1A1A;
   margin-bottom: 0.363636em;
   padding: 0.5em 1%;
 }
-/* line 1490, ../../default/sass/_defs.scss */
+/* line 1510, ../../default/sass/_defs.scss */
 .imj_mediaContainerEditMD .imj_sectionHeadline {
   margin-bottom: 0.545454em;
 }
 
-/* line 1496, ../../default/sass/_defs.scss */
+/* line 1516, ../../default/sass/_defs.scss */
 .imj_editGlobalAssignment {
   width: 91.25%;
   padding: 1% 4%;
   border-top: 0.1em solid #D45A00;
 }
-/* line 1503, ../../default/sass/_defs.scss */
+/* line 1523, ../../default/sass/_defs.scss */
 .imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataLabel label {
   display: inline-block;
   width: 100%;
 }
-/* line 1508, ../../default/sass/_defs.scss */
+/* line 1528, ../../default/sass/_defs.scss */
 .imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataValue {
   width: 69.25%;
   max-width: 69.25%;
 }
-/* line 1514, ../../default/sass/_defs.scss */
+/* line 1534, ../../default/sass/_defs.scss */
 .imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataValue > .imj_singleStatementEdit > textarea.imj_metadataValue {
   width: 100%;
 }
-/* line 1521, ../../default/sass/_defs.scss */
+/* line 1541, ../../default/sass/_defs.scss */
 .imj_editGlobalAssignment .imj_dataAssignmentPanel {
   display: inline-block;
   margin-top: 1em;
 }
-/* line 1526, ../../default/sass/_defs.scss */
+/* line 1546, ../../default/sass/_defs.scss */
 .imj_editGlobalAssignment + .imj_batchEditItemList {
   border-top: 0.1em dashed #D45A00;
 }
 
-/* line 1531, ../../default/sass/_defs.scss */
+/* line 1551, ../../default/sass/_defs.scss */
 .imj_singleStatementEdit {
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 1535, ../../default/sass/_defs.scss */
+/* line 1555, ../../default/sass/_defs.scss */
 .imj_singleStatementEdit .imj_inlineButtonGroup {
   margin-left: 1%;
 }
-/* line 1538, ../../default/sass/_defs.scss */
+/* line 1558, ../../default/sass/_defs.scss */
 .imj_singleStatementEdit textarea {
   resize: vertical;
 }
 
-/* line 1547, ../../default/sass/_defs.scss */
+/* line 1567, ../../default/sass/_defs.scss */
 .imj_ingestWrapper {
   width: 91.25%;
   padding: 0 4% 2em 4%;
   border-top: 0.1em solid #D45A00;
 }
 
-/* line 1552, ../../default/sass/_defs.scss */
+/* line 1572, ../../default/sass/_defs.scss */
 .imj_ingestMessageArea {
   width: 100%;
   border-bottom: 0.1em solid #D45A00;
   margin-bottom: 3em;
 }
 
-/* line 1560, ../../default/sass/_defs.scss */
+/* line 1580, ../../default/sass/_defs.scss */
 .imj_uploadDropArea + .imj_headline {
   border-top: 0.1em dashed #D45A00;
   border-bottom: 0.1em dashed #D45A00;
   margin: 2em 0 1em 0;
 }
-/* line 1565, ../../default/sass/_defs.scss */
+/* line 1585, ../../default/sass/_defs.scss */
 .imj_uploadDropArea + .imj_uploadUrlReference {
   margin-top: 4em;
 }
 
-/* line 1574, ../../default/sass/_defs.scss */
+/* line 1594, ../../default/sass/_defs.scss */
 .imj_upload {
   width: 91.25%;
   padding: 1% 4%;
   border-top: 0.1em solid #D45A00;
 }
-/* line 1579, ../../default/sass/_defs.scss */
+/* line 1599, ../../default/sass/_defs.scss */
 .imj_upload .imj_uploadInputWrapper {
   width: 70%;
   min-width: 30em;
   display: inline-block;
 }
-/* line 1584, ../../default/sass/_defs.scss */
+/* line 1604, ../../default/sass/_defs.scss */
 .imj_upload .imj_uploadDropArea {
   width: 100%;
 }
 
-/* line 1590, ../../default/sass/_defs.scss */
+/* line 1610, ../../default/sass/_defs.scss */
 .imj_uploadUrlReference {
   width: 98%;
   min-width: 30em;
   padding: 0.5% 1%;
   background-color: #2F3B3C;
 }
-/* line 1596, ../../default/sass/_defs.scss */
+/* line 1616, ../../default/sass/_defs.scss */
 .imj_uploadUrlReference label {
   margin-left: 1em;
 }
-/* line 1599, ../../default/sass/_defs.scss */
+/* line 1619, ../../default/sass/_defs.scss */
 .imj_uploadUrlReference input {
   width: 98%;
 }
-/* line 1602, ../../default/sass/_defs.scss */
+/* line 1622, ../../default/sass/_defs.scss */
 .imj_uploadUrlReference .submitPanel {
   padding: 0.545454em 0;
 }
 
-/* line 1608, ../../default/sass/_defs.scss */
+/* line 1628, ../../default/sass/_defs.scss */
 .imj_uploadOptionsArea {
   width: 27%;
   min-height: 33.545454em;
@@ -2400,18 +2483,18 @@ iframe#twitter-widget-0 div.root div.stream {
   vertical-align: top;
   background-color: inherit;
 }
-/* line 1617, ../../default/sass/_defs.scss */
+/* line 1637, ../../default/sass/_defs.scss */
 .imj_uploadOptionsArea .imj_headline,
 .imj_uploadOptionsArea .imj_sectionHeadline {
   margin-bottom: 1em;
 }
 
-/* line 1623, ../../default/sass/_defs.scss */
+/* line 1643, ../../default/sass/_defs.scss */
 .imj_uploadMessageArea {
   width: 100%;
   margin-top: 4em;
 }
-/* line 1627, ../../default/sass/_defs.scss */
+/* line 1647, ../../default/sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileErrorMessageArea,
 .imj_uploadMessageArea .imj_fileSuccessMessageArea {
   width: 48%;
@@ -2419,7 +2502,7 @@ iframe#twitter-widget-0 div.root div.stream {
   display: inline-block;
   vertical-align: top;
 }
-/* line 1634, ../../default/sass/_defs.scss */
+/* line 1654, ../../default/sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileErrorMessageArea .imj_messageList,
 .imj_uploadMessageArea .imj_fileSuccessMessageArea .imj_messageList {
   width: 84%;
@@ -2428,105 +2511,105 @@ iframe#twitter-widget-0 div.root div.stream {
   list-style: decimal-leading-zero;
   overflow: auto;
 }
-/* line 1642, ../../default/sass/_defs.scss */
+/* line 1662, ../../default/sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileErrorMessageArea {
   background-color: #1A1A1A;
 }
-/* line 1645, ../../default/sass/_defs.scss */
+/* line 1665, ../../default/sass/_defs.scss */
 .imj_uploadMessageArea .imj_fileSuccessMessageArea {
   background-color: #1A1A1A;
 }
 
-/* line 1655, ../../default/sass/_defs.scss */
+/* line 1675, ../../default/sass/_defs.scss */
 .imj_shareForm {
   width: 91.25%;
   padding: 1% 4%;
 }
-/* line 1659, ../../default/sass/_defs.scss */
+/* line 1679, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_shareRightsOverview {
   margin-top: 2em;
   padding-top: 1em;
   border-top: 0.1em dashed #D45A00;
 }
-/* line 1665, ../../default/sass/_defs.scss */
+/* line 1685, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable {
   width: 100%;
 }
-/* line 1668, ../../default/sass/_defs.scss */
+/* line 1688, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th,
 .imj_shareForm .imj_rightsTable td {
   width: 6em;
   padding: 0.272727em 0.545454em;
 }
-/* line 1673, ../../default/sass/_defs.scss */
+/* line 1693, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th.imj_rightsAction,
 .imj_shareForm .imj_rightsTable td.imj_rightsAction {
   padding: 0;
   text-align: right;
 }
-/* line 1677, ../../default/sass/_defs.scss */
+/* line 1697, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th.imj_rightsAction input,
 .imj_shareForm .imj_rightsTable td.imj_rightsAction input {
   margin: 0;
 }
-/* line 1683, ../../default/sass/_defs.scss */
+/* line 1703, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th {
   font-weight: bold;
 }
-/* line 1686, ../../default/sass/_defs.scss */
+/* line 1706, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable th:first-child {
   width: 13em;
   text-align: left;
 }
-/* line 1691, ../../default/sass/_defs.scss */
+/* line 1711, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable td {
   padding-bottom: 0.363636em;
 }
-/* line 1696, ../../default/sass/_defs.scss */
+/* line 1716, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable > tbody > tr:hover {
   background-color: #222222;
 }
-/* line 1700, ../../default/sass/_defs.scss */
+/* line 1720, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTable > tbody table {
   width: 100%;
 }
-/* line 1707, ../../default/sass/_defs.scss */
+/* line 1727, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTableForNewUser td {
   padding-right: 0.818181em;
   vertical-align: top;
 }
-/* line 1711, ../../default/sass/_defs.scss */
+/* line 1731, ../../default/sass/_defs.scss */
 .imj_shareForm .imj_rightsTableForNewUser input[type=checkbox] {
   display: block;
 }
 
-/* line 1718, ../../default/sass/_defs.scss */
+/* line 1738, ../../default/sass/_defs.scss */
 #sharePanel fieldset.imj_shareInformationFieldset {
   padding: 1% 1%;
   border-top-style: inset;
   border-bottom-style: outset;
   border-color: rgba(255, 255, 255, 0.15);
 }
-/* line 1724, ../../default/sass/_defs.scss */
+/* line 1744, ../../default/sass/_defs.scss */
 #sharePanel fieldset.imj_shareInformationFieldset > legend {
   margin: 0 1%;
   padding: 0 1%;
   font-size: 110%;
 }
-/* line 1731, ../../default/sass/_defs.scss */
+/* line 1751, ../../default/sass/_defs.scss */
 #sharePanel .imj_shareForm {
   border: 0 none;
   width: 100%;
   padding: 0;
 }
 
-/* line 1740, ../../default/sass/_defs.scss */
+/* line 1760, ../../default/sass/_defs.scss */
 .imj_adminEditPanel {
   margin: 0.5em 0em 1em -1em;
   padding: 0 0 2em 0;
 }
 
-/* line 1747, ../../default/sass/_defs.scss */
+/* line 1770, ../../default/sass/_defs.scss */
 .imj_userConfig .imj_adminPanel {
   display: inline-block;
   float: left;
@@ -2536,7 +2619,7 @@ iframe#twitter-widget-0 div.root div.stream {
   text-align: left;
   vertical-align: top;
 }
-/* line 1757, ../../default/sass/_defs.scss */
+/* line 1780, ../../default/sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation > fieldset {
   padding: 2%;
   border: 0 none;
@@ -2544,28 +2627,37 @@ iframe#twitter-widget-0 div.root div.stream {
   -webkit-border-radius: 0.41667em;
   border-radius: 0.41667em;
 }
-/* line 1762, ../../default/sass/_defs.scss */
+/* line 1785, ../../default/sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation > fieldset .imj_submitPanel {
   margin-top: 0;
 }
-/* line 1767, ../../default/sass/_defs.scss */
+/* line 1790, ../../default/sass/_defs.scss */
 .imj_userConfig .imj_userGlobalInformation + .imj_admindataSetEdit {
   margin: 1em 0;
   padding: 1em 0;
   border-bottom: 0.1em dashed #D45A00;
 }
-/* line 1773, ../../default/sass/_defs.scss */
+/* line 1796, ../../default/sass/_defs.scss */
 .imj_userConfig .imj_userGrantList {
   display: inline-block;
   margin: 0.5em 0;
 }
-/* line 1779, ../../default/sass/_defs.scss */
+/* line 1803, ../../default/sass/_defs.scss */
 .imj_userConfig .imj_admindataValueEntry + .imj_editButton {
   float: right;
 }
-/* line 1785, ../../default/sass/_defs.scss */
+/* line 1809, ../../default/sass/_defs.scss */
 .imj_userConfig .imj_connectedUserGroups .imj_admindataValueEntry {
   display: block;
+}
+
+/* line 1819, ../../default/sass/_defs.scss */
+.imj_setupConfig .imj_admindataValue .imj_admindataEdit {
+  width: 100%;
+}
+/* line 1829, ../../default/sass/_defs.scss */
+.imj_setupConfig .imj_adminPanel .imj_content .imj_admindataSet .imj_submitPanel {
+  margin-top: 0;
 }
 
 /* line 3, ../../default/sass/_menus.scss */
@@ -2769,6 +2861,21 @@ iframe#twitter-widget-0 div.root div.stream {
 /* line 28, ../../default/sass/_lists.scss */
 .imj_bibliographicList {
   width: 100%;
+  	/*
+  	.imj_statusArea {
+  		width: 16%;
+  		min-width: 9em;
+  		text-align: center;
+  		display: inline-block;
+  		overflow: hidden;
+  
+  		.imj_statusIconArea {
+  			width: 100%;
+  			margin: 0.5em 0;
+  			text-align: center;
+  		}
+  	}
+  	*/
 }
 /* line 31, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listHeader,
@@ -2793,48 +2900,50 @@ iframe#twitter-widget-0 div.root div.stream {
   min-width: 1.5em;
   display: inline-block;
 }
-/* line 50, ../../default/sass/_lists.scss */
+/* line 65, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_statusArea {
-  width: 16%;
-  min-width: 9em;
-  text-align: center;
-  display: inline-block;
-  overflow: hidden;
+  width: 2.181818em;
+  float: right;
+  margin-right: -2.75em;
 }
-/* line 57, ../../default/sass/_lists.scss */
-.imj_bibliographicList .imj_statusArea .imj_statusIconArea {
-  width: 100%;
-  margin: 0.5em 0;
-  text-align: center;
+/* line 70, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_statusArea > *[class*="imj_icon"] {
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
 }
-/* line 63, ../../default/sass/_lists.scss */
+/* line 75, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_statusArea:after {
+  clear: both;
+  content: "";
+}
+/* line 81, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listFooter {
   border-top: 0.1em solid #1A1A1A;
 }
-/* line 67, ../../default/sass/_lists.scss */
+/* line 85, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody {
   width: 100%;
 }
-/* line 70, ../../default/sass/_lists.scss */
+/* line 88, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem {
   width: 91.95%;
   padding: 0 4% 1em 4%;
   display: inline-block;
   border-top: 0.1em solid #1A1A1A;
 }
-/* line 76, ../../default/sass/_lists.scss */
+/* line 94, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem:hover {
   background-color: #1A1A1A;
 }
-/* line 79, ../../default/sass/_lists.scss */
+/* line 97, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem.imj_active {
   background-color: #353535;
 }
-/* line 82, ../../default/sass/_lists.scss */
+/* line 100, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem.imj_active:hover {
   background-color: #3e3e3e;
 }
-/* line 86, ../../default/sass/_lists.scss */
+/* line 104, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_previewArea {
   width: 21.5%;
   min-width: 12em;
@@ -2842,92 +2951,104 @@ iframe#twitter-widget-0 div.root div.stream {
   vertical-align: top;
   text-align: center;
 }
-/* line 93, ../../default/sass/_lists.scss */
+/* line 111, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemHeadline {
   padding: 0.5em 0;
   font-size: 120%;
   line-height: 145%;
 }
-/* line 98, ../../default/sass/_lists.scss */
+/* line 116, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemHeadline a {
   display: inline-block;
   max-width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-/* line 104, ../../default/sass/_lists.scss */
+/* line 122, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemHeadline .imj_messageWarn {
   padding: 0 1%;
   margin-right: 0.5454em;
 }
-/* line 109, ../../default/sass/_lists.scss */
+/* line 127, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_metadataLabel {
   font-weight: normal;
 }
-/* line 112, ../../default/sass/_lists.scss */
+/* line 130, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemActionArea {
   width: 100%;
 }
-/* line 115, ../../default/sass/_lists.scss */
+/* line 133, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemActionArea li {
   display: inline-block;
   padding: 0 0.545454em;
 }
-/* line 119, ../../default/sass/_lists.scss */
+/* line 137, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemActionArea + .imj_metadataSet {
   margin-top: 0.5em;
 }
-/* line 123, ../../default/sass/_lists.scss */
+/* line 141, ../../default/sass/_lists.scss */
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_interactiveArea {
   padding-top: 0.75em;
   vertical-align: top;
 }
-/* line 127, ../../default/sass/_lists.scss */
-.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_informationContent {
+/* line 145, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent {
   width: 77.25%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 132, ../../default/sass/_lists.scss */
-.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_informationContent .imj_metadataSet {
+/* line 150, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent .imj_metadataContent {
+  width: 100%;
+}
+/* line 155, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent .imj_descriptionArea p {
+  margin: 0;
+}
+/* line 160, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent p.imj_descriptionArea {
+  margin: 0;
+}
+/* line 165, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent .imj_metadataSet {
   padding-bottom: 0.25em;
 }
-/* line 136, ../../default/sass/_lists.scss */
-.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_informationContent .imj_metadataSet label.imj_metadataLabel {
+/* line 169, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent .imj_metadataSet label.imj_metadataLabel {
   cursor: default;
   min-width: 0;
   width: 24%;
 }
-/* line 142, ../../default/sass/_lists.scss */
-.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_informationContent .imj_metadataSet:hover {
+/* line 175, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent .imj_metadataSet:hover {
   background-color: #353535;
 }
-/* line 148, ../../default/sass/_lists.scss */
-.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_informationContent .imj_additionalInfoArea .imj_metadataContent {
+/* line 180, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent .imj_additionalInfoArea {
   display: none;
   padding-top: 0.5em;
 }
-/* line 154, ../../default/sass/_lists.scss */
-.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_informationContent .imj_additionalInfoArea .imj_displaySwitchArea a {
+/* line 185, ../../default/sass/_lists.scss */
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem .imj_itemContent .imj_additionalInfoArea .imj_displaySwitchArea a {
   cursor: pointer;
 }
 
-/* line 170, ../../default/sass/_lists.scss */
+/* line 201, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listHeader {
   width: 100%;
 }
-/* line 173, ../../default/sass/_lists.scss */
+/* line 204, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listHeader a {
   float: right;
   margin: 0.363636em 0.272727em 0.363636em;
   padding: 0 0.363636em;
 }
-/* line 178, ../../default/sass/_lists.scss */
+/* line 209, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listHeader a:hover {
   color: #F2F2F2;
   background-color: #D45A00;
 }
-/* line 183, ../../default/sass/_lists.scss */
+/* line 214, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listHeader .imj_separator {
   float: right;
   width: 0.090909em;
@@ -2935,49 +3056,49 @@ iframe#twitter-widget-0 div.root div.stream {
   border: solid #D45A00;
   border-width: 1.3em 0 0;
 }
-/* line 190, ../../default/sass/_lists.scss */
+/* line 221, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listHeader .imj_active {
   color: #F2F2F2;
   background-color: #D45A00;
 }
-/* line 196, ../../default/sass/_lists.scss */
+/* line 227, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listBody {
   clear: both;
   width: 100%;
   border-top: 0.1em solid #BBBBBB;
 }
-/* line 201, ../../default/sass/_lists.scss */
+/* line 232, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listBody .imj_entryPageTitle {
   font-size: 1.636em;
   letter-spacing: 0.045em;
   line-height: 130%;
   margin-bottom: 0.455em;
 }
-/* line 207, ../../default/sass/_lists.scss */
+/* line 238, ../../default/sass/_lists.scss */
 .imj_metadataList .imj_listBody .imj_entryPageDescription {
   line-height: 130%;
 }
 
-/* line 217, ../../default/sass/_lists.scss */
+/* line 248, ../../default/sass/_lists.scss */
 .imj_tiledMediaList {
   padding: 1% 4%;
 }
-/* line 220, ../../default/sass/_lists.scss */
+/* line 251, ../../default/sass/_lists.scss */
 .imj_tiledMediaList .imj_listHeader {
   min-height: 2em;
 }
-/* line 223, ../../default/sass/_lists.scss */
+/* line 254, ../../default/sass/_lists.scss */
 .imj_tiledMediaList .imj_listHeader .imj_overlayMenu .imj_menuBody {
   border: 0.18182em outset #F0F0F0;
   -moz-border-radius: 0.41667em;
   -webkit-border-radius: 0.41667em;
   border-radius: 0.41667em;
 }
-/* line 229, ../../default/sass/_lists.scss */
+/* line 260, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody {
   margin: 0 auto;
 }
-/* line 232, ../../default/sass/_lists.scss */
+/* line 263, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem {
   display: inline-block;
   width: 15.75%;
@@ -2987,25 +3108,25 @@ iframe#twitter-widget-0 div.root div.stream {
   vertical-align: top;
   /* general bug fix for webkit browser, because of wrong interpretation in responsive image scaling */
 }
-/* line 240, ../../default/sass/_lists.scss */
+/* line 271, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem label {
   max-width: 100%;
   overflow-x: hidden;
   text-overflow: ellipsis;
   display: inline-block;
 }
-/* line 246, ../../default/sass/_lists.scss */
+/* line 277, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem label.imj_optionLabel {
   white-space: nowrap;
 }
-/* line 252, ../../default/sass/_lists.scss */
+/* line 283, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_optionCheckbox + label.imj_optionLabel {
   max-width: 88%;
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 259, ../../default/sass/_lists.scss */
+/* line 290, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tooltip {
   display: none;
   position: absolute;
@@ -3016,98 +3137,98 @@ iframe#twitter-widget-0 div.root div.stream {
   -webkit-box-shadow: 0 0 1em #F0F0F0;
   box-shadow: 0 0 1em #F0F0F0;
 }
-/* line 269, ../../default/sass/_lists.scss */
+/* line 300, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tooltip .imj_metadataPublicationArea .imj_citation p:first-child {
   margin-top: 0;
   padding-top: 0;
 }
-/* line 276, ../../default/sass/_lists.scss */
+/* line 307, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileThumbnailArea {
   background-color: #2F3B3C;
 }
-/* line 279, ../../default/sass/_lists.scss */
+/* line 310, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileThumbnailArea.imj_selected {
   background-color: #D45A00;
 }
-/* line 282, ../../default/sass/_lists.scss */
+/* line 313, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileThumbnailArea img {
   width: 84%;
   height: 85%;
   padding: 8%;
   margin-top: 3%;
 }
-/* line 291, ../../default/sass/_lists.scss */
+/* line 322, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem:hover .imj_tileThumbnailArea {
   background-color: #D45A00;
 }
-/* line 294, ../../default/sass/_lists.scss */
+/* line 325, ../../default/sass/_lists.scss */
 .imj_tiledMediaList > .imj_listBody .imj_tileItem:hover .imj_tooltip {
   display: block;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 301, ../../default/sass/_lists.scss */
+  /* line 332, ../../default/sass/_lists.scss */
   .imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileThumbnailArea img {
     height: auto;
   }
 }
 
-/* line 313, ../../default/sass/_lists.scss */
+/* line 344, ../../default/sass/_lists.scss */
 .imj_entryPagePreviewTiledList {
   margin-bottom: 0.5em;
   padding: 1% 4%;
   border-top: 0.1em solid #D45A00;
 }
-/* line 318, ../../default/sass/_lists.scss */
+/* line 349, ../../default/sass/_lists.scss */
 .imj_entryPagePreviewTiledList .imj_entryPagePreviewTiledListItem {
   padding: 0.25em;
 }
-/* line 321, ../../default/sass/_lists.scss */
+/* line 352, ../../default/sass/_lists.scss */
 .imj_entryPagePreviewTiledList .imj_entryPagePreviewTiledListLink {
   float: right;
   width: 8em;
 }
-/* line 325, ../../default/sass/_lists.scss */
+/* line 356, ../../default/sass/_lists.scss */
 .imj_entryPagePreviewTiledList .imj_entryPagePreviewTiledListLink:after {
   clear: both;
   content: "";
 }
-/* line 330, ../../default/sass/_lists.scss */
+/* line 361, ../../default/sass/_lists.scss */
 .imj_entryPagePreviewTiledList + .imj_metadataList {
   clear: both;
   padding: 1% 4%;
 }
 
-/* line 341, ../../default/sass/_lists.scss */
+/* line 372, ../../default/sass/_lists.scss */
 .imj_metadataProfileList,
 .imj_metadataListMediaContainer {
   width: 91.25%;
   padding: 0 4%;
   border-top: 0.1em solid #D45A00;
 }
-/* line 347, ../../default/sass/_lists.scss */
+/* line 378, ../../default/sass/_lists.scss */
 .imj_metadataProfileList .imj_listHeader,
 .imj_metadataListMediaContainer .imj_listHeader {
   padding: 1% 0;
 }
-/* line 350, ../../default/sass/_lists.scss */
+/* line 381, ../../default/sass/_lists.scss */
 .imj_metadataProfileList .imj_listHeader .imj_listHeaderMenu,
 .imj_metadataListMediaContainer .imj_listHeader .imj_listHeaderMenu {
   float: right;
   display: inline-block;
 }
-/* line 354, ../../default/sass/_lists.scss */
+/* line 385, ../../default/sass/_lists.scss */
 .imj_metadataProfileList .imj_listHeader .imj_listHeaderMenu a,
 .imj_metadataListMediaContainer .imj_listHeader .imj_listHeaderMenu a {
   margin: 0.363636em 0.27272727em 0.363636em;
   padding: 0 0.363636em;
 }
-/* line 359, ../../default/sass/_lists.scss */
+/* line 390, ../../default/sass/_lists.scss */
 .imj_metadataProfileList .imj_listHeader .imj_headline,
 .imj_metadataListMediaContainer .imj_listHeader .imj_headline {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 364, ../../default/sass/_lists.scss */
+/* line 395, ../../default/sass/_lists.scss */
 .imj_metadataProfileList .imj_sectionHeadline,
 .imj_metadataListMediaContainer .imj_sectionHeadline {
   width: 100%;
@@ -3120,150 +3241,150 @@ iframe#twitter-widget-0 div.root div.stream {
   background-image: -webkit-linear-gradient(left, #1a1a1a 0%, #313131 60%);
   background-image: linear-gradient(to right, #1a1a1a 0%, #313131 60%);
 }
-/* line 378, ../../default/sass/_lists.scss */
+/* line 409, ../../default/sass/_lists.scss */
 .imj_metadataProfileList .imj_metadataProfileItem,
 .imj_metadataListMediaContainer .imj_metadataProfileItem {
   margin-top: 0.545454em;
 }
 
-/* line 385, ../../default/sass/_lists.scss */
+/* line 416, ../../default/sass/_lists.scss */
 .imj_metadataListMediaContainer .imj_listBody .imj_statusIconArea {
   vertical-align: top;
 }
-/* line 392, ../../default/sass/_lists.scss */
+/* line 423, ../../default/sass/_lists.scss */
 .imj_metadataListMediaContainer table.imj_metadataAuthorList thead th {
   font-weight: bold;
 }
-/* line 396, ../../default/sass/_lists.scss */
+/* line 427, ../../default/sass/_lists.scss */
 .imj_metadataListMediaContainer table.imj_metadataAuthorList th, .imj_metadataListMediaContainer table.imj_metadataAuthorList td {
   padding-right: 0.75em;
   vertical-align: top;
 }
-/* line 401, ../../default/sass/_lists.scss */
+/* line 432, ../../default/sass/_lists.scss */
 .imj_metadataListMediaContainer table.imj_metadataAuthorList tbody tr {
   line-height: 200%;
 }
-/* line 408, ../../default/sass/_lists.scss */
+/* line 439, ../../default/sass/_lists.scss */
 .imj_metadataListMediaContainer + .imj_metadataProfileList {
   border-top: 0.1em dashed #D45A00;
 }
 
-/* line 414, ../../default/sass/_lists.scss */
+/* line 445, ../../default/sass/_lists.scss */
 #imj_ajaxWrapper > .imj_metadataListMediaContainer {
   border-top: 0.1em solid #D45A00;
 }
 
-/* line 431, ../../default/sass/_lists.scss */
+/* line 462, ../../default/sass/_lists.scss */
 #imj_ajaxWrapper > .imj_metadataProfileList.imj_edit {
   border-top: 0.1em solid #D45A00;
 }
 
-/* line 439, ../../default/sass/_lists.scss */
+/* line 470, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit > .imj_listHeader > .imj_listHeaderMenu {
   float: none;
   display: inline-block;
 }
-/* line 443, ../../default/sass/_lists.scss */
+/* line 474, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit > .imj_listHeader > .imj_listHeaderMenu > * {
   display: inline;
 }
-/* line 446, ../../default/sass/_lists.scss */
+/* line 477, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit > .imj_listHeader > .imj_listHeaderMenu select {
   margin: 0 0.181818em;
 }
-/* line 451, ../../default/sass/_lists.scss */
+/* line 482, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_metadataTypeSelection {
   width: 9em;
 }
-/* line 454, ../../default/sass/_lists.scss */
+/* line 485, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_metadataLanguageSelection {
   width: 10em;
 }
-/* line 457, ../../default/sass/_lists.scss */
+/* line 488, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_itemHeader {
   width: 98%;
   padding: 0.5% 1%;
 }
-/* line 461, ../../default/sass/_lists.scss */
+/* line 492, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_itemHeader * {
   vertical-align: top;
 }
-/* line 464, ../../default/sass/_lists.scss */
+/* line 495, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_itemHeader .imj_inlineButtonGroup {
   margin-right: 0.272727em;
 }
-/* line 467, ../../default/sass/_lists.scss */
+/* line 498, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_itemHeader .imj_optionList {
   float: right;
   display: inline;
   margin-left: 0.727272em;
 }
-/* line 472, ../../default/sass/_lists.scss */
+/* line 503, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_itemHeader .imj_optionList .imj_optionSet {
   display: inline-block;
 }
-/* line 475, ../../default/sass/_lists.scss */
+/* line 506, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_itemHeader .imj_optionList .imj_optionSet + .imj_optionSet {
   margin-left: 0.545454em;
 }
-/* line 479, ../../default/sass/_lists.scss */
+/* line 510, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_itemHeader .imj_optionList .imj_optionLabel {
   min-width: 0;
   width: auto;
 }
-/* line 486, ../../default/sass/_lists.scss */
+/* line 517, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .statement_area {
   width: 100%;
   overflow: none;
 }
-/* line 490, ../../default/sass/_lists.scss */
+/* line 521, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .dropMetadataActive,
 .imj_metadataProfileList.imj_edit .dropChildActive {
   border-color: #D45A00 !important;
 }
-/* line 494, ../../default/sass/_lists.scss */
+/* line 525, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .drop-hover {
   min-height: 1em;
   background-color: #BBBBBB !important;
 }
-/* line 499, ../../default/sass/_lists.scss */
+/* line 530, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_dropArea {
   display: block;
   min-width: 85%;
 }
-/* line 503, ../../default/sass/_lists.scss */
+/* line 534, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_dropArea .imj_orderInfo {
   display: none;
 }
-/* line 507, ../../default/sass/_lists.scss */
+/* line 538, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .imj_dropArea:hover .imj_orderInfo {
   display: inline;
 }
-/* line 512, ../../default/sass/_lists.scss */
+/* line 543, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .highlight_area {
   border: 0.1em dotted #BBBBBB;
   background-color: #1A1A1A;
 }
-/* line 516, ../../default/sass/_lists.scss */
+/* line 547, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .highlight_area.imj_highlightDependencies,
 .imj_metadataProfileList.imj_edit .highlight_area .imj_highlightDependencies {
   background-color: #353535;
 }
-/* line 520, ../../default/sass/_lists.scss */
+/* line 551, ../../default/sass/_lists.scss */
 .imj_metadataProfileList.imj_edit .highlight_area:hover {
   background-color: #353535;
 }
 
-/* line 532, ../../default/sass/_lists.scss */
+/* line 563, ../../default/sass/_lists.scss */
 .imj_batchEditItemList {
   width: 91.25%;
   padding: 1% 4%;
 }
-/* line 536, ../../default/sass/_lists.scss */
+/* line 567, ../../default/sass/_lists.scss */
 .imj_batchEditItemList .imj_listHeader {
   padding-bottom: 1em;
 }
-/* line 539, ../../default/sass/_lists.scss */
+/* line 570, ../../default/sass/_lists.scss */
 .imj_batchEditItemList .imj_previewArea {
   width: 21.5%;
   min-width: 12em;
@@ -3271,30 +3392,30 @@ iframe#twitter-widget-0 div.root div.stream {
   vertical-align: top;
   text-align: center;
 }
-/* line 546, ../../default/sass/_lists.scss */
+/* line 577, ../../default/sass/_lists.scss */
 .imj_batchEditItemList .imj_informationContent {
   width: 77.25%;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 552, ../../default/sass/_lists.scss */
+/* line 583, ../../default/sass/_lists.scss */
 .imj_batchEditListItem {
   margin-bottom: 1em;
 }
 
-/* line 564, ../../default/sass/_lists.scss */
+/* line 596, ../../default/sass/_lists.scss */
 .imj_administrationTiledList {
   width: 91.95%;
   padding: 2% 4%;
   border-top: 0.1em solid #D45A00;
 }
-/* line 569, ../../default/sass/_lists.scss */
+/* line 601, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_listBody {
   width: 100%;
   text-align: center;
 }
-/* line 574, ../../default/sass/_lists.scss */
+/* line 606, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel {
   display: inline-block;
   max-width: 23%;
@@ -3303,16 +3424,16 @@ iframe#twitter-widget-0 div.root div.stream {
   margin-bottom: 2em;
   text-align: left;
 }
-/* line 582, ../../default/sass/_lists.scss */
+/* line 614, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel h2 {
   font-size: 140%;
   line-height: normal;
 }
-/* line 586, ../../default/sass/_lists.scss */
+/* line 618, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel ul {
   line-height: 150%;
 }
-/* line 589, ../../default/sass/_lists.scss */
+/* line 621, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel .imj_headline {
   text-align: center;
   background-color: #1A1A1A;
@@ -3321,7 +3442,7 @@ iframe#twitter-widget-0 div.root div.stream {
   border-radius: 0.90909em 0.90909em 0 0;
   border: 0.1em solid #1A1A1A;
 }
-/* line 596, ../../default/sass/_lists.scss */
+/* line 628, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel .imj_content {
   padding: 0.454545em 0.81818181em;
   min-height: 10em;
@@ -3330,22 +3451,66 @@ iframe#twitter-widget-0 div.root div.stream {
   border-radius: 0 0 0.90909em 0.90909em;
   border: 0.1em solid #1A1A1A;
 }
-/* line 607, ../../default/sass/_lists.scss */
+/* line 639, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel.imj_storageInformation {
   max-width: 33em;
 }
-/* line 610, ../../default/sass/_lists.scss */
+/* line 642, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel.imj_storageInformation .imj_admindataLabel {
   width: 33%;
 }
-/* line 613, ../../default/sass/_lists.scss */
+/* line 645, ../../default/sass/_lists.scss */
 .imj_administrationTiledList .imj_adminPanel.imj_storageInformation .imj_admindataValue {
   width: 61%;
 }
-/* line 620, ../../default/sass/_lists.scss */
+/* line 652, ../../default/sass/_lists.scss */
 .imj_administrationTiledList.imj_maxWidth .imj_adminPanel {
   width: 100%;
   max-width: none;
+}
+
+/* line 659, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig {
+  width: 100%;
+}
+/* line 664, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList {
+  width: 100%;
+  margin-top: 0.5em;
+}
+/* line 668, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_fileTypeDescription,
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_fileTypeValueDescription {
+  width: 46.5%;
+  padding: 0 0.5em;
+  margin-top: 0;
+  display: inline-block;
+}
+/* line 676, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_fileTypeDescription {
+  margin-right: 1%;
+}
+/* line 680, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_fileTypeInput {
+  width: 46.5%;
+  margin-right: 1%;
+}
+/* line 684, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_fileTypeInput input {
+  width: 100%;
+}
+/* line 688, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_fileTypeValueInput {
+  width: 46.5%;
+}
+/* line 691, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_fileTypeValueInput input {
+  width: 100%;
+}
+/* line 696, ../../default/sass/_lists.scss */
+.imj_fileTypeConfig .imj_fileTypeConfigList .imj_submitPanel {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 /* line 3, ../../default/sass/_jQueryOverrides.scss */
@@ -3809,8 +3974,8 @@ body .imj_siteWrapper .plupload_delete .plupload_file_action {
 /* line 123, ../../default/sass/_jQueryOverrides.scss */
 body .imj_siteWrapper .plupload_delete .plupload_file_action a {
   display: inline-block;
-  width: 1.45455em;
-  height: 1.45455em;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   border: 0 none;
   background: transparent url("http://localhost/D80000/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;

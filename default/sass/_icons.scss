@@ -312,6 +312,44 @@ body {
 		}
 	}
 	
+	.imj_iconExpand_16 {
+		@include iconPreset(16);
+		@include backgroundIcon('imjArrowAwayText_16.png', default);
+		
+		&:hover {
+			@include backgroundIcon('imjArrowAwayText_16.png', hover);
+		}
+		&:focus {
+			@include backgroundIcon('imjArrowAwayText_16.png', hover);
+		}
+	}
+	
+	.imj_iconCollapse_16 {
+		@include iconPreset(16);
+		@include backgroundIcon('imjArrowToText_16.png', default);
+		
+		&:hover {
+			@include backgroundIcon('imjArrowToText_16.png', hover);
+		}
+		&:focus {
+			@include backgroundIcon('imjArrowToText_16.png', hover);
+		}
+	}
+	
+	
+	// /* * Status Icons
+	// e.g. component bibListItem_released.xhtml, bibListItem_draft.xhtml
+	// ================================================================== */
+	.imj_iconStatusPrivate_24 {
+		@include iconPreset(24);
+		@include backgroundIcon('imjLocked_24.png', hover, left, center);
+	}
+	.imj_iconStatusShareable_24 {
+		@include iconPreset(24);
+		@include backgroundIcon('imjArrowRightToPeople_24.png', hover, left, center);
+	}
+	
+	
 	// /* * Status Icons
 	// e.g. component (bibliographicGridList.xhtml - logged in)
 	// ================================================== */
