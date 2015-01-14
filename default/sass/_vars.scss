@@ -1,46 +1,45 @@
 // GLOBALS
-/* used colors for imeji default theme */
-/*
-$color01: #F0F0F0;	// dirty white
-$color02: #F2F2F2;	// lighten dirty white
+// used colors for imeji default theme */
+// 
+// -color-01: #F0F0F0;	// dirty white
+// -color-02: #F2F2F2;	// lighten dirty white
+// 
+// -color-03: #6CAE2F;	// green
+// -color-04: #4AFF00;	// lighten green
+// 
+// -color-05: #FF7700;	// orange
+// -color-06: #FFC999;	// lighten dirty orange
+// 
+// -color-07: #D80000;	// lighten red
+// -color-08: #990000;	// red
+// 
+// -color-09: #000000;	// black
+// -color-10: #292929;	// darkgrey
+// -color-11: #313131;	// darkgrey - equals #313131
+// -color-12: #383838;	// darkgrey - equals #383838
+// -color-13: #444444;	// darken grey - equals #444444
+// -color-14: #4D4D4D;	// darken grey - equals #4D4D4D
+// -color-15: #BBBBBB;	// grey
 
-$color03: #6CAE2F;	// green
-$color04: #4AFF00;	// lighten green
-
-$color05: #FF7700;	// orange
-$color06: #FFC999;	// lighten dirty orange
-
-$color07: #D80000;	// lighten red
-$color08: #990000;	// red
-
-$color09: #000000;	// black
-$color10: #292929;	// darkgrey
-$color11: #313131;	// darkgrey - equals #313131
-$color12: #383838;	// darkgrey - equals #383838
-$color13: #444444;	// darken grey - equals #444444
-$color14: #4D4D4D;	// darken grey - equals #4D4D4D
-$color15: #BBBBBB;	// grey
-*/
 
 
 // ICONS
-// $jsf-icon-path: "http://localhost:8080/imeji/jsf/javax.faces.resource/imj_iconset/";	// path for development
-// $jsf-icon-path: "http://dev-imeji.org/imeji/jsf/resources/imj_iconset/";	// path for development
-$jsf-icon-path: "/imeji/resources/imj_iconset/";	// path for production
+// $icon-path: "../icons/";	// relative path to css source
+$icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
 $icon-colorfolder-default: "6CAE2F/";
 $icon-colorfolder-hover: "F0F0F0/";
 $icon-colorfolder-disabled: "BBBBBB/";
 $icon-colorfolder-error: "D80000/";
 
 
+
 // LOGO
-$jsf-logo-path: $jsf-icon-path;
+$logo-path: $icon-path;
 $logo-file: "logo_imeji.gif";
 $logo-position-horizontal: -1.909090em;
 $logo-position-vertical: 0;
 $logo-width: 13em;
 $logo-height: 5em;
-
 
 
 

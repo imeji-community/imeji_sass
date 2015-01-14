@@ -115,15 +115,15 @@
 }
 @mixin backgroundIcon($name, $status:default, $top:0, $left:0, $repeat:no-repeat, $color:transparent) {
 	@if $status == default {
-		background: $color url($jsf-icon-path + $icon-colorfolder-default + $name) $top $left $repeat;
+		background: $color url($icon-path + $icon-colorfolder-default + $name) $top $left $repeat;
 	} @else if $status == hover {
-		background: $color url($jsf-icon-path + $icon-colorfolder-hover + $name) $top $left $repeat;
+		background: $color url($icon-path + $icon-colorfolder-hover + $name) $top $left $repeat;
 	} @else if $status == disabled {
-		background: $color url($jsf-icon-path + $icon-colorfolder-disabled + $name) $top $left $repeat;
+		background: $color url($icon-path + $icon-colorfolder-disabled + $name) $top $left $repeat;
 	} @else if $status == logo {
-		background: $color url($jsf-logo-path + $name) $top $left $repeat;
+		background: $color url($logo-path + $name) $top $left $repeat;
 	} @else if $status == error {
-		background: $color url($jsf-icon-path + $icon-colorfolder-error + $name) $top $left $repeat;
+		background: $color url($icon-path + $icon-colorfolder-error + $name) $top $left $repeat;
 	}
 	
 }
