@@ -168,8 +168,22 @@ body {
 		margin-top: -0.1818em;
 		@include backgroundIcon('imjMagnifierTopLeft_24.png', hover, center, center);
 	}
-
-
+	
+	
+	// /* * Paginator Buttons (Tiled List)
+	// ================================================== */
+	.imj_iconGoTo {
+		@include iconPreset(16);
+		@include backgroundIcon('imjTriangleNext_16.png', default, center, right);
+		
+		&:hover {
+			@include backgroundIcon('imjTriangleNext_16.png', hover, center, right);
+		}
+		&:focus {
+			@include backgroundIcon('imjTriangleNext_16.png', hover, center, right);
+		}
+	}
+	
 	// /* * Paginator Buttons (Tiled List)
 	// ================================================== */
 	.imj_buttonBrowseToFirst_16 {

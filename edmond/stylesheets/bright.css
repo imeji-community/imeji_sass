@@ -395,6 +395,23 @@ body .imj_iconMagnifier_24 {
   background: transparent url("http://localhost/101010/imjMagnifierTopLeft_24.png") center center no-repeat;
 }
 /* line 175, ../../default/sass/_icons.scss */
+body .imj_iconGoTo {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  border: 0 none;
+  background: transparent url("http://localhost/D45A00/imjTriangleNext_16.png") center right no-repeat;
+}
+/* line 179, ../../default/sass/_icons.scss */
+body .imj_iconGoTo:hover {
+  background: transparent url("http://localhost/101010/imjTriangleNext_16.png") center right no-repeat;
+}
+/* line 182, ../../default/sass/_icons.scss */
+body .imj_iconGoTo:focus {
+  background: transparent url("http://localhost/101010/imjTriangleNext_16.png") center right no-repeat;
+}
+/* line 189, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16 {
   display: inline-block;
   width: 2.36364em;
@@ -403,19 +420,19 @@ body .imj_buttonBrowseToFirst_16 {
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjGotoFirst_16.png") center left no-repeat;
 }
-/* line 179, ../../default/sass/_icons.scss */
+/* line 193, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjGotoFirst_16.png") center left no-repeat;
 }
-/* line 182, ../../default/sass/_icons.scss */
+/* line 196, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16:hover {
   background: transparent url("http://localhost/101010/imjGotoFirst_16.png") center left no-repeat;
 }
-/* line 184, ../../default/sass/_icons.scss */
+/* line 198, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToFirst_16:hover.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjGotoFirst_16.png") center left no-repeat;
 }
-/* line 190, ../../default/sass/_icons.scss */
+/* line 204, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16 {
   display: inline-block;
   width: 2.36364em;
@@ -424,19 +441,19 @@ body .imj_buttonBrowseBackward_16 {
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjTrianglePrevious_16.png") center left no-repeat;
 }
-/* line 194, ../../default/sass/_icons.scss */
+/* line 208, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjTrianglePrevious_16.png") center left no-repeat;
 }
-/* line 197, ../../default/sass/_icons.scss */
+/* line 211, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16:hover {
   background: transparent url("http://localhost/101010/imjTrianglePrevious_16.png") center left no-repeat;
 }
-/* line 199, ../../default/sass/_icons.scss */
+/* line 213, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseBackward_16:hover.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjTrianglePrevious_16.png") center left no-repeat;
 }
-/* line 205, ../../default/sass/_icons.scss */
+/* line 219, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16 {
   display: inline-block;
   width: 2.36364em;
@@ -445,19 +462,19 @@ body .imj_buttonBrowseForward_16 {
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjTriangleNext_16.png") center right no-repeat;
 }
-/* line 209, ../../default/sass/_icons.scss */
+/* line 223, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjTriangleNext_16.png") center right no-repeat;
 }
-/* line 212, ../../default/sass/_icons.scss */
+/* line 226, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16:hover {
   background: transparent url("http://localhost/101010/imjTriangleNext_16.png") center right no-repeat;
 }
-/* line 214, ../../default/sass/_icons.scss */
+/* line 228, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseForward_16:hover.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjTriangleNext_16.png") center right no-repeat;
 }
-/* line 220, ../../default/sass/_icons.scss */
+/* line 234, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16 {
   display: inline-block;
   width: 2.36364em;
@@ -466,39 +483,39 @@ body .imj_buttonBrowseToLast_16 {
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjGotoLast_16.png") center right no-repeat;
 }
-/* line 224, ../../default/sass/_icons.scss */
+/* line 238, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjGotoLast_16.png") center right no-repeat;
 }
-/* line 227, ../../default/sass/_icons.scss */
+/* line 241, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16:hover {
   background: transparent url("http://localhost/101010/imjGotoLast_16.png") center right no-repeat;
 }
-/* line 229, ../../default/sass/_icons.scss */
+/* line 243, ../../default/sass/_icons.scss */
 body .imj_buttonBrowseToLast_16:hover.imj_deactivated {
   background: transparent url("http://localhost/BBBBBB/imjGotoLast_16.png") center right no-repeat;
 }
-/* line 238, ../../default/sass/_icons.scss */
+/* line 252, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_backwardButton {
   padding-left: 1.5em;
   background: transparent url("http://localhost/D45A00/imjTrianglePrevious_16.png") center left no-repeat;
 }
-/* line 242, ../../default/sass/_icons.scss */
+/* line 256, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_backwardButton:hover {
   color: #F0F0F0;
   background: transparent url("http://localhost/101010/imjTrianglePrevious_16.png") center left no-repeat;
 }
-/* line 248, ../../default/sass/_icons.scss */
+/* line 262, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_forwardButton {
   padding-right: 1.5em;
   background: transparent url("http://localhost/D45A00/imjTriangleNext_16.png") center right no-repeat;
 }
-/* line 252, ../../default/sass/_icons.scss */
+/* line 266, ../../default/sass/_icons.scss */
 body .imj_paginator .imj_forwardButton:hover {
   color: #F0F0F0;
   background: transparent url("http://localhost/101010/imjTriangleNext_16.png") center right no-repeat;
 }
-/* line 261, ../../default/sass/_icons.scss */
+/* line 275, ../../default/sass/_icons.scss */
 body .imj_buttonAdd_16 {
   display: inline-block;
   width: 16px;
@@ -508,11 +525,11 @@ body .imj_buttonAdd_16 {
   margin-right: 0.181818em;
   background: transparent url("http://localhost/D45A00/imjButtonPlusBorderOpen_16.png") 0 0 no-repeat;
 }
-/* line 266, ../../default/sass/_icons.scss */
+/* line 280, ../../default/sass/_icons.scss */
 body .imj_buttonAdd_16:hover {
   background: transparent url("http://localhost/101010/imjButtonPlusBorderOpen_16.png") 0 0 no-repeat;
 }
-/* line 271, ../../default/sass/_icons.scss */
+/* line 285, ../../default/sass/_icons.scss */
 body .imj_buttonRemove_16 {
   display: inline-block;
   width: 16px;
@@ -522,39 +539,39 @@ body .imj_buttonRemove_16 {
   margin-right: 0.182em;
   background: transparent url("http://localhost/D45A00/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
 }
-/* line 276, ../../default/sass/_icons.scss */
+/* line 290, ../../default/sass/_icons.scss */
 body .imj_buttonRemove_16:hover {
   background: transparent url("http://localhost/101010/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat;
 }
-/* line 282, ../../default/sass/_icons.scss */
+/* line 296, ../../default/sass/_icons.scss */
 body .imj_collapse .imj_buttonRemove_16 {
   margin-right: 0.272727em;
   vertical-align: top;
   background: transparent url("http://localhost/D45A00/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
 }
-/* line 287, ../../default/sass/_icons.scss */
+/* line 301, ../../default/sass/_icons.scss */
 body .imj_collapse .imj_buttonRemove_16:hover {
   background: transparent url("http://localhost/101010/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
 }
-/* line 292, ../../default/sass/_icons.scss */
+/* line 306, ../../default/sass/_icons.scss */
 body .imj_collapse:hover .imj_buttonRemove_16 {
   background: transparent url("http://localhost/101010/imjButtonMinusRoundedBorder_16.png") 0 0 no-repeat;
 }
-/* line 299, ../../default/sass/_icons.scss */
+/* line 313, ../../default/sass/_icons.scss */
 body .imj_expand .imj_buttonAdd_16 {
   margin-right: 0.272727em;
   vertical-align: top;
   background: transparent url("http://localhost/D45A00/imjButtonPlusBorder_16.png") 0 0 no-repeat;
 }
-/* line 304, ../../default/sass/_icons.scss */
+/* line 318, ../../default/sass/_icons.scss */
 body .imj_expand .imj_buttonAdd_16:hover {
   background: transparent url("http://localhost/101010/imjButtonPlusBorder_16.png") 0 0 no-repeat;
 }
-/* line 309, ../../default/sass/_icons.scss */
+/* line 323, ../../default/sass/_icons.scss */
 body .imj_expand:hover .imj_buttonAdd_16 {
   background: transparent url("http://localhost/101010/imjButtonPlusBorder_16.png") 0 0 no-repeat;
 }
-/* line 315, ../../default/sass/_icons.scss */
+/* line 329, ../../default/sass/_icons.scss */
 body .imj_iconExpand_16 {
   display: inline-block;
   width: 16px;
@@ -563,15 +580,15 @@ body .imj_iconExpand_16 {
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjArrowAwayText_16.png") 0 0 no-repeat;
 }
-/* line 319, ../../default/sass/_icons.scss */
+/* line 333, ../../default/sass/_icons.scss */
 body .imj_iconExpand_16:hover {
   background: transparent url("http://localhost/101010/imjArrowAwayText_16.png") 0 0 no-repeat;
 }
-/* line 322, ../../default/sass/_icons.scss */
+/* line 336, ../../default/sass/_icons.scss */
 body .imj_iconExpand_16:focus {
   background: transparent url("http://localhost/101010/imjArrowAwayText_16.png") 0 0 no-repeat;
 }
-/* line 327, ../../default/sass/_icons.scss */
+/* line 341, ../../default/sass/_icons.scss */
 body .imj_iconCollapse_16 {
   display: inline-block;
   width: 16px;
@@ -580,15 +597,15 @@ body .imj_iconCollapse_16 {
   border: 0 none;
   background: transparent url("http://localhost/D45A00/imjArrowToText_16.png") 0 0 no-repeat;
 }
-/* line 331, ../../default/sass/_icons.scss */
+/* line 345, ../../default/sass/_icons.scss */
 body .imj_iconCollapse_16:hover {
   background: transparent url("http://localhost/101010/imjArrowToText_16.png") 0 0 no-repeat;
 }
-/* line 334, ../../default/sass/_icons.scss */
+/* line 348, ../../default/sass/_icons.scss */
 body .imj_iconCollapse_16:focus {
   background: transparent url("http://localhost/101010/imjArrowToText_16.png") 0 0 no-repeat;
 }
-/* line 343, ../../default/sass/_icons.scss */
+/* line 357, ../../default/sass/_icons.scss */
 body .imj_iconStatusPrivate_24 {
   display: inline-block;
   width: 24px;
@@ -597,7 +614,7 @@ body .imj_iconStatusPrivate_24 {
   border: 0 none;
   background: transparent url("http://localhost/101010/imjLocked_24.png") left center no-repeat;
 }
-/* line 347, ../../default/sass/_icons.scss */
+/* line 361, ../../default/sass/_icons.scss */
 body .imj_iconStatusShareable_24 {
   display: inline-block;
   width: 24px;
@@ -606,7 +623,7 @@ body .imj_iconStatusShareable_24 {
   border: 0 none;
   background: transparent url("http://localhost/101010/imjArrowRightToPeople_24.png") left center no-repeat;
 }
-/* line 356, ../../default/sass/_icons.scss */
+/* line 370, ../../default/sass/_icons.scss */
 body .imj_icoStatusWithdrawn_32 {
   display: inline-block;
   width: 32px;
@@ -615,7 +632,7 @@ body .imj_icoStatusWithdrawn_32 {
   border: 0 none;
   background: transparent url("http://localhost/101010/imjDocumentDelete_32.png") left center no-repeat;
 }
-/* line 360, ../../default/sass/_icons.scss */
+/* line 374, ../../default/sass/_icons.scss */
 body .imj_icoStatusPending_32 {
   display: inline-block;
   width: 32px;
@@ -624,7 +641,7 @@ body .imj_icoStatusPending_32 {
   border: 0 none;
   background: transparent url("http://localhost/101010/imjDocumentPending_32.png") left center no-repeat;
 }
-/* line 364, ../../default/sass/_icons.scss */
+/* line 378, ../../default/sass/_icons.scss */
 body .imj_icoStatusReleased_32 {
   display: inline-block;
   width: 32px;
@@ -633,7 +650,7 @@ body .imj_icoStatusReleased_32 {
   border: 0 none;
   background: transparent url("http://localhost/101010/imjDocumentPublished_32.png") left center no-repeat;
 }
-/* line 371, ../../default/sass/_icons.scss */
+/* line 385, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow {
   float: right;
   display: inline-block;
@@ -644,16 +661,16 @@ body .imj_entryPagePreviewTiledListLinkArrow {
   margin-top: 1em;
   background: transparent url("http://localhost/D45A00/imjArrowThinRight_24.png") top right no-repeat;
 }
-/* line 377, ../../default/sass/_icons.scss */
+/* line 391, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow:hover {
   background: transparent url("http://localhost/101010/imjArrowThinRight_24.png") top right no-repeat;
 }
-/* line 380, ../../default/sass/_icons.scss */
+/* line 394, ../../default/sass/_icons.scss */
 body .imj_entryPagePreviewTiledListLinkArrow:after {
   clear: both;
   content: "";
 }
-/* line 387, ../../default/sass/_icons.scss */
+/* line 401, ../../default/sass/_icons.scss */
 body a:hover .imj_entryPagePreviewTiledListLinkArrow {
   background: transparent url("http://localhost/101010/imjArrowThinRight_24.png") top right no-repeat;
 }
