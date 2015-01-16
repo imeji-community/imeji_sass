@@ -184,8 +184,8 @@ body {
 		}
 	}
 	
-	// /* * Paginator Buttons (Tiled List)
-	// ================================================== */
+	// /* * Paginator Buttons (Tiled List, template_image.xhtml)
+	// ========================================================= */
 	.imj_buttonBrowseToFirst_16 {
 		@include iconPreset(16, 2.363636em);
 		@include backgroundIcon('imjGotoFirst_16.png', default, center, left);
@@ -245,30 +245,6 @@ body {
 			}
 		}
 	}
-
-	// /* * Paginator Buttons (Image.xhtml)
-	// ================================================== */
-	.imj_paginator {
-		.imj_backwardButton {	// used in simplePageBrowser
-			padding-left: 1.5em;
-			@include backgroundIcon('imjTrianglePrevious_16.png', default, center, left);
-
-			&:hover {
-				color: #F0F0F0;
-				@include backgroundIcon('imjTrianglePrevious_16.png', hover, center, left);
-			}
-		}
-	
-		.imj_forwardButton {	// used in simplePageBrowser
-			padding-right: 1.5em;
-			@include backgroundIcon('imjTriangleNext_16.png', default, center, right);
-
-			&:hover {
-				color: #F0F0F0;
-				@include backgroundIcon('imjTriangleNext_16.png', hover, center, right);
-			}
-		}
-	}	
 
 	// /* * Add + Remove Buttons - MetaData List
    	// ================================================== */

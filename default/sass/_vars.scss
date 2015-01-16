@@ -24,8 +24,8 @@
 
 
 // ICONS
-// $icon-path: "../icons/";	// relative path to css source
-$icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
+$icon-path: "../icons/";	// relative path to css source
+// $icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
 $icon-colorfolder-default: "6CAE2F/";
 $icon-colorfolder-hover: "F0F0F0/";
 $icon-colorfolder-disabled: "BBBBBB/";
@@ -34,7 +34,7 @@ $icon-colorfolder-error: "D80000/";
 
 
 // LOGO
-$logo-path: $icon-path;
+$logo-path: "../logo/"; // $icon-path;
 $logo-file: "logo_imeji.gif";
 $logo-position-horizontal: -1.909090em;
 $logo-position-vertical: 0;
@@ -45,7 +45,7 @@ $logo-height: 5em;
 
 // DEFAULTS
 $font-color-default: #F0F0F0;
-$font-size-default: 68.75%;
+$font-size-default: 75%;
 $font-color-critical: #D80000;
 $line-height-default: 145%;
 $box-shadow-default: 0.545454em 0.545454em 0.545454em #292929;

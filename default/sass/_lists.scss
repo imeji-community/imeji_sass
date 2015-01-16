@@ -152,6 +152,9 @@
 				}
 				
 				.imj_descriptionArea {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					
 					p {
 						margin: 0;
 					}
@@ -346,8 +349,17 @@
 	padding: 1% 4%;
 	border-top: $entrypage-separatortop-border-style;
 	
-	.imj_entryPagePreviewTiledListItem {
+	.imj_thumbnailsPreview {
+		display: inline;
+	}
+	.imj_tileItem {
+		display: inline-block; 
+		width:12.75%;
+		padding: 0.5%;
+	}
+	.imj_entryPagePreviewPicture {
 		padding: 0.25em;
+		width: 100%;
 	}
 	.imj_entryPagePreviewTiledListLink {
 		float: right;

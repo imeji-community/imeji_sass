@@ -251,6 +251,20 @@
 	}
 }
 
+.imj_inlineSelectionGroup {
+	display: inline-block;
+	
+	.imj_selectionLabel {
+		display: inline;
+		margin-right: 0.5em;
+	}
+	
+	.imj_selectionBox {
+		display: inline;
+	}
+}
+
+
 
 // =====================================================================
 // BUTTONS - NOT ICONS
@@ -286,6 +300,7 @@ button.imj_cancelButton,
 	color: $button-cancel-color;
 	background-color: $button-cancel-bgcolor;
 	border: $button-cancel-border;
+	cursor: pointer;
 	@include border-radius($border-radius-default);
 
 	&:hover {
@@ -307,6 +322,7 @@ button.imj_submitButton,
 	color: $button-submit-color;
 	background-color: $button-submit-bgcolor;
 	border: $button-submit-border;
+	cursor: pointer;
 	@include border-radius($border-radius-default);
 
 	&:hover {
@@ -349,6 +365,7 @@ button.imj_resetButton,
 	color: $button-reset-color;
 	background-color: $button-reset-bgcolor;
 	border: $button-reset-border;
+	cursor: pointer;
 	@include border-radius($border-radius-default);
 
 	&:hover {
@@ -368,6 +385,7 @@ button.imj_resetButton,
 	color: $button-back-color;
 	background-color: $button-back-bgcolor;
 	border-bottom: $button-back-border;
+	cursor: pointer;
 	@include border-radius(0 0 $border-radius-default $border-radius-default);
 
 	&:hover {
@@ -390,6 +408,7 @@ a.imj_editButton {
 	color: $button-edit-color;
 	background-color: $button-edit-bgcolor;
 	border: $button-edit-border;
+	cursor: pointer;
 	@include border-radius($border-radius-default);
 
 	&:hover {
@@ -594,6 +613,7 @@ h4.imj_sectionHeadline {
 
 	.imj_optionCheckbox {
 		margin-right: 0.272727em;
+		margin-left: 0;
 	}
 	.imj_optionLabel {
 		white-space: normal;
@@ -824,6 +844,16 @@ select.imj_metadataEditText {
 	}
 } // end of imj_simpleSearch
 
+// /* ===[ SiteHeader - SimpleSearch for Admin]===
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_isAdmin {
+	.imj_simpleSearch {
+		
+		.imj_simpleSearchInput {
+			width: 15em;
+		}
+	}
+}
 
 
 // /* ===[ Content - Sub Header Message Space ]===
@@ -1098,10 +1128,17 @@ select.imj_metadataEditText {
 // /* Simple Page Browser - used for detail view
 // ================================================== */
 .imj_simplePageBrowser {
-	.imj_backwardButton,
-	.imj_forwardButton {
+	.imj_buttonBrowseBackward_16 {
+		padding-left: 1.5em;
+	}
+	.imj_buttonBrowseForward_16 {
+		padding-right: 1.5em;
+	}
+	.imj_buttonBrowseBackward_16,
+	.imj_buttonBrowseForward_16 {
 		color: $paginator-color;
 		cursor: pointer;
+		width: auto;
 		
 		&:hover {
 			@include hover('paginatorHover');
@@ -1112,15 +1149,16 @@ select.imj_metadataEditText {
 		&:active {
 			@include disabled('paginatorDisabled');
 		}
-		&.disabled {
+		&.imj_deactivated {
+			cursor: default;
 			@include disabled('paginatorDisabled');
 		}
-		&.disabled:hover {
+		&.imj_deactivated:hover {
 			@include disabled('paginatorDisabled');
 		}
 	}
-	.imj_backwardButton + .imj_forwardButton {
-		margin-left: 1em;
+	.imj_buttonBrowseBackward_16 + .imj_buttonBrowseForward_16 {
+		margin-left: 1.5em;
 	}
 }
 
@@ -1822,6 +1860,18 @@ iframe#twitter-widget-0 div.root div.stream {
 	}
 	
 	.imj_adminPanel {
+		
+		.imj_headline {
+			
+			.imj_submitButton {
+				float:right;
+				
+				&:after {
+					clear: both;
+					content: "";
+				}
+			}
+		}
 		.imj_content {
 		
 			.imj_admindataSet {
