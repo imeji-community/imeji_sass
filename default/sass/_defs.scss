@@ -930,12 +930,15 @@ select.imj_metadataEditText {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		vertical-align: top;
+		
 		.imj_breadcrumpLongDescription {
 			display:none;
-			max-width: 10.272727em;
+			max-width: 20.272727em;
 			padding: 0 0.363636em;
 			white-space: normal;
 			background-color: $breadcrump-overlay-bgcolor;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 		&:hover {
 			.imj_breadcrumpLongDescription {
