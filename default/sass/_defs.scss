@@ -1169,7 +1169,18 @@ select.imj_metadataEditText {
 // ================================================== */
 .imj_singlePageBrowser {
 	display: inline-block;
-
+	
+	.imj_buttonBrowseToFirst_16,
+	.imj_buttonBrowseBackward_16,
+	.imj_buttonBrowseForward_16,
+	.imj_buttonBrowseToLast_16 {
+		cursor: pointer;
+		
+		&.imj_deactivated {
+			cursor: default;
+		}
+	}
+	
 	.imj_separator {
 		display: inline-block;
 		height: 1.81818181em;
@@ -1205,9 +1216,6 @@ select.imj_metadataEditText {
 	width: 95.95%;
 	padding: 0 2%;
 
-	a {
-		margin-left: 1em;
-	}
 	.imj_metadataValue {
 		width: 72.33%;
 		margin-left: 0.727272em;
@@ -1226,6 +1234,10 @@ select.imj_metadataEditText {
 		
 		.imj_buttonEdit_16 {
 			margin-right: 0.181818em;
+		}
+		
+		a {
+			margin-left: 1em;
 		}
 	}
 }
