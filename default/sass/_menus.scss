@@ -61,6 +61,7 @@
 			margin-left: 0.272727em;
 			border: none 0;
 			vertical-align: text-top;
+			cursor: pointer;
 		}
 		input[type="submit"]:hover {
 			@include hover(a);

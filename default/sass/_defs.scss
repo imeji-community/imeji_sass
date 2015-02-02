@@ -780,10 +780,11 @@ select.imj_metadataEditText {
 	}
 	
 	.imj_simpleSearchInput {
-		width: 16em;
+		width: 6em;
 		border: $pageheader-search-input-border;
 		@include border-radius(0.454545em 0 0 0.454545em);
 		vertical-align: top;
+		transition: width 250ms ease, margin-left 250ms;
 		
 		&:hover {
 			@include hover(searchInputHeader);
@@ -792,6 +793,7 @@ select.imj_metadataEditText {
 			@include hover(searchInputHeader);
 		}
 		&:focus {
+			width: 12em;
 			@include hover(searchInputHeader);
 		}
 	}
@@ -838,7 +840,7 @@ select.imj_metadataEditText {
 
 	.imj_simpleSearchLinkAdvancedsearch {
 		margin-top: 0.181818em;
-		margin-left: 2.090909em;
+		margin-left: 1.090909em;
 		white-space: nowrap;
 		display: inline-block;
 	}
@@ -848,6 +850,7 @@ select.imj_metadataEditText {
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_isAdmin {
 	.imj_simpleSearch {
+		margin-top: -6em;
 		
 		.imj_simpleSearchInput {
 			width: 15em;
@@ -1642,7 +1645,7 @@ iframe#twitter-widget-0 div.root div.stream {
 
 
 // /* === Upload Page ===
-// * Upload.xhtml
+// * Upload.xhtml, SingleUpload.xhtml
 // * ============================================ */
 .imj_upload {
 	width: 91.25%;
@@ -1656,6 +1659,20 @@ iframe#twitter-widget-0 div.root div.stream {
 	}
 	.imj_uploadDropArea {
 		width: 100%;
+	}
+	
+	.imj_fileUploadContainer {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-right: 2em;
+		display: inline-block;
+		
+		&.imj_singleUpload {
+			
+			.imj_submitPanel {
+				text-align: left;
+			}
+		}
 	}
 }
 
