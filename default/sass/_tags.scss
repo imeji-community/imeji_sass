@@ -31,7 +31,12 @@ a {
 	}
 
 }
-
+strong, b {	
+	font-weight: bold;	// bugfix for default user agent styling, e.g. in webkit
+}
+i {
+	font-style: italic;	// bugfix for default user agent styling, e.g. in webkit
+}
 input, button {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
