@@ -21,6 +21,10 @@
 // -color-14: #4D4D4D;	// darken grey - equals #4D4D4D
 // -color-15: #BBBBBB;	// grey
 
+// IMPORTS: e.g. font families or other foreign css defintions
+// ATTENTION css resets and a lot of other things are given bei compass, take notice of _combinedStyles.scss
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 
 
 // ICONS
@@ -44,6 +48,8 @@ $logo-height: 5em;
 
 
 // DEFAULTS
+// multiple fonts must be declared in ()
+$font-family-default: ("Open Sans", Arial, Helvetica, Verdana, sans-serif);
 $font-color-default: #F0F0F0;
 $font-size-default: 75%;
 $font-color-critical: #D80000;

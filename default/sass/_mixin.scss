@@ -1,4 +1,4 @@
-@mixin font($family:'Arial, Helvetica, Verdana, sans-serif', $color:$font-color-default, $size:$font-size-default, $lineHeight:$line-height-default) {
+@mixin font($family:$font-family-default, $color:$font-color-default, $size:$font-size-default, $lineHeight:$line-height-default) {
 	font: {
         	size: $size;
         	family: $family;
@@ -7,8 +7,8 @@
 	color: $color;
 	line-height: $lineHeight;
 }
-@mixin osfont() {
-	@include font(("Open Sans", sans-serif));
+@mixin defaultfont() {
+	@include font($font-family-default);
 }
 @mixin inputfont() {
 	@include font((Courier, "Courier New", serif), $input-color, (100%));
