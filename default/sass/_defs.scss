@@ -1382,30 +1382,20 @@ select.imj_metadataEditText {
 			}
 		}
 		.imj_tabMenu {
-			width: 100%;
 			text-align: right;
 
 			li {
 				background-color: $welcome-info-tabs-bgcolor;
 				&.ui-state-active {
 					background-color: $welcome-info-tabs-bgcolor-active;
-					a {
-						@include hover('a');
-					}
 				}
 			}
 		}
 		.imj_tabContent {
-			width: 100%;
 			min-height: 30em;
-			overflow: auto;
-			font-size: 110%;
-
+			
 			ul {
 				margin-bottom: 3em;
-				.imj_iconGoTo {
-					vertical-align: top;
-				}
 			}
 			li {
 				display: block;
@@ -1681,7 +1671,6 @@ iframe#twitter-widget-0 div.root div.stream {
 	width: 98%;
 	min-width: 30em;
 	padding: 0.5% 1%;
-	background-color: $upload-urlref-bgcolor;
 	
 	label {
 		margin-left: 1em;
@@ -1697,7 +1686,6 @@ iframe#twitter-widget-0 div.root div.stream {
 
 .imj_uploadOptionsArea {
 	width: 27%;
-	min-height: 33.545454em;
 	margin: 0 0 0 1.5%;
 	padding: 0.5% 0.5%;
 	display: inline-block;

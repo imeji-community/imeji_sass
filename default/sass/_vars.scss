@@ -28,8 +28,8 @@
 
 
 // ICONS
-$icon-path: "../icons/";	// relative path to css source
-// $icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
+// $icon-path: "../icons/";	// relative path to css source
+$icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
 $icon-colorfolder-default: "6CAE2F/";
 $icon-colorfolder-hover: "F0F0F0/";
 $icon-colorfolder-disabled: "BBBBBB/";
@@ -38,7 +38,7 @@ $icon-colorfolder-error: "D80000/";
 
 
 // LOGO
-$logo-path: "../logo/";
+$logo-path: $icon-path; // "../logo/";
 $logo-file: "logo_imeji.gif";
 $logo-position-horizontal: -1.909090em;
 $logo-position-vertical: 0;
@@ -267,6 +267,13 @@ $autocomplete-bgcolor-loading: $link-color;
 
 
 
+// SIMPLE LIST WITH TAB-MENU
+$tablist-menu-bgcolor: $body-bgcolor;
+$tablist-menuentry-bgcolor-active: #444444;
+$tablist-content-bgcolor: #444444;
+
+
+
 // METADATA LISTs -- e.g. on details page
 $mdlist-header-separator-border-color: $link-color;
 $mdlist-header-color-hover: $link-color-hover;
@@ -384,7 +391,6 @@ $paginator-pagenumber-color-active: $link-color-hover;
 
 // UPLOAD
 $upload-separation-border-style: $border-style-dashed;
-$upload-urlref-bgcolor: $body-bgcolor;
 $upload-optionarea-bgcolor: lighten($body-bgcolor, 10.5%);	// equals 444444
 $upload-messagearea-bgcolor-error: #757575;
 $upload-messagearea-bgcolor-success: $body-bgcolor;
@@ -400,7 +406,7 @@ $plupload-content-bgcolor: #757575;
 $welcome-info-bgcolor: $body-bgcolor;
 $welcome-info-tabs-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
 $welcome-info-listentry-bgcolor: $welcome-info-tabs-bgcolor;
-$welcome-info-tabs-bgcolor-active: lighten($body-bgcolor, 5.75%); // equals 383838
+$welcome-info-tabs-bgcolor-active: lighten($body-bgcolor, 8.75%); // equals 383838
 
 $welcome-carousel-bgcolor: transparent;
 $welcome-carousel-infolayer-bgcolor: $body-bgcolor;

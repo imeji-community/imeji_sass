@@ -761,3 +761,40 @@
 	}
 }
 
+
+
+.imj_tabList {
+	
+	.imj_tabMenu {
+		width: 100%;
+		background-color: $tablist-menu-bgcolor;
+		font-size: 120%;
+
+		li {
+			display: inline-block;
+			padding: 1em 0.5em;
+			
+			&.ui-state-active {
+				background-color: $tablist-menuentry-bgcolor-active;
+				a {
+					@include hover('a');
+				}
+			}
+		}
+	}
+	.imj_tabContent {
+		width: 100%;
+		background-color: $tablist-content-bgcolor;
+		overflow: auto;
+		font-size: 110%;
+
+		ul {
+			
+			.imj_iconGoTo {
+				vertical-align: top;
+			}
+		}
+		li {
+		}
+	}
+}

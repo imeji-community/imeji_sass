@@ -268,6 +268,13 @@ $autocomplete-bgcolor-loading: $link-color;
 
 
 
+// SIMPLE LIST WITH TAB-MENU
+$tablist-menu-bgcolor: $body-bgcolor;
+$tablist-menuentry-bgcolor-active: lighten($body-bgcolor, 17%);
+$tablist-content-bgcolor: lighten($body-bgcolor, 17%);
+
+
+
 // METADATA LISTs -- e.g. on details page
 $mdlist-header-separator-border-color: $link-color;
 $mdlist-header-color-hover: #F2F2F2;
@@ -385,7 +392,6 @@ $paginator-pagenumber-color-active: $link-color-hover;
 
 // UPLOAD
 $upload-separation-border-style: $border-style-dashed;
-$upload-urlref-bgcolor: #2F3B3C;
 $upload-optionarea-bgcolor: inherit;
 $upload-messagearea-bgcolor-error: $body-bgcolor;
 $upload-messagearea-bgcolor-success: $body-bgcolor;
@@ -401,7 +407,7 @@ $plupload-footer-bgcolor: #2F3B3C;
 $welcome-info-bgcolor: $body-bgcolor;
 $welcome-info-tabs-bgcolor: #313131;
 $welcome-info-listentry-bgcolor: $welcome-info-tabs-bgcolor;
-$welcome-info-tabs-bgcolor-active: #313131;
+$welcome-info-tabs-bgcolor-active: #2F3B3C;
 
 $welcome-carousel-bgcolor: transparent;
 $welcome-carousel-infolayer-bgcolor: $body-bgcolor;
