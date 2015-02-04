@@ -28,8 +28,8 @@
 
 
 // ICONS
-// $icon-path: "../icons/";	// relative path to css source
-$icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
+$icon-path: "../icons/";	// relative path to css source
+// $icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
 $icon-colorfolder-default: "6CAE2F/";
 $icon-colorfolder-hover: "F0F0F0/";
 $icon-colorfolder-disabled: "BBBBBB/";
@@ -38,7 +38,7 @@ $icon-colorfolder-error: "D80000/";
 
 
 // LOGO
-$logo-path: $icon_path; // "../logo/";
+$logo-path: "../logo/";
 $logo-file: "logo_imeji.gif";
 $logo-position-horizontal: -1.909090em;
 $logo-position-vertical: 0;

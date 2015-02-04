@@ -35,9 +35,14 @@ body {
 		}
 		.plupload_filelist_header {
 			width: 100%;
+			padding: 0.5em 0;
 			display: inline-block;
 			background-color: $plupload-header-bgcolor;
 			font-weight: bold;
+			
+			.plupload_header_content {
+				padding: 0.5em 0;
+			}
 		}
 		.plupload_filelist_footer {
 			padding: 0.545454em 0;
@@ -92,13 +97,13 @@ body {
 		/* style analog to imj_submitButton */
 		.plupload_buttons {
 			margin-right: 0.545454em;
+			padding: 0.252525em 0;
 			width: 50%;
 			display: inline-block;
 			vertical-align: top;
 		
 			a {
-				margin-left: 1em;
-				padding: 0 0.333333em;
+				padding: 0.333333em;
 				color: $button-color;
 				background-color: $button-bgcolor;
 				border: $button-border;
@@ -109,6 +114,10 @@ body {
 				}
 				&:focus {
 					@include hover(submitButton);
+				}
+				
+				&+a {
+					margin-left: 1em;
 				}
 			}
 		}
