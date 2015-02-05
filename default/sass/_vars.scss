@@ -1,5 +1,5 @@
 // GLOBALS
-// used colors for imeji default theme */
+// used colors for imeji default theme
 // 
 // -color-01: #F0F0F0;	// dirty white
 // -color-02: #F2F2F2;	// lighten dirty white
@@ -23,13 +23,13 @@
 
 // IMPORTS: e.g. font families or other foreign css defintions
 // ATTENTION css resets and a lot of other things are given bei compass, take notice of _combinedStyles.scss
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 
 
 
 // ICONS
-$icon-path: "../icons/";	// relative path to css source
-// $icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
+// $icon-path: "../icons/";	// relative path to css source
+$icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
 $icon-colorfolder-default: "6CAE2F/";
 $icon-colorfolder-hover: "F0F0F0/";
 $icon-colorfolder-disabled: "BBBBBB/";
@@ -38,7 +38,7 @@ $icon-colorfolder-error: "D80000/";
 
 
 // LOGO
-$logo-path: "../logo/";
+$logo-path: $icon-path; // "../logo/";
 $logo-file: "logo_imeji.gif";
 $logo-position-horizontal: -1.909090em;
 $logo-position-vertical: 0;

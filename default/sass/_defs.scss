@@ -150,6 +150,28 @@
 	border-top: $sharepage-separatortop-border-style;
 }
 
+// =====================================================================
+// ENTRY PAGES FOR COLLECTIONS AND ALBUMS
+// =====================================================================
+.imj_collectionEntryPage,
+.imj_albumEntryPage {
+	width: 91.25%;
+	padding: 1% 4%;
+	border-top: $entrypage-separatortop-border-style;
+	
+	.imj_headline {
+		
+		.imj_entryPagePreviewTiledListLinkArrow {
+			float: none;
+			margin-right: 0.5em;
+			vertical-align: bottom;
+		}
+		
+		&.imj_messageInfo {
+			margin-bottom: 1em;
+		}
+	}
+}
 
 // =====================================================================
 // MESSAGES

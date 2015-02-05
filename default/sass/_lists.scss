@@ -395,8 +395,6 @@
 
 .imj_entryPagePreviewTiledList {
 	margin-bottom: 0.5em;
-	padding: 1% 4%;
-	border-top: $entrypage-separatortop-border-style;
 	
 	.imj_thumbnailsPreview {
 		display: inline;
@@ -421,7 +419,6 @@
 	}
 	+ .imj_metadataList {
 		clear: both;
-		padding: 1% 4%;
 	}
 }
 
