@@ -311,9 +311,8 @@ $tiledlistadmin-itemcontent-border-style: $border-width-default solid $body-bgco
 
 
 
-// METADATA PROFILE LIST
-$mdprofilelist-headline-gradient-color-1: $body-bgcolor;
-$mdprofilelist-headline-gradient-color-2: #313131;
+// METADATA PROFILE PAGE
+$mdprofilepage-separatortop-border-style: $border-style-default;
 
 
 
@@ -327,6 +326,8 @@ $mdsubpanel-item-bgcolor-hover: $link-color;
 $mdsubpanel-border-bottom-style: $mdlist-body-border-top-style;
 
 // METADATA PROFILE LIST
+$mdprofilelist-headline-gradient-color-1: $body-bgcolor;
+$mdprofilelist-headline-gradient-color-2: #313131;
 $mdprofilelist-separatortop-border-style: $border-style-default;
 $mdprofilelist-separatortop-border-style-inplace: $border-style-dashed;
 // METADATA EDITING
