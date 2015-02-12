@@ -78,6 +78,16 @@ body {
 		}
 	}
 	
+	
+	.imj_iconErase_16 {
+	  @include iconPreset(16);
+    @include backgroundIcon('imjButtonCross_16.png', default);
+
+    &:hover {
+      @include backgroundIcon('imjButtonCross_16.png', hover);
+    }
+	}
+	
 
 	// /* * Sort & Order by Buttons
 	// ================================================== */

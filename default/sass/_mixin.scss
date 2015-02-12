@@ -112,6 +112,7 @@
 	height: $height;
 	vertical-align: $valign;
 	border: $border;
+	cursor: pointer;
 }
 @mixin backgroundIcon($name, $status:default, $top:0, $left:0, $repeat:no-repeat, $color:transparent) {
 	@if $status == default {
