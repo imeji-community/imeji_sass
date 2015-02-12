@@ -521,14 +521,16 @@
 }
 .imj_metadataProfileList {
 	&.imj_edit {
+	  
 		> .imj_listHeader {
-			> .imj_listHeaderMenu {
+		  
+		  ul.imj_listHeaderMenu {
 				float: none;
-				display: inline-block;
-			
-				> * {
-					display: inline;
+				
+				li {
+				  display: inline-block;
 				}
+				
 				select {
 					margin: 0 0.181818em;
 				}

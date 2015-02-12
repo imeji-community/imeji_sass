@@ -691,7 +691,6 @@ table.imj_optionSet {
 
 .imj_metadataSet {
 	@include datasetParam(set);
-	box-sizing: border-box;
 
 	.imj_metadataLabel {
 		@include datasetParam(label);

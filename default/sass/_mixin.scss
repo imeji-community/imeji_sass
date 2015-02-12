@@ -148,6 +148,7 @@
 		max-width: 72.6%;
 		word-wrap: break-word;
 	}
+	@include box-sizing("border-box");
 }
 
 // bugfix for Google Chrome
