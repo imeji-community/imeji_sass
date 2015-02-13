@@ -60,8 +60,33 @@
 		}
 	}
 }
-	
 
+// ===[ Content - FACETS ]===
+// ================================================================ */
+//  component: facets.xhtml 
+// ================================================================ */
+.imj_facetList {
+  line-height: 175%;
+  
+  .imj_facet {
+    display: inline-block;
+    margin-right: 1em;
+    padding: 0 0.272727em;
+    white-space: nowrap;
+    
+    .imj_separator {
+      color: $facet-separator-color;
+    }
+    .imj_facetCounter {
+      padding: 0 0.181818em;
+      font-size: 120%;
+    }
+    
+    &:hover {
+      background-color: $facet-bgcolor-hover;
+    }
+  }
+}
 
 // /* * bibliographicList used in bibliographicListTwoColumn.xhtml, bibliographicListThreeColumn.xhtml
 // ================================================== */

@@ -1344,38 +1344,6 @@ select.imj_metadataEditText {
 #imj_ajaxFacets {
 	padding: 1% 4%;
 }
-.imj_facetArea {
-	line-height: 175%;
-
-	.imj_facetGroup {
-		display: inline-block;
-		margin-right: 1.545454em;
-		padding: 0 0.181818em;
-		.imj_facetGroupOpener {
-			margin-right: 0.181818em;
-			display: none;
-		}
-		.imj_facetSeparator {
-			margin: 0 0.272727em;
-			color: $facet-separator-color;
-		}
-		.imj_facetGroupItem {
-			white-space: nowrap;
-		}
-		.imj_facetGroupCloser {
-			margin-left: 0.181818em;
-			display: none;
-		}
-
-		&:hover {
-			background-color: $facet-bgcolor-hover;
-		}
-	}
-}
-
-
-
-
 
 
 // ================================================== */
