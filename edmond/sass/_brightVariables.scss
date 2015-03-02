@@ -336,6 +336,11 @@ $mdprofilelist-drop-bgcolor-hover: $link-color-disabled !important;
 
 
 
+// METADATA PROFILE PREVIEW LIST
+$mdprofilepreview-item-border-style: $border-width-default dashed rgba(0, 0, 0, 0.15);
+
+
+
 // CREATE OR EDIT A COLLECTION / ALBUM
 $mediacontainer-separatortop-border-style: $border-style-default;
 $mediacontainer-author-bgcolor: $body-bgcolor;

@@ -317,6 +317,41 @@
 	}
 }
 
+// imj_metadataProfilePreviewList is an enhancement of the default imj_metadataList
+.imj_metadataProfilePreviewList {
+  .imj_listBody {
+    
+    .imj_listItem {
+      margin-top: 1em;
+      @include box-sizing("border-box");
+      
+      & > dl {
+        padding-left: 2%;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        border: $mdprofilepreview-item-border-style;
+      }
+      
+      
+      .imj_headline {
+        font-size: 115%;
+        padding: 0.25em 0;
+      }
+      
+      .imj_metadataBox {
+        display: inline-block;
+        margin-left: 1em;
+        vertical-align: top;
+        @include box-sizing("border-box");
+        
+        dt, dd {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
 // /* * tiledMediaList + singlePageBrowser
 // + Buttons + rangeSelector + infoLayer
 // (template_image_tiledlist.xhtml)
