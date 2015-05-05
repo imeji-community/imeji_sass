@@ -341,11 +341,11 @@ body {
 	// e.g. component bibListItem_released.xhtml, bibListItem_draft.xhtml
 	// ================================================================== */
 	.imj_iconStatusPrivate_24 {
-		@include iconPreset(24);
+		@include iconPreset(24, $defaultCursor:true);
 		@include backgroundIcon('imjLocked_24.png', hover, left, center);
 	}
 	.imj_iconStatusShareable_24 {
-		@include iconPreset(24);
+		@include iconPreset(24, $defaultCursor:true);
 		@include backgroundIcon('imjArrowRightToPeople_24.png', hover, left, center);
 	}
 	
@@ -354,15 +354,15 @@ body {
 	// e.g. component (bibliographicGridList.xhtml - logged in)
 	// ================================================== */
 	.imj_icoStatusWithdrawn_32 {
-		@include iconPreset(32);
+		@include iconPreset(32, $defaultCursor:true);
 		@include backgroundIcon('imjDocumentDelete_32.png', hover, left, center);
 	}
 	.imj_icoStatusPending_32 {
-		@include iconPreset(32);
+		@include iconPreset(32, $defaultCursor:true);
 		@include backgroundIcon('imjDocumentPending_32.png', hover, left, center);
 	}
 	.imj_icoStatusReleased_32 {
-		@include iconPreset(32);
+		@include iconPreset(32, $defaultCursor:true);
 		@include backgroundIcon('imjDocumentPublished_32.png', hover, left, center);
 	}
 	

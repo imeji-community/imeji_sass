@@ -86,7 +86,7 @@
 }
 
 
-@mixin iconPreset($size, $width:'', $height:'', $display:inline-block, $valign:middle, $border:(0 none)) {
+@mixin iconPreset($size, $width:'', $height:'', $defaultCursor:false, $display:inline-block, $valign:middle, $border:(0 none)) {
 
 	@if $width == '' {
 		@if $size == 16 {
@@ -112,7 +112,9 @@
 	height: $height;
 	vertical-align: $valign;
 	border: $border;
-	cursor: pointer;
+	@if $defaultCursor == false {
+	  cursor: pointer;
+	}
 }
 @mixin backgroundIcon($name, $status:default, $top:0, $left:0, $repeat:no-repeat, $color:transparent) {
 	@if $status == default {
