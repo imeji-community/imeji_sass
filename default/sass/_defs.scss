@@ -1062,7 +1062,11 @@ select.imj_metadataEditText {
 			width: 92%;
 			margin-left: 7%;
 			margin-top: 0.5em;
-
+			
+			> div {
+			  display: inline-block;
+			  vertical-align: top;
+			}
 			.imj_inlineButtonGroup {
 				margin-left: 0.5em;
 			}
@@ -1079,6 +1083,9 @@ select.imj_metadataEditText {
 			}
 			.imj_searchInputValue{
 				margin-bottom: 1em;
+			}
+			.imj_submitPanel {
+			  text-align: left;
 			}
 			
 			input[type="checkbox"] + label {
