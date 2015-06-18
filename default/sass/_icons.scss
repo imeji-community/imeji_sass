@@ -10,6 +10,8 @@ body {
 		@include backgroundIcon($logo-file, logo, $logo-position-horizontal, $logo-position-vertical);
 	}
 	
+	.imj_logo_alt {max-height: 154px; margin-top: -25px; margin-bottom:-25px;}
+	
 	.imj_buttonStyleSwitcher {
 		@include iconPreset(16);
 		margin: 0 0.727272em;
