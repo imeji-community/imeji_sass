@@ -344,6 +344,13 @@ body {
 		@include iconPreset(24, $defaultCursor:true);
 		@include backgroundIcon('imjLocked_24.png', hover, left, center);
 	}
+	
+	.imj_iconStatusPrivate_16 {
+		@include iconPreset(16, $defaultCursor:true);
+		@include backgroundIcon('imjLocked_16.png', hover, left, center);
+		float: left;
+		
+	}
 	.imj_iconStatusShareable_24 {
 		@include iconPreset(24, $defaultCursor:true);
 		@include backgroundIcon('imjArrowRightToPeople_24.png', hover, left, center);
