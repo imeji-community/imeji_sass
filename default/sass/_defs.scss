@@ -1376,14 +1376,14 @@ select.imj_metadataEditText {
 		margin-bottom: 1em; 
 	}
 	.imj_active { 
-		font-size: 145%; 
+		font-size: $register-step-active-font-size; 
 	}
 	.imj_submitted { 
 		padding: 0.272727em; 
-		background-color: #6CAE2F; 
+		background-color: $register-step-submitted-bg-color; 
 	}
 	&:after { 
-		content: " "; 
+		content: " ";
 		float: none; 
 		clear:both; 
 	}
