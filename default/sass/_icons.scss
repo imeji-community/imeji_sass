@@ -10,6 +10,8 @@ body {
 		@include backgroundIcon($logo-file, logo, $logo-position-horizontal, $logo-position-vertical);
 	}
 	
+	.imj_logo_alt {max-height: 154px; margin-top: -25px; margin-bottom:-25px;}
+	
 	.imj_buttonStyleSwitcher {
 		@include iconPreset(16);
 		margin: 0 0.727272em;
@@ -343,6 +345,13 @@ body {
 	.imj_iconStatusPrivate_24 {
 		@include iconPreset(24, $defaultCursor:true);
 		@include backgroundIcon('imjLocked_24.png', hover, left, center);
+	}
+	
+	.imj_iconStatusPrivate_16 {
+		@include iconPreset(16, $defaultCursor:true);
+		@include backgroundIcon('imjLocked_16.png', hover, left, center);
+		float: left;
+		
 	}
 	.imj_iconStatusShareable_24 {
 		@include iconPreset(24, $defaultCursor:true);

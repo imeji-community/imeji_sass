@@ -1296,11 +1296,11 @@ select.imj_metadataEditText {
 		}
 	}
 	.imj_infoNavigation {
-		width: 95.95%;
+		width: 90%;
 		padding: 0 2%;
 		text-align: right;
 		margin-bottom: 1.454545em;
-		
+		float:right;
 		.imj_buttonEdit_16 {
 			margin-right: 0.181818em;
 		}
@@ -1405,12 +1405,19 @@ select.imj_metadataEditText {
 		width: 100%;
 		padding: 1em 1.25em 1.25em 1em;
 		text-align: center;
+		
+		
 	}
 	.imj_community_logo {
 		padding: 1%;
 		margin-right: 5%;
 		@include border-radius($border-radius-default);
-	}
+	}	
+	
+}
+
+.imj_startpageFooterLogos{
+	.imj_poweredby_imprint { width: 50%; margin: 0 auto;}
 }
 
 #imj_welcomeInfoWrapper {
