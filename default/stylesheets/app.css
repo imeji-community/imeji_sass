@@ -445,6 +445,12 @@ select.imj_metadataEditText { min-height: 0; }
 
 .imj_loginFormSite { width: 91.25%; padding: 1% 4%; border-top: 0.1em solid #6CAE2F; }
 
+.imj_registerSteps { float: right; }
+.imj_registerSteps li { margin-bottom: 1em; }
+.imj_registerSteps .imj_active { font-size: 145%; }
+.imj_registerSteps .imj_submitted { padding: 0.272727em; background-color: #6CAE2F; }
+.imj_registerSteps:after { content: " "; float: none; clear: both; }
+
 .imj_startpageFooter { clear: both; width: 100%; padding: 1em 0; }
 .imj_startpageFooter img { margin: 0 1%; }
 .imj_startpageFooter .imj_startpageFooterLogos { width: 100%; padding: 1em 1.25em 1.25em 1em; text-align: center; }
