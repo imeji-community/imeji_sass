@@ -151,6 +151,8 @@ body a:hover .imj_entryPagePreviewTiledListLinkArrow { background: transparent u
 .imj_active { color: #F0F0F0; }
 .imj_active a { color: #F0F0F0; }
 
+.imj_requiredMarker:after { content: " *"; }
+
 .imj_activeMedia:hover, .imj_addMedia:hover { background-color: #444444; }
 
 .imj_disabled { color: #444444; cursor: default; background-color: inherit; }

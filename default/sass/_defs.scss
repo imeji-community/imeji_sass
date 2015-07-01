@@ -93,6 +93,9 @@
 		color: $link-color-active;
 	}
 }
+.imj_requiredMarker:after { 
+	content: " *"; 
+}
 
 // (image_details.xhtml)
 .imj_activeMedia,
