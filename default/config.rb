@@ -27,3 +27,4 @@ output_style = :compact
 # Use sensible defaults for your current environment.
 # One of: development (default), production
 environment = :production
+# test
