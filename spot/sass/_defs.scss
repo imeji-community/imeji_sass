@@ -1,0 +1,1940 @@
+// ======================================================
+// ===                  PAGE LAYOUT                   ===
+// ======================================================
+.imj_siteWrapper {
+    overflow: hidden;
+    width: $page-width;
+    max-width: $page-width-max;
+    height: auto !important;
+    min-height: 100%;
+    margin-bottom: -2.001em;
+}
+.imj_siteWrapper > * {  // add a saved area for the page left + right
+                        padding-left: 1.93em;
+                        padding-right: 1.93em;
+}
+// /* ===[ SiteHeader ]===
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_siteHeader {
+    background-color: $page-header-bg-color;
+
+    .imj_slogan {
+        display: inline-block;
+        margin-top: -3em;
+        vertical-align: middle;
+    }
+    &:after {
+        clear: both;
+        content: "";
+        content: 0 none;
+    }
+}
+
+.imj_spaceLogo {
+    max-height: $logo-height;
+    margin-left: 3%;
+}
+
+// /* === [ Site Headline ]===
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_siteContentHeadline {
+    clear: both;
+    float: right;
+    max-width: 24em;
+    margin: 0;
+    padding: 0.5% 6.5% 0.5% 1%;
+    color: $pagetitle-color;
+    background-color: $pagetitle-bgcolor;
+    text-align: right;
+    @include border-radius($border-radius-default);
+
+    &:after {
+        content: "";
+        content: none;
+        clear: right;
+    }
+    h1 {
+        font-size: 160%;
+        font-weight: bold;
+        letter-spacing: 0.045em;
+        line-height: normal;
+    }
+}
+
+// /* ===[ Content - Main Content - Content Header]===
+// ================================================== */
+.imj_mainContentWrapper {
+    width: $cnt-width;
+    max-width: $cnt-width-max;
+    background-color: $cnt-bgcolor;
+}
+
+// /*  ===[ SiteFooter ]===
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_siteFooter {
+    width: 100%;
+    padding: 2em 0;
+    text-align: center;
+    background-color: $page-footer-bg-color;
+}
+
+// ======================================================
+// ===             GLOBAL DEFINITIONS                 ===
+// ======================================================
+.imj_clearfix:after {
+    content: " ";
+    clear: both;
+}
+.imj_invisible {
+    visibility: hidden;
+}
+.imj_noDisplay {
+    display: none;
+}
+.imj_active {
+    color: $link-color-active;
+
+    a {
+        color: $link-color-active;
+    }
+}
+.imj_requiredMarker:after { 
+    content: " *"; 
+}
+
+// (image_details.xhtml)
+.imj_activeMedia,
+.imj_addMedia {
+
+    &:hover {
+        background-color: $media-active-add-bgcolor-hover;
+    }
+}
+.imj_disabled {
+    color: $input-color-disabled;
+    cursor: default;
+    background-color: $input-bgcolor-disabled;
+
+    a {
+        color: $link-color-disabled;
+        cursor: default;
+
+        &:hover {
+            color: $link-color-disabled;
+            cursor: default;
+        }
+    }
+    &:hover {
+        color: $input-color-disabled;
+        cursor: default;
+        background-color: $input-bgcolor-disabled;
+    }
+}
+.imj_keepFormat {
+    white-space: pre-wrap;
+}
+.imj_mediaWithdrawn { // (image_details.xhtml, entryPagePreviewTiledList)
+                      width: 100%;
+                      color: $media-widthdrawn-color;
+                      text-align: center;
+}
+.imj_selectMedia { // (image_details.xhtml)
+                   margin-right: 0.636em;
+}
+
+
+// =====================================================================
+// ===[ GENERAL DEFINITIONS FOR PAGES WITH DEFAULT OR SMALL CONTENT ]===
+// *  Share.xhtml
+// *  Legal.xhtml
+// *  About.xhtml
+// *  Help.xhtml
+// =====================================================================
+.imj_errorPage {
+    width: 91.25%;
+    padding: 1% 4%;
+}
+.imj_shareForm,
+.imj_legalPage,
+.imj_aboutPage,
+.imj_helpPage {
+    width: 91.25%;
+    padding: 1% 4%;
+    border-top: $sharepage-separatortop-border-style;
+}
+
+// =====================================================================
+// ENTRY PAGES FOR COLLECTIONS AND ALBUMS
+// =====================================================================
+.imj_collectionEntryPage,
+.imj_albumEntryPage {
+    width: 91.25%;
+    padding: 1% 4%;
+    border-top: $entrypage-separatortop-border-style;
+
+    .imj_headline {
+
+        .imj_entryPagePreviewTiledListLinkArrow {
+            float: none;
+            margin-right: 0.5em;
+            vertical-align: bottom;
+        }
+
+        &.imj_messageInfo {
+            margin-bottom: 1em;
+        }
+    }
+}
+// =====================================================================
+// EDIT METADATA + METADATA PROFILE PAGES
+// =====================================================================
+// ORGANISATION OF PERSON
+.imj_organisation { // look at component person.xhtml
+                    width: 100%;
+                    padding: 0 4%;
+                    @include box-sizing("border-box");
+}
+// METADATA PROFILE
+.imj_editMetadataProfilePage {
+    width: 91.25%;
+    padding: 1% 4%;
+    border-top: $mdprofilepage-separatortop-border-style;
+
+    h2 {
+        &.imj_headline {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+
+// =====================================================================
+// MESSAGES
+// =====================================================================
+.imj_pageMessageArea,
+.imj_contentMessageArea {
+    width: 87.95%;
+    display: inline-block;
+    color: $messagearea-color;
+    margin: 1em 0;
+    padding: 0 6%;
+}
+
+.imj_messageList {
+    width: 100%;
+    padding: 0;
+    font-size: 110%;
+
+    li {
+        width: 97.95%;
+        padding: 0.125em 1% 0.25em 1%;
+    }
+}
+.imj_messageStatus {
+    margin-top: 1em;
+    width: 97.95%;
+    padding: 0 1%;
+}
+.imj_messageInfo {
+    color: $message-info-color;
+    background-color: $message-info-bgcolor;
+}
+.imj_messageTitleInfo {
+    width: 97.95%;
+    padding: 0 1% 0.125em 1%;
+    font-size: 125%;
+    color: $message-info-color;
+    background-color: $message-info-bgcolor;
+}
+.imj_messageTitleWarn {
+    width: 97.95%;
+    padding: 0.25em 1%;
+    font-size: 145%;
+    line-height: 110%;
+    color: $message-warn-color;
+    background-color: $message-warn-bgcolor;
+}
+.imj_messageError,
+.imj_messageFatal,
+.imj_messageWarn {
+    color: $message-warn-color;
+    background-color: $message-warn-bgcolor;
+}
+
+
+// =====================================================================
+// DIALOGS
+// =====================================================================
+.imj_modalDialogBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $modaldialog-bgcolor;
+    opacity: 0.5;
+    filter: alpha(opacity =   50); /* IE 6, 7, 8 */
+    -ms-filter: "alpha(opacity = 50)";
+}
+
+.imj_modalDialogBox {
+    position: absolute;
+    top: 22.7272727272em;
+    padding: 0.72727272em;
+    background-color: $modaldialog-bgcolor;
+    display: none;
+    z-index: 5000;
+
+    @include box-shadow($modaldialog-shadow);
+    @include border-radius($border-radius-default);
+
+    .imj_submitPanel {
+        display: block;
+    }
+    .imj_confirmationReasonTextarea {
+        label {
+            display: block;
+        }
+    }
+    .imj_dialogReasonText {
+        width: 50em;
+        resize: vertical;
+    }
+    .imj_confirmationText {
+        p {
+            max-width: 50em;
+        }
+    }
+}
+
+.imj_inlineSelectionGroup {
+    display: inline-block;
+
+    .imj_selectionLabel {
+        display: inline;
+        margin-right: 0.5em;
+    }
+
+    .imj_selectionBox {
+        display: inline;
+    }
+}
+
+
+
+// =====================================================================
+// BUTTONS - NOT ICONS
+// =====================================================================
+
+// * general button group definitions */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_inlineButtonGroup {	// used in mediaContainer_editMetadata.xhtml, SearchAdvanced.xhtml
+                         white-space: nowrap;
+}
+
+// * general button classes */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_collapse, button.imj_collapse, input[type=button].imj_collapse,
+.imj_expand, button.imj_expand, input[type=button].imj_expand {
+    color: $link-color;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        color: $link-color-hover;
+        border: 0 none;
+        background-color: transparent;
+    }
+}
+
+a.imj_cancelButton,
+input.imj_cancelButton,
+button.imj_cancelButton,
+.imj_cancelButton {
+    margin: 0 1em;
+    color: $button-cancel-color;
+    background-color: $button-cancel-bgcolor;
+    border: $button-cancel-border;
+    cursor: pointer;
+    @include border-radius($border-radius-default);
+
+    &:hover {
+        @include hover(cancelButton);
+    }
+    &:active {
+        @include hover(cancelButton);
+    }
+    &:focus {
+        @include hover(cancelButton);
+    }
+}
+
+a.imj_submitButton,
+input.imj_submitButton,
+button.imj_submitButton,
+.imj_submitButton {
+    margin-left: 1em;
+    color: $button-submit-color;
+    background-color: $button-submit-bgcolor;
+    border: $button-submit-border;
+    cursor: pointer;
+    @include border-radius($border-radius-default);
+
+    &:hover {
+        @include hover(submitButton);
+    }
+    &:active {
+        @include hover(submitButton);
+    }
+    &:focus {
+        @include hover(submitButton);
+    }
+}
+
+a.imj_disabledButton,
+input.imj_disabledButton,
+button.imj_disabledButton,
+.imj_disabledButton {
+    margin-left: 1em;
+    cursor: default;
+    @include disabled(button);
+    @include border-radius($border-radius-default);
+
+    &:hover {
+        @include hover(disabledButton);
+    }
+    &:active {
+        @include hover(disabledButton);
+    }
+    &:focus {
+        @include hover(disabledButton);
+    }
+}
+
+// * resetButton used in: e.g. batch edit */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+a.imj_resetButton,
+input.imj_resetButton,
+button.imj_resetButton,
+.imj_resetButton {
+    color: $button-reset-color;
+    background-color: $button-reset-bgcolor;
+    border: $button-reset-border;
+    cursor: pointer;
+    @include border-radius($border-radius-default);
+
+    &:hover {
+        @include hover(resetButton);
+    }
+    &:active {
+        @include hover(resetButton);
+    }
+    &:focus {
+        @include hover(resetButton);
+    }
+}
+
+.imj_backButton {
+    padding: 0 0.3333333em;
+    margin-left: 1em;
+    color: $button-back-color;
+    background-color: $button-back-bgcolor;
+    border-bottom: $button-back-border;
+    cursor: pointer;
+    @include border-radius(0 0 $border-radius-default $border-radius-default);
+
+    &:hover {
+        @include border-radius($border-radius-default);
+        @include hover(backButton);
+    }
+    &:active {
+        @include border-radius($border-radius-default);
+        @include hover(backButton);
+    }
+    &:focus {
+        @include border-radius($border-radius-default);
+        @include hover(backButton);
+    }
+}
+
+.imj_editButton,
+a.imj_editButton {
+    margin-left: 1em;
+    color: $button-edit-color;
+    background-color: $button-edit-bgcolor;
+    border: $button-edit-border;
+    cursor: pointer;
+    @include border-radius($border-radius-default);
+
+    &:hover {
+        @include hover(editButton);
+    }
+    &:active {
+        @include hover(editButton);
+    }
+    &:focus {
+        @include hover(editButton);
+    }
+}
+.imj_editButton {
+
+    &[type="submit"] {
+        margin-left: 0;
+    }
+}
+
+
+// * removeButton used in: e.g. image_details.xhtml */
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+button.imj_removeButton { 
+    color: $link-color;
+    background-color: inherit;
+}
+.imj_removeButton { 
+
+    &:hover {
+        @include hover(removeButton);
+    }
+    &:active {
+        @include hover(removeButton);
+    }
+    &:focus {
+        @include hover(removeButton);
+    }
+}
+
+
+// =====================================================================
+// HEADLINES
+// =====================================================================
+.imj_headline h2,
+h2.imj_headline {
+    padding: 0.454545em 0.81818181em;
+    font-size: 140%;
+    line-height: normal;
+}
+
+.imj_headline h3,
+h3.imj_headline {
+    padding: 0.272727em 0.545454em;
+    font-size: 125%;
+    line-height: normal;
+}
+.imj_sectionHeadline h2,
+h2.imj_sectionHeadline {
+    font-size: 140%;
+    line-height: normal;
+}
+.imj_sectionHeadline h3,
+h3.imj_sectionHeadline {
+    padding: 0.272727em 0.545454em;
+    font-size: 120%;
+    line-height: normal;
+}
+
+.imj_headline h4,
+h4.imj_headline {
+    padding: 0.181818em 0.363636em;
+    font-size: 110%;
+    line-height: normal;
+}
+
+.imj_sectionHeadline h4,
+h4.imj_sectionHeadline {
+    padding: 0.181818em 0.363636em;
+    font-size: 110%;
+    font-style: italic;
+    line-height: normal;
+}
+
+// =====================================================================
+// /* ===[ COMMON ELEMENTS ]===
+// =====================================================================
+.highlight_area {
+    border: $highlightarea-border-style;
+    background-color: $highlightarea-bgcolor;
+
+    &.imj_highlightDependencies, 
+    .imj_highlightDependencies {
+        background-color: $highlightarea-bgcolor-hover;
+    }
+    &:hover {
+        background-color: $highlightarea-bgcolor-hover;
+    }
+}
+
+.imj_backPanel {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 1em 0;
+    padding: 0 2%;
+}
+
+.imj_customSelectbox {
+    display: inline-block;
+    margin-top: 0.090909em;
+    padding: 0.181818em 0.545454em 0 0.545454em;
+    border: $selectbox-border-style;
+    @include border-radius($border-radius-default);
+
+    select {
+        opacity: 0;
+        filter: Alpa(opacity=0);
+    }
+    .imj_showSelection {
+        position: absolute;
+        display: inline-block;
+
+        .imj_selectionText {
+            display: inline-block;
+            color: $selectbox-text-color;
+            text-align: left;
+            vertical-align: top;
+        }
+        .imj_buttonSortDescending_16 {
+            display: inline-block;
+            margin-right: 0;
+            margin-left: 0.272727em;
+
+            &:after {
+                clear: both;
+                content: "";
+                content: 0 none;
+            }
+        }
+    }
+}
+
+// * image / picture / media - stack - 
+// * -- component (bibliographicList.xhtml)
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+.imj_imageStack {
+    border: $imgstack-border-style;
+    @include box-shadow($imgstack-shadow);
+    float: left;
+    height: 100px;
+    margin: 15px;
+    position: relative;
+    width: 100px;
+    z-index: 100;
+
+    img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: $imgstack-border-style;
+        background: $imgstack-background-style;
+        z-index: 10;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: -6px;
+        top: -2px;
+        border: $imgstack-border-style;
+        background: $imgstack-background-style-before;
+        @include box-shadow($imgstack-shadow);
+        @include transform(rotate(-5deg));
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: -6px;
+        top: -2px;
+        border: $imgstack-border-style;
+        background: $imgstack-background-style-after;
+        @include box-shadow($imgstack-shadow);
+        @include transform(rotate(4deg));
+    }
+}
+
+
+
+// * imj_optionSet used in: 
+// --- tiledMediaList.xhtml, template_metada_profileEdit.xhtml, BatchEdit.xhtml, Upload.xhtml
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_optionSet {
+    max-width: 100%;
+    margin-bottom: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    .imj_optionCheckbox {
+        margin-right: 0.272727em;
+        margin-left: 0;
+    }
+    .imj_optionLabel {
+        white-space: normal;
+    }
+}
+table.imj_optionSet {
+    td {
+        label {
+            white-space: normal;
+        }
+    }
+}
+
+
+
+// SETS OF METADATA
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_globalMetadataSet,
+.imj_metadataWrapper,
+.imj_infodataWrapper {
+    width: 100%;
+}
+
+.imj_metadataSet {
+    @include datasetParam(set);
+
+    .imj_metadataLabel {
+        @include datasetParam(label);
+
+        * {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .imj_metadataValue {
+        @include datasetParam(value);
+
+        .imj_customSelectbox {
+            word-wrap: normal;
+        }
+    }
+}
+textarea.imj_metadataValue {
+    resize: vertical;
+}
+textarea.imj_metadataValue,
+input.imj_metadataValue {
+    width: 72.85%;
+}
+p.imj_metadataValue {
+    margin: 0 0 0 1em;
+}
+.imj_metadataValueEntry {
+    display: inline-block;
+
+    p:first-child {
+        margin-top: 0;
+    }
+}
+.imj_metadataValueEntryViewMap {	// used in MetadataOutput.xhtml
+                                 display: block;
+}
+
+// -- metadata edit
+.imj_metadataEditText {
+    width: 55em;
+    min-height: 6em;
+}
+select.imj_metadataEditText {
+    min-height: 0;
+}
+
+.imj_metadataEditDate {	// used in MetadataInput.xhtml
+                        width: 7.545454em;
+                        text-align: center;
+}
+.imj_metadataEditLink,
+.imj_metadataEditPerson,
+.imj_metadataEditPublication {
+    width: 55em;
+}
+.imj_metadataEditLicence,
+.imj_metadataEditNumber,
+.imj_metadataEditGeo,
+.imj_admindataEdit {
+    width: 25em;
+}
+
+.imj_infodataSet {
+    @include datasetParam(set);
+
+    .imj_infodataLabel {
+        @include datasetParam(label);
+    }
+    .imj_infodataValue {
+        @include datasetParam(value);
+    }
+}
+.imj_infodataValueEntryEmbed {	// used in image_details.xhtml
+                               min-height: 6em;
+                               width: 55em;
+}
+
+
+.imj_admindataSet {
+    @include datasetParam(set);
+
+    .imj_admindataLabel {
+        @include datasetParam(label);
+    }
+    .imj_admindataValue {
+        @include datasetParam(value);
+    }
+}
+.imj_admindataSetEdit {
+    margin: 1em 0;
+
+    .imj_admindataValue {
+        .imj_admindataSetEdit {
+            margin: 0;
+        }
+    }
+
+    .imj_admindataLabel {
+        @include datasetParam(label);
+    }
+    .imj_admindataValue {
+        @include datasetParam(value);
+    }
+}
+.imj_admindataCheckbox {
+    margin-left: 0;
+}
+.imj_admindataValue {
+
+    .imj_additionalCodeSnippet {	
+        // used in Config.xhtml
+        width: 100%;
+        min-height: 7em;
+        resize: vertical;
+    }
+}
+.imj_admindataValueCheckBox {
+    display: inline-block;
+}
+.imj_admindataValueEntry {
+    display: inline-block;
+}
+
+
+
+
+// PAGE HEADER
+
+// /* ===[ SiteHeader - SimpleSearch ]===
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+.imj_simpleSearch {
+    float: right;
+    margin-top: 0.75em;
+
+    .imj_simpleSearchInput {
+        width: 6em;
+        border: $pageheader-search-input-border;
+        @include border-radius(0.454545em 0 0 0.454545em);
+        vertical-align: middle;
+        font-size: 14pt;
+        transition: width 250ms ease, margin-left 250ms;
+        
+        &:hover {
+            @include hover(searchInputHeader);
+        }
+        &:active {
+            @include hover(searchInputHeader);
+        }
+        &:focus {
+            @include hover(searchInputHeader);
+        }
+    }
+
+    .imj_simpleSearchButtonSubmit {
+        margin-left: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        @include border-radius(0 0.454545em 0.454545em 0);
+        vertical-align: middle;
+        font-size: 14pt;
+
+        &:hover {
+            @include hover(submitButtonHeader);
+        }
+        &:active {
+            @include hover(submitButtonHeader);
+        }
+        &:focus {
+            @include hover(submitButtonHeader);
+        }
+    }
+
+    .imj_cancelButton {
+        margin: 0;
+        padding: 0.181818em 1em 0.272727em 1em;
+        vertical-align: middle;
+        @include border-radius(0 0.454545em 0.454545em 0);
+    }
+
+    .imj_searchInfoText {
+        display: inline-block;
+        margin: 0 0.272727em;
+    }
+} // end of imj_simpleSearch
+
+@media (min-width: 796px) {
+    .imj_simpleSearch {
+        .imj_simpleSearchInput {
+            width: 8em;
+            
+            &:focus {
+                width: 12em;
+            }
+        }
+    }
+}
+@media (min-width: 896px) {
+    .imj_simpleSearch {
+        .imj_simpleSearchInput {
+            width: 12em;
+            
+            &:focus {
+                width: 16em;
+            }
+        }
+    }
+}
+
+// /* ===[ Content - Sub Header Message Space ]===
+// ================================================== */
+.imj_subHeaderMessageSpace {
+    clear: both;
+    float: left;
+    display: inline;
+    overflow: hidden;
+    margin: 0.65em 0.0909em 0 0;
+    width: 81.3636em;
+}
+
+// ================================================== */
+// ================================================== */
+
+// /* ===[ Content - Submit Panel ]===
+// ================================================== */
+.imj_submitPanel {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 1em;
+
+    .imj_submitPanelSeparator {	// used in Share.xhtml
+                                margin-left: 0.545454em;
+                                margin-right: 0.545454em;
+
+                                + .imj_submitButton {	// used in Share.xhtml
+                                                      margin-left: 0;
+                                }
+    }
+
+    a,
+    input {
+        vertical-align: baseline;
+    }
+}
+
+
+// /* ===[ Content - Breadcrump History Navigation ]===
+// /* * breadcrump component (History.xhtml)
+// ================================================== */
+.imj_breadcrumpHistory {
+    width: 91.75%;
+    padding: 0 4%;
+    margin-bottom: 0.5em;
+
+    .imj_breadcrumpTitle {
+        margin-right: 0.363636em;
+        font-size: 1.090909em;
+        line-height: 2em;
+        vertical-align: top;
+    }
+    .imj_breadcrumpItem {
+        display: inline-block;
+        max-width: 11em;
+        line-height: 2em;
+        font-size: 1.090909em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+
+        .imj_breadcrumpLongDescription {
+            display:none;
+            max-width: 20.272727em;
+            padding: 0 0.363636em;
+            white-space: normal;
+            background-color: $breadcrump-overlay-bgcolor;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &:hover {
+            .imj_breadcrumpLongDescription {
+                position:absolute;
+                display:block;
+                z-index: 10;
+            }
+        }
+    }
+    .imj_breadcrumpSeparator {
+        margin-left: 0.363636em;
+        margin-right: 0.363636em;
+        line-height: 2em;
+        font-size: 1.090909em;
+        vertical-align: top;
+    }
+}
+
+
+
+// ===[ Advanced Search ]===
+// ================================================== */
+.imj_advancedSearch {
+    width: 91.25%;
+    padding: 0 4%;
+    border-top: $advsearch-separatortop-border-style;
+
+    .imj_logicalSearchGroup {
+        white-space: nowrap;
+        margin-right: 1.8%;
+    }
+    .imj_searchUnit {
+        width: 100%;
+        margin-top: 1em;
+
+        > div {
+            display: inline-block;
+        }
+        .imj_logicalConnector {
+            min-width: 3em;
+        }
+        .imj_logicalDetailConnector {
+            margin-left: 10%;
+            margin-top: 0.5em;
+            display: block;
+        }
+        .imj_inlineButtonGroup {
+            min-width: 3.5em;
+        }
+        .imj_compareLabel {
+            padding: 0 0.5em;
+        }
+
+        .imj_searchSelectbox {
+            > select {
+                max-width: 30em;
+            }
+        }
+        .imj_searchDetails {
+            width: 92%;
+            margin-left: 7%;
+            margin-top: 0.5em;
+
+            > div {
+                display: inline-block;
+                vertical-align: top;
+            }
+            .imj_inlineButtonGroup {
+                margin-left: 0.5em;
+            }
+            .imj_searchStatement {
+                > select {
+                    width: 15em;
+                }
+            }
+            .imj_searchInput {
+
+                > input {
+                    width: 20em;
+                }
+            }
+            .imj_searchInputValue{
+                margin-bottom: 1em;
+            }
+            .imj_submitPanel {
+                text-align: left;
+            }
+
+            input[type="checkbox"] + label {
+                margin-left: 0.181818em;
+                margin-right: 1em;
+            }
+        }
+    }
+    .imj_ajaxChangeElementButton,
+    .imj_ajaxUpdateElementButton {
+        display: none;
+    }
+}
+
+// /* search query display, in head of content
+// * (searchQueryDisplayArea.xhtml)
+// ===============================================
+.imj_searchQueryDisplay {
+    width: 91.25%;
+    padding: 1% 4%;
+
+    > fieldset {
+        padding: 1% 1%;
+        border-top-style: inset;
+        border-bottom-style: outset;
+        border-color: rgba(255,255,255, 0.15);
+
+        legend {
+            margin: 0 1%;
+            padding: 0 1%;
+            font-size: 110%;
+        }
+    }
+    .imj_submitButton {
+        display: inline-block;
+        white-space: nowrap;
+        margin-top: 0.272727em;
+    }
+}
+
+
+
+
+// /* * Selection Info Panel (Image.xhtml)
+// ================================================== */
+.imj_selectionInfoPanel {
+    width: 91.75%;
+    padding: 0 4%;
+    margin-bottom: 0.5em;
+
+    .imj_removeFacetButton {
+        margin-left: 0.181818em;
+    }
+    .imj_facetSeparator {
+        margin-right: 0.181818em;
+    }
+}
+.imj_selectionInfoPanelItemSelect {
+    float: right;
+}
+
+// /* * filter info panel (overview pages - Collections, Albums)
+// * filterInfoPanel.xhtml
+// ================================================== */
+.imj_filterInfoPanel {
+    width: 91.75%;
+    padding: 0 4%;
+    margin-bottom: 0.5em;
+
+    .imj_removeFilterButton {
+        margin: 0 0.272727em;
+    }
+}
+
+// ===[ Paginator Components ]===
+// ================================================== */
+.imj_paginator {	// used as container for different paginator types
+                 width: 91.75%;
+                 margin-top: 1em;
+                 margin-bottom: 1em;
+                 padding: 0.636363em 4%;
+                 text-align: center;
+                 border-top: $paginator-bordertop-style;
+
+                 .imj_rangeSelector {
+                     float: left;
+
+                     .imj_rangeSelectorLabel {
+                         margin-left: 0.363636em;
+                         vertical-align: baseline;
+                     }
+                 }
+                 .imj_gotoBox {
+                     float: right;
+
+                     label {
+                         vertical-align: baseline;
+                     }
+                     .imj_pageInput {
+                         width: 3em;
+                         margin-left: 0.363636em;
+                         margin-right: 0.363636em;
+                         text-align: center;
+                     }
+                     .imj_submitButton {
+                         margin-left: 0.545454em;
+                     }
+                 }
+}
+
+// /* Simple Page Browser - used for detail view
+// ================================================== */
+.imj_simplePageBrowser {
+    .imj_buttonBrowseBackward_16 {
+        padding-left: 1.5em;
+    }
+    .imj_buttonBrowseForward_16 {
+        padding-right: 1.5em;
+    }
+    .imj_buttonBrowseBackward_16,
+    .imj_buttonBrowseForward_16 {
+        color: $paginator-color;
+        cursor: pointer;
+        width: auto;
+
+        &:hover {
+            @include hover('paginatorHover');
+        }
+        &:focus {
+            @include hover('paginatorHover');
+        }
+        &:active {
+            @include disabled('paginatorDisabled');
+        }
+        &.imj_deactivated {
+            cursor: default;
+            @include disabled('paginatorDisabled');
+        }
+        &.imj_deactivated:hover {
+            @include disabled('paginatorDisabled');
+        }
+    }
+    .imj_buttonBrowseBackward_16 + .imj_buttonBrowseForward_16 {
+        margin-left: 1.5em;
+    }
+}
+
+// /* Single Page Browser - used for browse into tiled list
+// ================================================== */
+.imj_singlePageBrowser {
+    display: inline-block;
+
+    .imj_buttonBrowseToFirst_16,
+    .imj_buttonBrowseBackward_16,
+    .imj_buttonBrowseForward_16,
+    .imj_buttonBrowseToLast_16 {
+        cursor: pointer;
+
+        &.imj_deactivated {
+            cursor: default;
+        }
+    }
+
+    .imj_separator {
+        display: inline-block;
+        height: 1.81818181em;
+        vertical-align: middle;
+    }
+
+    .imj_pageNumber {
+        padding: 0 1em;
+        background-color: transparent;
+        border: 0 none;
+        font-size: 1em;
+        color: $paginator-pagenumber-color;
+        cursor: pointer;
+    }
+
+    .imj_pageNumber:hover {
+        color: $paginator-pagenumber-color-hover;
+    }
+
+    .imj_currentPageNumber {
+        padding: 0 1em;
+        color: $paginator-pagenumber-color-active;
+        background-color: transparent;
+        border: 0 none;
+    }
+}
+
+
+
+// === [ Image Info Layer ]===
+// /* currently used in MetadataPopup.xhtml for tiled list
+// ================================================== */
+.imj_imageInfoLayer {
+    width: 95.95%;
+    padding: 0 2%;
+
+    .imj_metadataValue {
+        width: 72.33%;
+        margin-left: 0.727272em;
+    }
+
+    .highlight_area {
+        &.imj_highlightDependencies {
+            background-color: $highlightarea-tooltip-bgcolor-hover;
+        }
+    }
+    .imj_infoNavigation {
+        width: 90%;
+        padding: 0 2%;
+        text-align: right;
+        margin-bottom: 1.454545em;
+        float:right;
+        .imj_buttonEdit_16 {
+            margin-right: 0.181818em;
+        }
+
+        a {
+            margin-left: 1em;
+        }
+    }
+}
+
+
+
+// /* * metadataSubPanel (image_details.xhtml, entryPageTabList.xhtml)
+//  * should be a part of imj_metadataList
+// ================================================== */
+.imj_metadataSubPanel {
+    text-align: left;
+    width: 91.95%;
+    padding: 1% 4%;
+
+    .imj_metadataSubPanelItem {
+        font-weight: bold;
+        border-bottom: $mdsubpanel-border-bottom-style;
+
+        a {
+            padding: 0 0.181818em;
+
+            &:hover {
+                background-color: $mdsubpanel-item-bgcolor-hover;
+            }
+        }
+    }
+}
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// /* ===[ FACETS ]===
+// * - facets.xhtml, selectionInfoPanel.xhtml
+// * ================================ */
+#imj_ajaxFacets {
+    padding: 1% 4%;
+}
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+// /* * login form
+// loginFormSite is includes on page content, not in menu!
+// ================================================= */
+.imj_loginFormSite {
+    width: 91.25%;
+    padding: 1% 4%;
+    border-top: $page-login-form-border-style;
+}
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+// /* * register page
+//  * Register.xhtml
+// ================================================= */
+.imj_registerSteps { 
+    float: right;
+
+    li { 
+        margin-bottom: 1em; 
+    }
+    .imj_active { 
+        font-size: $register-step-active-font-size; 
+    }
+    .imj_submitted { 
+        padding: 0.272727em; 
+        background-color: $register-step-submitted-bg-color; 
+    }
+    &:after { 
+        content: " ";
+        float: none; 
+        clear:both; 
+    }
+} 
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// STARTPAGE
+.imj_startpageFooter {
+    clear: both;
+    width: 100%;
+    padding: 1em 0;
+    img {
+        margin: 0 1%;
+    }
+    .imj_startpageFooterLogos {
+        width: 100%;
+        padding: 1em 1.25em 1.25em 1em;
+        text-align: center;
+
+
+    }
+    .imj_community_logo {
+        padding: 1%;
+        margin-right: 5%;
+        @include border-radius($border-radius-default);
+    }	
+
+}
+
+.imj_startpageFooterLogos{
+    .imj_poweredby_imprint { width: 50%; margin: 0 auto;}
+}
+
+#imj_welcomeInfoWrapper {
+    display: inline-block;
+    width: 48%;
+}
+.imj_welcomeInfo {
+    min-height: 34.8333333em;
+    width: 37.85%;
+    padding: 1%;
+    margin: 1% 0;
+    overflow: hidden;
+    background-color: $welcome-info-bgcolor;
+    @include border-radius($border-radius-default);
+
+    .id_tabs {
+        ul {
+            padding: 0;
+            margin-top: 0;
+            padding-top: 0.333333em;
+            list-style-type: none;	
+
+            li {
+                margin-left: 1%;
+                padding: 1%;
+                display: inline;
+                font-size: 110%;
+                @include border-radius($border-radius-default);
+            }
+        }
+        .imj_tabMenu {
+            text-align: right;
+
+            li {
+                background-color: $welcome-info-tabs-bgcolor;
+                &.ui-state-active {
+                    background-color: $welcome-info-tabs-bgcolor-active;
+                }
+            }
+        }
+        .imj_tabContent {
+            min-height: 30em;
+
+            ul {
+                margin-bottom: 3em;
+            }
+            li {
+                display: block;
+                padding-left: 2%;
+                background-color: $welcome-info-listentry-bgcolor;
+            }
+            .imj_headline, .imj_sectionHeadline {
+                margin-top: 1em;
+            }
+        }
+        div.ui-tabs-hide {
+            display: none;
+        }
+    }
+}
+
+// CAROUSEL
+.imj_startpage_carouselWrapper {
+    float: right;
+    margin-top: 2em;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+
+    .imj_startpage_carousel {
+        width: 100%;
+        min-height: 33.333333em;
+        overflow: hidden;
+
+        .imj_startpage_carouselContainer {
+            max-height: 400px;
+            overflow: visible;
+            min-width: 350px;
+            width: 40%;
+            margin: 0 auto;
+
+            #carousel {
+                height: 26.66666666em;
+                width: 90%;
+                margin: 0 auto;
+                background: $welcome-carousel-bgcolor;
+                overflow: visible !important;
+            }
+            #cloudinfoText {
+                display: none;
+
+                .imj_cloudInfoTitle {
+                    font-weight: bold;
+                }
+                #title-text, #alt-text {
+                    margin: 0;
+                }
+            }
+            .dynamicCloudinfo {
+                position: absolute;
+                z-index: 5600;
+                background-color: $welcome-carousel-infolayer-bgcolor;
+                padding: 0.75em;
+            }
+        }
+    }
+}
+.imj_startpage_carouselWrapper:after {
+    clear: right;
+}
+
+// OVERRIDES
+iframe#twitter-widget-0 {
+    width: 99.5%;
+    height: 43em;
+}
+
+iframe#twitter-widget-0 div.root div.stream {
+    height: 20em !important;
+}
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+// DETAIL PAGE OF MEDIA ENTRIES
+
+// /* * imj_mediaEntryDetailPage (sub_template/template_image.xhtml)
+// ================================================== */
+.imj_mediaEntryDetailPage {
+
+    > .imj_metadataList,
+    > .imj_mediaDisplayContainer {
+        width: 91.25%;
+        margin: 1% 4%;
+    }
+    .highlight_area.imj_highlightDependencies {
+        background-color: $highlightarea-bgcolor-hover;
+    }
+
+    // /* * mediaDisplayContainer + mediaEditPanel , MetaDataList + Submit Panel + Buttons (image_details.xhtml)
+    // ================================================== */
+    .imj_mediaDisplayContainer {
+        padding: 1em 0;
+        margin-bottom: 0.545454em;
+        text-align: center;
+        border-bottom: $detailpage-displaycontainer-borderbottom-style;
+
+        .imj_optionSet {
+
+            .imj_optionCheckbox {
+                vertical-align: bottom;
+            }
+        }
+    }
+}
+
+// /* * [ Content - EDIT] + Items (image_details.xhtml)
+// ================================================== */
+.imj_mediaEditPanel {
+    width: 100%;
+    margin-top: 0.545454em;
+
+    .imj_mediaEditPanelItem {
+        letter-spacing: 0.045em;
+        margin: 1em 0.273em 0 2.000em;
+        @include border-radius($border-radius-default);
+    }
+    .imj_metadataEditButtonArea {
+        display: inline-block;
+    }
+}
+
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+
+
+// /* * create new or edit container, e.g. album or collection
+// component (createNewContainer.xhtml)
+// ================================================== */
+.imj_mediaContainerEditMD {
+    margin-bottom: 0.5em;
+    padding: 0 4%;
+    width: 91.75%;
+    border-top: $mediacontainer-separatortop-border-style;
+
+    .imj_headline {
+        width: 100%;
+
+        .imj_headline h3 {
+            margin: 1% 0;
+        }
+    }
+    .imj_authorMetadataSet {
+        background-color: $mediacontainer-author-bgcolor;
+        margin-bottom: 1.363636em;
+        padding: 0.5em 1%;
+    }
+    .imj_sectionHeadline {
+        margin-bottom: 0.545454em;
+    }
+}
+
+
+.imj_editGlobalAssignment {	// on batch edit
+                            width: 91.25%;
+                            padding: 1% 4%;
+                            border-top: $batchedit-globalAssignment-separatortop-border-style;
+
+                            > .imj_metadataSet {
+                                > .imj_metadataLabel {
+                                    label {
+                                        display: inline-block;
+                                        width: 100%;
+                                    }
+                                }
+                                > .imj_metadataValue {
+                                    width: 69.25%;
+                                    max-width: 69.25%;
+
+                                    > .imj_singleStatementEdit {
+                                        > textarea {
+                                            &.imj_metadataValue {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .imj_dataAssignmentPanel {
+                                display: inline-block;
+                                margin-top: 1em;
+                            }
+
+                            + .imj_batchEditItemList {
+                                border-top: $batchedit-itemlist-separatortop-border-style;
+                            }
+}
+
+.imj_singleStatementEdit {
+    width: 100%;
+    margin-bottom: 1em;
+
+    .imj_inlineButtonGroup {
+        margin-left: 1%;
+    }
+    textarea {
+        resize: vertical;
+    }
+}
+
+
+// /* ===[ Ingest Page ]===
+// * (Ingest.xhtml)
+// * ============================================ */
+.imj_ingestWrapper {
+    width: 91.25%;
+    padding: 0 4% 2em 4%;
+    border-top: $ingestpage-separatortop-border-style;
+}
+.imj_ingestMessageArea {
+    width: 100%;
+    border-bottom: $ingestpage-messagearea-border-style;
+    margin-bottom: 3em;
+}
+
+.imj_uploadDropArea {
+
+    + .imj_headline {	// used in Ingest.xhtml
+                      border-top: $upload-separation-border-style;
+                      border-bottom: $upload-separation-border-style;
+                      margin: 2em 0 1em 0;
+    }
+    + .imj_uploadUrlReference {	// used in Upload.xhtml
+                                margin-top: 4em;
+    }
+}
+
+
+// /* === Upload Page ===
+// * Upload.xhtml, SingleUpload.xhtml
+// * ============================================ */
+.imj_upload {
+    width: 91.25%;
+    padding: 1% 4%;
+    border-top: $uploadpage-separatortop-border-style;
+
+    .imj_uploadInputWrapper {
+        width: 70%;
+        min-width: 30em;
+        display: inline-block;
+    }
+    .imj_uploadDropArea {
+        width: 100%;
+    }
+
+    .imj_fileUploadContainer {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-right: 2em;
+        display: inline-block;
+
+        &.imj_singleUpload {
+
+            .imj_submitPanel {
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+.imj_uploadUrlReference {
+    width: 98%;
+    min-width: 30em;
+    padding: 0.5% 1%;
+
+    label {
+        margin-left: 1em;
+    }
+    input {
+        width: 98%
+    }
+    .submitPanel {
+        padding: 0.545454em 0;
+    }
+}
+
+
+.imj_uploadOptionsArea {
+    width: 27%;
+    margin: 0 0 0 1.5%;
+    padding: 0.5% 0.5%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: $upload-optionarea-bgcolor;
+
+    .imj_headline,
+    .imj_sectionHeadline {
+        margin-bottom: 1em;
+    }
+}
+
+.imj_uploadMessageArea {
+    width: 100%;
+    margin-top: 4em;
+
+    .imj_fileErrorMessageArea,
+    .imj_fileSuccessMessageArea {
+        width: 48%;
+        padding: 1% 0.8%;
+        display: inline-block;
+        vertical-align: top;
+
+        .imj_messageList {
+            width: 84%;
+            max-height: 21em;
+            padding: 0 0 0 15.25%;
+            list-style: decimal-leading-zero;
+            overflow: auto;
+        }
+    }
+    .imj_fileErrorMessageArea {
+        background-color: $upload-messagearea-bgcolor-error;
+    }
+    .imj_fileSuccessMessageArea {
+        background-color: $upload-messagearea-bgcolor-success;
+    }
+}
+
+
+
+// /* === Share Page & Share Form ===
+// *  Share.xhtml
+// * ============================================ */
+.imj_shareForm {
+    width: 91.25%;
+    padding: 1% 4%;
+
+    .imj_shareRightsOverview {
+        margin-top: 2em;
+        padding-top: 1em;
+        border-top: $share-separator-border-style;
+    }
+
+    .imj_rightsTable {
+        width: 100%;
+
+        th, 
+        td {
+            width: 6em;
+            padding: 0.272727em 0.545454em;
+
+            &.imj_rightsAction {
+                padding: 0;
+                text-align: right;
+
+                input {
+                    margin: 0;
+                }
+            }
+        }
+
+        th {
+            font-weight: bold;
+
+            &:first-child {
+                width: 13em;
+                text-align: left;
+            }
+        }
+        td {
+            padding-bottom: 0.363636em;
+        }
+        > tbody {
+            > tr {
+                &:hover {
+                    background-color: $share-rightstable-body-bgcolor;
+                }
+            }
+            table {
+                width: 100%;
+            }
+        }
+    }
+
+    .imj_rightsTableForNewUser {	// used to add a new user with rights
+                                 td {
+                                     padding-right: 0.818181em;
+                                     vertical-align: top;
+                                 }
+                                 input[type=checkbox] {
+                                     display: block;
+                                 }
+    }
+}
+#sharePanel {	// used in image_details.xhtml
+              fieldset {
+                  &.imj_shareInformationFieldset {
+                      padding: 1% 1%;
+                      border-top-style: inset;
+                      border-bottom-style: outset;
+                      border-color: rgba(255,255,255, 0.15);
+
+                      > legend {
+                          margin: 0 1%;
+                          padding: 0 1%;
+                          font-size: 110%;
+                      }
+                  }
+              }
+              .imj_shareForm {
+                  border: 0 none;
+                  width: 100%;
+                  padding: 0;
+              }
+}
+
+
+// Admin Edit Panel - used in AdminStorage.xhtml, UserGroups.xhtml, Users.xhtml for buttons as "show details", "send new password", ...
+.imj_adminEditPanel {
+    margin: 0.5em 0em 1em -1em;
+    padding: 0 0 2em 0;
+}
+
+// /* === Config Pages ===
+// *  Users.xhtml
+// * Config.xhtml
+// * ============================================ */
+.imj_userConfig {
+    .imj_adminPanel {
+        display: inline-block;
+        float: left;
+        margin-bottom: 2em;
+        max-width: 99.99%;
+        padding: 0 2%;
+        text-align: left;
+        vertical-align: top;
+    }
+    .imj_userGlobalInformation {	// e.g. shows email, name and nick name for user
+                                 > fieldset {
+                                     padding: 2%;
+                                     border: $user-globalinfo-border-style;
+                                     @include border-radius($border-radius-default);
+
+                                     .imj_submitPanel {
+                                         margin-top: 0;
+                                     }
+                                 }
+
+                                 + .imj_admindataSetEdit {
+                                     margin: 1em 0;
+                                     padding: 1em 0;
+                                     border-bottom: $user-separatorbottom-border-style;
+                                 }
+    }
+    .imj_userGrantList {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+
+    .imj_admindataValueEntry {
+
+        + .imj_editButton {
+            float:right;
+        }
+    }
+
+    .imj_connectedUserGroups {
+        .imj_admindataValueEntry {
+            display: block;
+        }
+    }
+}
+
+// Config.xhtml
+.imj_setupConfig {
+
+    .imj_admindataValue {
+        .imj_admindataEdit {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .imj_adminPanel {
+
+        .imj_headline {
+
+            .imj_submitButton {
+                float:right;
+
+                &:after {
+                    clear: both;
+                    content: "";
+                }
+            }
+        }
+    }
+}

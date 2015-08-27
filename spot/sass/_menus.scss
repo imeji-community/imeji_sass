@@ -1,0 +1,207 @@
+
+.imj_menuPanel {
+    background-color: #c4e3e2;
+}
+
+// /* ===[ Main Menu Standard ]===
+// ================================================== */
+.imj_mainMenuStandard {
+    display: block;
+    line-height: normal;
+
+    > li {
+        display: inline-block;
+        color: $link-color;
+        box-sizing: border-box;
+        padding: 0.545454em 1em;
+        vertical-align: middle;
+        font-size: 14pt;
+    }
+
+    li {
+
+        ul {
+            font: 0/0 serif;
+            z-index: -1;
+            padding: 1em;
+            margin-left: -1em;
+            background-color: #f1f3f3;
+        }
+
+        hr {
+            display: none;
+        }
+
+        &:hover {
+            color: $link-color-hover;
+
+            > ul {
+                position: absolute;
+                font: inherit;
+                z-index: auto;
+
+                li {
+                    font-size: 13pt;
+                }
+            }
+
+            hr {
+                display: block;
+            }
+        }
+    }
+
+    a {
+        .fa {
+            display: inline-block;
+            margin-right: 0.272727em;
+        }
+    } 
+}
+
+// /* ===[ Metamenu Standard ]===
+// ================================================== */
+.imj_metaMenuStandardSingleLine {
+    width: 100%;
+    margin-top: 0.363636em;
+    text-align: right;
+
+    ul {
+        
+        li {
+            display: inline;
+            margin-right: 1em;
+        }
+    }
+
+    .imj_metaMenuItem {
+        vertical-align: baseline;
+
+        input {
+            height: 1.454545em;
+            color: $meta-input-color;
+            background-color: $meta-input-bgcolor;
+            border: $border-style-default;
+            vertical-align: top;
+        }
+        input[type="text"], input[type="password"] {
+            width: 12em;
+            margin-right: 0.181818em;
+            border: $border-style-default-double;
+        }
+        input[type="submit"] {
+            color: $meta-button-color;
+            padding: 0;
+            margin-left: 0.272727em;
+            border: none 0;
+            vertical-align: text-top;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            @include hover(a);
+        }
+
+        @include gchromeInputFix($meta-input-bgcolor, $meta-input-color);
+    }
+    .imj_customSelectbox {
+        vertical-align: middle;
+        padding-top: 0.181818em;
+
+        select {
+            margin-top: -0.181818em;
+        }
+    }
+}
+
+
+// /* ===[ Content (Sub) Menu ]===
+// ================================================== */
+.imj_contentMenu {
+    display: inline-block;
+    clear: both;
+    padding: 0 7.5%;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+
+    .imj_contentMenuItem {
+        display: inline-block;
+        padding: 0;
+        margin-right: 1em;
+    }
+    .imj_contentMenuSeparator {
+        display: inline-block;
+        width: 0.090909em; 
+        height: 1.090909em;
+        margin: 0 0.318em; 
+        padding: 0;
+    }
+    + .imj_contentSubMenu {
+        margin-top: 0.272727em;
+    }
+}
+.imj_contentSubMenu {
+    clear: both;
+    width: 84.95%;
+    padding: 0 7.5%;
+    letter-spacing: 0.045em;
+
+    .imj_contentSubMenuItem {
+        display: inline-block;
+        padding: 0;
+        margin-right: 1em;
+    }
+    .imj_contentSubMenuSeparator {
+        display: inline-block;
+        width: 0.090909em; 
+        height: 1.090909em;
+        margin: 0 0.318em; 
+        padding: 0;
+    }
+    + .imj_contentSubMenu {
+        margin-top: 0.272727em;
+    }
+}
+
+// /* ===[ Overlay Menu ]===
+// ================================================== */
+.imj_overlayMenu {
+    display: inline-block;
+    padding: 0.125em 0.25em;
+
+    .imj_menuHeader {
+        text-align: left;
+        color: $overlaymenu-header-color;
+        cursor: pointer;
+    }
+    .imj_menuBody {
+        display: none;
+        position: absolute;
+        padding: 0.272727em 1em;
+        background-color: $overlaymenu-bgcolor;
+    }
+    &:hover {
+        .imj_menuHeader {
+            color: $overlaymenu-header-color-hover;
+        }
+        .imj_menuBody {
+            display: block;
+        }
+    }
+
+    .imj_criticalItem {
+
+        &:hover {
+            background-color: $overlaymenu-bgcolor-critical;
+        }
+    }
+
+    .imj_listItemSeparator {
+        padding-top: 0.181818em;
+        border-top: $overlaymenu-border-horizontal-separator;
+    }
+
+    li {
+        line-height: 175%;
+    }
+}
+
