@@ -1,6 +1,6 @@
 
 .imj_menuPanel {
-    background-color: #c4e3e2;
+    background-color: $menu-panel-bg;
 }
 
 // /* ===[ Main Menu Standard ]===
@@ -12,10 +12,11 @@
     > li {
         display: inline-block;
         color: $link-color;
-        box-sizing: border-box;
+        box-sizing: content-box;
         padding: 0.545454em 1em;
         vertical-align: middle;
         font-size: 14pt;
+        text-transform: uppercase;
     }
 
     li {
@@ -25,29 +26,44 @@
             z-index: -1;
             padding: 1em;
             margin-left: -1em;
-            background-color: #f1f3f3;
+            background-color: $mainmenu-active-bg;
         }
 
         hr {
             display: none;
         }
 
+        &.imj_active {
+            background-color: $mainmenu-active-bg;
+            
+            > a {
+                color: $link-color-active;
+                font-weight: bold;
+            }
+        }
+
         &:hover {
             color: $link-color-hover;
-
+            cursor: pointer;
+            @include hover-effect($link-hover-effect-default);
+            
             > ul {
                 position: absolute;
                 font: inherit;
-                z-index: auto;
+                font-weight: normal;
+                z-index: 999;
 
                 li {
                     font-size: 13pt;
+                    text-transform: none;
                 }
             }
 
             hr {
                 display: block;
             }
+
+
         }
     }
 
@@ -55,6 +71,11 @@
         .fa {
             display: inline-block;
             margin-right: 0.272727em;
+        }
+
+        &:hover {
+            color: $link-color-hover;
+            
         }
     } 
 }
@@ -67,7 +88,7 @@
     text-align: right;
 
     ul {
-        
+
         li {
             display: inline;
             margin-right: 1em;

@@ -1,25 +1,15 @@
 // GLOBALS
-// used colors for imeji default theme
+// used colors for spot theme
 // 
-// -color-01: #F0F0F0;	// dirty white
-// -color-02: #F2F2F2;	// lighten dirty white
+// #f1f3f3  // BG Page
+// #e4eef0  // BG Header + Footer
+// #bddbe1  // BG Menu panel
+// #e9eef0  // BG ACTIVE Menu item + BG Sub-Menu
 // 
-// -color-03: #6CAE2F;	// green
-// -color-04: #4AFF00;	// lighten green
-// 
-// -color-05: #FF7700;	// orange
-// -color-06: #FFC999;	// lighten dirty orange
-// 
-// -color-07: #D80000;	// lighten red
-// -color-08: #990000;	// red
-// 
-// -color-09: #000000;	// black
-// -color-10: #292929;	// darkgrey
-// -color-11: #313131;	// darkgrey - equals #313131
-// -color-12: #383838;	// darkgrey - equals #383838
-// -color-13: #444444;	// darken grey - equals #444444
-// -color-14: #4D4D4D;	// darken grey - equals #4D4D4D
-// -color-15: #BBBBBB;	// grey
+// #000000  // Textcolor
+// #006f7b  // Link (incl. hover)
+// #b8bcbf  // Disabled Links/
+
 
 // IMPORTS: e.g. font families or other foreign css defintions
 // ATTENTION css resets and a lot of other things are given bei compass, take notice of _combinedStyles.scss
@@ -79,12 +69,12 @@ $cnt-bgcolor: transparent;
 
 
 // PAGE HEADER
-$page-header-bg-color: #e4eef9;
+$page-header-bg-color: #e4eef0;
 
 
 
 // PAGE FOOTER
-$page-footer-bg-color: #e4eef9;
+$page-footer-bg-color: #e4eef0;
 
 
 
@@ -98,9 +88,10 @@ $body-bgcolor: #f1f3f3;
 
 // navigation, links, ...
 $link-color: #006f7b;
-$link-color-hover: #F0F0F0;
+$link-color-hover: $link-color;
 $link-color-active: $link-color-hover;
-$link-color-disabled: #BBBBBB;
+$link-color-disabled: #b8bcbf;
+$link-hover-effect-default: 1; // 0 = nothing, 1 = bold, 2 = underline, 3 = bold and underline
 
 
 
@@ -179,7 +170,7 @@ $input-border-width: $border-width-default;
 $input-border-style: solid;
 
 $input-color: #000000;
-$input-bgcolor: $font-color-default;
+$input-bgcolor: transparent;
 $input-border: $input-border-style transparent $input-border-width;
 
 $input-color-hover: $input-color;
@@ -211,17 +202,28 @@ $select-border-disabled: $select-border;
 
 
 
+// PAGE TITLE
+$pagetitle-color: $font-color-default;
+$pagetitle-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
+
+
+
+// MENU
+$menu-panel-bg: #bddbe1;
+// $menu-panel-bg: #cce2e3;
+
+
+
+// MAIN MENU
+$mainmenu-active-bg: #e9fbfa;
+
+
+
 // META MENU
 $meta-input-color: #F2F2F2;
 $meta-button-color: $link-color;
 $meta-input-bgcolor: $body-bgcolor;
 $meta-separator-border-style: $border-style-default;
-
-
-
-// PAGE TITLE
-$pagetitle-color: $font-color-default;
-$pagetitle-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
 
 
 
