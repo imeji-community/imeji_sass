@@ -830,15 +830,21 @@ select.imj_metadataEditText {
 .imj_simpleSearch {
     float: right;
     margin-top: 0.75em;
+    border: $pageheader-search-border;
+    @include border-radius($border-radius-default);
+    // @include border-radius(0.454545em 0 0 0.454545em);
 
     .imj_simpleSearchInput {
         width: 6em;
         border: $pageheader-search-input-border;
-        @include border-radius(0.454545em 0 0 0.454545em);
+        @include input-placeholder {
+            color: $pageheader-search-placeholder-color;
+            font-style: $pageheader-search-placeholder-style;
+        }
         vertical-align: middle;
-        font-size: 14pt;
+        font-size: $pageheader-search-font-size;
         transition: width 250ms ease, margin-left 250ms;
-        
+
         &:hover {
             @include hover(searchInputHeader);
         }
@@ -851,23 +857,11 @@ select.imj_metadataEditText {
     }
 
     .imj_simpleSearchButtonSubmit {
+        // a hidden button, therefore are no effects as hover, ... necessary
         margin-left: 0;
-        padding-left: 1em;
-        padding-right: 1em;
-
-        @include border-radius(0 0.454545em 0.454545em 0);
+        font: 0/0 serif;
         vertical-align: middle;
-        font-size: 14pt;
-
-        &:hover {
-            @include hover(submitButtonHeader);
-        }
-        &:active {
-            @include hover(submitButtonHeader);
-        }
-        &:focus {
-            @include hover(submitButtonHeader);
-        }
+        z-index: -1;
     }
 
     .imj_cancelButton {
@@ -887,7 +881,7 @@ select.imj_metadataEditText {
     .imj_simpleSearch {
         .imj_simpleSearchInput {
             width: 8em;
-            
+
             &:focus {
                 width: 12em;
             }
@@ -898,7 +892,7 @@ select.imj_metadataEditText {
     .imj_simpleSearch {
         .imj_simpleSearchInput {
             width: 12em;
-            
+
             &:focus {
                 width: 16em;
             }

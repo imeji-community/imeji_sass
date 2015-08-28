@@ -5,12 +5,12 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/images";
 @import "compass/css3/box-sizing";
-@import "../../default/sass/mixin";
+@import "compass/css3/user-interface";
 @import "mixin";
 @import "tags";
 @import "icons";
 @import "defs";
 @import "menus";
 @import "lists";    // IMPORT ALL TYPES OF LIST DEFINITIONS
-@import "../../default/sass/overrides"; // includes all overrides, for foreign styles
+@import "overrides"; // includes all overrides, for foreign styles
 @import "experimental" // includes test css definitions

@@ -154,15 +154,6 @@ $button-edit-border-hover: $button-border-hover;
 $button-remove-color-hover: #F0F0F0;
 $button-remove-bgcolor-hover: #990000;
 
-// PAGE HEADER BUTTONS 
-$pageheader-button-submit-color: $button-submit-color;
-$pageheader-button-submit-bgcolor: $button-submit-bgcolor;
-$pageheader-button-submit-border: $button-border-style $pageheader-button-submit-bgcolor $button-border-width; 
-
-$pageheader-button-submit-color-hover: $button-submit-color-hover;
-$pageheader-button-submit-bgcolor-hover: $button-submit-bgcolor-hover;
-$pageheader-button-submit-border-hover: $button-border-style $pageheader-button-submit-bgcolor-hover $button-border-width;
-
 
 
 // input
@@ -184,9 +175,12 @@ $input-border-disabled: $input-border;
 
 
 // PAGE HEADER INPUT FIELDS
-$pageheader-search-input-border: $input-border;
-
-$pageheader-search-input-border-hover: $input-border-hover;
+$pageheader-search-border: $border-style-default;
+$pageheader-search-input-border: none;
+$pageheader-search-input-border-hover: $input-border;
+$pageheader-search-placeholder-color: $link-color;
+$pageheader-search-placeholder-style: italic;
+$pageheader-search-font-size: 14pt;
 
 
 

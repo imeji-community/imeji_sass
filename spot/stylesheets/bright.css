@@ -346,15 +346,16 @@ select.imj_metadataEditText { min-height: 0; }
 
 .imj_admindataValueEntry { display: inline-block; }
 
-.imj_simpleSearch { float: right; margin-top: 0.75em; }
-.imj_simpleSearch .imj_simpleSearchInput { width: 6em; border: solid transparent 0.1em; -moz-border-radius: 0.45455em 0 0 0.45455em; -webkit-border-radius: 0.45455em; border-radius: 0.45455em 0 0 0.45455em; vertical-align: middle; font-size: 14pt; transition: width 250ms ease, margin-left 250ms; }
-.imj_simpleSearch .imj_simpleSearchInput:hover { border: solid #006f7b 0.1em; }
-.imj_simpleSearch .imj_simpleSearchInput:active { border: solid #006f7b 0.1em; }
-.imj_simpleSearch .imj_simpleSearchInput:focus { border: solid #006f7b 0.1em; }
-.imj_simpleSearch .imj_simpleSearchButtonSubmit { margin-left: 0; padding-left: 1em; padding-right: 1em; -moz-border-radius: 0 0.45455em 0.45455em 0; -webkit-border-radius: 0; border-radius: 0 0.45455em 0.45455em 0; vertical-align: middle; font-size: 14pt; }
-.imj_simpleSearch .imj_simpleSearchButtonSubmit:hover { color: #000000; background-color: #4AFF00; border: solid #4AFF00 0.1em; }
-.imj_simpleSearch .imj_simpleSearchButtonSubmit:active { color: #000000; background-color: #4AFF00; border: solid #4AFF00 0.1em; }
-.imj_simpleSearch .imj_simpleSearchButtonSubmit:focus { color: #000000; background-color: #4AFF00; border: solid #4AFF00 0.1em; }
+.imj_simpleSearch { float: right; margin-top: 0.75em; border: 0.1em solid #006f7b; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
+.imj_simpleSearch .imj_simpleSearchInput { width: 6em; border: none; vertical-align: middle; font-size: 14pt; transition: width 250ms ease, margin-left 250ms; }
+.imj_simpleSearch .imj_simpleSearchInput:-moz-placeholder { color: #006f7b; font-style: italic; }
+.imj_simpleSearch .imj_simpleSearchInput::-moz-placeholder { color: #006f7b; font-style: italic; }
+.imj_simpleSearch .imj_simpleSearchInput:-ms-input-placeholder { color: #006f7b; font-style: italic; }
+.imj_simpleSearch .imj_simpleSearchInput::-webkit-input-placeholder { color: #006f7b; font-style: italic; }
+.imj_simpleSearch .imj_simpleSearchInput:hover { border: solid transparent 0.1em; }
+.imj_simpleSearch .imj_simpleSearchInput:active { border: solid transparent 0.1em; }
+.imj_simpleSearch .imj_simpleSearchInput:focus { border: solid transparent 0.1em; }
+.imj_simpleSearch .imj_simpleSearchButtonSubmit { margin-left: 0; font: 0/0 serif; vertical-align: middle; z-index: -1; }
 .imj_simpleSearch .imj_cancelButton { margin: 0; padding: 0.181818em 1em 0.272727em 1em; vertical-align: middle; -moz-border-radius: 0 0.45455em 0.45455em 0; -webkit-border-radius: 0; border-radius: 0 0.45455em 0.45455em 0; }
 .imj_simpleSearch .imj_searchInfoText { display: inline-block; margin: 0 0.272727em; }
 
