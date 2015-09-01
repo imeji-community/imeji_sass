@@ -8,31 +8,32 @@
     }
 }
 
-.imj_techdataList {	// used in image_details.xhtml to show exif metadata
-                    width: 100%;
-                    padding: 0.545454em 0;
-                    background-color: $techmdlist-bgcolor;
-                    vertical-align: top;
+.imj_techdataList {	
+    // used in image_details.xhtml to show exif metadata
+    width: 100%;
+    padding: 0.545454em 0;
+    background-color: $techmdlist-bgcolor;
+    vertical-align: top;
 
-                    .imj_listBody {
-                        overflow: auto;
-                        text-overflow: ellipsis;
+    .imj_listBody {
+        overflow: auto;
+        text-overflow: ellipsis;
 
-                        &.imj_minHeight {
-                            max-height: 5em;
-                        }
-                        &.imj_maxHeight {
-                            max-height: 18em;
-                        }
-                    }
+        &.imj_minHeight {
+            max-height: 5em;
+        }
+        &.imj_maxHeight {
+            max-height: 18em;
+        }
+    }
 
-                    .imj_techdataEntry {
-                        width: 98%;
-                        padding: 0 1%;
-                        white-space: pre;
-                        display: inline-block;
-                        overflow-x: auto;
-                    }
+    .imj_techdataEntry {
+        width: 98%;
+        padding: 0 1%;
+        white-space: pre;
+        display: inline-block;
+        overflow-x: auto;
+    }
 
 
 }
@@ -135,6 +136,7 @@
         > *[class*="imj_icon"] {
             margin-top: 0.25em;
             margin-bottom: 0.5em;
+            margin-left: -3em;
         }
 
         &:after {
@@ -151,8 +153,8 @@
         width: 100%;
 
         .imj_bibliographicListItem {
-            width: 91.95%;
-            padding: 0 4% 1em 4%;
+            width: 100%;
+            padding: 0 0 1em 0;
             display: inline-block;
             border-top: $biblist-separator-horizontal;
 
@@ -711,8 +713,6 @@
 // * Config.xhtml
 // =====================================================================
 .imj_administrationTiledList {
-    width: 91.95%;
-    padding: 2% 4%;
     border-top: $adminpage-separatortop-border-style;
 
     .imj_listBody {

@@ -162,8 +162,8 @@ $input-border-width: $border-width-default;
 $input-border-style: solid;
 
 $input-color: #000000;
-$input-bgcolor: transparent;
-$input-border: $input-border-style transparent $input-border-width;
+$input-bgcolor: #ffffff;
+$input-border: $input-border-style $link-color $input-border-width;
 
 $input-color-hover: $input-color;
 $input-bgcolor-hover: $input-bgcolor;
@@ -175,10 +175,18 @@ $input-border-disabled: $input-border;
 
 
 
+
+// MENU
+$menu-panel-bgcolor: #bddbe1;
+// $menu-panel-bgcolor: #cce2e3;
+
+
+
 // PAGE HEADER INPUT FIELDS
 $pageheader-search-border: $border-style-default;
 $pageheader-search-input-border: none;
 $pageheader-search-input-border-hover: $input-border;
+$pageheader-search-input-bgcolor: $menu-panel-bgcolor;
 $pageheader-search-placeholder-color: $link-color;
 $pageheader-search-placeholder-style: italic;
 $pageheader-search-font-size: 14pt;
@@ -203,9 +211,6 @@ $pagetitle-bgcolor: lighten($body-bgcolor, 3.3%); // equals 313131
 
 
 
-// MENU
-$menu-panel-bg: #bddbe1;
-// $menu-panel-bg: #cce2e3;
 
 
 
@@ -215,16 +220,16 @@ $mainmenu-active-bg: #e9fbfa;
 
 
 // META MENU
-$meta-input-color: #F2F2F2;
+$meta-input-color: $font-color-default;
 $meta-button-color: $link-color;
-$meta-input-bgcolor: $body-bgcolor;
+$meta-input-bgcolor: $page-header-bg-color;
 $meta-separator-border-style: $border-style-default;
 
 
 
 // OVERLAY MENU
 $overlaymenu-header-color: $link-color;
-$overlaymenu-bgcolor: #444444; 
+$overlaymenu-bgcolor: $body-bgcolor; 
 $overlaymenu-bgcolor-critical: $font-color-critical;
 $overlaymenu-header-color-hover: $link-color-hover;
 $overlaymenu-border-horizontal-separator: $border-style-default;
@@ -359,7 +364,7 @@ $batchedit-itemlist-separatortop-border-style: $border-style-dashed;
 
 // MESSAGES
 $messagearea-color: $font-color-default;	// equals F0F0F0
-$message-info-color: $link-color;
+$message-info-color: $font-color-default;
 $message-info-bgcolor: lighten($body-bgcolor, 10.5%); // equals 444444
 $message-warn-color: $font-color-critical;	// equals D80000
 $message-warn-bgcolor: $link-color-disabled;	// equals BBBBBB

@@ -7,6 +7,9 @@ html,body {
 body {
 	@include defaultfont();
 }
+body * {
+    box-sizing: border-box;
+}
 form {
 	display: inline;
 }
@@ -75,7 +78,10 @@ input[type="radio"] {
 	}
 }
 
-
+textarea {
+    background-color: $input-bgcolor;
+    border: $input-border;
+}
 // input {
 	// color: $input-color;
 	// background-color: $input-bgcolor;

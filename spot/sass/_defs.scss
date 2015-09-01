@@ -1,6 +1,70 @@
 // ======================================================
 // ===                  PAGE LAYOUT                   ===
 // ======================================================
+.imj_pageMessageArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    z-index: 11;
+    background-color: rgba(200,200,200, 0.5);
+
+    .imj_pageMessageContent {
+        max-width: 500px;
+        padding: 1em;
+        margin: 0 auto;
+        background-color: rgba(240,240,240, 0.5);
+    }
+    .imj_pageMessageHeader {
+        padding: 0.25em 1em;
+    }
+    .imj_closeMessages {
+        text-align: right;
+    }
+    .imj_messageList {
+        padding: 0;
+        background-color: #f1f3f3;
+
+        li {
+            padding: 0.25em 1em;
+        }
+
+    }
+
+}
+// =====================================================================
+// MESSAGES
+// =====================================================================
+
+.imj_messageStatus {
+    margin-top: 1em;
+    padding: 0 1%;
+}
+.imj_messageTitleInfo {
+    font-size: 125%;
+    color: $message-info-color;
+}
+.imj_messageTitleWarn {
+    font-size: 145%;
+    line-height: 110%;
+    color: $message-warn-color;
+}
+.imj_messageInfo {
+    color: $message-info-color;
+    background-color: $message-info-bgcolor;
+}
+.imj_messageError,
+.imj_messageFatal,
+.imj_messageWarn {
+    color: $message-warn-color;
+    background-color: $message-warn-bgcolor;
+}
+
+// =====================================================================
+// PAGE LAYOUT
+// =====================================================================
 .imj_siteWrapper {
     overflow: hidden;
     width: $page-width;
@@ -8,10 +72,12 @@
     height: auto !important;
     min-height: 100%;
     margin-bottom: -2.001em;
+    z-index: 10;
 }
-.imj_siteWrapper > * {  // add a saved area for the page left + right
-                        padding-left: 1.93em;
-                        padding-right: 1.93em;
+.imj_siteWrapper > * {  
+    // add a saved area for the page left + right
+    padding-left: 1.93em;
+    padding-right: 1.93em;
 }
 // /* ===[ SiteHeader ]===
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -38,21 +104,9 @@
 // /* === [ Site Headline ]===
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_siteContentHeadline {
-    clear: both;
-    float: right;
-    max-width: 24em;
-    margin: 0;
-    padding: 0.5% 6.5% 0.5% 1%;
-    color: $pagetitle-color;
-    background-color: $pagetitle-bgcolor;
-    text-align: right;
-    @include border-radius($border-radius-default);
+    /* color: $pagetitle-color;
+    background-color: $pagetitle-bgcolor; */
 
-    &:after {
-        content: "";
-        content: none;
-        clear: right;
-    }
     h1 {
         font-size: 160%;
         font-weight: bold;
@@ -142,6 +196,12 @@
                    margin-right: 0.636em;
 }
 
+.imj_activeAlbumInfo {
+    display: inline-block;
+    margin-top: -3em;
+    margin-left: 8em;
+    vertical-align: middle;
+}
 
 // =====================================================================
 // ===[ GENERAL DEFINITIONS FOR PAGES WITH DEFAULT OR SMALL CONTENT ]===
@@ -151,15 +211,13 @@
 // *  Help.xhtml
 // =====================================================================
 .imj_errorPage {
-    width: 91.25%;
-    padding: 1% 4%;
+
 }
 .imj_shareForm,
 .imj_legalPage,
 .imj_aboutPage,
 .imj_helpPage {
-    width: 91.25%;
-    padding: 1% 4%;
+
     border-top: $sharepage-separatortop-border-style;
 }
 
@@ -168,8 +226,6 @@
 // =====================================================================
 .imj_collectionEntryPage,
 .imj_albumEntryPage {
-    width: 91.25%;
-    padding: 1% 4%;
     border-top: $entrypage-separatortop-border-style;
 
     .imj_headline {
@@ -196,8 +252,6 @@
 }
 // METADATA PROFILE
 .imj_editMetadataProfilePage {
-    width: 91.25%;
-    padding: 1% 4%;
     border-top: $mdprofilepage-separatortop-border-style;
 
     h2 {
@@ -207,59 +261,6 @@
     }
 }
 
-
-// =====================================================================
-// MESSAGES
-// =====================================================================
-.imj_pageMessageArea,
-.imj_contentMessageArea {
-    width: 87.95%;
-    display: inline-block;
-    color: $messagearea-color;
-    margin: 1em 0;
-    padding: 0 6%;
-}
-
-.imj_messageList {
-    width: 100%;
-    padding: 0;
-    font-size: 110%;
-
-    li {
-        width: 97.95%;
-        padding: 0.125em 1% 0.25em 1%;
-    }
-}
-.imj_messageStatus {
-    margin-top: 1em;
-    width: 97.95%;
-    padding: 0 1%;
-}
-.imj_messageInfo {
-    color: $message-info-color;
-    background-color: $message-info-bgcolor;
-}
-.imj_messageTitleInfo {
-    width: 97.95%;
-    padding: 0 1% 0.125em 1%;
-    font-size: 125%;
-    color: $message-info-color;
-    background-color: $message-info-bgcolor;
-}
-.imj_messageTitleWarn {
-    width: 97.95%;
-    padding: 0.25em 1%;
-    font-size: 145%;
-    line-height: 110%;
-    color: $message-warn-color;
-    background-color: $message-warn-bgcolor;
-}
-.imj_messageError,
-.imj_messageFatal,
-.imj_messageWarn {
-    color: $message-warn-color;
-    background-color: $message-warn-bgcolor;
-}
 
 
 // =====================================================================
@@ -837,6 +838,7 @@ select.imj_metadataEditText {
     .imj_simpleSearchInput {
         width: 6em;
         border: $pageheader-search-input-border;
+        background-color: $pageheader-search-input-bgcolor;
         @include input-placeholder {
             color: $pageheader-search-placeholder-color;
             font-style: $pageheader-search-placeholder-style;
@@ -1132,38 +1134,40 @@ select.imj_metadataEditText {
 
 // ===[ Paginator Components ]===
 // ================================================== */
-.imj_paginator {	// used as container for different paginator types
-                 width: 91.75%;
-                 margin-top: 1em;
-                 margin-bottom: 1em;
-                 padding: 0.636363em 4%;
-                 text-align: center;
-                 border-top: $paginator-bordertop-style;
+.imj_paginator {	
+    // used as container for different paginator types
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    
+    &:last-child {
+       border-top: $paginator-bordertop-style;
+    }
 
-                 .imj_rangeSelector {
-                     float: left;
+    .imj_rangeSelector {
+        float: left;
 
-                     .imj_rangeSelectorLabel {
-                         margin-left: 0.363636em;
-                         vertical-align: baseline;
-                     }
-                 }
-                 .imj_gotoBox {
-                     float: right;
+        .imj_rangeSelectorLabel {
+            margin-left: 0.363636em;
+            vertical-align: baseline;
+        }
+    }
+    .imj_gotoBox {
+        float: right;
 
-                     label {
-                         vertical-align: baseline;
-                     }
-                     .imj_pageInput {
-                         width: 3em;
-                         margin-left: 0.363636em;
-                         margin-right: 0.363636em;
-                         text-align: center;
-                     }
-                     .imj_submitButton {
-                         margin-left: 0.545454em;
-                     }
-                 }
+        label {
+            vertical-align: baseline;
+        }
+        .imj_pageInput {
+            width: 3em;
+            margin-left: 0.363636em;
+            margin-right: 0.363636em;
+            text-align: center;
+        }
+        .imj_submitButton {
+            margin-left: 0.545454em;
+        }
+    }
 }
 
 // /* Simple Page Browser - used for detail view
@@ -1864,7 +1868,6 @@ iframe#twitter-widget-0 div.root div.stream {
 .imj_userConfig {
     .imj_adminPanel {
         display: inline-block;
-        float: left;
         margin-bottom: 2em;
         max-width: 99.99%;
         padding: 0 2%;
