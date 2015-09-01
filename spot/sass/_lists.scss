@@ -161,12 +161,14 @@
             &:hover {
                 background-color: $biblist-item-bgcolor-hover;
             }
-            &.imj_active {	// e.g. an album is marked as active
-                           background-color: $biblist-item-bgcolor-active;
+            &.imj_active {	
+                // e.g. an album is marked as active
+                color: inherit;
+                background-color: $biblist-item-bgcolor-active;
 
-                           &:hover {
-                               background-color: $biblist-item-bgcolor-active-hover;
-                           }
+                &:hover {
+                    background-color: $biblist-item-bgcolor-active-hover;
+                }
             }
             .imj_previewArea {
                 width: 21.5%;
@@ -189,6 +191,10 @@
                 .imj_messageWarn {
                     padding: 0 1%;
                     margin-right: 0.5454em;
+                }
+
+                .fa:before {
+                    margin-right: 0.5em;
                 }
             }
             .imj_metadataLabel {

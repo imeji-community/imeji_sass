@@ -4,11 +4,13 @@
 // #f1f3f3  // BG Page
 // #e4eef0  // BG Header + Footer
 // #bddbe1  // BG Menu panel
-// #e9eef0  // BG ACTIVE Menu item + BG Sub-Menu
+// e9fbfa  // BG ACTIVE Menu item + BG Sub-Menu + HOVER Submit Button
 // 
 // #000000  // Textcolor
 // #006f7b  // Link (incl. hover)
-// #b8bcbf  // Disabled Links/
+// #b8bcbf  // Disabled Links + Disabled Buttons    
+// #ffffff  // BG input + textarea
+
 
 
 // IMPORTS: e.g. font families or other foreign css defintions
@@ -105,10 +107,10 @@ $button-bgcolor: $link-color;
 $button-border: $button-border-style transparent $button-border-width;
 
 $button-color-hover: #000000;
-$button-bgcolor-hover: #4AFF00;
+$button-bgcolor-hover: #e9fbfa;
 $button-border-hover: $button-border-style $button-bgcolor-hover $button-border-width;
 
-$button-color-disabled: #444444;
+$button-color-disabled: #b8bcbf;
 $button-bgcolor-disabled: $link-color-disabled;
 $button-border-disabled: $button-border;
 
