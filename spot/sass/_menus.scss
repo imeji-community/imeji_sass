@@ -35,7 +35,7 @@
 
         &.imj_active {
             background-color: $mainmenu-active-bg;
-            
+
             > a {
                 color: $link-color-active;
                 font-weight: bold;
@@ -46,7 +46,7 @@
             color: $link-color-hover;
             cursor: pointer;
             @include hover-effect($link-hover-effect-default);
-            
+
             > ul {
                 position: absolute;
                 font: inherit;
@@ -75,7 +75,7 @@
 
         &:hover {
             color: $link-color-hover;
-            
+
         }
     } 
 }
@@ -226,3 +226,27 @@
     }
 }
 
+.imj_footerMenu {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-right: 2em;
+    margin-bottom: 2em;
+
+    .imj_headline {
+        font-weight: bold;
+    }
+    &.imj_singleLine {
+        display: block;
+
+        li {
+            display: inline-block;
+            margin-right: 1em;
+            vertical-align: middle;
+
+            &:first-child {
+                margin-right: 2em;
+            }
+        }
+    }
+}
