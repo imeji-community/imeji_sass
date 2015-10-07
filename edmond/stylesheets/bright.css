@@ -57,6 +57,7 @@ p { display: block; margin: 1em 0; }
 
 /* ===[ ICONS - Buttons ]=== ================================================== */
 body .imj_logo { width: 21em; height: 5em; padding: 0; display: inline-block; background: transparent url("../logo/logo_for_bright.png") 1.3333em 0 no-repeat; }
+body .imj_logo_alt { max-height: 154px; margin-top: -25px; margin-bottom: -25px; }
 body .imj_buttonStyleSwitcher { display: inline-block; width: 16px; height: 16px; vertical-align: middle; border: 0 none; cursor: pointer; margin: 0 0.727272em; outline: none; background: transparent url("../icons/D45A00/imjButtonMonitorColor_16.png") 0 0 no-repeat; }
 body .imj_buttonStyleSwitcher:hover { border: 0 none; outline: none; background: transparent url("../icons/101010/imjButtonMonitorColor_16.png") 0 0 no-repeat; }
 body .imj_iconTriangleBottomRight_16 { display: inline-block; width: 16px; height: 16px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/D45A00/imjTriangleLargeBottomRight_16.png") 0 0 no-repeat; }
@@ -120,11 +121,12 @@ body .imj_iconExpand_16:focus { background: transparent url("../icons/101010/imj
 body .imj_iconCollapse_16 { display: inline-block; width: 16px; height: 16px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/D45A00/imjArrowToText_16.png") 0 0 no-repeat; }
 body .imj_iconCollapse_16:hover { background: transparent url("../icons/101010/imjArrowToText_16.png") 0 0 no-repeat; }
 body .imj_iconCollapse_16:focus { background: transparent url("../icons/101010/imjArrowToText_16.png") 0 0 no-repeat; }
-body .imj_iconStatusPrivate_24 { display: inline-block; width: 24px; height: 24px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/101010/imjLocked_24.png") left center no-repeat; }
-body .imj_iconStatusShareable_24 { display: inline-block; width: 24px; height: 24px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/101010/imjArrowRightToPeople_24.png") left center no-repeat; }
-body .imj_icoStatusWithdrawn_32 { display: inline-block; width: 32px; height: 32px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/101010/imjDocumentDelete_32.png") left center no-repeat; }
-body .imj_icoStatusPending_32 { display: inline-block; width: 32px; height: 32px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/101010/imjDocumentPending_32.png") left center no-repeat; }
-body .imj_icoStatusReleased_32 { display: inline-block; width: 32px; height: 32px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/101010/imjDocumentPublished_32.png") left center no-repeat; }
+body .imj_iconStatusPrivate_24 { display: inline-block; width: 24px; height: 24px; vertical-align: middle; border: 0 none; background: transparent url("../icons/101010/imjLocked_24.png") left center no-repeat; }
+body .imj_iconStatusPrivate_16 { display: inline-block; width: 16px; height: 16px; vertical-align: middle; border: 0 none; background: transparent url("../icons/101010/imjLocked_16.png") left center no-repeat; float: left; }
+body .imj_iconStatusShareable_24 { display: inline-block; width: 24px; height: 24px; vertical-align: middle; border: 0 none; background: transparent url("../icons/101010/imjArrowRightToPeople_24.png") left center no-repeat; }
+body .imj_icoStatusWithdrawn_32 { display: inline-block; width: 32px; height: 32px; vertical-align: middle; border: 0 none; background: transparent url("../icons/101010/imjDocumentDelete_32.png") left center no-repeat; }
+body .imj_icoStatusPending_32 { display: inline-block; width: 32px; height: 32px; vertical-align: middle; border: 0 none; background: transparent url("../icons/101010/imjDocumentPending_32.png") left center no-repeat; }
+body .imj_icoStatusReleased_32 { display: inline-block; width: 32px; height: 32px; vertical-align: middle; border: 0 none; background: transparent url("../icons/101010/imjDocumentPublished_32.png") left center no-repeat; }
 body .imj_entryPagePreviewTiledListLinkArrow { float: right; display: inline-block; width: 24px; height: 24px; vertical-align: middle; border: 0 none; cursor: pointer; margin-top: 1em; background: transparent url("../icons/D45A00/imjArrowThinRight_24.png") top right no-repeat; }
 body .imj_entryPagePreviewTiledListLinkArrow:hover { background: transparent url("../icons/101010/imjArrowThinRight_24.png") top right no-repeat; }
 body .imj_entryPagePreviewTiledListLinkArrow:after { clear: both; content: ""; }
@@ -136,6 +138,7 @@ body a:hover .imj_entryPagePreviewTiledListLinkArrow { background: transparent u
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit { color: #F0F0F0; background-color: #D45A00; border: solid #D45A00 0.1em; }
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit:hover { color: #000000; background-color: #fd6b00; border: solid #fd6b00 0.1em; }
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit:focus { color: #000000; background-color: #fd6b00; border: solid #fd6b00 0.1em; }
+.imj_siteWrapper .imj_spaceLogo { max-height: 5em; margin-left: 3%; }
 .imj_siteWrapper .imj_siteContentHeadline { clear: both; float: right; max-width: 24em; margin: 0; padding: 0.5% 6.5% 0.5% 1%; color: #101010; background-color: #D6D8D7; text-align: right; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
 .imj_siteWrapper .imj_siteContentHeadline:after { content: ""; content: none; clear: right; }
 .imj_siteWrapper .imj_siteContentHeadline h1 { font-size: 160%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
@@ -147,6 +150,8 @@ body a:hover .imj_entryPagePreviewTiledListLinkArrow { background: transparent u
 
 .imj_active { color: #101010; }
 .imj_active a { color: #101010; }
+
+.imj_requiredMarker:after { content: " *"; }
 
 .imj_activeMedia:hover, .imj_addMedia:hover { background-color: #444444; }
 
@@ -350,8 +355,8 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_simpleSearch input[type=radio] + label { margin-left: 0.181818em; margin-right: 1em; }
 .imj_simpleSearch .imj_simpleSearchLinkAdvancedsearch { margin-top: 0.181818em; margin-left: 1.090909em; white-space: nowrap; display: inline-block; }
 
-.imj_isAdmin .imj_simpleSearch { margin-top: -6em; }
-.imj_isAdmin .imj_simpleSearch .imj_simpleSearchInput { width: 15em; }
+.imj_isAdmin .imj_simpleSearch { margin-right: -2em; }
+.imj_isAdmin .imj_simpleSearch .imj_simpleSearchInput { width: 12em; }
 
 .imj_subHeaderMessageSpace { clear: both; float: left; display: inline; overflow: hidden; margin: 0.65em 0.0909em 0 0; width: 81.3636em; }
 
@@ -379,10 +384,12 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_advancedSearch .imj_searchUnit .imj_compareLabel { padding: 0 0.5em; }
 .imj_advancedSearch .imj_searchUnit .imj_searchSelectbox > select { max-width: 30em; }
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails { width: 92%; margin-left: 7%; margin-top: 0.5em; }
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails > div { display: inline-block; vertical-align: top; }
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_inlineButtonGroup { margin-left: 0.5em; }
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchStatement > select { width: 15em; }
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchInput > input { width: 20em; }
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_searchInputValue { margin-bottom: 1em; }
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_submitPanel { text-align: left; }
 .imj_advancedSearch .imj_searchUnit .imj_searchDetails input[type="checkbox"] + label { margin-left: 0.181818em; margin-right: 1em; }
 .imj_advancedSearch .imj_ajaxChangeElementButton, .imj_advancedSearch .imj_ajaxUpdateElementButton { display: none; }
 
@@ -422,14 +429,14 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_singlePageBrowser .imj_buttonBrowseToFirst_16, .imj_singlePageBrowser .imj_buttonBrowseBackward_16, .imj_singlePageBrowser .imj_buttonBrowseForward_16, .imj_singlePageBrowser .imj_buttonBrowseToLast_16 { cursor: pointer; }
 .imj_singlePageBrowser .imj_buttonBrowseToFirst_16.imj_deactivated, .imj_singlePageBrowser .imj_buttonBrowseBackward_16.imj_deactivated, .imj_singlePageBrowser .imj_buttonBrowseForward_16.imj_deactivated, .imj_singlePageBrowser .imj_buttonBrowseToLast_16.imj_deactivated { cursor: default; }
 .imj_singlePageBrowser .imj_separator { display: inline-block; height: 1.81818181em; vertical-align: middle; }
-.imj_singlePageBrowser .imj_pageNumber { padding: 0 1em; background-color: transparent; border: 0 none; font-size: 1em; color: #D45A00; }
+.imj_singlePageBrowser .imj_pageNumber { padding: 0 1em; background-color: transparent; border: 0 none; font-size: 1em; color: #D45A00; cursor: pointer; }
 .imj_singlePageBrowser .imj_pageNumber:hover { color: #101010; }
 .imj_singlePageBrowser .imj_currentPageNumber { padding: 0 1em; color: #101010; background-color: transparent; border: 0 none; }
 
 .imj_imageInfoLayer { width: 95.95%; padding: 0 2%; }
 .imj_imageInfoLayer .imj_metadataValue { width: 72.33%; margin-left: 0.727272em; }
 .imj_imageInfoLayer .highlight_area.imj_highlightDependencies { background-color: white; }
-.imj_imageInfoLayer .imj_infoNavigation { width: 95.95%; padding: 0 2%; text-align: right; margin-bottom: 1.454545em; }
+.imj_imageInfoLayer .imj_infoNavigation { width: 90%; padding: 0 2%; text-align: right; margin-bottom: 1.454545em; float: right; }
 .imj_imageInfoLayer .imj_infoNavigation .imj_buttonEdit_16 { margin-right: 0.181818em; }
 .imj_imageInfoLayer .imj_infoNavigation a { margin-left: 1em; }
 
@@ -442,10 +449,18 @@ select.imj_metadataEditText { min-height: 0; }
 
 .imj_loginFormSite { width: 91.25%; padding: 1% 4%; border-top: 0.1em solid #D45A00; }
 
+.imj_registerSteps { float: right; }
+.imj_registerSteps li { margin-bottom: 1em; }
+.imj_registerSteps .imj_active { font-size: 145%; }
+.imj_registerSteps .imj_submitted { padding: 0.272727em; background-color: #D45A00; }
+.imj_registerSteps:after { content: " "; float: none; clear: both; }
+
 .imj_startpageFooter { clear: both; width: 100%; padding: 1em 0; }
 .imj_startpageFooter img { margin: 0 1%; }
 .imj_startpageFooter .imj_startpageFooterLogos { width: 100%; padding: 1em 1.25em 1.25em 1em; text-align: center; }
 .imj_startpageFooter .imj_community_logo { padding: 1%; margin-right: 5%; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
+
+.imj_startpageFooterLogos .imj_poweredby_imprint { width: 50%; margin: 0 auto; }
 
 #imj_welcomeInfoWrapper { display: inline-block; width: 48%; }
 
@@ -852,3 +867,15 @@ body .imj_siteWrapper .plupload_delete .plupload_file_action { vertical-align: t
 body .imj_siteWrapper .plupload_delete .plupload_file_action a { display: inline-block; width: 16px; height: 16px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/D80000/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat; }
 body .imj_siteWrapper .plupload_delete .plupload_file_action a:hover { background: transparent url("../icons/101010/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat; }
 body .imj_siteWrapper .moxie-shim input { border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; -ms-border-radius: 0; padding: 0; margin: 0; cursor: pointer; }
+
+.imj_siteWrapper .imj_siteFooter { height: 70px; }
+
+.imj_startpageFooterLogos .imj_poweredby_software { float: left; margin-left: 2%; display: table; }
+.imj_startpageFooterLogos .imj_poweredby_software .imj_poweredby_software_text { display: table-cell; vertical-align: middle; }
+.imj_startpageFooterLogos .imj_poweredby_software .imj_poweredby_software_image { display: table-cell; vertical-align: middle; padding-left: 0.5em; }
+.imj_startpageFooterLogos .imj_poweredby_institution { float: right; margin-right: 2%; }
+
+.imj_siteWrapper .imj_headline_text h1 { font-size: 160%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
+.imj_siteWrapper .imj_headline_text h2 { font-size: 140%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
+.imj_siteWrapper .imj_headline_text h3 { font-size: 120%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
+.imj_siteWrapper .imj_justified_text { text-align: justify; }
