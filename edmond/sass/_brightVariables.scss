@@ -26,7 +26,6 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
 
 
-
 // ICONS
 $icon-path: "../icons/";	// relative path to css source
 // $icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources
@@ -76,10 +75,8 @@ $page-width-max: 84.0909em;
 $page-login-form-border-style: $border-style-default;
 
 
-
 // body
 $body-bgcolor: #F2F2F2;
-
 
 
 // navigation, links, ...
@@ -87,6 +84,7 @@ $link-color: #D45A00;
 $link-color-hover: #101010;
 $link-color-active: $link-color-hover;
 $link-color-disabled: #BBBBBB;
+
 
 
 // buttons
@@ -304,6 +302,7 @@ $tiledlist-item-bgcolor-selected: $link-color;
 $tiledlist-item-bgcolor-hover: $link-color;
 
 
+
 // TILED ADMIN LIST
 $tiledlistadmin-itemheader-bgcolor: $body-bgcolor;
 $tiledlistadmin-itemheader-border-style: $border-width-default solid $body-bgcolor;
@@ -454,6 +453,10 @@ $sharepage-separatortop-border-style: $border-style-default;
 $adminpage-separatortop-border-style: $border-style-default;
 
 
+
+// REGISTER PAGE
+$register-step-active-font-size: (145%);
+$register-step-submitted-bg-color: $link-color;
 
 // following are vars to discuss or rework
 // media in image_details.xhtml
