@@ -74,6 +74,10 @@
 		width: 100%;
 		padding: 2em 0;
 		text-align: center;
+        
+        img {
+            max-height: 40px;
+        }
 	}
 }
 
@@ -1409,7 +1413,6 @@ select.imj_metadataEditText {
 		padding: 1em 1.25em 1.25em 1em;
 		text-align: center;
 		
-		
 	}
 	.imj_community_logo {
 		padding: 1%;
@@ -1420,7 +1423,10 @@ select.imj_metadataEditText {
 }
 
 .imj_startpageFooterLogos{
-	.imj_poweredby_imprint { width: 50%; margin: 0 auto;}
+	.imj_poweredby_imprint { 
+        width: 50%; 
+        margin: 0 auto;
+    }
 }
 
 #imj_welcomeInfoWrapper {
