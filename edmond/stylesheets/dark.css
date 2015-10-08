@@ -143,6 +143,7 @@ body a:hover .imj_entryPagePreviewTiledListLinkArrow { background: transparent u
 .imj_siteWrapper .imj_siteContentHeadline:after { content: ""; content: none; clear: right; }
 .imj_siteWrapper .imj_siteContentHeadline h1 { font-size: 160%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
 .imj_siteWrapper .imj_siteFooter { clear: both; width: 100%; padding: 2em 0; text-align: center; }
+.imj_siteWrapper .imj_siteFooter img { max-height: 40px; }
 
 .imj_invisible { visibility: hidden; }
 
@@ -879,3 +880,8 @@ body .imj_siteWrapper .moxie-shim input { border-radius: 0; -webkit-border-radiu
 .imj_siteWrapper .imj_headline_text h2 { font-size: 140%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
 .imj_siteWrapper .imj_headline_text h3 { font-size: 120%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
 .imj_siteWrapper .imj_justified_text { text-align: justify; }
+
+.imj_siteWrapper > .imj_mainContentWrapper { padding-bottom: 2em; }
+.imj_siteWrapper .imj_siteFooter { height: auto; min-height: 3em; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_software { float: right; margin-left: 0; margin-right: 2%; margin-top: -1.181818em; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_institution { float: left; margin-left: 2%; margin-right: 0; margin-top: -2.5em; }

@@ -3,3 +3,28 @@
 // IMPORTS, don't change the order of imports, because they are depends another
 @import "darkVariables";
 @import "../../default/sass/_combinedStyles.scss";
+
+.imj_siteWrapper {
+    
+    & > .imj_mainContentWrapper {
+        padding-bottom: 2em;
+    }
+    .imj_siteFooter {
+        height: auto;
+        min-height: 3em;
+        
+        .imj_poweredby_software {
+            float: right;
+            margin-left: 0;
+            margin-right: 2%;
+            margin-top: -1.181818em;
+        }
+        
+        .imj_poweredby_institution {
+            float: left;
+            margin-left: 2%;
+            margin-right: 0;
+            margin-top: -2.5em;
+        }
+    }
+}
