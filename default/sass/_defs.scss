@@ -862,6 +862,12 @@ select.imj_metadataEditText {
 			@include hover(searchInputHeader);
 		}
 	}
+    
+    &:hover {
+        .imj_simpleSearchInput {
+            width: 12em;
+        }
+    }
 	
 	.imj_simpleSearchButtonSubmit {
 		margin-left: 0;
