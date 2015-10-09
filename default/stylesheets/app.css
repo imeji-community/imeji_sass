@@ -346,6 +346,7 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_simpleSearch .imj_simpleSearchInput:hover { border: solid #6CAE2F 0.1em; }
 .imj_simpleSearch .imj_simpleSearchInput:active { border: solid #6CAE2F 0.1em; }
 .imj_simpleSearch .imj_simpleSearchInput:focus { width: 12em; border: solid #6CAE2F 0.1em; }
+.imj_simpleSearch:hover .imj_simpleSearchInput { width: 12em; }
 .imj_simpleSearch .imj_simpleSearchButtonSubmit { margin-left: 0; padding-left: 1em; padding-right: 1em; -moz-border-radius: 0 0.45455em 0.45455em 0; -webkit-border-radius: 0; border-radius: 0 0.45455em 0.45455em 0; vertical-align: top; }
 .imj_simpleSearch .imj_simpleSearchButtonSubmit:hover { color: #000000; background-color: #4AFF00; border: solid #4AFF00 0.1em; }
 .imj_simpleSearch .imj_simpleSearchButtonSubmit:active { color: #000000; background-color: #4AFF00; border: solid #4AFF00 0.1em; }
