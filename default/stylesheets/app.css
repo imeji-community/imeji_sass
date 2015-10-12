@@ -875,7 +875,7 @@ body .imj_siteWrapper .moxie-shim input { border-radius: 0; -webkit-border-radiu
 .imj_startpageFooterLogos .imj_poweredby_software { float: left; margin-left: 2%; display: table; }
 .imj_startpageFooterLogos .imj_poweredby_software .imj_poweredby_software_text { display: table-cell; vertical-align: middle; }
 .imj_startpageFooterLogos .imj_poweredby_software .imj_poweredby_software_image { display: table-cell; vertical-align: middle; padding-left: 0.5em; }
-.imj_startpageFooterLogos .imj_poweredby_institution { float: right; margin-right: 2%; }
+.imj_startpageFooterLogos .imj_poweredby_institution { float: right; margin-right: 2%; margin-top: -1.5em; }
 
 .imj_siteWrapper .imj_headline_text h1 { font-size: 160%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
 .imj_siteWrapper .imj_headline_text h2 { font-size: 140%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
