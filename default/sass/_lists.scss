@@ -780,18 +780,23 @@
 	  
 	  &.imj_fileTypeConfigList {
 	    width: 100%;
-      margin-top: 0.5em;
-      
-  	  td {
-  	    
-  	    .imj_fileTypeInput,
-  	    .imj_fileTypeValueInput {
-          width: 90%;
-          padding: 1% 2%;
+        margin-top: 0.5em;
+
+        td {
+
+          .imj_fileTypeInput,
+          .imj_fileTypeValueInput {
+            width: 94%;
+            padding: 1% 2%;
+          }
         }
-  	  }
-  	}
+      }
 	}
+    .imj_inlineButtonGroup {
+        * + * {
+            margin-left: 0.272727em;
+        }
+    }
 }
 
 
