@@ -26,6 +26,7 @@
 			color: $pageheader-button-submit-color;
 			background-color: $pageheader-button-submit-bgcolor;
 			border: $pageheader-button-submit-border;
+            cursor: pointer;
 
 			&:hover {
 				@include hover(submitButtonHeader);
