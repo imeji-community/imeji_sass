@@ -36,6 +36,20 @@
 			}
 		}
 	}
+    
+    .imj_logo {
+		width: $logo-width;
+		height: $logo-height;
+		padding: 0;
+		display: inline-block;
+		@include backgroundIcon($logo-file, logo, $logo-position-horizontal, $logo-position-vertical);
+	}
+	
+	.imj_logo_alt {
+        max-height: 154px; 
+        margin-top: -25px; 
+        margin-bottom:-25px;
+    }
 
 	.imj_spaceLogo {
 		max-height: $logo-height;
@@ -1152,6 +1166,7 @@ select.imj_metadataEditText {
 
 	.imj_removeFacetButton {
 		margin-left: 0.181818em;
+        margin-right: 0.181818em;
 	}
 	.imj_facetSeparator {
 		margin-right: 0.181818em;

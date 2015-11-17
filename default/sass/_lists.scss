@@ -831,6 +831,13 @@
                 width: 61%;
             }
         }
+        
+        .imj_admindataValue {
+
+            & + .imj_clearInput {
+                vertical-align: top;
+            }
+        }
     }
 
     &.imj_maxWidth {
