@@ -716,10 +716,10 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_tabList .imj_tabContent { width: 100%; background-color: #444444; overflow: auto; font-size: 110%; }
 .imj_tabList .imj_tabContent ul .imj_iconGoTo { vertical-align: top; }
 
-.imj_siteWrapper .fa { font-size: 125%; }
-.imj_siteWrapper .fa-th, .imj_siteWrapper .fa-list-alt { font-size: 150%; }
-.imj_siteWrapper .fa-size-2 { font-size: 175%; }
-.imj_siteWrapper .fa-size-3 { font-size: 225%; }
+.imj_siteWrapper .fa { font-size: 110%; }
+.imj_siteWrapper .fa-size-2 { font-size: 150%; }
+.imj_siteWrapper .fa-size-3 { font-size: 190%; }
+.imj_siteWrapper .fa-size-4 { font-size: 230%; }
 .imj_siteWrapper .imj_listHeader .fa-pull-right { margin-right: 0.5em; }
 .imj_siteWrapper .fa-plus-square-o, .imj_siteWrapper .fa-minus-square-o { margin-left: 0.1em; margin-right: 0.2em; }
 .imj_siteWrapper .fa-chevron-left { margin-left: 0.5em; margin-right: 0.5em; }
@@ -743,7 +743,9 @@ body .ui-datepicker-title select + select { margin-left: 0.363636em; }
 body .ui-datepicker-calendar { margin-top: 0.181818em; }
 body .ui-datepicker-calendar th { text-align: right; }
 body .ui-datepicker-calendar td { text-align: right; }
-body .imj_siteWrapper { /* style for date keeper from jquery-ui*/ 		/* ===[ Upload ]=== 		* with external library PL-UPLOADER 		* ============================================ */ /* style analog to imj_submitButton */ }
+body .imj_siteWrapper { /* style for date keeper from jquery-ui*/ /* ===[ Upload ]===
+* with external library PL-UPLOADER
+* ============================================ */ }
 body .imj_siteWrapper .ui-menu { width: 300px; padding: 0 5px 5px 5px; color: #292929; background-color: #292929; }
 body .imj_siteWrapper .ui-menu-item { background-color: #292929; width: 300px; font-weight: bold; border-left: 5px; }
 body .imj_siteWrapper .ui-autocomplete { position: absolute; z-index: 4000 !important; }
@@ -801,8 +803,8 @@ body .imj_siteWrapper .plupload_buttons a:focus { color: #000000; background-col
 body .imj_siteWrapper .plupload_buttons a + a { margin-left: 1em; }
 body .imj_siteWrapper .plupload_delete:hover { background-color: rgba(0, 0, 0, 0.1); }
 body .imj_siteWrapper .plupload_delete .plupload_file_action { vertical-align: text-top; }
-body .imj_siteWrapper .plupload_delete .plupload_file_action a { display: inline-block; width: 16px; height: 16px; vertical-align: middle; border: 0 none; cursor: pointer; background: transparent url("../icons/D80000/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat; }
-body .imj_siteWrapper .plupload_delete .plupload_file_action a:hover { background: transparent url("../icons/F0F0F0/imjButtonMinusRoundedBorderOpen_16.png") 0 0 no-repeat; }
+body .imj_siteWrapper .plupload_delete .plupload_file_action a { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: 125%; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body .imj_siteWrapper .plupload_delete .plupload_file_action a:before { content: "\f014"; }
 body .imj_siteWrapper .moxie-shim input { border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; -ms-border-radius: 0; padding: 0; margin: 0; cursor: pointer; }
 
 .imj_siteWrapper .imj_siteFooter { height: 70px; }

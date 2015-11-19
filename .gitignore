@@ -169,3 +169,4 @@ pip-log.txt
 # SASS
 .sass-cache/
 imeji_default.log
+/HTML5Application/nbproject/private/
