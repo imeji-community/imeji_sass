@@ -810,12 +810,20 @@
             @include border-radius(0.909090em 0.909090em 0 0);
             border: $tiledlistadmin-itemheader-border-style;
         }
+		.imj_config_headline {
+			@extend .imj_headline;
+			cursor: pointer;
+			border-color: rgba($link-color, 0.36);
+		}
         .imj_content {
             // width: 91.95%;
             padding: 0.454545em 0.81818181em;
             min-height: 10em;
             @include border-radius(0 0 0.909090em 0.909090em);
             border: $tiledlistadmin-itemcontent-border-style;
+			.imj_submitButton{
+				float:right;
+			}
         }
 
         // /* for information about the storage content 

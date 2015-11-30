@@ -697,6 +697,7 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_administrationTiledList .imj_adminPanel h2 { font-size: 140%; line-height: normal; }
 .imj_administrationTiledList .imj_adminPanel ul { line-height: 150%; }
 .imj_administrationTiledList .imj_adminPanel .imj_headline { text-align: center; background-color: #292929; -moz-border-radius: 0.90909em 0.90909em 0 0; -webkit-border-radius: 0.90909em; border-radius: 0.90909em 0.90909em 0 0; border: 0.1em solid #292929; }
+.imj_administrationTiledList .imj_adminPanel .imj_headline .imj_config { cursor: pointer; }
 .imj_administrationTiledList .imj_adminPanel .imj_content { padding: 0.454545em 0.81818181em; min-height: 10em; -moz-border-radius: 0 0 0.90909em 0.90909em; -webkit-border-radius: 0; border-radius: 0 0 0.90909em 0.90909em; border: 0.1em solid #292929; }
 .imj_administrationTiledList .imj_adminPanel.imj_storageInformation { max-width: 33em; }
 .imj_administrationTiledList .imj_adminPanel.imj_storageInformation .imj_admindataLabel { width: 33%; }
