@@ -1198,6 +1198,24 @@ select.imj_metadataEditText {
 	padding: 0.636363em 4%;
 	text-align: center;
 	border-top: $paginator-bordertop-style;
+	
+	.previousItem{
+		padding-right: 0.5em;
+		&:before{
+			font-family: FontAwesome;
+			content: "\f053";
+			padding-right: 0.5em;
+		}
+	}
+	
+	.nextItem{
+		padding-left: 0.5em;
+		&:after{
+			font-family: FontAwesome;
+			content: "\f054";
+			padding-left: 0.5em;
+		}
+	}
 
 	.imj_rangeSelector {
 		float: left;
