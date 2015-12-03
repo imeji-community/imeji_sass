@@ -143,6 +143,19 @@
 		text-align: left;
 		color: $overlaymenu-header-color;
 		cursor: pointer;
+		
+		.selectAll:before{
+			font-family: FontAwesome;
+			content: "\f00c";
+			padding-right: 0.1em;
+		}
+		
+		.selectNone:before{
+			font-family: FontAwesome;
+			content: "\f00d ";
+			padding-right: 0.1em;
+		}
+		
 	}
 	
 	.imj_menuText {
@@ -150,6 +163,7 @@
 		line-height: 175%;
 		padding: 0.272727em 1em;
 	}
+	
 	.imj_menuBody, .imj_menuSimpleSearch{
 		display: none;
 		position: absolute;

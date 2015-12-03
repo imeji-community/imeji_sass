@@ -290,6 +290,7 @@
 }
 
 .imj_modalDialogBox {
+	max-width: 50em;
 	position: absolute;
 	top: 22.7272727272em;
 	padding: 0.72727272em;
@@ -1170,6 +1171,24 @@ select.imj_metadataEditText {
 	margin: 0;
 	padding: 0.636363em 1%;
 	text-align: center;
+	
+	.previousItem{
+		padding-right: 0.5em;
+		&:before{
+			font-family: FontAwesome;
+			content: "\f053";
+			padding-right: 0.5em;
+		}
+	}
+	
+	.nextItem{
+		padding-left: 0.5em;
+		&:after{
+			font-family: FontAwesome;
+			content: "\f054";
+			padding-left: 0.5em;
+		}
+	}
 
 	.imj_rangeSelector {
 		float: left;
