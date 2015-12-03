@@ -500,7 +500,7 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_setupConfig .imj_adminPanel .imj_headline .imj_submitButton, .imj_setupConfig .imj_administrationTiledList .imj_adminPanel .imj_config_headline .imj_submitButton, .imj_administrationTiledList .imj_setupConfig .imj_adminPanel .imj_config_headline .imj_submitButton { float: right; }
 .imj_setupConfig .imj_adminPanel .imj_headline .imj_submitButton:after, .imj_setupConfig .imj_administrationTiledList .imj_adminPanel .imj_config_headline .imj_submitButton:after, .imj_administrationTiledList .imj_setupConfig .imj_adminPanel .imj_config_headline .imj_submitButton:after { clear: both; content: ""; }
 
-.imj_mainMenuStandard { display: inline-block; padding: 0 3%; font-size: 135%; letter-spacing: 0.090909em; text-align: left; text-transform: uppercase; }
+.imj_mainMenuStandard { display: inline-block; padding: 0 3% 1em 3%; font-size: 135%; letter-spacing: 0.090909em; text-align: left; text-transform: uppercase; }
 .imj_mainMenuStandard .imj_mainMenuStandardItem { display: inline-block; padding: 0.272727em 0.181818em 0.272727em 0.272727em; margin-right: 0.454545em; text-decoration: none; background-color: #313131; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
 
 .imj_metaMenuStandardSingleLine { width: 100%; margin-top: 0.363636em; text-align: right; }
@@ -523,7 +523,7 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_contentMenu .imj_contentMenuSeparator { display: inline-block; width: 0.090909em; height: 1.090909em; margin: 0 0.318em; padding: 0; }
 .imj_contentMenu + .imj_contentSubMenu { margin-top: 0.272727em; }
 
-.imj_contentSubMenu { clear: both; width: 84.95%; padding: 0.3em 3%; letter-spacing: 0.045em; }
+.imj_contentSubMenu { clear: both; width: 95%; padding: 0.3em 3%; letter-spacing: 0.045em; }
 .imj_contentSubMenu .imj_contentSubMenuItem { display: inline-block; padding: 0; margin-right: 1em; }
 .imj_contentSubMenu .imj_contentSubMenuSeparator { display: inline-block; width: 0.090909em; height: 1.090909em; margin: 0 0.318em; padding: 0; }
 .imj_contentSubMenu + .imj_contentSubMenu { margin-top: 0.272727em; }
@@ -541,6 +541,8 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_overlayMenu li { line-height: 175%; padding: 0.272727em 1em; }
 .imj_overlayMenu li:hover { background-color: #313131; }
 .imj_overlayMenu .hovered { background-color: #313131; }
+
+.imj_menuRight { float: right; }
 
 .imj_optionList li { padding-bottom: 0.272727em; }
 
