@@ -15,7 +15,7 @@
 	// /* ===[ SiteHeader ]===
 	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 	.imj_siteHeader {
-		padding: 0 4%;
+		padding: 0 3% 0 0;
 		
 		&:after {
 			clear: both;
@@ -60,14 +60,13 @@
 	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 	.imj_siteContentHeadline {
 		clear: both;
-		float: right;
-		max-width: 24em;
-		margin: 0;
-		padding: 0.5% 6.5% 0.5% 1%;
+		float: left;
+		max-width: 40%;
+		margin: 0.4em 3%;
+		padding: 0.5% 0.4em;
 		color: $pagetitle-color;
 		background-color: $pagetitle-bgcolor;
-		text-align: right;
-		@include border-radius($border-radius-default);
+		text-align: left;
 		
 		&:after {
 			content: "";
@@ -165,15 +164,15 @@
 // *  Help.xhtml
 // =====================================================================
 .imj_errorPage {
-	width: 91.25%;
-	padding: 1% 4%;
+	width: 100;
+	padding: 1% 0%;
 }
 .imj_shareForm,
 .imj_legalPage,
 .imj_aboutPage,
 .imj_helpPage {
-	width: 91.25%;
-	padding: 1% 4%;
+	width: 100%;
+	padding: 1% 0%;
 	border-top: $sharepage-separatortop-border-style;
 }
 
@@ -182,9 +181,8 @@
 // =====================================================================
 .imj_collectionEntryPage,
 .imj_albumEntryPage {
-	width: 91.25%;
-	padding: 1% 4%;
-	border-top: $entrypage-separatortop-border-style;
+	width: 100%;
+	padding: 1% 0%;
 	
 	.imj_headline {
 		
@@ -210,9 +208,8 @@
 }
 // METADATA PROFILE
 .imj_editMetadataProfilePage {
-  width: 91.25%;
-  padding: 1% 4%;
-  border-top: $mdprofilepage-separatortop-border-style;
+  width: 100%;
+  padding: 1% 0%;
   
   h2 {
     &.imj_headline {
@@ -581,10 +578,12 @@ h4.imj_sectionHeadline {
 
 .imj_backPanel {
 	display: inline-block;
-	width: 100%;
 	text-align: left;
-	margin: 1em 0;
-	padding: 0 2%;
+	margin: 0 0 1em 0;
+	padding:0;
+	float: left;
+	width:5%;
+	white-space: nowrap;
 }
 
 .imj_customSelectbox {
@@ -634,7 +633,7 @@ h4.imj_sectionHeadline {
 	margin: 15px;
 	position: relative;
 	width: 100px;
-	z-index: 100;
+	z-index: 10;
 
 	img {
 		position: relative;
@@ -844,7 +843,7 @@ select.imj_metadataEditText {
 .imj_siteHeaderMenuSearchSection {
 	width: 100%;
 	padding: 0;
-	margin: 0 0 2em 0;
+	margin: 0;
 }
 
 // /* ===[ SiteHeader - SimpleSearch ]===
@@ -860,34 +859,17 @@ select.imj_metadataEditText {
 	}
 	
 	.imj_simpleSearchInput {
-		width: 6em;
 		border: $pageheader-search-input-border;
 		@include border-radius(0.454545em 0 0 0.454545em);
 		vertical-align: top;
-		transition: width 250ms ease, margin-left 250ms;
-		
-		&:hover {
-			@include hover(searchInputHeader);
-		}
-		&:active {
-			@include hover(searchInputHeader);
-		}
-		&:focus {
-			width: 12em;
-			@include hover(searchInputHeader);
-		}
+		width: 17em;
 	}
     
-    &:hover {
-        .imj_simpleSearchInput {
-            width: 12em;
-        }
-    }
 	
 	.imj_simpleSearchButtonSubmit {
 		margin-left: 0;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 
 		@include border-radius(0 0.454545em 0.454545em 0);
 		vertical-align: top;
@@ -932,17 +914,6 @@ select.imj_metadataEditText {
 	}
 } // end of imj_simpleSearch
 
-// /* ===[ SiteHeader - SimpleSearch for Admin]===
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-.imj_isAdmin {
-	.imj_simpleSearch {
-		margin-right: -2em;
-		
-		.imj_simpleSearchInput {
-			width: 12em;
-		}
-	}
-}
 
 
 // /* ===[ Content - Sub Header Message Space ]===
@@ -990,8 +961,8 @@ select.imj_metadataEditText {
 	display: inline;
 	overflow: hidden;
 	width: 93.95%;
-	padding: 0 3%;
-	margin: 2em 0.090909em 0 0;
+	padding: 0.5em 3%;
+	margin: 0.2em 0.090909em 0 0;
 	background-color: $maincontent-bgcolor;
 }
 
@@ -1000,8 +971,8 @@ select.imj_metadataEditText {
 // /* * breadcrump component (History.xhtml)
 // ================================================== */
 .imj_breadcrumpHistory {
- 	width: 91.75%;
-	padding: 0 4%;
+ 	width: 100%;
+	padding: 0 0%;
 	margin-bottom: 0.5em;
 
 	.imj_breadcrumpTitle {
@@ -1051,8 +1022,8 @@ select.imj_metadataEditText {
 // ===[ Advanced Search ]===
 // ================================================== */
 .imj_advancedSearch {
-  	width: 91.25%;
-	padding: 0 4%;
+  	width: 100%;
+	padding: 0;
 	border-top: $advsearch-separatortop-border-style;
 
 	.imj_logicalSearchGroup {
@@ -1132,8 +1103,10 @@ select.imj_metadataEditText {
 // * (searchQueryDisplayArea.xhtml)
 // ===============================================
 .imj_searchQueryDisplay {
-	width: 91.25%;
-	padding: 1% 4%;
+	width: 100%;
+	padding: 1.5% 0;
+	margin: 0 3%;
+	font-size: 120%;
 
 	> fieldset {
 		padding: 1% 1%;
@@ -1160,8 +1133,8 @@ select.imj_metadataEditText {
 // /* * Selection Info Panel (Image.xhtml)
 // ================================================== */
 .imj_selectionInfoPanel {
-	width: 91.75%;
-	padding: 0 4%;
+	width: 100%;
+	padding: 0 0%;
 	margin-bottom: 0.5em;
 
 	.imj_removeFacetButton {
@@ -1180,8 +1153,8 @@ select.imj_metadataEditText {
 // * filterInfoPanel.xhtml
 // ================================================== */
 .imj_filterInfoPanel {
-	width: 91.75%;
-	padding: 0 4%;
+	width: 100%;
+	padding: 0 0%;
 	margin-bottom: 0.5em;
 
 	.imj_removeFilterButton {
@@ -1192,12 +1165,11 @@ select.imj_metadataEditText {
 // ===[ Paginator Components ]===
 // ================================================== */
 .imj_paginator {	// used as container for different paginator types
-	width: 91.75%;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding: 0.636363em 4%;
+	width: 99%;
+	background-color: $body-bgcolor;
+	margin: 0;
+	padding: 0.636363em 1%;
 	text-align: center;
-	border-top: $paginator-bordertop-style;
 
 	.imj_rangeSelector {
 		float: left;
@@ -1376,7 +1348,7 @@ select.imj_metadataEditText {
 // * - facets.xhtml, selectionInfoPanel.xhtml
 // * ================================ */
 #imj_ajaxFacets {
-	padding: 1% 4%;
+	padding: 1% 0%;
 }
 
 
@@ -1635,8 +1607,8 @@ iframe#twitter-widget-0 div.root div.stream {
 // ================================================== */
 .imj_mediaContainerEditMD {
 	margin-bottom: 0.5em;
-	padding: 0 4%;
-	width: 91.75%;
+	padding: 0;
+	width: 100%;
 	border-top: $mediacontainer-separatortop-border-style;
 
 	.imj_headline {
@@ -1736,9 +1708,8 @@ iframe#twitter-widget-0 div.root div.stream {
 // * Upload.xhtml, SingleUpload.xhtml
 // * ============================================ */
 .imj_upload {
-	width: 91.25%;
-	padding: 1% 4%;
-	border-top: $uploadpage-separatortop-border-style;
+	width: 100%;
+	padding: 1em 0;
 
 	.imj_uploadInputWrapper {
 		width: 70%;
