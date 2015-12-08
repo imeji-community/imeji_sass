@@ -183,6 +183,7 @@
 .imj_albumEntryPage {
 	width: 100%;
 	padding: 1% 0%;
+	display: block;
 	
 	.imj_headline {
 		
@@ -863,7 +864,7 @@ select.imj_metadataEditText {
 		border: $pageheader-search-input-border;
 		@include border-radius(0.454545em 0 0 0.454545em);
 		vertical-align: top;
-		width: 17em;
+		width: $simplesearch-width;
 	}
     
 	
@@ -1025,7 +1026,6 @@ select.imj_metadataEditText {
 .imj_advancedSearch {
   	width: 100%;
 	padding: 0;
-	border-top: $advsearch-separatortop-border-style;
 
 	.imj_logicalSearchGroup {
 		white-space: nowrap;
@@ -1584,10 +1584,7 @@ iframe#twitter-widget-0 div.root div.stream {
 	// /* * mediaDisplayContainer + mediaEditPanel , MetaDataList + Submit Panel + Buttons (image_details.xhtml)
 	// ================================================== */
 	.imj_mediaDisplayContainer {
-		padding: 1em 0;
-		margin-bottom: 0.545454em;
 		text-align: center;
-		border-bottom: $detailpage-displaycontainer-borderbottom-style;
 
 		.imj_optionSet {
 

@@ -161,7 +161,17 @@
 	.imj_menuText {
 		text-align: left;
 		line-height: 175%;
-		padding: 0.272727em 1em;
+		padding: 0.5em 1em;
+		display: block;
+	}
+	
+	.imj_menuSimpleSearch{
+		 box-shadow: $box-shadow-default;
+		 width: $simplesearch-width;
+		 li{
+			 border-top: 1px dashed $body-bgcolor;
+			 padding: 0.5em 1em;
+		 }
 	}
 	
 	.imj_menuBody, .imj_menuSimpleSearch{
