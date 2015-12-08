@@ -865,6 +865,7 @@ select.imj_metadataEditText {
 		@include border-radius(0.454545em 0 0 0.454545em);
 		vertical-align: top;
 		width: $simplesearch-width;
+		font-size:100%;
 	}
     
 	
@@ -872,6 +873,7 @@ select.imj_metadataEditText {
 		margin-left: 0;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
+		font-size:100%;
 
 		@include border-radius(0 0.454545em 0.454545em 0);
 		vertical-align: top;

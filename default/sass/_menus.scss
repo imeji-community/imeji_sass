@@ -167,7 +167,8 @@
 	
 	.imj_menuSimpleSearch{
 		 box-shadow: $box-shadow-default;
-		 width: $simplesearch-width;
+		 width: $simplesearch-width + 1em;
+		 
 		 li{
 			 border-top: 1px dashed $body-bgcolor;
 			 padding: 0.5em 1em;
