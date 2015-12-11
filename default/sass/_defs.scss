@@ -27,6 +27,7 @@
 			background-color: $pageheader-button-submit-bgcolor;
 			border: $pageheader-button-submit-border;
             cursor: pointer;
+			float:right;
 
 			&:hover {
 				@include hover(submitButtonHeader);
@@ -173,7 +174,6 @@
 .imj_helpPage {
 	width: 100%;
 	padding: 1% 0%;
-	border-top: $sharepage-separatortop-border-style;
 }
 
 // =====================================================================
@@ -1739,12 +1739,16 @@ iframe#twitter-widget-0 div.root div.stream {
 	}
 	
 	.imj_fileUploadContainer {
-		margin-top: 2em;
 		margin-bottom: 2em;
 		margin-right: 2em;
 		display: inline-block;
 		
 		&.imj_singleUpload {
+			border:3px dashed $body-bgcolor; 
+			line-height:10em; 
+			font-size:150%; 
+			text-align:center; 
+			cursor: pointer;
 			
 			.imj_submitPanel {
 				text-align: left;
