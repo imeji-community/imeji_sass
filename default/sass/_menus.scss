@@ -166,8 +166,7 @@
 	}
 	
 	.imj_menuSimpleSearch{
-		 width: $simplesearch-width + 1em;
-		 
+		 width: $simplesearch-width + 1em; 
 		 li{
 			 border-top: 1px dashed $body-bgcolor;
 			 padding: 0.5em 1em;
@@ -180,16 +179,17 @@
 		background-color: $overlaymenu-bgcolor;
        
 	}
+	
 	&:hover {
 		.imj_menuHeader {
 			color: $overlaymenu-header-color-hover;
 		}
-		.imj_menuBody {
+		> .imj_menuBody {
 			display: block;
 			z-index: 100;
 		}
 	}
-
+	
 	.imj_criticalItem {
 		&:hover {
 			background-color: $overlaymenu-bgcolor-critical;
