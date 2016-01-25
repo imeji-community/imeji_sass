@@ -79,6 +79,8 @@
 			font-weight: bold;
 			letter-spacing: 0.045em;
 			line-height: normal;
+			text-overflow: ellipsis;
+			overflow: hidden;
 		}
 	}
 
@@ -1159,6 +1161,7 @@ select.imj_metadataEditText {
 	width: 100%;
 	padding: 0 0%;
 	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 
 	.imj_removeFilterButton {
 		margin: 0 0.272727em;
