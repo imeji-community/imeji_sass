@@ -154,7 +154,7 @@
 }
 
 // bugfix for Google Chrome
-@mixin gchromeInputFix($shadowColor:$body-bgcolor, $textColor:$font-color-default) {
+@mixin gchromeInputFix($shadowColor:$color-11, $textColor:$font-color-default) {
 	input:-webkit-autofill {
 		-webkit-box-shadow:0 0 0 5em $shadowColor inset;
 		-webkit-text-fill-color: $textColor;
