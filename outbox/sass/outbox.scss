@@ -1,0 +1,38 @@
+// VARIOUS VARIABLES, which not match with other components
+
+
+// IMPORTS, don't change the order of imports, because they are depends another
+@import "outboxVariables";
+@import "../../default/sass/_combinedStyles.scss";
+
+body {
+    background-image: url($logo-path/$back-image);
+}
+
+.imj_siteWrapper {
+
+    background-color: #EEEEEE;
+    
+    & > .imj_mainContentWrapper {
+        padding-bottom: 2em;
+    }
+    .imj_siteFooter {
+        height: auto;
+        min-height: 3em;
+        background-color: #D6D8D7;
+
+        .imj_poweredby_software {
+            float: right;
+            margin-left: 0;
+            margin-right: 2%;
+            margin-top: -1.181818em;
+        }
+
+        .imj_poweredby_institution {
+            float: left;
+            margin-left: 2%;
+            margin-right: 0;
+            margin-top: -2.5em;
+        }
+    }
+}
