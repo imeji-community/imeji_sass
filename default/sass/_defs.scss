@@ -1172,7 +1172,7 @@ select.imj_metadataEditText {
 // ================================================== */
 .imj_paginator {	// used as container for different paginator types
 	width: 99%;
-	background-color: $body-bgcolor;
+	background-color: $color-11;
 	margin: 0;
 	padding: 0.636363em 1%;
 	text-align: center;
@@ -1754,7 +1754,7 @@ iframe#twitter-widget-0 div.root div.stream {
 		display: inline-block;
 		
 		&.imj_singleUpload {
-			border:3px dashed $body-bgcolor; 
+			border:3px dashed $color-11; 
 			line-height:10em; 
 			font-size:150%; 
 			text-align:center; 

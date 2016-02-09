@@ -62,6 +62,7 @@
 			border: none 0;
 			vertical-align: text-top;
 			cursor: pointer;
+			background-color: $color-9;
 		}
 		input[type="submit"]:hover {
 			@include hover(a);
@@ -168,7 +169,7 @@
 	.imj_menuSimpleSearch{
 		 width: $simplesearch-width + 1em; 
 		 li{
-			 border-top: 1px dashed $body-bgcolor;
+			 border-top: 1px dashed $color-11;
 			 padding: 0.5em 1em;
 		 }
 	}
