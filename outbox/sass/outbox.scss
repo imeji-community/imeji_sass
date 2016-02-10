@@ -6,12 +6,15 @@
 @import "../../default/sass/_combinedStyles.scss";
 
 body {
-    background-image: url($logo-path/$back-image);
+	background-image: url($logo-path/$back-image) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .imj_siteWrapper {
 
-    background-color: #EEEEEE;
     
     & > .imj_mainContentWrapper {
         padding-bottom: 2em;
@@ -19,7 +22,7 @@ body {
     .imj_siteFooter {
         height: auto;
         min-height: 3em;
-        background-color: #D6D8D7;
+        background-color: #F2F2F2;
 
         .imj_poweredby_software {
             float: right;
@@ -29,10 +32,26 @@ body {
         }
 
         .imj_poweredby_institution {
-            float: left;
+  	    position: absolute;
+	    background-color: #e4e4e4;
+	    border-top-right-radius: 30px;
+            box-shadow: 0 0 10px #808080;
             margin-left: 2%;
             margin-right: 0;
             margin-top: -2.5em;
+            height: 117px;
+            width: 215px;
+        }
+
+        .imj_poweredby_institution a {
+            background-image: url("https://www.mpdl.mpg.de/templates/mpdl/images/mpdl-logo@2x.png");
+            margin-left: 14px;
+            margin-top: 5px;
+            background-repeat: no-repeat;
+            background-size: 175px 48px;
+            display: inline-block;
+            height: 48px;
+            width: 175px;
         }
     }
 }
