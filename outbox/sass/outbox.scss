@@ -21,8 +21,11 @@ body {
     }
     .imj_siteFooter {
         height: auto;
-        min-height: 3em;
-        background-color: #F2F2F2;
+        min-height: 4em;
+        background-color: $color-9;
+//        max-width: 84.0909em;
+//        position: absolute;
+//        bottom: 0;
 
         .imj_poweredby_software {
             float: right;
@@ -44,7 +47,7 @@ body {
         }
 
         .imj_poweredby_institution a {
-            background-image: url("https://www.mpdl.mpg.de/templates/mpdl/images/mpdl-logo@2x.png");
+//    background-image: url("https://www.mpdl.mpg.de/templates/mpdl/images/mpdl-logo@2x.png");
             margin-left: 14px;
             margin-top: 5px;
             background-repeat: no-repeat;
