@@ -26,7 +26,7 @@
 	$color-9: #F2F2F2;	// light dirty white
 	
 	//BACKGROUND MAIN CONTENT
-	$color-10: #D6D8D7;	// light dirty white
+	$color-10: #E6E6E6;	// light dirty white
 	
 	//ITEMS ON MAIN CONTENT
 	$color-11: #F2F2F2; //darkgrey
@@ -35,7 +35,7 @@
 	$color-12: #BBBBBB;	// grey
 	
 	//POP-UP MENUS & ACTION MENU
-	$color-13: #C9CBC6; //lightgrey
+	$color-13: #D9D9D9;     //lightgrey
 	
 
 
@@ -70,7 +70,7 @@ $logo-height: 5em;
 // multiple fonts must be declared in ()
 $font-family-default: ("Open Sans", Arial, Helvetica, Verdana, sans-serif);
 $font-color-default: $color-01;
-$font-size-default: 80%;
+$font-size-default: 85%;
 $font-color-critical: $color-07;
 $line-height-default: 145%;
 $box-shadow-default: 0.545454em 0.545454em 0.545454em $color-11;
