@@ -832,10 +832,15 @@ body .imj_siteWrapper .moxie-shim input { border-radius: 0; -webkit-border-radiu
 .imj_siteWrapper .imj_headline_text h3 { font-size: 120%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
 .imj_siteWrapper .imj_justified_text { text-align: justify; }
 
-.imj_siteWrapper { display: table; height: 100% !important; border-bottom: 1em solid #990000; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.imj_siteWrapper { display: table; height: 100% !important; border-bottom: 0.7em solid #990000; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 .imj_siteWrapper .imj_siteHeader { display: table-row; }
+.imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine { width: 93,95%; padding: 0.3em 3%; }
+.imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection { width: 93,95%; padding: 0.3em 3%; }
 .imj_siteWrapper .imj_siteContentHeadline { display: table-row; }
 .imj_siteWrapper #actionsMenuArea { display: table-row; }
 .imj_siteWrapper #imj_pageMessageArea { display: table-row; }
-.imj_siteWrapper .imj_mainContentWrapper { display: table-row; height: 100%; }
-.imj_siteWrapper .imj_siteFooter { display: table-row; background-color: #E6E6E6; }
+.imj_siteWrapper .imj_mainContentWrapper { display: table-row; height: 100%; border-bottom: transparent 30px; }
+.imj_siteWrapper .imj_siteFooter { display: table-row; margin-top: 2em; height: 94px; }
+.imj_siteWrapper .imj_siteFooter img { max-height: 48px; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_software { float: right; margin-left: 0; margin-right: 2%; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_institution { position: absolute; background-color: #e4e4e4; border-top-right-radius: 30px; box-shadow: 0 0 10px #808080; margin-left: 2%; margin-right: 0; margin-top: 2.5em; height: 117px; width: 215px; }
