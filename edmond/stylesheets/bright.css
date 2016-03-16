@@ -137,10 +137,10 @@ p { display: block; margin: 1em 0; }
 .imj_collapse, button.imj_collapse, input[type=button].imj_collapse, .imj_expand, button.imj_expand, input[type=button].imj_expand { color: #D45A00; border: 0 none; background-color: transparent; cursor: pointer; }
 .imj_collapse:hover, button.imj_collapse:hover, input[type=button].imj_collapse:hover, .imj_expand:hover, button.imj_expand:hover, input[type=button].imj_expand:hover { color: #101010; border: 0 none; background-color: transparent; }
 
-a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: #101010; background-color: #990000; border: solid #990000 0.1em; cursor: pointer; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
-a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: #101010; background-color: #D80000; border: solid #D80000 0.1em; }
-a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: #101010; background-color: #D80000; border: solid #D80000 0.1em; }
-a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: #101010; background-color: #D80000; border: solid #D80000 0.1em; }
+a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: #F0F0F0; background-color: #990000; border: solid #990000 0.1em; cursor: pointer; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
+a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: #F0F0F0; background-color: #D80000; border: solid #D80000 0.1em; }
+a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: #F0F0F0; background-color: #D80000; border: solid #D80000 0.1em; }
+a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: #F0F0F0; background-color: #D80000; border: solid #D80000 0.1em; }
 
 a.imj_submitButton, input.imj_submitButton, button.imj_submitButton, .imj_submitButton { margin-left: 1em; color: #F0F0F0; background-color: #D45A00; border: solid transparent 0.1em; cursor: pointer; -moz-border-radius: 0.41667em; -webkit-border-radius: 0.41667em; border-radius: 0.41667em; }
 a.imj_submitButton:hover, input.imj_submitButton:hover, button.imj_submitButton:hover, .imj_submitButton:hover { color: #101010; background-color: #FD6B00; border: solid #FD6B00 0.1em; }
@@ -471,7 +471,7 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_uploadMessageArea .imj_fileErrorMessageArea { background-color: #F2F2F2; }
 .imj_uploadMessageArea .imj_fileSuccessMessageArea { background-color: #F2F2F2; }
 
-.imj_shareForm { width: 91.25%; padding: 1% 4%; }
+.imj_shareForm { width: 91.25%; padding: 1% 4%; margin-top: 20px; }
 .imj_shareForm .imj_shareRightsOverview { margin-top: 2em; padding-top: 1em; border-top: 0.1em dashed #D45A00; }
 .imj_shareForm .imj_rightsTable { width: 100%; }
 .imj_shareForm .imj_rightsTable th, .imj_shareForm .imj_rightsTable td { width: 6em; padding: 0.272727em 0.545454em; }
