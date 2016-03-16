@@ -471,7 +471,7 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
 .imj_uploadMessageArea .imj_fileErrorMessageArea { background-color: #757575; }
 .imj_uploadMessageArea .imj_fileSuccessMessageArea { background-color: #F2F2F2; }
 
-.imj_shareForm { width: 91.25%; padding: 1% 4%; margin-top: 20px; }
+.imj_shareForm { width: 91.25%; padding: 1% 4%; }
 .imj_shareForm .imj_shareRightsOverview { margin-top: 2em; padding-top: 1em; border-top: 0.1em dashed #990000; }
 .imj_shareForm .imj_rightsTable { width: 100%; }
 .imj_shareForm .imj_rightsTable th, .imj_shareForm .imj_rightsTable td { width: 6em; padding: 0.272727em 0.545454em; }
@@ -832,10 +832,11 @@ body .imj_siteWrapper .moxie-shim input { border-radius: 0; -webkit-border-radiu
 .imj_siteWrapper .imj_headline_text h3 { font-size: 120%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
 .imj_siteWrapper .imj_justified_text { text-align: justify; }
 
-.imj_siteWrapper { display: table; height: 100% !important; border-bottom: 1em solid #990000; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
-.imj_siteWrapper .imj_siteHeader { display: table-row; }
-.imj_siteWrapper .imj_siteContentHeadline { display: table-row; }
-.imj_siteWrapper #actionsMenuArea { display: table-row; }
-.imj_siteWrapper #imj_pageMessageArea { display: table-row; }
-.imj_siteWrapper .imj_mainContentWrapper { display: table-row; height: 100%; }
-.imj_siteWrapper .imj_siteFooter { display: table-row; background-color: #E6E6E6; }
+html { height: 100%; box-sizing: border-box; }
+
+body { position: relative; margin: 0; padding-bottom: 6rem; min-height: 100%; }
+
+.imj_siteWrapper .imj_siteFooter { position: absolute; padding: 1rem; height: 94px; bottom: 0; border-bottom: 0.5em solid #990000; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.imj_siteWrapper .imj_siteFooter img { max-height: 48px; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_software { float: right; margin-left: 0; margin-right: 2%; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_institution { position: absolute; background-color: #e4e4e4; border-top-right-radius: 30px; box-shadow: 0 0 10px #808080; margin-left: 2%; margin-right: 0; margin-top: 2.5em; height: 117px; width: 215px; }

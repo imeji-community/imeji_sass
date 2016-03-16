@@ -1,0 +1,72 @@
+// VARIOUS VARIABLES, which not match with other components
+
+// IMPORTS, don't change the order of imports, because they are depends another
+@import "outboxVariables";
+@import "../../default/sass/_combinedStyles.scss";
+
+.imj_siteWrapper {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex; 
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.imj_siteHeader, .imj_siteContentHeadline, #actionsMenuArea, #imj_pageMessageArea {
+		-webkit-box-flex: none;
+		-moz-box-flex: none;
+		-webkit-flex: none; 
+		-ms-flex: none;    
+		flex: none;
+	}
+
+	.imj_mainContentWrapper {
+		-webkit-box-flex: 1 auto;
+		-moz-box-flex: 1 0 auto;
+		-webkit-flex: 1 0 auto; 
+		-ms-flex: 1 0 auto;    
+		flex: 1 0 auto;
+	}
+
+	.imj_siteFooter {
+		flex: none;
+                height: 90px;
+
+		border-bottom: 0.1em dotted $color-03;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+
+                img {
+                        max-height: 48px;
+                }
+
+		.imj_poweredby_imprint {
+			padding: 1em 0;
+		}
+
+                .imj_poweredby_software {
+                        float: right;
+                        margin-left: 0;
+                        margin-right: 2%;
+			padding: 1em 0 0 0;
+//                      margin-top: -1.181818em;
+                }
+
+                .imj_poweredby_institution {
+                        position: absolute;
+                        background-color: #e4e4e4;
+                        border-top-right-radius: 30px;
+                        box-shadow: 0 0 10px #808080;
+                        margin-left: 2%;
+                        margin-right: 0;
+			margin-top: -4em;
+                        height: 70px;
+                        width: 215px;
+			padding-top: 15px;
+		}
+
+	}
+
+}

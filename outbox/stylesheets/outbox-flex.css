@@ -832,10 +832,11 @@ body .imj_siteWrapper .moxie-shim input { border-radius: 0; -webkit-border-radiu
 .imj_siteWrapper .imj_headline_text h3 { font-size: 120%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; }
 .imj_siteWrapper .imj_justified_text { text-align: justify; }
 
-.imj_siteWrapper { display: table; height: 100% !important; border-bottom: 1em solid #990000; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
-.imj_siteWrapper .imj_siteHeader { display: table-row; }
-.imj_siteWrapper .imj_siteContentHeadline { display: table-row; }
-.imj_siteWrapper #actionsMenuArea { display: table-row; }
-.imj_siteWrapper #imj_pageMessageArea { display: table-row; }
-.imj_siteWrapper .imj_mainContentWrapper { display: table-row; height: 100%; }
-.imj_siteWrapper .imj_siteFooter { display: table-row; background-color: #E6E6E6; }
+.imj_siteWrapper { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-direction: column; height: 100%; }
+.imj_siteWrapper .imj_siteHeader, .imj_siteWrapper .imj_siteContentHeadline, .imj_siteWrapper #actionsMenuArea, .imj_siteWrapper #imj_pageMessageArea { -webkit-box-flex: none; -moz-box-flex: none; -webkit-flex: none; -ms-flex: none; flex: none; }
+.imj_siteWrapper .imj_mainContentWrapper { -webkit-box-flex: 1 auto; -moz-box-flex: 1 0 auto; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; }
+.imj_siteWrapper .imj_siteFooter { flex: none; height: 90px; border-bottom: 0.1em dotted #990000; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.imj_siteWrapper .imj_siteFooter img { max-height: 48px; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_imprint { padding: 1em 0; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_software { float: right; margin-left: 0; margin-right: 2%; padding: 1em 0 0 0; }
+.imj_siteWrapper .imj_siteFooter .imj_poweredby_institution { position: absolute; background-color: #e4e4e4; border-top-right-radius: 30px; box-shadow: 0 0 10px #808080; margin-left: 2%; margin-right: 0; margin-top: -4em; height: 70px; width: 215px; padding-top: 15px; }

@@ -13,7 +13,7 @@
 	$color-04: #D45A00;	// orange
 	
 	//RESET
-	$color-05: #FFFFFF;	// orange
+	$color-05: #FFFFFF;	// white 
 	$color-06: #FF9000;	// lighten dirty orange
 
 	//ERROR & WARNING
@@ -23,10 +23,10 @@
 	//MAIN COLOUR:
 	
 	//BACKGROUND
-	$color-9: #F2F2F2;	// light dirty white
+	$color-09: #F2F2F2;	// light dirty white
 	
 	//BACKGROUND MAIN CONTENT
-	$color-10: #D6D8D7;	// light dirty white
+	$color-10: #E6E6E6;	// light dirty white
 	
 	//ITEMS ON MAIN CONTENT
 	$color-11: #F2F2F2; //darkgrey
@@ -35,7 +35,7 @@
 	$color-12: #BBBBBB;	// grey
 	
 	//POP-UP MENUS & ACTION MENU
-	$color-13: #C9CBC6; //lightgrey
+	$color-13: #D9D9D9;     //lightgrey
 	
 
 
@@ -59,7 +59,7 @@ $icon-colorfolder-error: "D80000/";
 $logo-path: "../logo/";
 $logo-file: "outbox-logo.png";
 $back-image: "outbox-bg.jpg";
-$logo-position-horizontal: -1.909090em;
+$logo-position-horizontal: 1.909090em;
 $logo-position-vertical: 0;
 $logo-width: 20em;
 $logo-height: 5em;
@@ -70,7 +70,7 @@ $logo-height: 5em;
 // multiple fonts must be declared in ()
 $font-family-default: ("Open Sans", Arial, Helvetica, Verdana, sans-serif);
 $font-color-default: $color-01;
-$font-size-default: 80%;
+$font-size-default: 85%;
 $font-color-critical: $color-07;
 $line-height-default: 145%;
 $box-shadow-default: 0.545454em 0.545454em 0.545454em $color-11;
@@ -96,7 +96,7 @@ $page-login-form-border-style: $border-style-default;
 
 
 // body
-$body-bgcolor: $color-9;
+$body-bgcolor: $color-09;
 
 
 // navigation, links, ...
@@ -111,11 +111,13 @@ $link-color-disabled: $color-12;
 $button-border-width: $border-width-default;
 $button-border-style: solid;
 
-$button-color: $color-01;
+// CHANGE:
+$button-color: $color-05;
 $button-bgcolor: $link-color;
 $button-border: $button-border-style transparent $button-border-width;
 
-$button-color-hover: $color-2;
+// CHANGE:
+$button-color-hover: $color-05;
 $button-bgcolor-hover: $color-04;
 $button-border-hover: $button-border-style $button-bgcolor-hover $button-border-width;
 
@@ -139,14 +141,15 @@ $button-submit-color-hover: $button-color-hover;
 $button-submit-bgcolor-hover: $button-bgcolor-hover;
 $button-submit-border-hover: $button-border-hover;
 
-$button-reset-color: $color-2;
-//CHANGE: 
-$button-reset-bgcolor: $color-05;
-$button-reset-border: $button-border-style $button-reset-bgcolor $button-border-width;
+// CHANGE: Use same definition as for cancel button
+$button-reset-color: $button-cancel-color;
+$button-reset-bgcolor: $button-cancel-bgcolor;
+$button-reset-border: $button-cancel-border;
 
-$button-reset-color-hover: $button-reset-color;
-$button-reset-bgcolor-hover: $color-06;
-$button-reset-border-hover: $button-border-style $button-reset-bgcolor-hover $button-border-width;
+$button-reset-color-hover: $button-cancel-color-hover;
+$button-reset-bgcolor-hover: $button-cancel-bgcolor-hover;
+$button-reset-border-hover: $button-cancel-border-hover;
+// CHANGE: End
 
 $button-back-color: $button-color;
 $button-back-bgcolor: inherit;
@@ -182,9 +185,12 @@ $pageheader-button-submit-border-hover: $button-border-style $pageheader-button-
 $input-border-width: $border-width-default;
 $input-border-style: solid;
 
-$input-color: $color-2;
+// CHANGE
+$input-color: $color-01;
 $input-bgcolor: $color-05;
-$input-border: $input-border-style transparent $input-border-width;
+// CHANGE
+//$input-border: $input-border-style transparent $input-border-width;
+$input-border: $input-border-style $input-border-width;
 
 $input-color-hover: $input-color;
 $input-bgcolor-hover: $input-bgcolor;
@@ -206,9 +212,11 @@ $pageheader-search-input-border-hover: $input-border-hover;
 // select
 $select-border-width: $border-width-default;
 $select-border-style: solid;
-$select-bgcolor: $color-01;
-
-$select-border: $select-border-style transparent $select-border-width;
+// CHANGE
+$select-bgcolor: $color-05;
+// CHANGE
+// $select-border: $select-border-style transparent $select-border-width;
+$select-border: $select-border-style $select-border-width;
 $select-border-hover: $select-border-style $link-color $select-border-width;
 $select-border-disabled: $select-border;
 
