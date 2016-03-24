@@ -1,57 +1,38 @@
 // VARIOUS VARIABLES, which not match with other components
 
-
 // IMPORTS, don't change the order of imports, because they are depends another
 @import "outboxVariables";
 @import "../../default/sass/_combinedStyles.scss";
 
-body {
-	background-image: url($logo-path/$back-image) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 .imj_siteWrapper {
 
-    
-    & > .imj_mainContentWrapper {
-        padding-bottom: 2em;
-    }
-    .imj_siteFooter {
-        height: auto;
-        min-height: 3em;
-        background-color: #F2F2F2;
+	display: table;
+	height: 100% !important;
+	border-bottom: 1em solid $color-03;
+    	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 
-        .imj_poweredby_software {
-            float: right;
-            margin-left: 0;
-            margin-right: 2%;
-            margin-top: -1.181818em;
-        }
+	.imj_siteHeader {
+		display: table-row;
+	}
+	.imj_siteContentHeadline {
+		display: table-row;
+	}
+	#actionsMenuArea {
+		display: table-row;
+	}
+	#imj_pageMessageArea {
+		display: table-row;
+	}
+	.imj_mainContentWrapper {
+		display: table-row;
+		height: 100%; 
+	}
+	.imj_siteFooter {
+		display: table-row;
+		background-color: $color-10;
+	}
 
-        .imj_poweredby_institution {
-  	    position: absolute;
-	    background-color: #e4e4e4;
-	    border-top-right-radius: 30px;
-            box-shadow: 0 0 10px #808080;
-            margin-left: 2%;
-            margin-right: 0;
-            margin-top: -2.5em;
-            height: 117px;
-            width: 215px;
-        }
-
-        .imj_poweredby_institution a {
-            background-image: url("https://www.mpdl.mpg.de/templates/mpdl/images/mpdl-logo@2x.png");
-            margin-left: 14px;
-            margin-top: 5px;
-            background-repeat: no-repeat;
-            background-size: 175px 48px;
-            display: inline-block;
-            height: 48px;
-            width: 175px;
-        }
-    }
 }
+

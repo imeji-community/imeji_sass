@@ -1,0 +1,84 @@
+// VARIOUS VARIABLES, which not match with other components
+
+
+// IMPORTS, don't change the order of imports, because they are depends another
+@import "outboxVariables";
+@import "../../default/sass/_combinedStyles.scss";
+
+.imj_siteWrapper {
+
+	display: table;
+	height: 100% !important;
+	border-bottom: 0.7em solid $color-03;
+    	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	.imj_siteHeader {
+		display: table-row;
+
+		.imj_metaMenuStandardSingleLine {
+			width: 93,95%;
+			padding: 0.3em 3%;
+		}
+		.imj_siteHeaderMenuSearchSection {
+			width: 93,95%;
+			padding: 0.3em 3%;
+		}
+
+	}
+	.imj_siteContentHeadline {
+		display: table-row;
+	}
+	#actionsMenuArea {
+		display: table-row;
+	}
+	#imj_pageMessageArea {
+		display: table-row;
+	}
+	.imj_mainContentWrapper {
+		display: table-row;
+		height: 100%; 
+		border-bottom: transparent 30px;
+	}
+	.imj_siteFooter {
+		display: table-row;
+		margin-top: 2em;
+		height: 94px;
+
+		img {
+			max-height: 48px;
+		}
+
+		.imj_poweredby_software {
+			float: right;
+			margin-left: 0;
+			margin-right: 2%;
+//			margin-top: -1.181818em;
+		}
+
+		.imj_poweredby_institution {
+			position: absolute;
+			background-color: #e4e4e4;
+			border-top-right-radius: 30px;
+			box-shadow: 0 0 10px #808080;
+			margin-left: 2%;
+			margin-right: 0;
+//			margin-top: -2.5em;
+			margin-top: 2.5em;
+			height: 117px;
+			width: 215px;
+		}
+
+//		.imj_poweredby_institution a {
+//			background-image: url($logo-path + "mpdl-logo.png");
+//			margin-left: 14px;
+//			margin-top: 5px;
+//			display: inline-block;
+//			height: 48px;
+//			width: 175px;
+//		}
+	}
+
+}
+
