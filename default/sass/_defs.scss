@@ -1826,7 +1826,9 @@ iframe#twitter-widget-0 div.root div.stream {
 	}
 }
 
-
+.imj_borderBackGround{
+	border-color: $color-09 !important;;
+}
 
 // /* === Share Page & Share Form ===
 // *  Share.xhtml
@@ -1847,8 +1849,14 @@ iframe#twitter-widget-0 div.root div.stream {
 		
 		th, 
 		td {
-			width: 6em;
+			min-width: 5em;
 			padding: 0.272727em 0.545454em;
+			
+			&.imj_rightsTableUser{
+				min-width: 18em;
+				max-width: 18em; 
+				word-break: break-all;
+			}
 			
 			&.imj_rightsAction {
 				padding: 0;
