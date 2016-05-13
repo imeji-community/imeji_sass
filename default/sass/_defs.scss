@@ -386,6 +386,10 @@ button.imj_cancelButton,
 	}
 }
 
+.imj_cancelLink{
+	color: $button-cancel-bgcolor;
+}
+
 a.imj_submitButton,
 input.imj_submitButton,
 button.imj_submitButton,
