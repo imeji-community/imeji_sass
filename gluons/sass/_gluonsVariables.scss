@@ -49,6 +49,8 @@
 	
 	$color-16: #BCBCBC; //medium grey
 
+	$color-17: #424242; //dark grey
+
 // IMPORTS: e.g. font families or other foreign css defintions
 // ATTENTION css resets and a lot of other things are given bei compass, take notice of _combinedStyles.scss
 @import url("//fonts.googleapis.com/css?family=Open+Sans");
@@ -80,7 +82,7 @@ $font-color-default: $color-01;
 $font-size-default: 75%;
 $font-color-critical: $color-07;
 $line-height-default: 145%;
-$box-shadow-default: 0.545454em 0.545454em 0.545454em $color-11;
+$box-shadow-default: 0.3em 0.3em 0.3em $color-17;
 $border-radius-default: 0em;
 $border-width-default: 0.10em;
 $border-style-default: $border-width-default solid $color-03;
@@ -118,24 +120,24 @@ $link-color-disabled: $color-12;
 $button-border-width: $border-width-default;
 $button-border-style: solid;
 
-$button-color: $color-01;
+$button-color: $color-02;
 $button-bgcolor: $link-color;
 $button-border: $button-border-style transparent $button-border-width;
 
 $button-color-hover: $color-02;
-$button-bgcolor-hover: $color-04;
+$button-bgcolor-hover: darken($link-color, 15%);
 $button-border-hover: $button-border-style $button-bgcolor-hover $button-border-width;
 
 $button-color-disabled: $color-13;
 $button-bgcolor-disabled: $link-color-disabled;
 $button-border-disabled: $button-border;
 
-$button-cancel-color: $font-color-default;
-$button-cancel-bgcolor: darken($font-color-critical, 12.3%); // $color-08;
+$button-cancel-color: $color-02;
+$button-cancel-bgcolor: $font-color-critical; // $color-08;
 $button-cancel-border: $button-border-style $button-cancel-bgcolor $button-border-width;
 
-$button-cancel-color-hover: $font-color-default;
-$button-cancel-bgcolor-hover: $font-color-critical; // equals $color-07;
+$button-cancel-color-hover: $color-02;
+$button-cancel-bgcolor-hover: darken($font-color-critical, 15%); // equals $color-07;
 $button-cancel-border-hover: $button-border-style $button-cancel-bgcolor-hover $button-border-width;
 
 $button-submit-color: $button-color;

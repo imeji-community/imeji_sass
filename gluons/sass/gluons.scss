@@ -15,7 +15,7 @@ html {
 }
 */
 html, body {
-	background-color: #424242;
+	background-color: $color-17;
 }
 
 .imj_siteWrapper .imj_logo {
@@ -29,6 +29,12 @@ html, body {
 	}
 
 	
+
+}
+
+.imj_contentSubMenuItem, .imj_overlayMenu .imj_active {
+	color: $color-02;
+
 
 }
 
@@ -100,7 +106,8 @@ color:$color-02;
 	background-repeat: no-repeat;
 	background-color: $color-09;
 	//min-height: 100% !important;
-	position:relative;
+	position: relative;
+	overflow: hidden;
     
 
     .imj_siteFooter {
