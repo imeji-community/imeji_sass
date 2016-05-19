@@ -216,21 +216,11 @@
 		cursor: pointer;
 		padding-right: 1.454545em;
 		display: inline-block;
-		@include backgroundIcon('imjTriangleNext_16.png', default, right, center);
-	
-		&:hover {
-			@include backgroundIcon('imjTriangleNext_16.png', hover, right, center);
-		}
 	}
 	.ui-datepicker-prev {
 		padding-left: 1.454545em;
 		display: inline-block;
 		cursor: pointer;
-		@include backgroundIcon('imjTrianglePrevious_16.png', default, left, center);
-		
-		&:hover {
-			@include backgroundIcon('imjTrianglePrevious_16.png', hover, left, center);
-		}
 	}
 	.ui-datepicker-title {
 		text-align: center;
