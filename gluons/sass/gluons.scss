@@ -1,0 +1,207 @@
+// VARIOUS VARIABLES, which not match with other components
+
+
+// IMPORTS, don't change the order of imports, because they are depends another
+@import "gluonsVariables";
+@import "../../default/sass/_combinedStyles.scss";
+
+/*
+html {
+	background-image: url('../backgrounds/Grey-polygon-background/281-Kopie.jpg');
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color: #FFFFFF;
+	
+}
+*/
+html, body {
+	background-color: $color-17;
+}
+
+
+.gluons_startpage_div {
+	width:25em;
+	background-color: rgba(#FFFFFF, 0.8);
+	padding:5px 10px 5px 10px;
+	margin-top:0.5em;
+	//height:100%;
+	//min-height:50em;
+
+
+}
+
+.gluons_startpageHeadline {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 1.5em;
+
+}
+
+.imj_mainContentWrapper {
+	
+
+}
+
+.imj_welcomeInfo {
+	
+	background-image: url('../backgrounds/start_background3.jpg');
+	background-color: transparent;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height:100%;
+	min-height:52em;
+	width:100%;
+}
+
+.imj_siteWrapper .imj_logo {
+	background-size: auto 10em;
+}
+
+.imj_metaMenuStandardSingleLine a, .imj_siteHeaderMenuSearchSection a, .imj_contentSubMenu a, .imj_contentSubMenu .imj_overlayMenu .imj_menuHeader, .imj_contentMenu a {
+	color:$color-15;
+	&:hover {
+		color: $color-02;
+	}
+
+	
+
+}
+
+.imj_contentSubMenuItem, .imj_overlayMenu .imj_active {
+	color: $color-02;
+
+}
+
+
+
+.imj_mainMenuStandard .imj_mainMenuStandardItem, .imj_contentMenu .imj_contentMenuItem {
+	background-color:transparent;
+	&:hover {
+		background-color:$color-15;
+		& a {
+			color:$color-02;
+		}
+	}
+	&.imj_active{
+		background-color:$color-15;
+		& a {
+			color:$font-color-default;
+		}
+	}
+	
+
+}
+
+/*
+.imj_overlayMenu .imj_sectionHeadline{
+	color: $color-02;
+}
+*/
+
+
+//MetaMenu
+.imj_siteHeaderMenuSearchSection {
+	background-color:$mainmenu-item-bgcolor;
+}
+
+.imj_simpleSearchInputWrapper {
+	padding-right:3%;
+}
+
+.imj_metaMenuItemsAlign {
+	padding-right:3%;
+	padding-left:3%;
+	background-color:$mainmenu-item-bgcolor;
+}
+
+
+//Paginator
+.imj_paginator {
+	background-color: #FFFFFF;
+}
+
+.imj_searchQueryDisplay{
+color:$color-02;
+
+}
+
+
+
+.imj_mainContentWrapper{
+	margin-bottom: 100px;
+	width:94%;
+}
+
+
+
+.imj_siteWrapper {
+	// /* ===[ SiteHeader ]===
+	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+	
+	background-image: url('../backgrounds/rect_blue_long.png');
+	background-repeat: no-repeat;
+	background-color: $color-09;
+	//min-height: 100% !important;
+	position: relative;
+	overflow: hidden;
+
+	//max-width: 90em;
+    
+
+    .imj_siteFooter {
+    	background-image: url('../backgrounds/rect_blue_footer_long.png');
+    	background-position: right top;
+    	color: $color-02;
+    	
+    	position:absolute;
+    	height:100px;
+    	background-color:$color-14;
+    	bottom: 0;
+    	padding: 0;
+
+    
+    	//Move powered by logo to right side
+    	.imj_poweredby_software {
+            float: right;
+            margin-left: 0;
+            margin-right: 2%;
+        }
+        
+        
+        .imj_startpageFooterLogos { 
+        	margin-top:2em;
+        
+        	.imj_poweredby_institution {
+        	}
+        	
+        }
+
+        .imj_poweredby_institution {
+			position: absolute;
+			bottom:0;
+			background-color: #e4e4e4;
+			border-top-right-radius: 30px;
+            //box-shadow: 0 0 10px #808080;
+            margin-left: 2%;
+            height: 85px;
+            width: 215px;
+            
+            //remove old mpdl logo
+            .imj_community_logo {
+				visibility:hidden;
+				display:none;
+			}
+        }
+
+        .imj_poweredby_institution a {
+            background-image: url("https://www.mpdl.mpg.de/templates/mpdl/images/mpdl-logo@2x.png");
+            margin-left: 3px;
+            margin-top: 15px;
+            background-repeat: no-repeat;
+            background-size: 175px 48px;
+            display: inline-block;
+            height: 48px;
+            width: 175px;
+        }
+    }
+}
