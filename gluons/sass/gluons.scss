@@ -30,6 +30,23 @@ html, body {
 
 }
 
+h1.gluons_disclaimerHeadline {
+	font-size:2em;
+	font-weight:bold;
+	padding-top:2em;
+	padding-bottom:0.5em;
+}
+
+h2.gluons_disclaimerHeadline {
+	font-size:1.5em;
+	//font-weight:bold;
+	padding-top:1.5em;
+	padding-bottom:0.5em;
+}
+
+
+
+
 .gluons_startpageHeadline {
 	font-size: 1.5em;
 	font-weight: bold;
@@ -67,12 +84,15 @@ html, body {
 
 }
 
-.imj_contentSubMenuItem, .imj_overlayMenu .imj_active {
+.imj_contentSubMenuItem, .imj_overlayMenu .imj_active, .imj_overlayMenuList {
 	color: $color-02;
 
 }
 
-
+.imj_statusHeaderArea .imj_listDottedSeparator  {
+    border-top: 1px solid $color-02 !important;
+    padding: 0.5em 1em;
+}
 
 .imj_mainMenuStandard .imj_mainMenuStandardItem, .imj_contentMenu .imj_contentMenuItem {
 	background-color:transparent;
