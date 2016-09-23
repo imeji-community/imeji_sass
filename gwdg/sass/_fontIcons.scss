@@ -1,0 +1,44 @@
+// these file extends the font awesome
+// http://fortawesome.github.io/Font-Awesome/icons/
+
+
+.imj_siteWrapper {
+    
+    // general increase of icon size
+    .fa {
+        font-size: 110%;
+    }
+    
+    // own class to increase the font-size instyle
+    .fa-size-2 {
+        font-size: 150%;
+    }
+    .fa-size-3 {
+        font-size: 190%;
+    }
+    .fa-size-4 {
+        font-size: 230%;
+    }
+    .imj_listHeader {
+        
+        .fa-pull-right {
+            margin-right: 0.5em;
+        }
+    }
+    
+    .fa-plus-square-o,
+    .fa-minus-square-o {
+        margin-left: 0.1em;
+        margin-right: 0.2em;
+    }
+    
+    // paginator icons
+    .fa-chevron-left {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .fa-chevron-right {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}

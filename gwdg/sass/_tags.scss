@@ -1,0 +1,143 @@
+html,body {
+	@include max-dimension();
+	margin: 0px;
+	padding: 0px;
+	background-color: $body-bgcolor;
+}
+body {
+	@include defaultfont();
+}
+form {
+	display: inline;
+}
+a {
+	color: $link-color;
+	text-decoration: none;
+	
+	&:hover {
+		@include hover('a');
+	}
+	&:focus {
+		@include hover('a');
+	}
+	&:active {
+		color: $link-color;
+	}
+	&.disabled {
+		@include disabled('a');
+	}
+	&.disabled:hover {
+		@include disabled('a');
+	}
+
+}
+strong, b {	
+	font-weight: bold;	// bugfix for default user agent styling, e.g. in webkit
+}
+i {
+	font-style: italic;	// bugfix for default user agent styling, e.g. in webkit
+}
+input, button {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: $input-color;
+	background-color: $input-bgcolor;
+	border: $input-border;
+	@include border-radius($border-radius-default);
+	
+	&:hover {
+		@include hover('input');
+	}
+	&:focus {
+		@include hover('input');
+	}
+}
+input[type="checkbox"], 
+input[type="radio"] {
+	background-color: inherit;
+	border: none;
+}
+
+[class$=Button] {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	
+	@include border-radius($border-radius-default);
+	
+	&:hover {
+		@include hover('a');
+	}
+	&:focus {
+		@include hover('a');
+	}
+}
+
+
+// input {
+	// color: $input-color;
+	// background-color: $input-bgcolor;
+	// border: $input-border;
+	// @include border-radius($border-radius-default);
+	// letter-spacing: 0.06em;
+	// padding: 0.25em 0.5em;
+	// @include inputfont();
+// 	
+	// &:hover {
+		// @include hover('input');
+	// }
+	// &:focus {
+		// @include hover('input');
+	// }
+// }
+// button, [class*=Button] {
+	// padding: 0.25em 0.5em;
+	// border: $input-border;
+	// @include inputfont();
+// }*/
+/**
+* 1. Address box sizing set to `content-box` in IE 8/9.
+* 2. Remove excess padding in IE 8/9.
+*/
+// input[type="checkbox"], 
+// input[type="radio"] {
+// //	padding: 0; /* 2 */
+	// box-sizing: border-box; /* 1 */
+	// background-color: inherit;
+// 	
+	// &:hover {
+		// padding: 0; /* 2 */
+		// box-sizing: border-box; /* 1 */
+		// background-color: inherit;
+		// border: none;
+	// }
+	// &:focus {
+		// padding: 0; /* 2 */
+		// box-sizing: border-box; /* 1 */
+		// background-color: inherit;
+		// border: none;
+	// }
+// }*/
+select {
+	max-width: 100%;
+	border: $select-border;
+	@include border-radius($border-radius-default);
+	background-color: $select-bgcolor;
+
+	&:hover {
+		@include hover('select');
+	}
+	&:focus {
+		@include hover('select');
+	}
+}
+// label, input, button, select, textarea {
+	// font-size: 1em;
+// }
+label {
+	min-width: 24%;
+}
+p {
+	display: block;
+	margin: 1em 0;
+}
+

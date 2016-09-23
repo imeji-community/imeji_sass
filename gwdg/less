@@ -1,0 +1,832 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans");   |	@import url("//fonts.googleapis.com/css?family=Open+Sans");								
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4 |	html, body, div, span, applet, object, iframe, h1, h2, h3, h4								
+							      |									
+html { line-height: 1; }				      |	html { line-height: 1; }								
+							      |									
+ol, ul { list-style: none; }				      |	ol, ul { list-style: none; }								
+							      |									
+table { border-collapse: collapse; border-spacing: 0; }	      |	table { border-collapse: collapse; border-spacing: 0; }								
+							      |									
+caption, th, td { text-align: left; font-weight: normal; vert |	caption, th, td { text-align: left; font-weight: normal; vert								
+							      |									
+q, blockquote { quotes: none; }				      |	q, blockquote { quotes: none; }								
+q:before, q:after, blockquote:before, blockquote:after { cont |	q:before, q:after, blockquote:before, blockquote:after { cont								
+							      |									
+a img { border: none; }					      |	a img { border: none; }								
+							      |									
+article, aside, details, figcaption, figure, footer, header,  |	article, aside, details, figcaption, figure, footer, header, 								
+							      |									
+html, body { width: 100%; height: 100%; margin: 0px; padding: |	html, body { width: 100%; height: 100%; margin: 0px; padding:								
+							      |									
+body { font-size: 120%; font-family: "Open Sans", Arial, Helv |	body { font-size: 75%; font-family: "Open Sans", Arial, Helve								
+							      |									
+form { display: inline; }				      |	form { display: inline; }								
+							      |									
+a { color: #6CAE2F; text-decoration: none; }		      |	a { color: #6CAE2F; text-decoration: none; }								
+a:hover { color: #F0F0F1; }				      |	a:hover { color: #F0F0F0; }								
+a:focus { color: #F0F0F1; }				      |	a:focus { color: #F0F0F0; }								
+a:active { color: #6CAE2F; }				      |	a:active { color: #6CAE2F; }								
+a.disabled { color: #BBBBBB; cursor: default; border: solid t |	a.disabled { color: #BBBBBB; cursor: default; border: solid t								
+a.disabled:hover { color: #BBBBBB; cursor: default; border: s |	a.disabled:hover { color: #BBBBBB; cursor: default; border: s								
+							      |									
+strong, b { font-weight: bold; }			      |	strong, b { font-weight: bold; }								
+							      |									
+i { font-style: italic; }				      |	i { font-style: italic; }								
+							      |									
+input, button { padding-left: 0.5em; padding-right: 0.5em; co |	input, button { padding-left: 0.5em; padding-right: 0.5em; co								
+input:hover, button:hover { color: #000000; background-color: |	input:hover, button:hover { color: #000000; background-color:								
+input:focus, button:focus { color: #000000; background-color: |	input:focus, button:focus { color: #000000; background-color:								
+							      |									
+input[type="checkbox"], input[type="radio"] { background-colo |	input[type="checkbox"], input[type="radio"] { background-colo								
+							      |									
+[class$=Button] { padding-left: 0.5em; padding-right: 0.5em;  |	[class$=Button] { padding-left: 0.5em; padding-right: 0.5em; 								
+[class$=Button]:hover { color: #F0F0F1; }		      |	[class$=Button]:hover { color: #F0F0F0; }								
+[class$=Button]:focus { color: #F0F0F1; }		      |	[class$=Button]:focus { color: #F0F0F0; }								
+							      |									
+/**							      |	/**								
+* 1. Address box sizing set to `content-box` in IE 8/9.	      |	* 1. Address box sizing set to `content-box` in IE 8/9.								
+* 2. Remove excess padding in IE 8/9.			      |	* 2. Remove excess padding in IE 8/9.								
+*/							      |	*/								
+select { max-width: 100%; border: solid transparent 0.1em; -m |	select { max-width: 100%; border: solid transparent 0.1em; -m								
+select:hover { border: solid #6CAE2F 0.1em; }		      |	select:hover { border: solid #6CAE2F 0.1em; }								
+select:focus { border: solid #6CAE2F 0.1em; }		      |	select:focus { border: solid #6CAE2F 0.1em; }								
+							      |									
+label { min-width: 24%; }				      |	label { min-width: 24%; }								
+							      |									
+p { display: block; margin: 1em 0; }			      |	p { display: block; margin: 1em 0; }								
+							      |									
+.imj_siteWrapper { overflow: hidden; width: 100%; max-width:  |	.imj_siteWrapper { overflow: hidden; width: 100%; max-width: 								
+.imj_siteWrapper .imj_siteHeader { padding: 0 3% 0 0; }	      |	.imj_siteWrapper .imj_siteHeader { padding: 0 3% 0 0; }								
+.imj_siteWrapper .imj_siteHeader:after { clear: both; content |	.imj_siteWrapper .imj_siteHeader:after { clear: both; content								
+.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmi |	.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmi								
+.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmi |	.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmi								
+.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmi |	.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmi								
+.imj_siteWrapper .imj_logo { width: 13em; height: 5em; paddin |	.imj_siteWrapper .imj_logo { width: 13em; height: 5em; paddin								
+.imj_siteWrapper .imj_logo_alt { max-height: 154px; margin-to |	.imj_siteWrapper .imj_logo_alt { max-height: 154px; margin-to								
+.imj_siteWrapper .imj_spaceLogo { max-height: 5em; margin-lef |	.imj_siteWrapper .imj_spaceLogo { max-height: 5em; margin-lef								
+.imj_siteWrapper .imj_siteContentHeadline { clear: both; floa |	.imj_siteWrapper .imj_siteContentHeadline { clear: both; floa								
+.imj_siteWrapper .imj_siteContentHeadline:after { content: "" |	.imj_siteWrapper .imj_siteContentHeadline:after { content: ""								
+.imj_siteWrapper .imj_siteContentHeadline h1 { font-size: 160 |	.imj_siteWrapper .imj_siteContentHeadline h1 { font-size: 160								
+.imj_siteWrapper .imj_siteFooter { clear: both; width: 100%;  |	.imj_siteWrapper .imj_siteFooter { clear: both; width: 100%; 								
+.imj_siteWrapper .imj_siteFooter img { max-height: 40px; }    |	.imj_siteWrapper .imj_siteFooter img { max-height: 40px; }								
+							      |									
+.imj_invisible { visibility: hidden; }			      |	.imj_invisible { visibility: hidden; }								
+							      |									
+.imj_noDisplay { display: none; }			      |	.imj_noDisplay { display: none; }								
+							      |									
+.imj_active { color: #F0F0F1; }				      |	.imj_active { color: #F0F0F0; }								
+.imj_active a { color: #F0F0F1; }			      |	.imj_active a { color: #F0F0F0; }								
+							      |									
+.imj_requiredMarker:after { content: " *"; }		      |	.imj_requiredMarker:after { content: " *"; }								
+							      |									
+.imj_activeMedia:hover, .imj_addMedia:hover { background-colo |	.imj_activeMedia:hover, .imj_addMedia:hover { background-colo								
+							      |									
+.imj_disabled { color: #444444; cursor: default; background-c |	.imj_disabled { color: #444444; cursor: default; background-c								
+.imj_disabled a { color: #BBBBBB; cursor: default; }	      |	.imj_disabled a { color: #BBBBBB; cursor: default; }								
+.imj_disabled a:hover { color: #BBBBBB; cursor: default; }    |	.imj_disabled a:hover { color: #BBBBBB; cursor: default; }								
+.imj_disabled:hover { color: #444444; cursor: default; backgr |	.imj_disabled:hover { color: #444444; cursor: default; backgr								
+							      |									
+.imj_keepFormat { white-space: pre-wrap; }		      |	.imj_keepFormat { white-space: pre-wrap; }								
+							      |									
+.imj_mediaWithdrawn { width: 100%; color: #D80000; text-align |	.imj_mediaWithdrawn { width: 100%; color: #D80000; text-align								
+							      |									
+.imj_selectMedia { margin-right: 0.636em; }		      |	.imj_selectMedia { margin-right: 0.636em; }								
+							      |									
+.imj_errorPage { width: 100; padding: 1% 0%; }		      |	.imj_errorPage { width: 100; padding: 1% 0%; }								
+							      |									
+.imj_shareForm, .imj_legalPage, .imj_aboutPage, .imj_helpPage |	.imj_shareForm, .imj_legalPage, .imj_aboutPage, .imj_helpPage								
+							      |									
+.imj_collectionEntryPage, .imj_albumEntryPage { width: 100%;  |	.imj_collectionEntryPage, .imj_albumEntryPage { width: 100%; 								
+.imj_collectionEntryPage .imj_headline .imj_entryPagePreviewT |	.imj_collectionEntryPage .imj_headline .imj_entryPagePreviewT								
+.imj_collectionEntryPage .imj_headline.imj_messageInfo, .imj_ |	.imj_collectionEntryPage .imj_headline.imj_messageInfo, .imj_								
+							      |									
+.imj_organisation { width: 100%; padding: 0 4%; -moz-box-sizi |	.imj_organisation { width: 100%; padding: 0 4%; -moz-box-sizi								
+							      |									
+.imj_editMetadataProfilePage { width: 100%; padding: 1% 0%; } |	.imj_editMetadataProfilePage { width: 100%; padding: 1% 0%; }								
+.imj_editMetadataProfilePage h2.imj_headline, .imj_editMetada |	.imj_editMetadataProfilePage h2.imj_headline, .imj_editMetada								
+							      |									
+.imj_pageMessageArea, .imj_contentMessageArea { width: 87.95% |	.imj_pageMessageArea, .imj_contentMessageArea { width: 87.95%								
+							      |									
+.imj_messageList { width: 100%; padding: 0; font-size: 110%;  |	.imj_messageList { width: 100%; padding: 0; font-size: 110%; 								
+.imj_messageList li { width: 97.95%; padding: 0.125em 1% 0.25 |	.imj_messageList li { width: 97.95%; padding: 0.125em 1% 0.25								
+							      |									
+.imj_messageStatus { margin-top: 1em; width: 97.95%; padding: |	.imj_messageStatus { margin-top: 1em; width: 97.95%; padding:								
+							      |									
+.imj_messageInfo { color: #6CAE2F; background-color: #444444; |	.imj_messageInfo { color: #6CAE2F; background-color: #444444;								
+							      |									
+.imj_messageTitleInfo { width: 97.95%; padding: 0 1% 0.125em  |	.imj_messageTitleInfo { width: 97.95%; padding: 0 1% 0.125em 								
+							      |									
+.imj_messageTitleWarn { width: 97.95%; padding: 0.25em 1%; fo |	.imj_messageTitleWarn { width: 97.95%; padding: 0.25em 1%; fo								
+							      |									
+.imj_messageError, .imj_messageFatal, .imj_messageWarn { colo |	.imj_messageError, .imj_messageFatal, .imj_messageWarn { colo								
+							      |									
+.imj_modalDialogBackground { display: none; position: fixed;  |	.imj_modalDialogBackground { display: none; position: fixed; 								
+							      |									
+.imj_modalDialogBox { max-width: 60em; position: absolute; to |	.imj_modalDialogBox { max-width: 60em; position: absolute; to								
+.imj_modalDialogBox .imj_submitPanel { display: block; }      |	.imj_modalDialogBox .imj_submitPanel { display: block; }								
+.imj_modalDialogBox .imj_confirmationReasonTextarea label { d |	.imj_modalDialogBox .imj_confirmationReasonTextarea label { d								
+.imj_modalDialogBox .imj_dialogReasonText { width: 50em; resi |	.imj_modalDialogBox .imj_dialogReasonText { width: 50em; resi								
+.imj_modalDialogBox .imj_confirmationText p { max-width: 50em |	.imj_modalDialogBox .imj_confirmationText p { max-width: 50em								
+							      |									
+.imj_inlineSelectionGroup { display: inline-block; }	      |	.imj_inlineSelectionGroup { display: inline-block; }								
+.imj_inlineSelectionGroup .imj_selectionLabel { display: inli |	.imj_inlineSelectionGroup .imj_selectionLabel { display: inli								
+.imj_inlineSelectionGroup .imj_selectionBox { display: inline |	.imj_inlineSelectionGroup .imj_selectionBox { display: inline								
+							      |									
+.imj_inlineButtonGroup { white-space: nowrap; }		      |	.imj_inlineButtonGroup { white-space: nowrap; }								
+							      |									
+.imj_collapse, button.imj_collapse, input[type=button].imj_co |	.imj_collapse, button.imj_collapse, input[type=button].imj_co								
+.imj_collapse:hover, button.imj_collapse:hover, input[type=bu |	.imj_collapse:hover, button.imj_collapse:hover, input[type=bu								
+							      |									
+a.imj_cancelButton, input.imj_cancelButton, button.imj_cancel |	a.imj_cancelButton, input.imj_cancelButton, button.imj_cancel								
+a.imj_cancelButton:hover, input.imj_cancelButton:hover, butto |	a.imj_cancelButton:hover, input.imj_cancelButton:hover, butto								
+a.imj_cancelButton:active, input.imj_cancelButton:active, but |	a.imj_cancelButton:active, input.imj_cancelButton:active, but								
+a.imj_cancelButton:focus, input.imj_cancelButton:focus, butto |	a.imj_cancelButton:focus, input.imj_cancelButton:focus, butto								
+							      |									
+.imj_cancelLink { color: #990000; }			      |	.imj_cancelLink { color: #990000; }								
+							      |									
+a.imj_submitButton, input.imj_submitButton, button.imj_submit |	a.imj_submitButton, input.imj_submitButton, button.imj_submit								
+a.imj_submitButton:hover, input.imj_submitButton:hover, butto |	a.imj_submitButton:hover, input.imj_submitButton:hover, butto								
+a.imj_submitButton:active, input.imj_submitButton:active, but |	a.imj_submitButton:active, input.imj_submitButton:active, but								
+a.imj_submitButton:focus, input.imj_submitButton:focus, butto |	a.imj_submitButton:focus, input.imj_submitButton:focus, butto								
+							      |									
+a.imj_disabledButton, input.imj_disabledButton, button.imj_di |	a.imj_disabledButton, input.imj_disabledButton, button.imj_di								
+a.imj_disabledButton:hover, input.imj_disabledButton:hover, b |	a.imj_disabledButton:hover, input.imj_disabledButton:hover, b								
+a.imj_disabledButton:active, input.imj_disabledButton:active, |	a.imj_disabledButton:active, input.imj_disabledButton:active,								
+a.imj_disabledButton:focus, input.imj_disabledButton:focus, b |	a.imj_disabledButton:focus, input.imj_disabledButton:focus, b								
+							      |									
+a.imj_resetButton, input.imj_resetButton, button.imj_resetBut |	a.imj_resetButton, input.imj_resetButton, button.imj_resetBut								
+a.imj_resetButton:hover, input.imj_resetButton:hover, button. |	a.imj_resetButton:hover, input.imj_resetButton:hover, button.								
+a.imj_resetButton:active, input.imj_resetButton:active, butto |	a.imj_resetButton:active, input.imj_resetButton:active, butto								
+a.imj_resetButton:focus, input.imj_resetButton:focus, button. |	a.imj_resetButton:focus, input.imj_resetButton:focus, button.								
+							      |									
+.imj_backButton { padding: 0 0.3333333em; margin-left: 1em; c |	.imj_backButton { padding: 0 0.3333333em; margin-left: 1em; c								
+.imj_backButton:hover { -moz-border-radius: 0.41667em; -webki |	.imj_backButton:hover { -moz-border-radius: 0.41667em; -webki								
+.imj_backButton:active { -moz-border-radius: 0.41667em; -webk |	.imj_backButton:active { -moz-border-radius: 0.41667em; -webk								
+.imj_backButton:focus { -moz-border-radius: 0.41667em; -webki |	.imj_backButton:focus { -moz-border-radius: 0.41667em; -webki								
+							      |									
+.imj_editButton, a.imj_editButton { margin-left: 1em; color:  |	.imj_editButton, a.imj_editButton { margin-left: 1em; color: 								
+.imj_editButton:hover, a.imj_editButton:hover { color: #00000 |	.imj_editButton:hover, a.imj_editButton:hover { color: #00000								
+.imj_editButton:active, a.imj_editButton:active { color: #000 |	.imj_editButton:active, a.imj_editButton:active { color: #000								
+.imj_editButton:focus, a.imj_editButton:focus { color: #00000 |	.imj_editButton:focus, a.imj_editButton:focus { color: #00000								
+							      |									
+.imj_editButton[type="submit"] { margin-left: 0; }	      |	.imj_editButton[type="submit"] { margin-left: 0; }								
+							      |									
+button.imj_removeButton { color: #6CAE2F; background-color: i |	button.imj_removeButton { color: #6CAE2F; background-color: i								
+							      |									
+.imj_removeButton:hover { color: #F0F0F1; background-color: # |	.imj_removeButton:hover { color: #F0F0F0; background-color: #								
+.imj_removeButton:active { color: #F0F0F1; background-color:  |	.imj_removeButton:active { color: #F0F0F0; background-color: 								
+.imj_removeButton:focus { color: #F0F0F1; background-color: # |	.imj_removeButton:focus { color: #F0F0F0; background-color: #								
+							      |									
+.imj_headline h2, .imj_administrationTiledList .imj_adminPane |	.imj_headline h2, .imj_administrationTiledList .imj_adminPane								
+							      |									
+.imj_headline h3, .imj_administrationTiledList .imj_adminPane |	.imj_headline h3, .imj_administrationTiledList .imj_adminPane								
+							      |									
+.imj_sectionHeadline h2, h2.imj_sectionHeadline { font-size:  |	.imj_sectionHeadline h2, h2.imj_sectionHeadline { font-size: 								
+							      |									
+.imj_sectionHeadline h3, h3.imj_sectionHeadline { padding: 0. |	.imj_sectionHeadline h3, h3.imj_sectionHeadline { padding: 0.								
+							      |									
+.imj_headline h4, .imj_administrationTiledList .imj_adminPane |	.imj_headline h4, .imj_administrationTiledList .imj_adminPane								
+							      |									
+.imj_sectionHeadline h4, h4.imj_sectionHeadline { padding: 0. |	.imj_sectionHeadline h4, h4.imj_sectionHeadline { padding: 0.								
+							      |									
+.highlight_area { border: 0 none; background-color: inherit;  |	.highlight_area { border: 0 none; background-color: inherit; 								
+.highlight_area.imj_highlightDependencies, .highlight_area .i |	.highlight_area.imj_highlightDependencies, .highlight_area .i								
+.highlight_area:hover { background-color: #444444; }	      |	.highlight_area:hover { background-color: #444444; }								
+							      |									
+.imj_backPanel { display: inline-block; text-align: left; mar |	.imj_backPanel { display: inline-block; text-align: left; mar								
+							      |									
+.imj_customSelectbox { display: inline-block; margin-top: 0.0 |	.imj_customSelectbox { display: inline-block; margin-top: 0.0								
+.imj_customSelectbox select { opacity: 0; filter: Alpa(opacit |	.imj_customSelectbox select { opacity: 0; filter: Alpa(opacit								
+.imj_customSelectbox .imj_showSelection { position: absolute; |	.imj_customSelectbox .imj_showSelection { position: absolute;								
+.imj_customSelectbox .imj_showSelection .imj_selectionText {  |	.imj_customSelectbox .imj_showSelection .imj_selectionText { 								
+.imj_customSelectbox .imj_showSelection .imj_buttonSortDescen |	.imj_customSelectbox .imj_showSelection .imj_buttonSortDescen								
+.imj_customSelectbox .imj_showSelection .imj_buttonSortDescen |	.imj_customSelectbox .imj_showSelection .imj_buttonSortDescen								
+							      |									
+.imj_imageStack { border: 2px solid #F0F0F1; -moz-box-shadow: |	.imj_imageStack { border: 2px solid #F0F0F0; -moz-box-shadow:								
+.imj_imageStack img { position: relative; width: 100%; height |	.imj_imageStack img { position: relative; width: 100%; height								
+.imj_imageStack:before { content: ""; position: absolute; wid |	.imj_imageStack:before { content: ""; position: absolute; wid								
+.imj_imageStack:after { content: ""; position: absolute; widt |	.imj_imageStack:after { content: ""; position: absolute; widt								
+							      |									
+.imj_optionSet { max-width: 100%; margin-bottom: 1em; white-s |	.imj_optionSet { max-width: 100%; margin-bottom: 1em; white-s								
+.imj_optionSet .imj_optionCheckbox { margin-right: 0.272727em |	.imj_optionSet .imj_optionCheckbox { margin-right: 0.272727em								
+.imj_optionSet .imj_optionLabel { white-space: normal; }      |	.imj_optionSet .imj_optionLabel { white-space: normal; }								
+							      |									
+table.imj_optionSet td label { white-space: normal; }	      |	table.imj_optionSet td label { white-space: normal; }								
+							      |									
+.imj_globalMetadataSet, .imj_metadataWrapper, .imj_infodataWr |	.imj_globalMetadataSet, .imj_metadataWrapper, .imj_infodataWr								
+							      |									
+.imj_metadataSet { width: 100%; display: inline-block; paddin |	.imj_metadataSet { width: 100%; display: inline-block; paddin								
+.imj_metadataSet .imj_metadataLabel { display: inline-block;  |	.imj_metadataSet .imj_metadataLabel { display: inline-block; 								
+.imj_metadataSet .imj_metadataLabel * { overflow: hidden; tex |	.imj_metadataSet .imj_metadataLabel * { overflow: hidden; tex								
+.imj_metadataSet .imj_metadataValue { display: inline-block;  |	.imj_metadataSet .imj_metadataValue { display: inline-block; 								
+.imj_metadataSet .imj_metadataValue .imj_customSelectbox { wo |	.imj_metadataSet .imj_metadataValue .imj_customSelectbox { wo								
+							      |									
+textarea.imj_metadataValue { resize: vertical; }	      |	textarea.imj_metadataValue { resize: vertical; }								
+							      |									
+textarea.imj_metadataValue, input.imj_metadataValue { width:  |	textarea.imj_metadataValue, input.imj_metadataValue { width: 								
+							      |									
+p.imj_metadataValue { margin: 0 0 0 1em; }		      |	p.imj_metadataValue { margin: 0 0 0 1em; }								
+							      |									
+.imj_metadataValueEntry { display: inline-block; }	      |	.imj_metadataValueEntry { display: inline-block; }								
+.imj_metadataValueEntry p:first-child { margin-top: 0; }      |	.imj_metadataValueEntry p:first-child { margin-top: 0; }								
+							      |									
+.imj_metadataValueEntryViewMap { display: block; }	      |	.imj_metadataValueEntryViewMap { display: block; }								
+							      |									
+.imj_metadataEditText { width: 55em; min-height: 6em; }	      |	.imj_metadataEditText { width: 55em; min-height: 6em; }								
+							      |									
+select.imj_metadataEditText { min-height: 0; }		      |	select.imj_metadataEditText { min-height: 0; }								
+							      |									
+.imj_metadataEditDate { width: 7.545454em; text-align: center |	.imj_metadataEditDate { width: 7.545454em; text-align: center								
+							      |									
+.imj_metadataEditLink, .imj_metadataEditPerson, .imj_metadata |	.imj_metadataEditLink, .imj_metadataEditPerson, .imj_metadata								
+							      |									
+.imj_metadataEditLicence, .imj_metadataEditNumber, .imj_metad |	.imj_metadataEditLicence, .imj_metadataEditNumber, .imj_metad								
+							      |									
+.imj_infodataSet { width: 100%; display: inline-block; paddin |	.imj_infodataSet { width: 100%; display: inline-block; paddin								
+.imj_infodataSet .imj_infodataLabel { display: inline-block;  |	.imj_infodataSet .imj_infodataLabel { display: inline-block; 								
+.imj_infodataSet .imj_infodataValue { display: inline-block;  |	.imj_infodataSet .imj_infodataValue { display: inline-block; 								
+							      |									
+.imj_infodataValueEntryEmbed { min-height: 6em; width: 55em;  |	.imj_infodataValueEntryEmbed { min-height: 6em; width: 55em; 								
+							      |									
+.imj_admindataSet { width: 100%; display: inline-block; paddi |	.imj_admindataSet { width: 100%; display: inline-block; paddi								
+.imj_admindataSet .imj_admindataLabel { display: inline-block |	.imj_admindataSet .imj_admindataLabel { display: inline-block								
+.imj_admindataSet .imj_admindataValue { display: inline-block |	.imj_admindataSet .imj_admindataValue { display: inline-block								
+							      |									
+.imj_admindataSetEdit { margin: 1em 0; }		      |	.imj_admindataSetEdit { margin: 1em 0; }								
+.imj_admindataSetEdit .imj_admindataValue .imj_admindataSetEd |	.imj_admindataSetEdit .imj_admindataValue .imj_admindataSetEd								
+.imj_admindataSetEdit .imj_admindataLabel { display: inline-b |	.imj_admindataSetEdit .imj_admindataLabel { display: inline-b								
+.imj_admindataSetEdit .imj_admindataValue { display: inline-b |	.imj_admindataSetEdit .imj_admindataValue { display: inline-b								
+							      |									
+.imj_admindataCheckbox { margin-left: 0; }		      |	.imj_admindataCheckbox { margin-left: 0; }								
+							      |									
+.imj_admindataValue .imj_additionalCodeSnippet { width: 100%; |	.imj_admindataValue .imj_additionalCodeSnippet { width: 100%;								
+							      |									
+.imj_admindataValueCheckBox { display: inline-block; }	      |	.imj_admindataValueCheckBox { display: inline-block; }								
+							      |									
+.imj_admindataValueEntry { display: inline-block; }	      |	.imj_admindataValueEntry { display: inline-block; }								
+							      |									
+.imj_siteHeaderMenuSearchSection { width: 100%; padding: 0; m |	.imj_siteHeaderMenuSearchSection { width: 100%; padding: 0; m								
+							      |									
+.imj_simpleSearch { float: right; display: inline-block; over |	.imj_simpleSearch { float: right; display: inline-block; over								
+.imj_simpleSearch .imj_simpleSearchInputWrapper { display: in |	.imj_simpleSearch .imj_simpleSearchInputWrapper { display: in								
+.imj_simpleSearch .imj_simpleSearchInput { border: solid tran |	.imj_simpleSearch .imj_simpleSearchInput { border: solid tran								
+.imj_simpleSearch .imj_simpleSearchButtonSubmit { margin-left |	.imj_simpleSearch .imj_simpleSearchButtonSubmit { margin-left								
+.imj_simpleSearch .imj_simpleSearchButtonSubmit:hover { color |	.imj_simpleSearch .imj_simpleSearchButtonSubmit:hover { color								
+.imj_simpleSearch .imj_simpleSearchButtonSubmit:active { colo |	.imj_simpleSearch .imj_simpleSearchButtonSubmit:active { colo								
+.imj_simpleSearch .imj_simpleSearchButtonSubmit:focus { color |	.imj_simpleSearch .imj_simpleSearchButtonSubmit:focus { color								
+.imj_simpleSearch .imj_cancelButton { margin: 0; padding: 0.1 |	.imj_simpleSearch .imj_cancelButton { margin: 0; padding: 0.1								
+.imj_simpleSearch .imj_searchInfoText { display: inline-block |	.imj_simpleSearch .imj_searchInfoText { display: inline-block								
+.imj_simpleSearch input[type=radio] { margin: 0.090909em 0 0  |	.imj_simpleSearch input[type=radio] { margin: 0.090909em 0 0 								
+.imj_simpleSearch input[type=radio] + label { margin-left: 0. |	.imj_simpleSearch input[type=radio] + label { margin-left: 0.								
+.imj_simpleSearch .imj_simpleSearchLinkAdvancedsearch { margi |	.imj_simpleSearch .imj_simpleSearchLinkAdvancedsearch { margi								
+							      |									
+.imj_subHeaderMessageSpace { clear: both; float: left; displa |	.imj_subHeaderMessageSpace { clear: both; float: left; displa								
+							      |									
+.imj_submitPanel { display: inline-block; width: 100%; text-a |	.imj_submitPanel { display: inline-block; width: 100%; text-a								
+.imj_submitPanel .imj_submitPanelSeparator { margin-left: 0.5 |	.imj_submitPanel .imj_submitPanelSeparator { margin-left: 0.5								
+.imj_submitPanel .imj_submitPanelSeparator + .imj_submitButto |	.imj_submitPanel .imj_submitPanelSeparator + .imj_submitButto								
+.imj_submitPanel a, .imj_submitPanel input { vertical-align:  |	.imj_submitPanel a, .imj_submitPanel input { vertical-align: 								
+							      |									
+.imj_mainContentWrapper { clear: both; float: left; display:  |	.imj_mainContentWrapper { clear: both; float: left; display: 								
+							      |									
+.imj_breadcrumpHistory { width: 100%; padding: 0 0%; margin-b |	.imj_breadcrumpHistory { width: 100%; padding: 0 0%; margin-b								
+.imj_breadcrumpHistory .imj_breadcrumpTitle { margin-right: 0 |	.imj_breadcrumpHistory .imj_breadcrumpTitle { margin-right: 0								
+.imj_breadcrumpHistory .imj_breadcrumpItem { display: inline- |	.imj_breadcrumpHistory .imj_breadcrumpItem { display: inline-								
+.imj_breadcrumpHistory .imj_breadcrumpItem .imj_breadcrumpLon |	.imj_breadcrumpHistory .imj_breadcrumpItem .imj_breadcrumpLon								
+.imj_breadcrumpHistory .imj_breadcrumpItem:hover .imj_breadcr |	.imj_breadcrumpHistory .imj_breadcrumpItem:hover .imj_breadcr								
+.imj_breadcrumpHistory .imj_breadcrumpSeparator { margin-left |	.imj_breadcrumpHistory .imj_breadcrumpSeparator { margin-left								
+							      |									
+.imj_advancedSearch { width: 100%; padding: 0; }	      |	.imj_advancedSearch { width: 100%; padding: 0; }								
+.imj_advancedSearch .imj_logicalSearchGroup { white-space: no |	.imj_advancedSearch .imj_logicalSearchGroup { white-space: no								
+.imj_advancedSearch .imj_searchUnit { width: 100%; margin-top |	.imj_advancedSearch .imj_searchUnit { width: 100%; margin-top								
+.imj_advancedSearch .imj_searchUnit > div { display: inline-b |	.imj_advancedSearch .imj_searchUnit > div { display: inline-b								
+.imj_advancedSearch .imj_searchUnit .imj_logicalConnector { m |	.imj_advancedSearch .imj_searchUnit .imj_logicalConnector { m								
+.imj_advancedSearch .imj_searchUnit .imj_logicalDetailConnect |	.imj_advancedSearch .imj_searchUnit .imj_logicalDetailConnect								
+.imj_advancedSearch .imj_searchUnit .imj_inlineButtonGroup {  |	.imj_advancedSearch .imj_searchUnit .imj_inlineButtonGroup { 								
+.imj_advancedSearch .imj_searchUnit .imj_compareLabel { paddi |	.imj_advancedSearch .imj_searchUnit .imj_compareLabel { paddi								
+.imj_advancedSearch .imj_searchUnit .imj_searchSelectbox > se |	.imj_advancedSearch .imj_searchUnit .imj_searchSelectbox > se								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails { widt |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails { widt								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails > div  |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails > div 								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_i |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_i								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails .imj_s								
+.imj_advancedSearch .imj_searchUnit .imj_searchDetails input[ |	.imj_advancedSearch .imj_searchUnit .imj_searchDetails input[								
+.imj_advancedSearch .imj_ajaxChangeElementButton, .imj_advanc |	.imj_advancedSearch .imj_ajaxChangeElementButton, .imj_advanc								
+							      |									
+.imj_searchQueryDisplay { width: 100%; padding: 1.5% 0; margi |	.imj_searchQueryDisplay { width: 100%; padding: 1.5% 0; margi								
+.imj_searchQueryDisplay > fieldset { padding: 1% 1%; border-t |	.imj_searchQueryDisplay > fieldset { padding: 1% 1%; border-t								
+.imj_searchQueryDisplay > fieldset legend { margin: 0 1%; pad |	.imj_searchQueryDisplay > fieldset legend { margin: 0 1%; pad								
+.imj_searchQueryDisplay .imj_submitButton { display: inline-b |	.imj_searchQueryDisplay .imj_submitButton { display: inline-b								
+							      |									
+.imj_selectionInfoPanel { width: 100%; padding: 0 0%; margin- |	.imj_selectionInfoPanel { width: 100%; padding: 0 0%; margin-								
+.imj_selectionInfoPanel .imj_removeFacetButton { margin-left: |	.imj_selectionInfoPanel .imj_removeFacetButton { margin-left:								
+.imj_selectionInfoPanel .imj_facetSeparator { margin-right: 0 |	.imj_selectionInfoPanel .imj_facetSeparator { margin-right: 0								
+							      |									
+.imj_selectionInfoPanelItemSelect { float: right; }	      |	.imj_selectionInfoPanelItemSelect { float: right; }								
+							      |									
+.imj_filterInfoPanel { width: 100%; padding: 0 0%; margin-bot |	.imj_filterInfoPanel { width: 100%; padding: 0 0%; margin-bot								
+.imj_filterInfoPanel .imj_removeFilterButton { margin: 0 0.27 |	.imj_filterInfoPanel .imj_removeFilterButton { margin: 0 0.27								
+							      |									
+.imj_paginator { width: 99%; background-color: #292929; margi |	.imj_paginator { width: 99%; background-color: #292929; margi								
+.imj_paginator .previousItem { padding-right: 0.5em; }	      |	.imj_paginator .previousItem { padding-right: 0.5em; }								
+.imj_paginator .previousItem:before { font-family: FontAwesom |	.imj_paginator .previousItem:before { font-family: FontAwesom								
+.imj_paginator .nextItem { padding-left: 0.5em; }	      |	.imj_paginator .nextItem { padding-left: 0.5em; }								
+.imj_paginator .nextItem:after { font-family: FontAwesome; co |	.imj_paginator .nextItem:after { font-family: FontAwesome; co								
+.imj_paginator .imj_rangeSelector { float: left; }	      |	.imj_paginator .imj_rangeSelector { float: left; }								
+.imj_paginator .imj_rangeSelector .imj_rangeSelectorLabel { m |	.imj_paginator .imj_rangeSelector .imj_rangeSelectorLabel { m								
+.imj_paginator .imj_gotoBox { float: right; }		      |	.imj_paginator .imj_gotoBox { float: right; }								
+.imj_paginator .imj_gotoBox label { vertical-align: baseline; |	.imj_paginator .imj_gotoBox label { vertical-align: baseline;								
+.imj_paginator .imj_gotoBox .imj_pageInput { width: 3em; marg |	.imj_paginator .imj_gotoBox .imj_pageInput { width: 3em; marg								
+.imj_paginator .imj_gotoBox .imj_submitButton { margin-left:  |	.imj_paginator .imj_gotoBox .imj_submitButton { margin-left: 								
+							      |									
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16 { padding |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16 { padding								
+.imj_simplePageBrowser .imj_buttonBrowseForward_16 { padding- |	.imj_simplePageBrowser .imj_buttonBrowseForward_16 { padding-								
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16, .imj_sim |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16, .imj_sim								
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16:hover, .i |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16:hover, .i								
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16:focus, .i |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16:focus, .i								
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16:active, . |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16:active, .								
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16.imj_deact |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16.imj_deact								
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16.imj_deact |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16.imj_deact								
+.imj_simplePageBrowser .imj_buttonBrowseBackward_16 + .imj_bu |	.imj_simplePageBrowser .imj_buttonBrowseBackward_16 + .imj_bu								
+							      |									
+.imj_singlePageBrowser { display: inline-block; }	      |	.imj_singlePageBrowser { display: inline-block; }								
+.imj_singlePageBrowser .imj_buttonBrowseToFirst_16, .imj_sing |	.imj_singlePageBrowser .imj_buttonBrowseToFirst_16, .imj_sing								
+.imj_singlePageBrowser .imj_buttonBrowseToFirst_16.imj_deacti |	.imj_singlePageBrowser .imj_buttonBrowseToFirst_16.imj_deacti								
+.imj_singlePageBrowser .imj_separator { display: inline-block |	.imj_singlePageBrowser .imj_separator { display: inline-block								
+.imj_singlePageBrowser .imj_pageNumber { padding: 0 1em; back |	.imj_singlePageBrowser .imj_pageNumber { padding: 0 1em; back								
+.imj_singlePageBrowser .imj_pageNumber:hover { color: #F0F0F1 |	.imj_singlePageBrowser .imj_pageNumber:hover { color: #F0F0F0								
+.imj_singlePageBrowser .imj_currentPageNumber { padding: 0 1e |	.imj_singlePageBrowser .imj_currentPageNumber { padding: 0 1e								
+							      |									
+.imj_imageInfoLayer { width: 95.95%; padding: 0 2%; }	      |	.imj_imageInfoLayer { width: 95.95%; padding: 0 2%; }								
+.imj_imageInfoLayer .imj_metadataValue { width: 72.33%; margi |	.imj_imageInfoLayer .imj_metadataValue { width: 72.33%; margi								
+.imj_imageInfoLayer .highlight_area.imj_highlightDependencies |	.imj_imageInfoLayer .highlight_area.imj_highlightDependencies								
+.imj_imageInfoLayer .imj_infoNavigation { width: 90%; padding |	.imj_imageInfoLayer .imj_infoNavigation { width: 90%; padding								
+.imj_imageInfoLayer .imj_infoNavigation .imj_buttonEdit_16 {  |	.imj_imageInfoLayer .imj_infoNavigation .imj_buttonEdit_16 { 								
+.imj_imageInfoLayer .imj_infoNavigation a { margin-left: 1em; |	.imj_imageInfoLayer .imj_infoNavigation a { margin-left: 1em;								
+							      |									
+.imj_metadataSubPanel { text-align: left; width: 91.95%; padd |	.imj_metadataSubPanel { text-align: left; width: 91.95%; padd								
+.imj_metadataSubPanel .imj_metadataSubPanelItem { font-weight |	.imj_metadataSubPanel .imj_metadataSubPanelItem { font-weight								
+.imj_metadataSubPanel .imj_metadataSubPanelItem a { padding:  |	.imj_metadataSubPanel .imj_metadataSubPanelItem a { padding: 								
+.imj_metadataSubPanel .imj_metadataSubPanelItem a:hover { bac |	.imj_metadataSubPanel .imj_metadataSubPanelItem a:hover { bac								
+							      |									
+#imj_ajaxFacets { padding: 1% 0%; }			      |	#imj_ajaxFacets { padding: 1% 0%; }								
+							      |									
+.imj_loginFormSite { width: 91.25%; padding: 1% 4%; border-to |	.imj_loginFormSite { width: 91.25%; padding: 1% 4%; border-to								
+							      |									
+.imj_registerSteps { float: right; }			      |	.imj_registerSteps { float: right; }								
+.imj_registerSteps li { margin-bottom: 1em; }		      |	.imj_registerSteps li { margin-bottom: 1em; }								
+.imj_registerSteps .imj_active { font-size: 145%; }	      |	.imj_registerSteps .imj_active { font-size: 145%; }								
+.imj_registerSteps .imj_submitted { padding: 0.272727em; back |	.imj_registerSteps .imj_submitted { padding: 0.272727em; back								
+.imj_registerSteps:after { content: " "; float: none; clear:  |	.imj_registerSteps:after { content: " "; float: none; clear: 								
+							      |									
+.imj_startpageFooter { clear: both; width: 100%; padding: 1em |	.imj_startpageFooter { clear: both; width: 100%; padding: 1em								
+.imj_startpageFooter img { margin: 0 1%; }		      |	.imj_startpageFooter img { margin: 0 1%; }								
+.imj_startpageFooter .imj_startpageFooterLogos { width: 100%; |	.imj_startpageFooter .imj_startpageFooterLogos { width: 100%;								
+.imj_startpageFooter .imj_community_logo { padding: 1%; margi |	.imj_startpageFooter .imj_community_logo { padding: 1%; margi								
+							      |									
+.imj_startpageFooterLogos .imj_poweredby_imprint { width: 50% |	.imj_startpageFooterLogos .imj_poweredby_imprint { width: 50%								
+							      |									
+#imj_welcomeInfoWrapper { display: inline-block; width: 48%;  |	#imj_welcomeInfoWrapper { display: inline-block; width: 48%; 								
+							      |									
+.imj_welcomeInfo { min-height: 34.8333333em; width: 37.85%; p |	.imj_welcomeInfo { min-height: 34.8333333em; width: 37.85%; p								
+.imj_welcomeInfo .id_tabs ul { padding: 0; margin-top: 0; pad |	.imj_welcomeInfo .id_tabs ul { padding: 0; margin-top: 0; pad								
+.imj_welcomeInfo .id_tabs ul li { margin-left: 1%; padding: 1 |	.imj_welcomeInfo .id_tabs ul li { margin-left: 1%; padding: 1								
+.imj_welcomeInfo .id_tabs .imj_tabMenu { text-align: right; } |	.imj_welcomeInfo .id_tabs .imj_tabMenu { text-align: right; }								
+.imj_welcomeInfo .id_tabs .imj_tabMenu li { background-color: |	.imj_welcomeInfo .id_tabs .imj_tabMenu li { background-color:								
+.imj_welcomeInfo .id_tabs .imj_tabMenu li.ui-state-active { b |	.imj_welcomeInfo .id_tabs .imj_tabMenu li.ui-state-active { b								
+.imj_welcomeInfo .id_tabs .imj_tabContent { min-height: 30em; |	.imj_welcomeInfo .id_tabs .imj_tabContent { min-height: 30em;								
+.imj_welcomeInfo .id_tabs .imj_tabContent ul { margin-bottom: |	.imj_welcomeInfo .id_tabs .imj_tabContent ul { margin-bottom:								
+.imj_welcomeInfo .id_tabs .imj_tabContent li { display: block |	.imj_welcomeInfo .id_tabs .imj_tabContent li { display: block								
+.imj_welcomeInfo .id_tabs .imj_tabContent .imj_headline, .imj |	.imj_welcomeInfo .id_tabs .imj_tabContent .imj_headline, .imj								
+.imj_welcomeInfo .id_tabs div.ui-tabs-hide { display: none; } |	.imj_welcomeInfo .id_tabs div.ui-tabs-hide { display: none; }								
+							      |									
+.imj_startpage_carouselWrapper { float: right; margin-top: 2e |	.imj_startpage_carouselWrapper { float: right; margin-top: 2e								
+.imj_startpage_carouselWrapper .imj_startpage_carousel { widt |	.imj_startpage_carouselWrapper .imj_startpage_carousel { widt								
+.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s |	.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s								
+.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s |	.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s								
+.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s |	.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s								
+.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s |	.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s								
+.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s |	.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s								
+.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s |	.imj_startpage_carouselWrapper .imj_startpage_carousel .imj_s								
+							      |									
+.imj_startpage_carouselWrapper:after { clear: right; }	      |	.imj_startpage_carouselWrapper:after { clear: right; }								
+							      |									
+iframe#twitter-widget-0 { width: 99.5%; height: 43em; }	      |	iframe#twitter-widget-0 { width: 99.5%; height: 43em; }								
+							      |									
+iframe#twitter-widget-0 div.root div.stream { height: 20em !i |	iframe#twitter-widget-0 div.root div.stream { height: 20em !i								
+							      |									
+.imj_mediaEntryDetailPage > .imj_metadataList, .imj_mediaEntr |	.imj_mediaEntryDetailPage > .imj_metadataList, .imj_mediaEntr								
+.imj_mediaEntryDetailPage .highlight_area.imj_highlightDepend |	.imj_mediaEntryDetailPage .highlight_area.imj_highlightDepend								
+.imj_mediaEntryDetailPage .imj_mediaDisplayContainer { text-a |	.imj_mediaEntryDetailPage .imj_mediaDisplayContainer { text-a								
+.imj_mediaEntryDetailPage .imj_mediaDisplayContainer .imj_opt |	.imj_mediaEntryDetailPage .imj_mediaDisplayContainer .imj_opt								
+							      |									
+.imj_mediaEditPanel { width: 100%; margin-top: 0.545454em; }  |	.imj_mediaEditPanel { width: 100%; margin-top: 0.545454em; }								
+.imj_mediaEditPanel .imj_mediaEditPanelItem { letter-spacing: |	.imj_mediaEditPanel .imj_mediaEditPanelItem { letter-spacing:								
+.imj_mediaEditPanel .imj_metadataEditButtonArea { display: in |	.imj_mediaEditPanel .imj_metadataEditButtonArea { display: in								
+							      |									
+.imj_metadataValue .imj_metadataEditButtonArea { display: blo |	.imj_metadataValue .imj_metadataEditButtonArea { display: blo								
+							      |									
+.imj_mediaContainerEditMD { margin-bottom: 0.5em; padding: 0; |	.imj_mediaContainerEditMD { margin-bottom: 0.5em; padding: 0;								
+.imj_mediaContainerEditMD .imj_headline, .imj_mediaContainerE |	.imj_mediaContainerEditMD .imj_headline, .imj_mediaContainerE								
+.imj_mediaContainerEditMD .imj_headline .imj_headline h3, .im |	.imj_mediaContainerEditMD .imj_headline .imj_headline h3, .im								
+.imj_mediaContainerEditMD .imj_authorMetadataSet { background |	.imj_mediaContainerEditMD .imj_authorMetadataSet { background								
+.imj_mediaContainerEditMD .imj_sectionHeadline { margin-botto |	.imj_mediaContainerEditMD .imj_sectionHeadline { margin-botto								
+							      |									
+.imj_editGlobalAssignment { width: 91.25%; padding: 1% 4%; }  |	.imj_editGlobalAssignment { width: 91.25%; padding: 1% 4%; }								
+.imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataL |	.imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataL								
+.imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataV |	.imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataV								
+.imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataV |	.imj_editGlobalAssignment > .imj_metadataSet > .imj_metadataV								
+.imj_editGlobalAssignment .imj_dataAssignmentPanel { display: |	.imj_editGlobalAssignment .imj_dataAssignmentPanel { display:								
+.imj_editGlobalAssignment + .imj_batchEditItemList { border-t |	.imj_editGlobalAssignment + .imj_batchEditItemList { border-t								
+							      |									
+.imj_singleStatementEdit { width: 100%; margin-bottom: 1em; } |	.imj_singleStatementEdit { width: 100%; margin-bottom: 1em; }								
+.imj_singleStatementEdit .imj_inlineButtonGroup { margin-left |	.imj_singleStatementEdit .imj_inlineButtonGroup { margin-left								
+.imj_singleStatementEdit textarea { resize: vertical; }	      |	.imj_singleStatementEdit textarea { resize: vertical; }								
+							      |									
+.imj_ingestWrapper { width: 91.25%; padding: 0 4% 2em 4%; bor |	.imj_ingestWrapper { width: 91.25%; padding: 0 4% 2em 4%; bor								
+							      |									
+.imj_ingestMessageArea { width: 100%; border-bottom: 0.1em so |	.imj_ingestMessageArea { width: 100%; border-bottom: 0.1em so								
+							      |									
+.imj_uploadDropArea + .imj_headline, .imj_administrationTiled |	.imj_uploadDropArea + .imj_headline, .imj_administrationTiled								
+.imj_uploadDropArea + .imj_uploadUrlReference { margin-top: 4 |	.imj_uploadDropArea + .imj_uploadUrlReference { margin-top: 4								
+							      |									
+.imj_upload { width: 100%; padding: 1em 0; }		      |	.imj_upload { width: 100%; padding: 1em 0; }								
+.imj_upload .imj_uploadInputWrapper { width: 70%; min-width:  |	.imj_upload .imj_uploadInputWrapper { width: 70%; min-width: 								
+.imj_upload .imj_uploadDropArea { width: 100%; }	      |	.imj_upload .imj_uploadDropArea { width: 100%; }								
+.imj_upload .imj_fileUploadContainer { margin-bottom: 2em; ma |	.imj_upload .imj_fileUploadContainer { margin-bottom: 2em; ma								
+.imj_upload .imj_fileUploadContainer.imj_singleUpload { borde |	.imj_upload .imj_fileUploadContainer.imj_singleUpload { borde								
+.imj_upload .imj_fileUploadContainer.imj_singleUpload .imj_su |	.imj_upload .imj_fileUploadContainer.imj_singleUpload .imj_su								
+							      |									
+.imj_uploadUrlReference { width: 98%; min-width: 30em; paddin |	.imj_uploadUrlReference { width: 98%; min-width: 30em; paddin								
+.imj_uploadUrlReference label { margin-left: 1em; }	      |	.imj_uploadUrlReference label { margin-left: 1em; }								
+.imj_uploadUrlReference input { width: 98%; }		      |	.imj_uploadUrlReference input { width: 98%; }								
+.imj_uploadUrlReference .submitPanel { padding: 0.545454em 0; |	.imj_uploadUrlReference .submitPanel { padding: 0.545454em 0;								
+							      |									
+.imj_uploadOptionsArea { width: 27%; margin: 0 0 0 1.5%; padd |	.imj_uploadOptionsArea { width: 27%; margin: 0 0 0 1.5%; padd								
+.imj_uploadOptionsArea .imj_headline, .imj_uploadOptionsArea  |	.imj_uploadOptionsArea .imj_headline, .imj_uploadOptionsArea 								
+							      |									
+.imj_uploadMessageArea { width: 100%; margin-top: 4em; }      |	.imj_uploadMessageArea { width: 100%; margin-top: 4em; }								
+.imj_uploadMessageArea .imj_fileErrorMessageArea, .imj_upload |	.imj_uploadMessageArea .imj_fileErrorMessageArea, .imj_upload								
+.imj_uploadMessageArea .imj_fileErrorMessageArea .imj_message |	.imj_uploadMessageArea .imj_fileErrorMessageArea .imj_message								
+.imj_uploadMessageArea .imj_fileErrorMessageArea { background |	.imj_uploadMessageArea .imj_fileErrorMessageArea { background								
+.imj_uploadMessageArea .imj_fileSuccessMessageArea { backgrou |	.imj_uploadMessageArea .imj_fileSuccessMessageArea { backgrou								
+							      |									
+.imj_borderBackGround { border-color: #292929 !important; }   |	.imj_borderBackGround { border-color: #292929 !important; }								
+							      |									
+.imj_shareForm { width: 91.25%; padding: 1% 4%; margin-top: 2 |	.imj_shareForm { width: 91.25%; padding: 1% 4%; margin-top: 2								
+.imj_shareForm .imj_shareRightsOverview { margin-top: 2em; pa |	.imj_shareForm .imj_shareRightsOverview { margin-top: 2em; pa								
+.imj_shareForm .imj_rightsTable { width: 100%; }	      |	.imj_shareForm .imj_rightsTable { width: 100%; }								
+.imj_shareForm .imj_rightsTable th, .imj_shareForm .imj_right |	.imj_shareForm .imj_rightsTable th, .imj_shareForm .imj_right								
+.imj_shareForm .imj_rightsTable th.imj_rightsTableUser, .imj_ |	.imj_shareForm .imj_rightsTable th.imj_rightsTableUser, .imj_								
+.imj_shareForm .imj_rightsTable th.imj_rightsAction, .imj_sha |	.imj_shareForm .imj_rightsTable th.imj_rightsAction, .imj_sha								
+.imj_shareForm .imj_rightsTable th.imj_rightsAction input, .i |	.imj_shareForm .imj_rightsTable th.imj_rightsAction input, .i								
+.imj_shareForm .imj_rightsTable th { font-weight: bold; }     |	.imj_shareForm .imj_rightsTable th { font-weight: bold; }								
+.imj_shareForm .imj_rightsTable th:first-child { width: 13em; |	.imj_shareForm .imj_rightsTable th:first-child { width: 13em;								
+.imj_shareForm .imj_rightsTable td { padding-bottom: 0.363636 |	.imj_shareForm .imj_rightsTable td { padding-bottom: 0.363636								
+.imj_shareForm .imj_rightsTable > tbody > tr:hover { backgrou |	.imj_shareForm .imj_rightsTable > tbody > tr:hover { backgrou								
+.imj_shareForm .imj_rightsTable > tbody table { width: 100%;  |	.imj_shareForm .imj_rightsTable > tbody table { width: 100%; 								
+.imj_shareForm .imj_rightsTableForNewUser td { padding-right: |	.imj_shareForm .imj_rightsTableForNewUser td { padding-right:								
+.imj_shareForm .imj_rightsTableForNewUser input[type=checkbox |	.imj_shareForm .imj_rightsTableForNewUser input[type=checkbox								
+							      |									
+#sharePanel fieldset.imj_shareInformationFieldset { padding:  |	#sharePanel fieldset.imj_shareInformationFieldset { padding: 								
+#sharePanel fieldset.imj_shareInformationFieldset > legend {  |	#sharePanel fieldset.imj_shareInformationFieldset > legend { 								
+#sharePanel .imj_shareForm { border: 0 none; width: 100%; pad |	#sharePanel .imj_shareForm { border: 0 none; width: 100%; pad								
+							      |									
+.imj_adminEditPanel { margin: 0.5em 0em 1em -1em; padding: 0  |	.imj_adminEditPanel { margin: 0.5em 0em 1em -1em; padding: 0 								
+							      |									
+.imj_userConfig .imj_adminPanel { display: inline-block; floa |	.imj_userConfig .imj_adminPanel { display: inline-block; floa								
+.imj_userConfig .imj_userGlobalInformation > fieldset { paddi |	.imj_userConfig .imj_userGlobalInformation > fieldset { paddi								
+.imj_userConfig .imj_userGlobalInformation > fieldset .imj_su |	.imj_userConfig .imj_userGlobalInformation > fieldset .imj_su								
+.imj_userConfig .imj_userGlobalInformation + .imj_admindataSe |	.imj_userConfig .imj_userGlobalInformation + .imj_admindataSe								
+.imj_userConfig .imj_userGrantList { display: inline-block; m |	.imj_userConfig .imj_userGrantList { display: inline-block; m								
+.imj_userConfig .imj_admindataValueEntry + .imj_editButton {  |	.imj_userConfig .imj_admindataValueEntry + .imj_editButton { 								
+.imj_userConfig .imj_connectedUserGroups .imj_admindataValueE |	.imj_userConfig .imj_connectedUserGroups .imj_admindataValueE								
+							      |									
+.imj_setupConfig .imj_admindataValue .imj_admindataEdit { wid |	.imj_setupConfig .imj_admindataValue .imj_admindataEdit { wid								
+.imj_setupConfig .imj_adminPanel .imj_headline .imj_submitBut |	.imj_setupConfig .imj_adminPanel .imj_headline .imj_submitBut								
+.imj_setupConfig .imj_adminPanel .imj_headline .imj_submitBut |	.imj_setupConfig .imj_adminPanel .imj_headline .imj_submitBut								
+							      |									
+.imj_mainMenuStandard { display: inline-block; padding: 0 3%  |	.imj_mainMenuStandard { display: inline-block; padding: 0 3% 								
+.imj_mainMenuStandard .imj_mainMenuStandardItem { display: in |	.imj_mainMenuStandard .imj_mainMenuStandardItem { display: in								
+							      |									
+.imj_metaMenuStandardSingleLine { width: 100%; margin-top: 0. |	.imj_metaMenuStandardSingleLine { width: 100%; margin-top: 0.								
+.imj_metaMenuStandardSingleLine .imj_metaMenuSeparator { heig |	.imj_metaMenuStandardSingleLine .imj_metaMenuSeparator { heig								
+.imj_metaMenuStandardSingleLine .imj_metaMenuItem:not[select] |	.imj_metaMenuStandardSingleLine .imj_metaMenuItem:not[select]								
+.imj_metaMenuStandardSingleLine .imj_metaMenuItem { vertical- |	.imj_metaMenuStandardSingleLine .imj_metaMenuItem { vertical-								
+.imj_metaMenuStandardSingleLine .imj_metaMenuItem input { hei |	.imj_metaMenuStandardSingleLine .imj_metaMenuItem input { hei								
+.imj_metaMenuStandardSingleLine .imj_metaMenuItem input[type= |	.imj_metaMenuStandardSingleLine .imj_metaMenuItem input[type=								
+.imj_metaMenuStandardSingleLine .imj_metaMenuItem input[type= |	.imj_metaMenuStandardSingleLine .imj_metaMenuItem input[type=								
+.imj_metaMenuStandardSingleLine .imj_metaMenuItem input[type= |	.imj_metaMenuStandardSingleLine .imj_metaMenuItem input[type=								
+.imj_metaMenuStandardSingleLine .imj_metaMenuItem input:-webk |	.imj_metaMenuStandardSingleLine .imj_metaMenuItem input:-webk								
+.imj_metaMenuStandardSingleLine .imj_customSelectbox { vertic |	.imj_metaMenuStandardSingleLine .imj_customSelectbox { vertic								
+.imj_metaMenuStandardSingleLine .imj_customSelectbox select { |	.imj_metaMenuStandardSingleLine .imj_customSelectbox select {								
+							      |									
+.imj_contentMenu { clear: both; padding: 0; margin: 0.5em 3%; |	.imj_contentMenu { clear: both; padding: 0; margin: 0.5em 3%;								
+.imj_contentMenu .imj_contentMenuItem { display: inline-block |	.imj_contentMenu .imj_contentMenuItem { display: inline-block								
+	background-color : $media-active-add-bgcolor-hover;   |		background-color : $media-active-add-bgcolor-hover;								
+}*/ }							      |	}*/ }								
+.imj_contentMenu .imj_contentMenuItem:hover { background-colo |	.imj_contentMenu .imj_contentMenuItem:hover { background-colo								
+.imj_contentMenu .imj_contentMenuSeparator { display: inline- |	.imj_contentMenu .imj_contentMenuSeparator { display: inline-								
+.imj_contentMenu + .imj_contentSubMenu { margin-top: 0.272727 |	.imj_contentMenu + .imj_contentSubMenu { margin-top: 0.272727								
+							      |									
+.imj_contentSubMenu { clear: both; width: 95%; padding: 0.3em |	.imj_contentSubMenu { clear: both; width: 95%; padding: 0.3em								
+.imj_contentSubMenu .imj_contentSubMenuItem { display: inline |	.imj_contentSubMenu .imj_contentSubMenuItem { display: inline								
+.imj_contentSubMenu .imj_contentSubMenuSeparator { display: i |	.imj_contentSubMenu .imj_contentSubMenuSeparator { display: i								
+.imj_contentSubMenu + .imj_contentSubMenu { margin-top: 0.272 |	.imj_contentSubMenu + .imj_contentSubMenu { margin-top: 0.272								
+							      |									
+.imj_overlayMenu { display: inline-block; padding: 0.125em 0. |	.imj_overlayMenu { display: inline-block; padding: 0.125em 0.								
+.imj_overlayMenu .imj_menuHeader { text-align: left; color: # |	.imj_overlayMenu .imj_menuHeader { text-align: left; color: #								
+.imj_overlayMenu .imj_menuHeader .selectAll:before { font-fam |	.imj_overlayMenu .imj_menuHeader .selectAll:before { font-fam								
+.imj_overlayMenu .imj_menuHeader .selectNone:before { font-fa |	.imj_overlayMenu .imj_menuHeader .selectNone:before { font-fa								
+.imj_overlayMenu .imj_menuText { text-align: left; line-heigh |	.imj_overlayMenu .imj_menuText { text-align: left; line-heigh								
+.imj_overlayMenu .imj_menuSimpleSearch { width: 18em; }	      |	.imj_overlayMenu .imj_menuSimpleSearch { width: 18em; }								
+.imj_overlayMenu .imj_menuSimpleSearch li { border-top: 1px d |	.imj_overlayMenu .imj_menuSimpleSearch li { border-top: 1px d								
+.imj_overlayMenu .imj_menuBody, .imj_overlayMenu .imj_menuSim |	.imj_overlayMenu .imj_menuBody, .imj_overlayMenu .imj_menuSim								
+.imj_overlayMenu:hover .imj_menuHeader { color: #F0F0F1; }    |	.imj_overlayMenu:hover .imj_menuHeader { color: #F0F0F0; }								
+.imj_overlayMenu:hover > .imj_menuBody { display: block; z-in |	.imj_overlayMenu:hover > .imj_menuBody { display: block; z-in								
+.imj_overlayMenu .imj_criticalItem:hover { background-color:  |	.imj_overlayMenu .imj_criticalItem:hover { background-color: 								
+.imj_overlayMenu .imj_listItemSeparator { padding-top: 0.1818 |	.imj_overlayMenu .imj_listItemSeparator { padding-top: 0.1818								
+.imj_overlayMenu li { line-height: 175%; padding: 0.272727em  |	.imj_overlayMenu li { line-height: 175%; padding: 0.272727em 								
+.imj_overlayMenu li:hover { background-color: #313131; }      |	.imj_overlayMenu li:hover { background-color: #313131; }								
+.imj_overlayMenu .hovered { background-color: #313131; }      |	.imj_overlayMenu .hovered { background-color: #313131; }								
+							      |									
+.imj_menuRight { float: right; }			      |	.imj_menuRight { float: right; }								
+							      |									
+.imj_optionList li { padding-bottom: 0.272727em; }	      |	.imj_optionList li { padding-bottom: 0.272727em; }								
+							      |									
+.imj_techdataList { width: 100%; padding: 0.545454em 0; backg |	.imj_techdataList { width: 100%; padding: 0.545454em 0; backg								
+.imj_techdataList .imj_listBody { overflow: auto; text-overfl |	.imj_techdataList .imj_listBody { overflow: auto; text-overfl								
+.imj_techdataList .imj_listBody.imj_minHeight { max-height: 5 |	.imj_techdataList .imj_listBody.imj_minHeight { max-height: 5								
+.imj_techdataList .imj_listBody.imj_maxHeight { max-height: 1 |	.imj_techdataList .imj_listBody.imj_maxHeight { max-height: 1								
+.imj_techdataList .imj_techdataEntry { width: 98%; padding: 0 |	.imj_techdataList .imj_techdataEntry { width: 98%; padding: 0								
+							      |									
+.imj_upload .imj_techdataList { display: inline-block; overfl |	.imj_upload .imj_techdataList { display: inline-block; overfl								
+.imj_upload .imj_techdataList .imj_listHeader { box-shadow: 0 |	.imj_upload .imj_techdataList .imj_listHeader { box-shadow: 0								
+.imj_upload .imj_techdataList .imj_listHeader .imj_iconExpand |	.imj_upload .imj_techdataList .imj_listHeader .imj_iconExpand								
+.imj_upload .imj_techdataList .imj_techdataEntry { overflow:  |	.imj_upload .imj_techdataList .imj_techdataEntry { overflow: 								
+							      |									
+.imj_facetList { line-height: 175%; }			      |	.imj_facetList { line-height: 175%; }								
+.imj_facetList .imj_facet { display: inline-block; margin-rig |	.imj_facetList .imj_facet { display: inline-block; margin-rig								
+.imj_facetList .imj_facet .imj_separator { color: #F0F0F1; }  |	.imj_facetList .imj_facet .imj_separator { color: #F0F0F0; }								
+.imj_facetList .imj_facet .imj_facetCounter { padding: 0 0.18 |	.imj_facetList .imj_facet .imj_facetCounter { padding: 0 0.18								
+.imj_facetList .imj_facet:hover { background-color: #444444;  |	.imj_facetList .imj_facet:hover { background-color: #444444; 								
+							      |									
+.imj_bibliographicList { width: 100%;     /* .imj_statusArea  |	.imj_bibliographicList { width: 100%;     /* .imj_statusArea 								
+ .imj_statusIconArea { width: 100%; margin: 0.5em 0; text-ali |	 .imj_statusIconArea { width: 100%; margin: 0.5em 0; text-ali								
+.imj_bibliographicList .imj_listHeader, .imj_bibliographicLis |	.imj_bibliographicList .imj_listHeader, .imj_bibliographicLis								
+.imj_bibliographicList .imj_listHeader > div, .imj_bibliograp |	.imj_bibliographicList .imj_listHeader > div, .imj_bibliograp								
+.imj_bibliographicList .imj_listHeader .imj_globalDisplaySwit |	.imj_bibliographicList .imj_listHeader .imj_globalDisplaySwit								
+.imj_bibliographicList .imj_interactiveArea { width: 5%; min- |	.imj_bibliographicList .imj_interactiveArea { width: 5%; min-								
+.imj_bibliographicList .imj_statusArea { width: 2.181818em; f |	.imj_bibliographicList .imj_statusArea { width: 2.181818em; f								
+.imj_bibliographicList .imj_statusArea > *[class*="imj_icon"] |	.imj_bibliographicList .imj_statusArea > *[class*="imj_icon"]								
+.imj_bibliographicList .imj_statusArea:after { clear: both; c |	.imj_bibliographicList .imj_statusArea:after { clear: both; c								
+.imj_bibliographicList .imj_listFooter { border-top: 0.1em so |	.imj_bibliographicList .imj_listFooter { border-top: 0.1em so								
+.imj_bibliographicList .imj_listBody { width: 100%; }	      |	.imj_bibliographicList .imj_listBody { width: 100%; }								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+.imj_bibliographicList .imj_listBody .imj_bibliographicListIt |	.imj_bibliographicList .imj_listBody .imj_bibliographicListIt								
+							      |									
+.imj_metadataList .imj_listHeader { width: 100%; }	      |	.imj_metadataList .imj_listHeader { width: 100%; }								
+.imj_metadataList .imj_listHeader a { float: right; margin: 0 |	.imj_metadataList .imj_listHeader a { float: right; margin: 0								
+.imj_metadataList .imj_listHeader a:hover { color: #F0F0F1; b |	.imj_metadataList .imj_listHeader a:hover { color: #F0F0F0; b								
+.imj_metadataList .imj_listHeader .imj_separator { float: rig |	.imj_metadataList .imj_listHeader .imj_separator { float: rig								
+.imj_metadataList .imj_listHeader .imj_active { color: #F0F0F |	.imj_metadataList .imj_listHeader .imj_active { color: #F0F0F								
+.imj_metadataList .imj_listHeader.imj_noBorder { border: 0 no |	.imj_metadataList .imj_listHeader.imj_noBorder { border: 0 no								
+.imj_metadataList .imj_listBody { clear: both; width: 100%; b |	.imj_metadataList .imj_listBody { clear: both; width: 100%; b								
+.imj_metadataList .imj_listBody .imj_entryPageTitle { font-si |	.imj_metadataList .imj_listBody .imj_entryPageTitle { font-si								
+.imj_metadataList .imj_listBody .imj_entryPageDescription { l |	.imj_metadataList .imj_listBody .imj_entryPageDescription { l								
+.imj_metadataList .imj_listBody.imj_noBorder { border: 0 none |	.imj_metadataList .imj_listBody.imj_noBorder { border: 0 none								
+							      |									
+.imj_metadataProfilePreviewList .imj_listBody .imj_listItem { |	.imj_metadataProfilePreviewList .imj_listBody .imj_listItem {								
+.imj_metadataProfilePreviewList .imj_listBody .imj_listItem > |	.imj_metadataProfilePreviewList .imj_listBody .imj_listItem >								
+.imj_metadataProfilePreviewList .imj_listBody .imj_listItem . |	.imj_metadataProfilePreviewList .imj_listBody .imj_listItem .								
+.imj_metadataProfilePreviewList .imj_listBody .imj_listItem . |	.imj_metadataProfilePreviewList .imj_listBody .imj_listItem .								
+.imj_metadataProfilePreviewList .imj_listBody .imj_listItem . |	.imj_metadataProfilePreviewList .imj_listBody .imj_listItem .								
+							      |									
+.imj_tiledMediaList { padding: 0%; }			      |	.imj_tiledMediaList { padding: 0%; }								
+.imj_tiledMediaList .imj_listHeader { min-height: 2em; }      |	.imj_tiledMediaList .imj_listHeader { min-height: 2em; }								
+.imj_tiledMediaList .imj_listHeader .imj_overlayMenu .imj_men |	.imj_tiledMediaList .imj_listHeader .imj_overlayMenu .imj_men								
+.imj_tiledMediaList > .imj_listBody { margin: 1em 0 0 0; }    |	.imj_tiledMediaList > .imj_listBody { margin: 1em 0 0 0; }								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem { display:  |	.imj_tiledMediaList > .imj_listBody .imj_tileItem { display: 								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem label { max |	.imj_tiledMediaList > .imj_listBody .imj_tileItem label { max								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem label.imj_o |	.imj_tiledMediaList > .imj_listBody .imj_tileItem label.imj_o								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_option |	.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_option								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_toolti |	.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_toolti								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_toolti |	.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_toolti								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileTh |	.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileTh								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileTh |	.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileTh								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileTh |	.imj_tiledMediaList > .imj_listBody .imj_tileItem .imj_tileTh								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem:hover .imj_ |	.imj_tiledMediaList > .imj_listBody .imj_tileItem:hover .imj_								
+.imj_tiledMediaList > .imj_listBody .imj_tileItem:hover .imj_ |	.imj_tiledMediaList > .imj_listBody .imj_tileItem:hover .imj_								
+@media screen and (-webkit-min-device-pixel-ratio: 0) { .imj_ |	@media screen and (-webkit-min-device-pixel-ratio: 0) { .imj_								
+							      |									
+.imj_detailList { width: 100%; border-collapse: separate; bor |	.imj_detailList { width: 100%; border-collapse: separate; bor								
+.imj_detailList thead th { border-bottom: solid 1px #CCCCCC;  |	.imj_detailList thead th { border-bottom: solid 1px #CCCCCC; 								
+.imj_detailList tfoot td { border-top: solid 1px #CCCCCC; }   |	.imj_detailList tfoot td { border-top: solid 1px #CCCCCC; }								
+.imj_detailList thead .imj_colFiletype, .imj_detailList thead |	.imj_detailList thead .imj_colFiletype, .imj_detailList thead								
+.imj_detailList th, .imj_detailList td { padding: 0.5em; text |	.imj_detailList th, .imj_detailList td { padding: 0.5em; text								
+.imj_detailList .imj_colFiletype { width: 10%; text-align: ce |	.imj_detailList .imj_colFiletype { width: 10%; text-align: ce								
+.imj_detailList .imj_colCheckbox { width: 5%; }		      |	.imj_detailList .imj_colCheckbox { width: 5%; }								
+.imj_detailList .imj_colFileIcon { width: 5%; text-align: cen |	.imj_detailList .imj_colFileIcon { width: 5%; text-align: cen								
+.imj_detailList .imj_colFilename { width: 55%; }	      |	.imj_detailList .imj_colFilename { width: 55%; }								
+.imj_detailList .imj_colFilesize { width: 15%; text-align: ri |	.imj_detailList .imj_colFilesize { width: 15%; text-align: ri								
+.imj_detailList .imj_colDate { width: 20%; text-align: center |	.imj_detailList .imj_colDate { width: 20%; text-align: center								
+							      |									
+.imj_entryPagePreviewTiledList { margin-bottom: 0.5em; }      |	.imj_entryPagePreviewTiledList { margin-bottom: 0.5em; }								
+.imj_entryPagePreviewTiledList .imj_thumbnailsPreview { displ |	.imj_entryPagePreviewTiledList .imj_thumbnailsPreview { displ								
+.imj_entryPagePreviewTiledList .imj_tileItem { display: inlin |	.imj_entryPagePreviewTiledList .imj_tileItem { display: inlin								
+.imj_entryPagePreviewTiledList .imj_entryPagePreviewPicture { |	.imj_entryPagePreviewTiledList .imj_entryPagePreviewPicture {								
+.imj_entryPagePreviewTiledList .imj_entryPagePreviewTiledList |	.imj_entryPagePreviewTiledList .imj_entryPagePreviewTiledList								
+.imj_entryPagePreviewTiledList .imj_entryPagePreviewTiledList |	.imj_entryPagePreviewTiledList .imj_entryPagePreviewTiledList								
+							      |									
+.imj_metadataList { clear: both; }			      |	.imj_metadataList { clear: both; }								
+							      |									
+.imj_metadataProfileList .imj_listHeader, .imj_metadataListMe |	.imj_metadataProfileList .imj_listHeader, .imj_metadataListMe								
+.imj_metadataProfileList .imj_listHeader .imj_listHeaderMenu, |	.imj_metadataProfileList .imj_listHeader .imj_listHeaderMenu,								
+.imj_metadataProfileList .imj_listHeader .imj_listHeaderMenu  |	.imj_metadataProfileList .imj_listHeader .imj_listHeaderMenu 								
+.imj_metadataProfileList .imj_listHeader .imj_headline, .imj_ |	.imj_metadataProfileList .imj_listHeader .imj_headline, .imj_								
+.imj_metadataProfileList .imj_sectionHeadline, .imj_metadataL |	.imj_metadataProfileList .imj_sectionHeadline, .imj_metadataL								
+.imj_metadataProfileList .imj_metadataProfileItem, .imj_metad |	.imj_metadataProfileList .imj_metadataProfileItem, .imj_metad								
+							      |									
+.imj_metadataListMediaContainer .imj_listBody .imj_statusIcon |	.imj_metadataListMediaContainer .imj_listBody .imj_statusIcon								
+.imj_metadataListMediaContainer table.imj_metadataAuthorList  |	.imj_metadataListMediaContainer table.imj_metadataAuthorList 								
+.imj_metadataListMediaContainer table.imj_metadataAuthorList  |	.imj_metadataListMediaContainer table.imj_metadataAuthorList 								
+.imj_metadataListMediaContainer table.imj_metadataAuthorList  |	.imj_metadataListMediaContainer table.imj_metadataAuthorList 								
+.imj_metadataListMediaContainer + .imj_metadataProfileList {  |	.imj_metadataListMediaContainer + .imj_metadataProfileList { 								
+							      |									
+#imj_ajaxWrapper > .imj_metadataProfileList.imj_edit { border |	#imj_ajaxWrapper > .imj_metadataProfileList.imj_edit { border								
+							      |									
+.imj_metadataProfileList.imj_edit > .imj_listHeader ul.imj_li |	.imj_metadataProfileList.imj_edit > .imj_listHeader ul.imj_li								
+.imj_metadataProfileList.imj_edit > .imj_listHeader ul.imj_li |	.imj_metadataProfileList.imj_edit > .imj_listHeader ul.imj_li								
+.imj_metadataProfileList.imj_edit > .imj_listHeader ul.imj_li |	.imj_metadataProfileList.imj_edit > .imj_listHeader ul.imj_li								
+.imj_metadataProfileList.imj_edit .imj_metadataTypeSelection  |	.imj_metadataProfileList.imj_edit .imj_metadataTypeSelection 								
+.imj_metadataProfileList.imj_edit .imj_metadataLanguageSelect |	.imj_metadataProfileList.imj_edit .imj_metadataLanguageSelect								
+.imj_metadataProfileList.imj_edit .imj_itemHeader { width: 98 |	.imj_metadataProfileList.imj_edit .imj_itemHeader { width: 98								
+.imj_metadataProfileList.imj_edit .imj_itemHeader * { vertica |	.imj_metadataProfileList.imj_edit .imj_itemHeader * { vertica								
+.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_inline |	.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_inline								
+.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option |	.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option								
+.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option |	.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option								
+.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option |	.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option								
+.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option |	.imj_metadataProfileList.imj_edit .imj_itemHeader .imj_option								
+.imj_metadataProfileList.imj_edit .statement_area { width: 10 |	.imj_metadataProfileList.imj_edit .statement_area { width: 10								
+.imj_metadataProfileList.imj_edit .dropMetadataActive, .imj_m |	.imj_metadataProfileList.imj_edit .dropMetadataActive, .imj_m								
+.imj_metadataProfileList.imj_edit .drop-hover { min-height: 1 |	.imj_metadataProfileList.imj_edit .drop-hover { min-height: 1								
+.imj_metadataProfileList.imj_edit .imj_dropArea { display: bl |	.imj_metadataProfileList.imj_edit .imj_dropArea { display: bl								
+.imj_metadataProfileList.imj_edit .imj_dropArea .imj_orderInf |	.imj_metadataProfileList.imj_edit .imj_dropArea .imj_orderInf								
+.imj_metadataProfileList.imj_edit .imj_dropArea:hover .imj_or |	.imj_metadataProfileList.imj_edit .imj_dropArea:hover .imj_or								
+.imj_metadataProfileList.imj_edit .highlight_area { border: 0 |	.imj_metadataProfileList.imj_edit .highlight_area { border: 0								
+.imj_metadataProfileList.imj_edit .highlight_area.imj_highlig |	.imj_metadataProfileList.imj_edit .highlight_area.imj_highlig								
+.imj_metadataProfileList.imj_edit .highlight_area:hover { bac |	.imj_metadataProfileList.imj_edit .highlight_area:hover { bac								
+							      |									
+.imj_batchEditItemList { width: 91.25%; padding: 1% 4%; }     |	.imj_batchEditItemList { width: 91.25%; padding: 1% 4%; }								
+.imj_batchEditItemList .imj_listHeader { padding-bottom: 1em; |	.imj_batchEditItemList .imj_listHeader { padding-bottom: 1em;								
+.imj_batchEditItemList .imj_previewArea { width: 21.5%; min-w |	.imj_batchEditItemList .imj_previewArea { width: 21.5%; min-w								
+.imj_batchEditItemList .imj_informationContent { width: 77.25 |	.imj_batchEditItemList .imj_informationContent { width: 77.25								
+							      |									
+.imj_batchEditListItem { margin-bottom: 1em; }		      |	.imj_batchEditListItem { margin-bottom: 1em; }								
+							      |									
+.imj_administrationTiledList { width: 91.95%; padding: 2% 4%; |	.imj_administrationTiledList { width: 91.95%; padding: 2% 4%;								
+.imj_administrationTiledList .imj_listBody { width: 100%; tex |	.imj_administrationTiledList .imj_listBody { width: 100%; tex								
+.imj_administrationTiledList .imj_adminPanel { display: inlin |	.imj_administrationTiledList .imj_adminPanel { display: inlin								
+.imj_administrationTiledList .imj_adminPanel h2 { font-size:  |	.imj_administrationTiledList .imj_adminPanel h2 { font-size: 								
+.imj_administrationTiledList .imj_adminPanel ul { line-height |	.imj_administrationTiledList .imj_adminPanel ul { line-height								
+.imj_administrationTiledList .imj_adminPanel .imj_headline, . |	.imj_administrationTiledList .imj_adminPanel .imj_headline, .								
+.imj_administrationTiledList .imj_adminPanel .imj_config_head |	.imj_administrationTiledList .imj_adminPanel .imj_config_head								
+.imj_administrationTiledList .imj_adminPanel .imj_content { p |	.imj_administrationTiledList .imj_adminPanel .imj_content { p								
+.imj_administrationTiledList .imj_adminPanel .imj_content .im |	.imj_administrationTiledList .imj_adminPanel .imj_content .im								
+.imj_administrationTiledList .imj_adminPanel.imj_storageInfor |	.imj_administrationTiledList .imj_adminPanel.imj_storageInfor								
+.imj_administrationTiledList .imj_adminPanel.imj_storageInfor |	.imj_administrationTiledList .imj_adminPanel.imj_storageInfor								
+.imj_administrationTiledList .imj_adminPanel.imj_storageInfor |	.imj_administrationTiledList .imj_adminPanel.imj_storageInfor								
+.imj_administrationTiledList .imj_adminPanel .imj_admindataVa |	.imj_administrationTiledList .imj_adminPanel .imj_admindataVa								
+.imj_administrationTiledList.imj_maxWidth .imj_adminPanel { w |	.imj_administrationTiledList.imj_maxWidth .imj_adminPanel { w								
+							      |									
+.imj_fileTypeConfig { width: 100%; }			      |	.imj_fileTypeConfig { width: 100%; }								
+.imj_fileTypeConfig table.imj_fileTypeConfigList { width: 100 |	.imj_fileTypeConfig table.imj_fileTypeConfigList { width: 100								
+.imj_fileTypeConfig table.imj_fileTypeConfigList td .imj_file |	.imj_fileTypeConfig table.imj_fileTypeConfigList td .imj_file								
+.imj_fileTypeConfig .imj_inlineButtonGroup * + * { margin-lef |	.imj_fileTypeConfig .imj_inlineButtonGroup * + * { margin-lef								
+							      |									
+.imj_tabList .imj_tabMenu { width: 100%; background-color: #2 |	.imj_tabList .imj_tabMenu { width: 100%; background-color: #2								
+.imj_tabList .imj_tabMenu li { display: inline-block; padding |	.imj_tabList .imj_tabMenu li { display: inline-block; padding								
+.imj_tabList .imj_tabMenu li.ui-state-active { background-col |	.imj_tabList .imj_tabMenu li.ui-state-active { background-col								
+.imj_tabList .imj_tabMenu li.ui-state-active a { color: #F0F0 |	.imj_tabList .imj_tabMenu li.ui-state-active a { color: #F0F0								
+.imj_tabList .imj_tabContent { width: 100%; background-color: |	.imj_tabList .imj_tabContent { width: 100%; background-color:								
+.imj_tabList .imj_tabContent ul .imj_iconGoTo { vertical-alig |	.imj_tabList .imj_tabContent ul .imj_iconGoTo { vertical-alig								
+							      |									
+.imj_siteWrapper .fa { font-size: 110%; }		      |	.imj_siteWrapper .fa { font-size: 110%; }								
+.imj_siteWrapper .fa-size-2 { font-size: 150%; }	      |	.imj_siteWrapper .fa-size-2 { font-size: 150%; }								
+.imj_siteWrapper .fa-size-3 { font-size: 190%; }	      |	.imj_siteWrapper .fa-size-3 { font-size: 190%; }								
+.imj_siteWrapper .fa-size-4 { font-size: 230%; }	      |	.imj_siteWrapper .fa-size-4 { font-size: 230%; }								
+.imj_siteWrapper .imj_listHeader .fa-pull-right { margin-righ |	.imj_siteWrapper .imj_listHeader .fa-pull-right { margin-righ								
+.imj_siteWrapper .fa-plus-square-o, .imj_siteWrapper .fa-minu |	.imj_siteWrapper .fa-plus-square-o, .imj_siteWrapper .fa-minu								
+.imj_siteWrapper .fa-chevron-left { margin-left: 0.5em; margi |	.imj_siteWrapper .fa-chevron-left { margin-left: 0.5em; margi								
+.imj_siteWrapper .fa-chevron-right { margin-left: 0.5em; marg |	.imj_siteWrapper .fa-chevron-right { margin-left: 0.5em; marg								
+							      |									
+body { /* style for date keeper from jquery-ui*/ }	      |	body { /* style for date keeper from jquery-ui*/ }								
+body .ui-menu { width: 300px; padding: 0 5px 5px 5px; color:  |	body .ui-menu { width: 300px; padding: 0 5px 5px 5px; color: 								
+body .ui-menu-item { background-color: #292929; width: 300px; |	body .ui-menu-item { background-color: #292929; width: 300px;								
+body .ui-autocomplete { position: absolute; z-index: 4000 !im |	body .ui-autocomplete { position: absolute; z-index: 4000 !im								
+body .ui-autocomplete-loading { background-color: #6CAE2F; }  |	body .ui-autocomplete-loading { background-color: #6CAE2F; }								
+body .ui-helper-hidden-accessible { display: none; }	      |	body .ui-helper-hidden-accessible { display: none; }								
+body .ui-datepicker { width: 15em; padding: 0.363636em 0.6363 |	body .ui-datepicker { width: 15em; padding: 0.363636em 0.6363								
+body .ui-datepicker-calendar, body .ui-datepicker-rtl { width |	body .ui-datepicker-calendar, body .ui-datepicker-rtl { width								
+body .ui-datepicker, body .ui-datepicker-calendar, body .ui-d |	body .ui-datepicker, body .ui-datepicker-calendar, body .ui-d								
+body .ui-datepicker-next { float: right; cursor: pointer; pad |	body .ui-datepicker-next { float: right; cursor: pointer; pad								
+body .ui-datepicker-prev { padding-left: 1.454545em; display: |	body .ui-datepicker-prev { padding-left: 1.454545em; display:								
+body .ui-datepicker-title { text-align: center; }	      |	body .ui-datepicker-title { text-align: center; }								
+body .ui-datepicker-title select + select { margin-left: 0.36 |	body .ui-datepicker-title select + select { margin-left: 0.36								
+body .ui-datepicker-calendar { margin-top: 0.181818em; }      |	body .ui-datepicker-calendar { margin-top: 0.181818em; }								
+body .ui-datepicker-calendar th { text-align: right; }	      |	body .ui-datepicker-calendar th { text-align: right; }								
+body .ui-datepicker-calendar td { text-align: right; }	      |	body .ui-datepicker-calendar td { text-align: right; }								
+body .imj_siteWrapper { /* style for date keeper from jquery- |	body .imj_siteWrapper { /* style for date keeper from jquery-								
+* with external library PL-UPLOADER			      |	* with external library PL-UPLOADER								
+* ============================================ */ }	      |	* ============================================ */ }								
+body .imj_siteWrapper .ui-menu { width: 300px; padding: 0 5px |	body .imj_siteWrapper .ui-menu { width: 300px; padding: 0 5px								
+body .imj_siteWrapper .ui-menu-item { background-color: #2929 |	body .imj_siteWrapper .ui-menu-item { background-color: #2929								
+body .imj_siteWrapper .ui-autocomplete { position: absolute;  |	body .imj_siteWrapper .ui-autocomplete { position: absolute; 								
+body .imj_siteWrapper .ui-autocomplete-loading { background-c |	body .imj_siteWrapper .ui-autocomplete-loading { background-c								
+body .imj_siteWrapper .ui-helper-hidden-accessible { display: |	body .imj_siteWrapper .ui-helper-hidden-accessible { display:								
+body .imj_siteWrapper .ui-datepicker { width: 15em; padding:  |	body .imj_siteWrapper .ui-datepicker { width: 15em; padding: 								
+body .imj_siteWrapper .ui-datepicker-calendar, body .imj_site |	body .imj_siteWrapper .ui-datepicker-calendar, body .imj_site								
+body .imj_siteWrapper .ui-datepicker, body .imj_siteWrapper . |	body .imj_siteWrapper .ui-datepicker, body .imj_siteWrapper .								
+body .imj_siteWrapper .ui-datepicker-next { float: right; cur |	body .imj_siteWrapper .ui-datepicker-next { float: right; cur								
+body .imj_siteWrapper .ui-datepicker-prev { padding-left: 1.4 |	body .imj_siteWrapper .ui-datepicker-prev { padding-left: 1.4								
+body .imj_siteWrapper .ui-datepicker-title { text-align: cent |	body .imj_siteWrapper .ui-datepicker-title { text-align: cent								
+body .imj_siteWrapper .ui-datepicker-title select + select {  |	body .imj_siteWrapper .ui-datepicker-title select + select { 								
+body .imj_siteWrapper .ui-datepicker-calendar { margin-top: 0 |	body .imj_siteWrapper .ui-datepicker-calendar { margin-top: 0								
+body .imj_siteWrapper .ui-datepicker-calendar th { text-align |	body .imj_siteWrapper .ui-datepicker-calendar th { text-align								
+body .imj_siteWrapper .ui-datepicker-calendar td { text-align |	body .imj_siteWrapper .ui-datepicker-calendar td { text-align								
+body .imj_siteWrapper .imj_siteHeader, body .imj_siteWrapper  |	body .imj_siteWrapper .imj_siteHeader, body .imj_siteWrapper 								
+body .imj_siteWrapper .imj_siteHeader .ui-menu, body .imj_sit |	body .imj_siteWrapper .imj_siteHeader .ui-menu, body .imj_sit								
+body .imj_siteWrapper .imj_siteHeader .ui-menu-item, body .im |	body .imj_siteWrapper .imj_siteHeader .ui-menu-item, body .im								
+body .imj_siteWrapper .imj_siteHeader .ui-autocomplete, body  |	body .imj_siteWrapper .imj_siteHeader .ui-autocomplete, body 								
+body .imj_siteWrapper .imj_siteHeader .ui-autocomplete-loadin |	body .imj_siteWrapper .imj_siteHeader .ui-autocomplete-loadin								
+body .imj_siteWrapper .imj_siteHeader .ui-helper-hidden-acces |	body .imj_siteWrapper .imj_siteHeader .ui-helper-hidden-acces								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker, body .i |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker, body .i								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker, body .i |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker, body .i								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-next, bo |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-next, bo								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-prev, bo |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-prev, bo								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-title, b |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-title, b								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-title se |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-title se								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar								
+body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar |	body .imj_siteWrapper .imj_siteHeader .ui-datepicker-calendar								
+body .imj_siteWrapper .plupload_header_content > div { displa |	body .imj_siteWrapper .plupload_header_content > div { displa								
+body .imj_siteWrapper .plupload_header_content .plupload_head |	body .imj_siteWrapper .plupload_header_content .plupload_head								
+body .imj_siteWrapper .plupload_filelist_header > div, body . |	body .imj_siteWrapper .plupload_filelist_header > div, body .								
+body .imj_siteWrapper .plupload_filelist_header { width: 100% |	body .imj_siteWrapper .plupload_filelist_header { width: 100%								
+body .imj_siteWrapper .plupload_filelist_header .plupload_hea |	body .imj_siteWrapper .plupload_filelist_header .plupload_hea								
+body .imj_siteWrapper .plupload_filelist_footer { padding: 0. |	body .imj_siteWrapper .plupload_filelist_footer { padding: 0.								
+body .imj_siteWrapper .plupload_filelist_footer .plupload_fil |	body .imj_siteWrapper .plupload_filelist_footer .plupload_fil								
+body .imj_siteWrapper .plupload_filelist_footer .plupload_upl |	body .imj_siteWrapper .plupload_filelist_footer .plupload_upl								
+body .imj_siteWrapper .plupload_filelist { width: 100%; heigh |	body .imj_siteWrapper .plupload_filelist { width: 100%; heigh								
+body .imj_siteWrapper .imj_ingestWrapper .plupload_filelist { |	body .imj_siteWrapper .imj_ingestWrapper .plupload_filelist {								
+body .imj_siteWrapper .plupload_file_name { width: 60%; paddi |	body .imj_siteWrapper .plupload_file_name { width: 60%; paddi								
+body .imj_siteWrapper .plupload_file_action { width: 13%; tex |	body .imj_siteWrapper .plupload_file_action { width: 13%; tex								
+body .imj_siteWrapper .plupload_file_status { width: 7%; min- |	body .imj_siteWrapper .plupload_file_status { width: 7%; min-								
+body .imj_siteWrapper .plupload_file_size { width: 15%; text- |	body .imj_siteWrapper .plupload_file_size { width: 15%; text-								
+body .imj_siteWrapper .plupload_clearer { height: 0.090909em; |	body .imj_siteWrapper .plupload_clearer { height: 0.090909em;								
+body .imj_siteWrapper .plupload_buttons { margin-right: 0.545 |	body .imj_siteWrapper .plupload_buttons { margin-right: 0.545								
+body .imj_siteWrapper .plupload_buttons a { padding: 0.333333 |	body .imj_siteWrapper .plupload_buttons a { padding: 0.333333								
+body .imj_siteWrapper .plupload_buttons a:hover { color: #000 |	body .imj_siteWrapper .plupload_buttons a:hover { color: #000								
+body .imj_siteWrapper .plupload_buttons a:focus { color: #000 |	body .imj_siteWrapper .plupload_buttons a:focus { color: #000								
+body .imj_siteWrapper .plupload_buttons a + a { margin-left:  |	body .imj_siteWrapper .plupload_buttons a + a { margin-left: 								
+body .imj_siteWrapper .plupload_delete:hover { background-col |	body .imj_siteWrapper .plupload_delete:hover { background-col								
+body .imj_siteWrapper .plupload_delete .plupload_file_action  |	body .imj_siteWrapper .plupload_delete .plupload_file_action 								
+body .imj_siteWrapper .plupload_delete .plupload_file_action  |	body .imj_siteWrapper .plupload_delete .plupload_file_action 								
+body .imj_siteWrapper .plupload_delete .plupload_file_action  |	body .imj_siteWrapper .plupload_delete .plupload_file_action 								
+body .imj_siteWrapper .moxie-shim input { border-radius: 0; - |	body .imj_siteWrapper .moxie-shim input { border-radius: 0; -								
+							      |									
+.imj_siteWrapper .imj_siteFooter { height: 70px; }	      |	.imj_siteWrapper .imj_siteFooter { height: 70px; }								
+							      |									
+.imj_startpageFooterLogos .imj_poweredby_software { float: le |	.imj_startpageFooterLogos .imj_poweredby_software { float: le								
+.imj_startpageFooterLogos .imj_poweredby_software .imj_powere |	.imj_startpageFooterLogos .imj_poweredby_software .imj_powere								
+.imj_startpageFooterLogos .imj_poweredby_software .imj_powere |	.imj_startpageFooterLogos .imj_poweredby_software .imj_powere								
+.imj_startpageFooterLogos .imj_poweredby_institution { float: |	.imj_startpageFooterLogos .imj_poweredby_institution { float:								
+							      |									
+.imj_siteWrapper .imj_headline_text h1 { font-size: 160%; fon |	.imj_siteWrapper .imj_headline_text h1 { font-size: 160%; fon								
+.imj_siteWrapper .imj_headline_text h2 { font-size: 140%; fon |	.imj_siteWrapper .imj_headline_text h2 { font-size: 140%; fon								
+.imj_siteWrapper .imj_headline_text h3 { font-size: 120%; fon |	.imj_siteWrapper .imj_headline_text h3 { font-size: 120%; fon								
+.imj_siteWrapper .imj_justified_text { text-align: justify; } |	.imj_siteWrapper .imj_justified_text { text-align: justify; }								

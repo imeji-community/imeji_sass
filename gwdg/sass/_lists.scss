@@ -1,0 +1,913 @@
+
+// /* imj_optionList used in 
+// * image_details.xhtml, template_metada_profileEdit.xhtml
+// */
+.imj_optionList {
+    li {
+        padding-bottom: 0.272727em;
+    }
+}
+
+.imj_techdataList {	// used in image_details.xhtml to show exif metadata
+                    width: 100%;
+                    padding: 0.545454em 0;
+                    background-color: $techmdlist-bgcolor;
+                    vertical-align: top;
+
+                    .imj_listBody {
+                        overflow: auto;
+                        text-overflow: ellipsis;
+
+                        &.imj_minHeight {
+                            max-height: 5em;
+                        }
+                        &.imj_maxHeight {
+                            max-height: 18em;
+                        }
+                    }
+
+                    .imj_techdataEntry {
+                        width: 98%;
+                        padding: 0 1%;
+                        white-space: pre;
+                        display: inline-block;
+                        overflow-x: auto;
+                    }
+
+
+}
+.imj_upload {
+
+    .imj_techdataList {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .imj_listHeader {
+            box-shadow: 0 0.7em 0.7em rgba(0,0,0,0.25);
+            margin: 0 0 1em 0;
+
+            .imj_iconExpand_16,
+            .imj_iconCollapse_16 {
+                float: right;
+                margin: 0.25em 0.25em 0 0;
+            }
+        }
+
+        .imj_techdataEntry {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+// ===[ Content - FACETS ]===
+// ================================================================ */
+//  component: facets.xhtml 
+// ================================================================ */
+.imj_facetList {
+    line-height: 175%;
+
+    .imj_facet {
+        display: inline-block;
+        margin-right: 1em;
+        padding: 0 0.272727em;
+        white-space: nowrap;
+
+        .imj_separator {
+            color: $facet-separator-color;
+        }
+        .imj_facetCounter {
+            padding: 0 0.181818em;
+            font-size: 120%;
+        }
+
+        &:hover {
+            background-color: $facet-bgcolor-hover;
+        }
+    }
+}
+
+// /* * bibliographicList used in bibliographicListTwoColumn.xhtml, bibliographicListThreeColumn.xhtml
+// ================================================== */
+.imj_bibliographicList {
+    width: 100%;
+
+    .imj_listHeader,
+    .imj_listFooter {
+        width: 91.95%;
+        padding: 0.25em 4% 0.5em 4%;
+
+        > div {
+            vertical-align: middle;
+        }
+        .imj_globalDisplaySwitchArea {
+            display: inline-block;
+            width: 77.95%;
+        }
+    }
+
+    .imj_interactiveArea {
+        width: 5%;
+        min-width: 1.5em;
+        display: inline-block;
+    }
+    /*
+    .imj_statusArea {
+        width: 16%;
+        min-width: 9em;
+        text-align: center;
+        display: inline-block;
+        overflow: hidden;
+
+        .imj_statusIconArea {
+            width: 100%;
+            margin: 0.5em 0;
+            text-align: center;
+        }
+    }
+    */
+    .imj_statusArea {
+        width: 2.181818em;
+        float: right;
+        margin-right: -2.75em;
+
+        > *[class*="imj_icon"] {
+            margin-top: 0.25em;
+            margin-bottom: 0.5em;
+        }
+
+        &:after {
+            clear: both;
+            content: "";
+        }
+
+    }
+    .imj_listFooter {
+        border-top: $biblist-separator-horizontal;
+    }
+
+    .imj_listBody {
+        width: 100%;
+
+        .imj_bibliographicListItem {
+            width: 91.95%;
+            padding: 0 4% 1em 4%;
+            display: inline-block;
+            border-top: $biblist-separator-horizontal;
+
+            &:hover {
+                background-color: $biblist-item-bgcolor-hover;
+            }
+            &.imj_active {	// e.g. an album is marked as active
+                           background-color: $biblist-item-bgcolor-active;
+
+                           &:hover {
+                               background-color: $biblist-item-bgcolor-active-hover;
+                           }
+            }
+            .imj_previewArea {
+                width: 21.5%;
+                min-width: 12em;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+            }
+            .imj_itemHeadline {
+                padding: 0.5em 0;
+                font-size: 120%;
+                line-height: 145%;
+
+                a {
+                    display: inline-block;
+                    max-width: 100%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                .imj_messageWarn {
+                    padding: 0 1%;
+                    margin-right: 0.5454em;
+                }
+            }
+            .imj_metadataLabel {
+                font-weight: normal;
+            }
+            .imj_itemActionArea {
+                width: 100%;
+
+                li {
+                    display: inline-block;
+                    padding: 0 0.545454em;
+                }
+                + .imj_metadataSet {
+                    margin-top: 0.5em;
+                }
+            }
+            .imj_interactiveArea {
+                padding-top: 0.75em;
+                vertical-align: top;
+            }
+            .imj_itemContent {
+                width: 77.25%;
+                display: inline-block;
+                vertical-align: top;
+
+                .imj_metadataContent {
+                    width: 100%;
+                }
+
+                .imj_descriptionArea {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+                p {
+                    &.imj_descriptionArea {
+                        margin: 0;
+                    }
+                }
+
+                .imj_metadataSet {
+                    padding-bottom: 0.25em;
+
+                    label {
+                        &.imj_metadataLabel {
+                            cursor: default;
+                            min-width: 0;
+                            width: 24%;
+                        }
+                    }
+                    &:hover {
+                        background-color: $biblist-item-data-bgcolor-hover;
+                    }
+                }
+
+                .imj_additionalInfoArea {
+                    display: none;
+                    padding-top: 0.5em;
+
+                    .imj_displaySwitchArea {
+                        a {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }	// end of listItem
+    }	// end of listBody
+}	// end of imj_bibliographicList
+
+
+// /* * metadataLists (image_details.xhtml, entryPageTabList.xhtml, mediaContainer_viewMetadata.xhtml)
+// ================================================== */
+.imj_metadataList {
+
+    .imj_listHeader {
+        width: 100%;
+
+        a {
+            float: right;
+            margin: 0.363636em 0.272727em 0.363636em;
+            padding: 0 0.363636em;
+
+            &:hover {
+                color: $mdlist-header-color-hover;
+                background-color: $mdlist-header-bgcolor-hover;
+            }
+        }
+        .imj_separator {
+            float: right;
+            width: 0.090909em;
+            margin-top: 0.454545em;
+            border: solid $mdlist-header-separator-border-color;
+            border-width: 1.3em 0 0;
+        }
+        .imj_active {
+            color: $mdlist-header-color-hover;
+            background-color: $mdlist-header-bgcolor-active;
+        }
+
+        &.imj_noBorder {
+            border: 0 none;
+        }
+    }
+
+    .imj_listBody {
+        clear: both;
+        width: 100%;
+        border-top: $mdlist-body-border-top-style;
+
+        .imj_entryPageTitle {
+            font-size: 1.636em;
+            letter-spacing: 0.045em;
+            line-height: 130%;
+            margin-bottom: 0.455em;
+        }
+        .imj_entryPageDescription {
+            line-height: 130%;
+        }
+
+        &.imj_noBorder {
+            border: 0 none;
+        }
+    }
+}
+
+// imj_metadataProfilePreviewList is an enhancement of the default imj_metadataList
+.imj_metadataProfilePreviewList {
+    .imj_listBody {
+
+        .imj_listItem {
+            margin-top: 1em;
+            @include box-sizing("border-box");
+
+            & > dl {
+                padding-left: 2%;
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
+                border: $mdprofilepreview-item-border-style;
+            }
+
+
+            .imj_headline {
+                font-size: 115%;
+                padding: 0.25em 0;
+            }
+
+            .imj_metadataBox {
+                display: inline-block;
+                margin-left: 1em;
+                vertical-align: top;
+                @include box-sizing("border-box");
+
+                dt, dd {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+// /* * tiledMediaList + singlePageBrowser
+// + Buttons + rangeSelector + infoLayer
+// (template_image_tiledlist.xhtml)
+// ================================================== */
+// /* * tiledMediaList */
+.imj_tiledMediaList {
+    padding: 0%;
+
+    .imj_listHeader {
+        min-height: 2em;
+
+        .imj_overlayMenu .imj_menuBody {
+            border: $tiledlist-overlay-border-style;
+            @include border-radius($border-radius-default);
+        }
+    }
+
+    > .imj_listBody {
+        margin: 1em 0 0 0;
+
+        .imj_tileItem {
+            display: inline-block;
+            width: 15.75%;
+            max-width: 11.545454em;
+            padding-bottom: 2em;
+            margin: 0 1.775% 0 0;
+            vertical-align: top;
+
+            label {
+                max-width: 100%;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                display:inline-block;
+
+                &.imj_optionLabel {
+                    white-space: nowrap;
+                }
+            }
+
+            .imj_optionCheckbox {
+                + label.imj_optionLabel {
+                    max-width: 88%;
+                    display: inline-block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .imj_tooltip {
+                display: none;
+                position: absolute;
+                z-index: 10;
+                width: 30em;
+                background-color: $tiledlist-tooltip-bgcolor;
+                @include box-shadow($tiledlist-tooltip-shadow);
+
+                .imj_metadataPublicationArea {
+                    .imj_citation {
+                        p:first-child {
+                            margin-top: 0;
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+            .imj_tileThumbnailArea {
+                background-color: $tiledlist-item-bgcolor;
+
+                &.imj_selected {
+                    background-color: $tiledlist-item-bgcolor-selected;
+                }
+                img {
+                    width: 84%;
+                    height: 85%;
+                    padding: 8%;
+                    margin-top: 3%;
+                }
+            }
+
+            &:hover {
+                .imj_tileThumbnailArea {
+                    background-color: $tiledlist-item-bgcolor-hover;
+                }
+                .imj_tooltip {
+                    display: block;
+                }
+            }
+
+            /* general bug fix for webkit browser, because of wrong interpretation in responsive image scaling */
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+                .imj_tileThumbnailArea img {
+                    height: auto;
+                }
+            }
+        } // end of imj_tileItem
+
+    } // end of imj_listBody
+}
+// ================================================== */
+
+// /* * detailed list / table
+// included in (template_image_tiledlist.xhtml)
+// ================================================== */
+// /* * detailList */
+
+.imj_detailList {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    thead {
+
+        th {
+            border-bottom: solid 1px #CCCCCC;
+        }
+    }
+
+    tfoot {
+
+        td {
+            border-top: solid 1px #CCCCCC;
+        }
+    }
+
+    thead, tfoot {
+        .imj_colFiletype, .imj_colFilesize {
+            text-align: center;
+        }
+    }
+    
+    th, td {
+        padding: 0.5em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+
+    .imj_colFiletype{
+		width: 10%; 
+		text-align: center; 
+    }
+    
+    .imj_colCheckbox {
+        width: 5%;
+    }
+    
+    .imj_colFileIcon {
+        width: 5%;
+        text-align: center;
+    }
+    
+    .imj_colFilename{
+        width: 55%;
+    }
+    
+    .imj_colFilesize{
+        width: 15%;
+        text-align: right;
+    }
+    
+    .imj_colDate {
+        width: 20%; 
+		text-align: center;
+    }
+}
+// ================================================== */
+
+// ENTRY PAGE OF COLLECTION OR ALBUM
+
+.imj_entryPagePreviewTiledList {
+    margin-bottom: 0.5em;
+
+    .imj_thumbnailsPreview {
+        display: inline;
+    }
+    .imj_tileItem {
+        display: inline-block; 
+        width:12.75%;
+        padding: 0.5%;
+    }
+    .imj_entryPagePreviewPicture {
+        padding: 0.25em;
+        width: 100%;
+    }
+    .imj_entryPagePreviewTiledListLink {
+        float: right;
+        width: 8em;
+
+        &:after {
+            clear: both;
+            content: "";
+        }
+    } 
+}
+ .imj_metadataList {
+    clear: both;
+}
+
+// /* ===[ Content - VIEW PROFILE OF METADATA ]===
+// ================================================================ */
+// /* * metadataProfileLists (metadataProfile_view.xhtml) 
+// * metadataListMediaContainer (mediaContainer_viewMetadata.xhtml)
+// ================================================================ */
+.imj_metadataProfileList,
+.imj_metadataListMediaContainer {
+
+    .imj_listHeader {
+        padding: 1% 0;
+
+        .imj_listHeaderMenu {
+            float: right;
+            display: inline-block;
+
+            a {
+                margin: 0.363636em 0.27272727em 0.363636em;
+                padding: 0 0.363636em;
+            }
+        }
+        .imj_headline {
+            display: inline-block;
+            margin-right: 1em;
+        }
+    }
+    .imj_sectionHeadline {
+        width: 100%;
+        display: inline-block;
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        // background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        // background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* FF3.6+ */
+        // background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(1%, rgba(0, 0, 0, 0.2)), color-stop(63%, rgba(0, 0, 0, 0))); /* Chrome,Safari4+ */
+        // background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* Chrome10+,Safari5.1+ */
+        // background: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* Opera 11.10+ */
+        // background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* IE10+ */
+        // background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 63%); /* W3C */
+        // filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#33000000', endColorstr='#00000000', GradientType=1); /* IE6-8 */
+        @include background-image(linear-gradient(left, $mdprofilelist-headline-gradient-color-1 0%, $mdprofilelist-headline-gradient-color-2 60%));
+    }
+    .imj_metadataProfileItem {
+        margin-top: 0.545454em;
+    }
+}
+
+.imj_metadataListMediaContainer {
+    .imj_listBody {
+        .imj_statusIconArea {
+            vertical-align: top;
+        }
+    }
+    table {
+        &.imj_metadataAuthorList {
+            thead {
+                th {
+                    font-weight: bold;
+                }
+            }
+            th, td {
+                padding-right: 0.75em;
+                vertical-align: top;
+            }
+            tbody {
+                tr {
+                    line-height: 200%;
+                }
+            }
+        }
+    }
+    // specific border definition
+    + .imj_metadataProfileList {
+        border-top: $mdprofilelist-separatortop-border-style-inplace;
+    }
+}
+
+// ================================================== */
+// ================================================== */
+// ================================================== */
+
+
+// /* ===[ Content - EDIT PROFILE OF METADATA ]===
+// ================================================================ */
+// /* * metadataProfileLists (metadataProfile_view.xhtml) 
+// * metadataListMediaContainer (mediaContainer_viewMetadata.xhtml)
+// ================================================================ */
+#imj_ajaxWrapper {
+    > .imj_metadataProfileList {
+        &.imj_edit {
+            border-top: $mdprofilelist-separatortop-border-style;
+        }
+    }
+}
+.imj_metadataProfileList {
+    &.imj_edit {
+
+        > .imj_listHeader {
+
+            ul.imj_listHeaderMenu {
+                float: none;
+
+                li {
+                    display: inline-block;
+                }
+
+                select {
+                    margin: 0 0.181818em;
+                }
+            }
+        }
+        .imj_metadataTypeSelection { 
+            width: 9em;
+        }
+        .imj_metadataLanguageSelection {
+            width: 10em;
+        }
+        .imj_itemHeader {
+            width: 98%;
+            padding: 0.5% 1%;
+
+            * {
+                vertical-align: top;
+            }
+            .imj_inlineButtonGroup {
+                margin-right: 0.272727em;
+            }
+            .imj_optionList {
+                float:right;
+                display: inline;
+                margin-left: 0.727272em;
+
+                .imj_optionSet {
+                    display: inline-block;
+
+                    + .imj_optionSet {
+                        margin-left: 0.545454em;
+                    }
+                }
+                .imj_optionLabel {
+                    min-width: 0;
+                    width: auto;
+                }
+            }
+        } // end of imj_itemHeader
+
+        .statement_area {
+            width: 100%;
+            overflow: none;
+        }
+        .dropMetadataActive,
+        .dropChildActive {
+            border-color: $mdprofilelist-dropmd-border-color-active;
+        }
+        .drop-hover {
+            min-height: 1em;
+            background-color: $mdprofilelist-drop-bgcolor-hover;
+        }
+        .dropMetadata {}
+        .imj_dropArea {
+            display: block;
+            min-width: 85%;
+
+            .imj_orderInfo {
+                display: none;
+            }
+            &:hover {
+                .imj_orderInfo {
+                    display: inline;
+                }
+            }
+        }
+        .highlight_area {
+            border: $highlightarea-border-style-mdprofile;
+            background-color: $highlightarea-bgcolor-mdprofile;
+
+            &.imj_highlightDependencies, 
+            .imj_highlightDependencies {
+                background-color: $highlightarea-bgcolor-hover-mdprofile;
+            }
+            &:hover {
+                background-color: $highlightarea-bgcolor-hover-mdprofile;
+            }
+        }
+
+    } // end of imj_edit
+}
+
+
+// /* * batchEditItemList - 
+// file (BatchEdit.xhtml)
+// ================================================================================== */
+.imj_batchEditItemList {
+    width: 91.25%;
+    padding: 1% 4%;
+
+    .imj_listHeader {
+        padding-bottom: 1em;
+    }
+    .imj_previewArea {
+        width: 21.5%;
+        min-width: 12em;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+    .imj_informationContent {
+        width: 77.25%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.imj_batchEditListItem {
+    margin-bottom: 1em;
+}
+
+
+// =====================================================================
+// ===[ ADMIN PAGES ]===
+// * UserAdministrationPage.xhtml
+// * UserCreate.xhtml
+// * Users.xhtml
+// * AdminStorage.xhtml
+// * Config.xhtml
+// =====================================================================
+.imj_administrationTiledList {
+    width: 91.95%;
+    padding: 2% 4%;
+
+    .imj_listBody {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imj_adminPanel {
+        display: inline-block;
+        max-width: 23%;
+        padding: 0 2%;
+        vertical-align: top;
+        margin-bottom: 2em;
+        text-align: left;
+
+        h2 {
+            font-size: 140%;
+            line-height: normal;
+        }
+        ul {
+            line-height: 150%;
+        }
+        .imj_headline {
+            // width: 91.95%;
+            text-align: center;
+            background-color: $tiledlistadmin-itemheader-bgcolor;
+            @include border-radius(0.909090em 0.909090em 0 0);
+            border: $tiledlistadmin-itemheader-border-style;
+        }
+		.imj_config_headline {
+			@extend .imj_headline;
+			cursor: pointer;
+			border-color: rgba($link-color, 0.36);
+		}
+        .imj_content {
+            // width: 91.95%;
+            padding: 0.454545em 0.81818181em;
+            min-height: 10em;
+            @include border-radius(0 0 0.909090em 0.909090em);
+            border: $tiledlistadmin-itemcontent-border-style;
+			.imj_submitButton{
+				float:right;
+			}
+        }
+
+        // /* for information about the storage content 
+        // * the values needs less space as usual
+        // */
+        &.imj_storageInformation {
+            max-width: 33em;
+
+            .imj_admindataLabel {
+                width: 33%;
+            }
+            .imj_admindataValue {
+                width: 61%;
+            }
+        }
+        
+        .imj_admindataValue {
+
+            & + .imj_clearInput {
+                vertical-align: top;
+            }
+        }
+    }
+
+    &.imj_maxWidth {
+        .imj_adminPanel {
+            width: 100%;
+            max-width: none;
+        }
+    }
+}	// end of imj_administrationTiledList
+
+.imj_fileTypeConfig {
+    width: 100%;
+
+    table {
+
+        &.imj_fileTypeConfigList {
+            width: 100%;
+            margin-top: 0.5em;
+
+            td {
+
+                .imj_fileTypeInput,
+                .imj_fileTypeValueInput {
+                    width: 94%;
+                    padding: 1% 2%;
+                }
+            }
+        }
+    }
+    .imj_inlineButtonGroup {
+        * + * {
+            margin-left: 0.272727em;
+        }
+    }
+}
+
+
+
+.imj_tabList {
+
+    .imj_tabMenu {
+        width: 100%;
+        background-color: $tablist-menu-bgcolor;
+        font-size: 120%;
+
+        li {
+            display: inline-block;
+            padding: 1em 0.5em;
+
+            &.ui-state-active {
+                background-color: $tablist-menuentry-bgcolor-active;
+                a {
+                    @include hover('a');
+                }
+            }
+        }
+    }
+    .imj_tabContent {
+        width: 100%;
+        background-color: $tablist-content-bgcolor;
+        overflow: auto;
+        font-size: 110%;
+
+        ul {
+
+            .imj_iconGoTo {
+                vertical-align: top;
+            }
+        }
+        li {
+        }
+    }
+}
